@@ -1,0 +1,105 @@
+---
+title: "03_graphs"
+author: "OW"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r}
+
+library(ggplot2)
+library(dplyr)
+library(forcats)
+library(readr)
+Metrics_full <- read_csv("~/Desktop/Paper Code/Delisting_FOTR/Delisting_FOTR/Data/Created_Data/SingleShortDate_P51_StreamName_wadable.csv")
+Metrics_full<-Metrics_full[,-1]
+Metrics_full$StreamName <-gsub("Creek","", Metrics_full$StreamName)
+
+Metrics_full$StreamName <-gsub("Branch","", Metrics_full$StreamName)
+
+Metrics_full$StreamName <-gsub("Drainage","", Metrics_full$StreamName)
+
+Metrics_full$StreamName <-gsub("Evans","Evan", Metrics_full$StreamName)
+
+Metrics_full$StreamName<-trimws(Metrics_full$StreamName)
+
+```
+
+```{r}
+
+pop_range <- range(Metrics_full$Richness)
+pop_range_seq <- seq(from =-40, to =40, by = 5)
+Metrics_full$StreamName<- factor(Metrics_full$StreamName, levels =unique( Metrics_full$StreamName[order(Metrics_full$Richness)]))
+  
+```
+
+```{r}
+
+Richness_graph<-Metrics_full %>%mutate(
+    SpeciesRichness = ifelse(Method=="Seine", Richness*(-1),
+                        Richness*1))%>%
+    mutate(StreamName = fct_relevel(StreamName, 
+              "Pebble", "Franklin","Willow","Evan", "Walled Lk","Bishop", "Tarabusi","Quarton","Minnow Pond","Tonquish","Seeley","Fellows","Fowler","Johnson", "Bell","Upper Rouge","Middle Rouge", "Lower Rouge","Main Rouge")) %>%
+    ggplot(aes(x =StreamName,y = SpeciesRichness, fill=Method)) + 
+    geom_bar(stat = "identity", color="black") +
+    coord_flip()+
+scale_fill_manual(values=c("#83aed9","#d98383"), labels=c('Seine',"Electrofishing"))+ 
+  scale_y_continuous(limits = c(-30,30), 
+                       breaks = pop_range_seq, 
+                     labels = abs(pop_range_seq))+
+   labs( x = "Stream Branch",
+        y = "Species Count")+ 
+  theme_classic()+
+  theme(text = element_text(size = 15,family="Helvetica"),legend.key.size = unit(.35,"cm"))  +
+  geom_text(aes(label=abs(SpeciesRichness)), color="black", check_overlap= FALSE, size=3.5, vjust="0.5", hjust="inward")+ labs(fill="")
+```
+  
+  
+  
+```{r}
+Tolerant_test<-Metrics_full %>% select(StreamName, Method, TolerantCount) %>% mutate(Type="Tolerant") %>% dplyr::rename(Count=TolerantCount)
+Intolerant_test <-Metrics_full %>% select(StreamName, Method, IntolerantCount)%>% mutate(Type="Intolerant")  %>% dplyr::rename(Count=IntolerantCount)
+Tolerance<-rbind(Tolerant_test,Intolerant_test) %>%  mutate_if(is.integer, ~replace(., is.na(.), 0))
+
+Tolerance$Count[Tolerance$Count == 0] <- NA
+
+
+```
+
+
+```{r}
+ggTolerance<-Tolerance %>%mutate(
+    Count = ifelse(Method=="Seine", Count*(-1),
+                        Count*1))%>%
+ mutate(StreamName = fct_relevel(StreamName, 
+              "Pebble", "Franklin","Willow","Evan", "Walled Lk","Bishop", "Tarabusi","Quarton","Minnow Pond","Tonquish","Seeley","Fellows","Fowler","Johnson", "Bell","Upper Rouge","Middle Rouge","Lower Rouge","Main Rouge")) %>%
+    ggplot(aes(x =StreamName,y = Count, fill=interaction(Method, Type)), alpha= Type) + 
+    geom_bar(stat = "identity", color="black", position="stack") +
+    coord_flip()+
+  scale_fill_manual(values=c("#4888c7","#c74848","#a4c4e3","#e3a4a4"),labels=c('Intolerant Seine',"Intolerant Electrofishing",'Tolerant Seine',"Tolerant Electrofishing"))+ 
+  scale_y_continuous(limits = c(-20,20), 
+                       breaks = pop_range_seq, 
+                     labels = abs(pop_range_seq))+
+   labs( x = "Stream Branch",
+        y = "Species Count", 
+        fill= "")+
+  theme_classic()+
+  theme(text = element_text(size = 15, family="Helvetica"),  panel.spacing.x = unit(0, "pt"), strip.background = element_rect(colour = "black"),legend.key.size = unit(.35,"cm"))  +
+   geom_text(aes(label=abs(Count)),size = 3.5, position = position_stack(vjust = 0.5))
+```
+
+
+
+```{r}
+library(ggpubr)
+ggarrange(Richness_graph, ggTolerance+ 
+               theme(axis.text.y = element_blank(),
+                     axis.ticks.y = element_blank(),
+                     axis.title.y = element_blank() ), 
+          labels = c("A", "B"),
+          ncol = 2, nrow = 1, 
+          legend = "right",
+          hjust = -1)
+
+```
+

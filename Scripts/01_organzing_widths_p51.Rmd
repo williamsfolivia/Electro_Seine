@@ -1,0 +1,159 @@
+---
+title: "01_combining_data"
+author: "OW"
+date: "2023-09-27"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(readxl)
+library(plyr)
+library(remotes)
+##install_github("USEPA/StreamCatTools", build_vignettes=FALSE)
+library(StreamCatTools)
+
+finalnames<-read_csv("Data/P51_pieces/historic_COMID.csv", 
+    col_types = cols(...1 = col_skip()))
+
+habitat_clean <- read_csv("Data/P51_pieces/habitat_clean.csv")
+names(habitat_clean) <- gsub(" ", "", names(habitat_clean))
+habitat_clean<-habitat_clean[-42,] ## taking out the duplicate Bell4
+
+locations<-read_csv("Data/ArcGIS_data/historical.watershed.COMID.csv",
+    col_types = cols(...1 = col_skip()))
+
+crosswalk<-read_csv("Data/Raw_Database/Crosswalk_DNR.csv") %>% select(-'...1')
+
+DNR_Lengths_Scores <- read_excel("Data/P51_pieces/DNR_Lengths_Scores.xlsx", 
+    col_types = c("text", "numeric", "numeric", "numeric", "numeric"))
+
+DNR_Lengths_Scores$Site<-tolower(DNR_Lengths_Scores$Site)
+
+FOTR_measured_width <- read_excel("Data/P51_pieces/FOTR_measured_width.xlsx", 
+    col_types = c("numeric", "text", "numeric"))
+```
+
+```{r}
+Widths_22<-habitat_clean %>%transmute(FIELDID=Site,Width = (WettedWidth...22+WettedWidth...13+WettedWidth...4)/3)
+Widths_22$FIELDID<-tolower(Widths_22$FIELDID)
+crosswalk<-crosswalk %>% 
+    mutate(DNRName_merge = coalesce(DNRName, FIELDID))
+
+Widths_22<-left_join(Widths_22,crosswalk, by=c('FIELDID'='DNRName_merge')) %>% select(FIELDID,Width,COMID)
+slim_crosswalk<-crosswalk %>% select(FIELDID,DNRName_merge)
+dnr_widths<-DNR_Lengths_Scores %>% select(Site,Width) 
+```
+
+
+
+```{r setup, include=FALSE}
+Names_final<-crosswalk %>% mutate(DNRName_merge = coalesce(DNRName, FIELDID))
+slim_names<-Names_final %>% select(FIELDID,DNRName_merge,COMID)
+additions = data.frame(FIELDID = c("upper5", "low14",	"mr-4","middle3","up6"), DNRName_merge=c("upper5", "l-3","md-4","md-5","u-2"), COMID = c("10849374","10850162","10849648","10849642","10849602"))
+slim_names = rbind(slim_names,additions)
+slim_names$FIELDID <- gsub(" ", "", slim_names$FIELDID)
+slim_names$DNRName_merge <- gsub(" ", "", slim_names$DNRName_merge )
+slim_names$FIELDID <- gsub("dnrnfel", "dnrfel", slim_names$FIELDID)
+slim_names$DNRName_merge <- gsub("dnrnfel", "dnrfel", slim_names$DNRName_merge)
+dnr_widths$Site <- gsub(" ", "", dnr_widths$Site)
+
+
+##Names_final<-Names_final %>% mutate(DNRName_merge = coalesce(DNRName, FIELDID))
+
+
+Historic_widths<-left_join(dnr_widths,slim_names, by = c("Site"="DNRName_merge"))
+```
+
+
+```{r}
+Historic_widths_sub<-Historic_widths %>% select(FIELDID,Width, COMID) 
+
+additions1 = data.frame(FIELDID = c("md-13"), Width=c("7"), COMID = c("10849426"))
+Historic_widths_sub = rbind(Historic_widths_sub,additions1)
+
+combined_width=plyr::rbind.fill(Historic_widths_sub,Widths_22)
+```
+
+```{r}
+library(StreamCatTools)
+FIELDID_Crosswalk  <- read_csv("~/Library/CloudStorage/OneDrive-Umich/Rouge River/RougeRiver_Anaylsis/Raw_Data/Crosswalk/Final_Crosswalk_FIELDID_V2_HR.csv", 
+    col_types = cols(ReachCode = col_number(), 
+        COMID = col_number()))
+
+COMID_PUGAP <- read_excel("~/Library/CloudStorage/OneDrive-Umich/Rouge River/RougeRiver_Anaylsis/Raw_Data/Crosswalk/COMID_PUGAP.xls", 
+    col_types = c("numeric", "numeric", "text", 
+        "text", "text", "text", "numeric", 
+        "numeric"))
+comid_rouge <- COMID_PUGAP$COMID
+comid_rouge<-toString(comid_rouge)
+```
+
+```{r}
+wetted<-sc_get_data(metric='wetted_width_m',aoi='Other',comid=comid_rouge)
+bankful<-sc_get_data(metric='bankfull_width_m',aoi='Other',comid=comid_rouge)
+
+streamcat_widths<-left_join(wetted,bankful, by="COMID")
+streamcat_widths$COMID<-as.character(as.numeric(streamcat_widths$COMID))
+```
+
+```{r}
+final_widths<-left_join(streamcat_widths,combined_width, by="COMID")
+final_widths<-final_widths%>%mutate(Wetted_width_ft=WETTED_WIDTH_M*3.28084)
+final_widths$FIELDID <- gsub("dnrnfel", "dnrfel", final_widths$FIELDID)
+final_widths$Width <- gsub("between 10-15", "12.5", final_widths$Width)
+final_widths$Width<-as.numeric(as.character(final_widths$Width))
+```
+
+
+```{r}
+final_widths_ex<-final_widths%>% 
+    mutate(Final_width_ft = coalesce(Width, Wetted_width_ft)) %>% select(FIELDID,COMID,Final_width_ft)
+
+final_widths_ex1<-final_widths_ex  %>%
+dplyr::group_by(COMID, FIELDID) %>%    dplyr::summarise(finalwidth_ft=mean(Final_width_ft)) 
+
+final_widths_ex1<-final_widths_ex1 %>% mutate(
+update_location= case_when(COMID==10850302 ~ "franklin11", 
+                           COMID==10849794 ~"lower4", 
+                           COMID==10849412 ~"peb4"),
+update_length= case_when(COMID==10848482 ~15, 
+                         COMID==10849708 ~ 12, 
+                         COMID== 10849704 ~ 9,
+                         COMID==10849780 ~6, 
+                         COMID==10848448 ~ 11, 
+                         COMID==10848534 ~ 22)) %>% 
+  mutate(final_FIELDID = coalesce(FIELDID, update_location), 
+         final_width_p = coalesce(finalwidth_ft, update_length)) %>% 
+  select(COMID,final_FIELDID,final_width_p) %>% dplyr::rename(FIELDID=final_FIELDID)
+
+
+final_widths_ex2<-left_join(slim_names,final_widths_ex1, by=c("COMID","FIELDID"),relationship = "many-to-many") 
+
+final_widths_ex2<-final_widths_ex2 %>% mutate(update_length= case_when(COMID==10848482 ~15, 
+                         COMID==10849708 ~ 12, 
+                         COMID== 10849704 ~ 9,
+                         COMID==10849780 ~6, 
+                         COMID==10848448 ~ 11, 
+                         COMID==10848534 ~ 22)) %>% 
+   mutate(final_width = coalesce(final_width_p, update_length)) %>% 
+  select(COMID,FIELDID,final_width) 
+
+
+
+average_widths <-final_widths_ex2%>% 
+dplyr::group_by(COMID) %>% 
+  filter(!is.na(final_width)) %>% 
+ dplyr::summarise(average_width = mean(final_width))
+
+final_possible<-left_join(final_widths_ex2, average_widths, by= "COMID") %>% mutate(combined_final_width = coalesce(final_width, average_width)) %>% select(COMID,FIELDID,combined_final_width) %>% distinct()
+
+FOTR_measured_width<- FOTR_measured_width %>% mutate(COMID=as.character(COMID))
+final_possible <- left_join(final_possible, FOTR_measured_width, by=c("COMID","FIELDID")) %>% mutate(combined_final_width= coalesce(combined_final_width.x, combined_final_width.y)) %>% select(COMID,FIELDID,combined_final_width)
+
+```
+
+```{r}
+write.csv(final_possible,"Data/Created_Data/final_widths_possible.csv")
+```
+

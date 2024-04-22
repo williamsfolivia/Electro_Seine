@@ -1,0 +1,74 @@
+---
+title: "Dissimilarity"
+author: "OW"
+date: "2023-08-07"
+output: html_document
+---
+
+`
+```{r}
+library(tidyverse)
+library(ggplot2) 
+library(vegan)
+
+Raw_Rouge<-Close_date_rouge <- read_csv("Data/Created_Data/Close_date_rouge.csv", 
+    col_types = cols(...1 = col_skip(), DateSampled = col_date(format = "%Y-%m-%d"), 
+        TotalFish = col_number()))
+
+Raw_Rouge$Method[Raw_Rouge$Method=="Backpack Shock"]<-"Shocking"
+Raw_Rouge$Method[Raw_Rouge$Method=="Barge Shock"]<-"Shocking"
+Raw_Rouge$Method[Raw_Rouge$Method=="Boom Shock"]<-"Shocking"
+
+Combined_P51 = Raw_Rouge %>%  
+  dplyr::mutate_at(vars(DateSampled), funs(year, month, day)) 
+```
+
+
+```{r}
+WadableRouge<-Combined_P51%>%
+ filter(!(FIELDID %in% c("DNRFel","John10","Evan6","Low14","Main21","Main20","MR-15")))
+
+SubsetRouge<-Combined_P51 %>%
+ filter(!(FIELDID %in% c("DNRFel","John10","Evan6","Main21","Main12","Main10","Main12N","Low14","Main20","MR-15")))
+```
+
+```{r}
+SubsetRouge_final<-SubsetRouge %>% dplyr::select(StreamName,Method, CommonName, TotalFish)
+SubsetRouge_final<-SubsetRouge_final %>% group_by(StreamName,Method, CommonName) %>% 
+  dplyr::summarise(sum_fish=sum(TotalFish), .groups = "keep")  %>% arrange(CommonName)
+
+SubsetRouge_final<-SubsetRouge_final %>% pivot_wider(names_from = CommonName, values_from = sum_fish)
+SubsetRouge_final<-SubsetRouge_final %>%  mutate_if(is.numeric, ~1 * (. != 0)) %>% dplyr::mutate(across(where(is.numeric), ~ ifelse(is.na(.), 0, .)))
+
+SubsetRouge<-SubsetRouge_final %>% arrange(StreamName, Method)
+SubsetRouge_final$Branch_Method <- paste(SubsetRouge_final$StreamName,"_", SubsetRouge_final$Method)
+SubsetRouge_final$Branch_Method<- gsub(" ", "", SubsetRouge_final$Branch_Method)
+
+Names<-SubsetRouge_final$Branch_Method
+SubsetRouge_final <-subset(SubsetRouge_final,select = c(american_brook_lamprey:yellow_perch))
+```
+
+```{r}
+dissimilarity<-vegdist(SubsetRouge_final, "bray", binary = TRUE) #presence/absence when binary is TRUE 
+
+
+diss.matrix<-as.matrix(dissimilarity)
+rownames(diss.matrix) <- Names
+colnames(diss.matrix)<- Names
+
+diss.matrix<-data.frame(diss.matrix)
+```
+
+```{r}
+one<-matrix(1, 38, 38)
+hundred<-matrix(100, 38, 38)
+```
+
+```{r}
+overall<-(one-diss.matrix)*hundred
+```
+
+```{r}
+write.csv(overall,"Data/Created_Data/Output/matrix_wadable.csv")
+```
+

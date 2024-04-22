@@ -1,0 +1,299 @@
+---
+title: "02_p51calulations_FOTR"
+author: "OW"
+date: "2024-04-02"
+output: html_document
+---
+```{r}
+library(tidyverse)
+library(readxl)
+Raw_Rouge<- read_csv("Data/Created_Data/Close_date_rouge.csv", 
+    col_types = cols(...1 = col_skip(), DateSampled = col_date(format = "%Y-%m-%d"), 
+        TotalFish = col_number(), year = col_number(), 
+        timebetween = col_skip()))
+P51_species<-read_csv("Data/P51_pieces/P51_species.csv")
+Raw_Rouge$Method[Raw_Rouge$Method=="Backpack Shock"]<-"Shocking"
+Raw_Rouge$Method[Raw_Rouge$Method=="Barge Shock"]<-"Shocking"
+Raw_Rouge$Method[Raw_Rouge$Method=="Boom Shock"]<-"Shocking"
+
+Rouge_locations <- read_csv("Data/P51_pieces/tblSamplingSites_2022.csv")
+Rouge_locations<- Rouge_locations[, c("Branch", "FIELDID")]
+Combined_P51<-left_join(Raw_Rouge, Rouge_locations, by ="FIELDID") 
+
+Combined_P51 = Combined_P51 %>%  
+  mutate_at(vars(DateSampled), funs(year, month, day))
+
+final_widths<-read_csv("Data/P51_pieces/final_widths_possible.csv",
+    col_types = cols(...1 = col_skip(), combined_final_width = col_number()))
+final_widths$FIELDID<-tolower(final_widths$FIELDID)
+Rouge_locations <-read_excel("Data/Raw_Database/tblSamplingSites_all.xlsx")
+Rouge_locations<- Rouge_locations[, c("Branch", "StreamName","FIELDID")]
+Rouge_locations$FIELDID<-tolower(Rouge_locations$FIELDID)
+
+crosswalk<-read_csv("Data/Raw_Database/Crosswalk_DNR.csv")
+subset_crosswalk<-crosswalk %>% select(FIELDID,COMID) %>% unique()
+```
+
+
+##Building the metrics
+
+```{r}
+P51_species <- mutate_each(P51_species, funs=tolower)
+P51_species$Intolerant <- gsub(" ", "_", P51_species$Intolerant)
+P51_species$Omnivores <- gsub(" ", "_", P51_species$Omnivores)
+P51_species$Insectivores <- gsub(" ", "_", P51_species$Insectivores)
+P51_species$Piscivores <- gsub(" ", "_", P51_species$Piscivores)
+P51_species$Tolerant <- gsub(" ", "_", P51_species$Tolerant)
+P51_species$Lithophilic <- gsub(" ", "_", P51_species$Lithophilic)
+P51_species$Darter <- gsub(" ", "_", P51_species$Darter)
+P51_species$Sunfish <- gsub(" ", "_", P51_species$Sunfish)
+P51_species$Sucker <- gsub(" ", "_", P51_species$Sucker)
+
+Tolerance <- P51_species[, c("Intolerant", "Tolerant")]
+Tolerance<-gather(Tolerance, key="Tolerance", value ="CommonName")
+Tolerance[Tolerance == ''] <- NA
+Tolerance<-Tolerance[complete.cases(Tolerance), ]
+
+Species_Type <-P51_species[, c("Darter", "Sunfish","Sucker")]
+Species_Type<-gather(Species_Type, key="Species_Type", value ="CommonName")
+Species_Type[Species_Type == ''] <- NA
+Species_Type<-Species_Type[complete.cases(Species_Type), ]
+
+Food_Type <-P51_species[, c("Omnivores","Insectivores","Piscivores")]
+Food_Type<-gather(Food_Type, key="Food_Type", value ="CommonName")
+Food_Type[Food_Type == ''] <- NA
+Food_Type<-Food_Type[complete.cases(Food_Type), ]
+
+Spawn_Type<-P51_species[, c("Lithophilic")]
+Spawn_Type<-Spawn_Type %>% dplyr::rename(CommonName=Lithophilic)%>% dplyr::mutate(Spawner="Lithophilic")
+Spawn_Type[Spawn_Type == ''] <- NA
+Spawn_Type<-Spawn_Type[complete.cases(Spawn_Type), ]
+
+Combined_P51<-left_join(Combined_P51,Tolerance,by="CommonName")
+Combined_P51<-left_join(Combined_P51,Species_Type, by = "CommonName")
+Combined_P51<-left_join(Combined_P51,Food_Type, by = "CommonName")
+Combined_P51<-left_join(Combined_P51,Spawn_Type, by = "CommonName")
+
+```
+
+```{r}
+Totalfish<-Combined_P51 %>% group_by(Method, FIELDID,DateSampled) %>% dplyr::summarize(TotalFish = sum(TotalFish))
+Totalfish.tolerance<-Combined_P51 %>% group_by(Method, FIELDID, Tolerance,DateSampled) %>% dplyr::summarize(TotalTolerance = sum(TotalFish))
+Totalfish.species<-Combined_P51 %>% group_by(Method, FIELDID, Species_Type,DateSampled) %>% dplyr::summarize(TotalSpecies = sum(TotalFish))
+
+Totalfish.food<-Combined_P51 %>% group_by(Method, FIELDID, Food_Type,DateSampled) %>% dplyr::summarize(TotalFood = sum(TotalFish))
+
+Totalfish.spawn<-Combined_P51 %>% group_by(Method, FIELDID, Spawner,DateSampled) %>% dplyr::summarize(TotalSpawn = sum(TotalFish))
+
+Totalfish.tolerance<-Totalfish.tolerance[complete.cases(Totalfish.tolerance), ]
+Totalfish.species<-Totalfish.species[complete.cases(Totalfish.species), ]
+Totalfish.food<-Totalfish.food[complete.cases(Totalfish.food), ]
+Totalfish.spawn<-Totalfish.spawn[complete.cases(Totalfish.spawn), ]
+
+##gets counts and renames 
+CountSpecies<-Combined_P51%>% group_by(Method, FIELDID, Species_Type,DateSampled) %>% dplyr::count(Species_Type) %>% dplyr::rename(TypeAbundance= n)
+CountSpecies[is.na(CountSpecies)] <- "Normal"
+CountSpecies<-spread(CountSpecies, Species_Type, TypeAbundance) %>% dplyr::rename(DarterCount= Darter,
+      SunfishCount =Sunfish, 
+      SuckerCount =Sucker,
+      NormalCountSpecies= Normal)
+CountSpecies[is.na(CountSpecies)] <- 0
+
+
+CountTolerance<-Combined_P51 %>% group_by(Method, FIELDID, Tolerance,DateSampled) %>% dplyr::count(Tolerance) %>% dplyr::rename(ToleranceAbundance= n)
+CountTolerance[is.na(CountTolerance)] <- "Normal"
+CountTolerance<-spread(CountTolerance,Tolerance, ToleranceAbundance) %>% dplyr::rename(IntolerantCount= Intolerant,
+      TolerantCount =Tolerant, 
+      NormalCountTolerance =Normal)
+CountTolerance[is.na(CountTolerance)] <- 0
+
+
+CountFood<-Combined_P51 %>% group_by(Method, FIELDID, Food_Type,DateSampled) %>% dplyr::count(Food_Type) %>% dplyr::rename(FoodCount= n)
+CountFood[is.na(CountFood)] <- "Normal"
+CountFood<-spread(CountFood,Food_Type,FoodCount) %>% dplyr::rename(InsectivoresCount= Insectivores,
+      PiscivoresCount =Piscivores, 
+      NormalCountFood =Normal, 
+      OmnivoresCount =Omnivores)
+CountFood[is.na(CountFood)] <- 0
+
+CountSpawn<-Combined_P51 %>% group_by(Method, FIELDID, Spawner,DateSampled) %>% dplyr::count(Spawner) %>% dplyr::rename(SpawnerCount= n)
+CountSpawn[is.na(CountSpawn)] <- "Normal"
+CountSpawn<-spread(CountSpawn,Spawner,SpawnerCount) %>% 
+  dplyr::rename(LithophilicCount= Lithophilic)
+CountSpawn[is.na(CountSpawn)] <- 0
+```
+
+```{r}
+Totalfish.tolerance<-Totalfish.tolerance %>% pivot_wider(names_from = Tolerance, values_from = TotalTolerance ) 
+Totalfish.tolerance[is.na(Totalfish.tolerance)] <- 0
+
+Total.tolerance.abundance<-left_join(Totalfish,Totalfish.tolerance)
+Total.tolerance.abundance <-Total.tolerance.abundance %>% mutate_if(is.integer,as.numeric) %>% mutate(Percent_Tolerant=(Tolerant/TotalFish)*100) %>% 
+  dplyr::rename(IntolerantAbundance=Intolerant, 
+      TolerantAbundance=Tolerant)
+
+Final_P51cal<-left_join(Totalfish,Total.tolerance.abundance, by =c("FIELDID","Method","DateSampled","TotalFish"))
+
+
+```
+
+
+```{r}
+
+Totalfish.spawn.abundance<-left_join(Totalfish,Totalfish.spawn)
+
+Totalfish.spawn.abundance<-Totalfish.spawn.abundance %>% replace_na(list(Spawner = 'Lithophilic', TotalSpawn = 0)) 
+
+
+Totalfish.spawn.abundance <-Totalfish.spawn.abundance %>% mutate_if(is.integer,as.numeric) %>% mutate(Percent_Lithophilic=(TotalSpawn/TotalFish)*100) %>% 
+  dplyr::rename(LithophilicAbundance=TotalSpawn)
+
+Final_P51cal<-left_join(Final_P51cal,Totalfish.spawn.abundance, by =c("FIELDID","Method","DateSampled","TotalFish"))
+```
+
+```{r}
+Totalfish.species<-Totalfish.species %>% pivot_wider(names_from = Species_Type, values_from = TotalSpecies ) 
+
+Total.species.abundance<-left_join(Totalfish,Totalfish.species)
+Total.species.abundance[is.na(Total.species.abundance)] <- 0
+
+Total.species.abundance <-Total.species.abundance %>% mutate_if(is.integer,as.numeric) %>% mutate(Percent_Darter=(Darter/TotalFish)*100,
+       Percent_Sucker=(Sucker/TotalFish)*100,
+       Percent_Sunfish=(Sunfish/TotalFish)*100) %>% 
+  dplyr::rename(DarterAbundance=Darter, 
+      SunfishAbundance=Sunfish,
+      SuckerAbundance=Sucker)
+
+Final_P51cal<-left_join(Final_P51cal,Total.species.abundance, by =c("FIELDID","Method","DateSampled","TotalFish"))
+```
+
+```{r}
+Totalfish.food<-Totalfish.food %>% pivot_wider(names_from = Food_Type, values_from = TotalFood ) 
+
+Total.food.abundance<-left_join(Totalfish,Totalfish.food)
+Total.food.abundance[is.na(Total.food.abundance)] <- 0
+
+Total.food.abundance <-Total.food.abundance %>% mutate_if(is.integer,as.numeric) %>% mutate(Percent_Insectivores=(Insectivores/TotalFish)*100,
+       Percent_Omnivores=(Omnivores/TotalFish)*100,
+       Percent_Piscivores=(Piscivores/TotalFish)*100) %>% 
+  dplyr::rename(InsectivoresAbundance=Insectivores, 
+      OmnivoresAbundance=Omnivores,
+      PiscivoresAbundance=Piscivores)
+
+Final_P51cal<-left_join(Final_P51cal,Total.food.abundance, by =c("FIELDID","Method","DateSampled","TotalFish"))
+```
+
+
+```{r}
+CountFish<-Raw_Rouge %>% pivot_wider(names_from = CommonName,values_from = TotalFish)
+CountFish[is.na(CountFish)] <- 0
+
+SpeciesRichness<-CountFish %>%
+  group_by(FIELDID,Method,DateSampled) %>% dplyr::summarise(across(american_brook_lamprey:yellow_perch, sum)) %>% 
+mutate_if(is.numeric, ~1 * (. != 0))  %>% ungroup () %>%
+ dplyr:: mutate(Richness = rowSums(select_if(., is.numeric), na.rm = TRUE)) %>% select(FIELDID,Method, DateSampled, Richness)
+
+Final_P51cal<-left_join(SpeciesRichness,Final_P51cal, by =c("FIELDID","Method","DateSampled"))
+
+```
+
+```{r}
+df_list <- list(CountFood, CountSpawn, CountSpecies, CountTolerance,Final_P51cal)
+
+Final_P51cal<-df_list %>% reduce(full_join, by =c("FIELDID","Method","DateSampled"))
+```
+
+```{r}
+Final_metrics<-Final_P51cal %>% select(FIELDID,Method,DateSampled,TotalFish,Richness,DarterCount,SunfishCount,SuckerCount,IntolerantCount,Percent_Tolerant,Percent_Omnivores,Percent_Piscivores,Percent_Lithophilic, Percent_Insectivores)
+Final_metrics$FIELDID<-tolower(Final_metrics$FIELDID)
+```
+
+##Begin the scoring of the metrics 
+```{r}
+Metrics_width<-left_join(Final_metrics,final_widths, by="FIELDID") %>% dplyr::rename(finalwidth_ft=combined_final_width)
+```
+
+##Creating the ranges-- +1 is upper and -1 is lower
+```{r}
+Metrics_width<-Metrics_width %>% mutate(Richness_upper=case_when(finalwidth_ft>=12~14, finalwidth_ft<12~1.2*finalwidth_ft), 
+                      Richness_lower=case_when(finalwidth_ft>=12~10, finalwidth_ft<12~.76*finalwidth_ft),
+                      Darter_upper=case_when(finalwidth_ft>=15~3, finalwidth_ft<15~.22*finalwidth_ft), 
+                      Darter_lower=case_when(finalwidth_ft>=15~2, finalwidth_ft<15~.11*finalwidth_ft),
+                      Sunfish_upper=case_when(finalwidth_ft>=20~3, finalwidth_ft<20~.17*finalwidth_ft), 
+                      Sunfish_lower=case_when(finalwidth_ft>=20~2, finalwidth_ft<20~.085*finalwidth_ft), 
+                      Sucker_upper=case_when(finalwidth_ft>=15~2, finalwidth_ft<15~.14*finalwidth_ft), 
+                      Sucker_lower=case_when(finalwidth_ft>=15~2, finalwidth_ft<20~.066*finalwidth_ft), 
+                      Intolerant_upper=case_when(finalwidth_ft>=24~4, finalwidth_ft<24~.19*finalwidth_ft), 
+                      Intolerant_lower=case_when(finalwidth_ft>=24~2, finalwidth_ft<24~.096*finalwidth_ft), 
+                      Tolerant_upper=39, Tolerant_lower=75,
+                      Omnivore_upper=31, Omnivore_lower=72, 
+                      Insectivore_upper=62, Insectivore_lower=15,
+                      Piscivore_upper=3, Piscivore_lower=1, 
+                      Lithophilic_upper=47, Lithophilic_lower=1)
+
+```
+
+
+```{r}
+Final_score<-Metrics_width %>% 
+mutate(Richness_score=case_when(Richness>Richness_upper ~ 1, Richness <=  Richness_upper & Richness>=Richness_lower ~ 0, Richness<Richness_lower~-1),
+                                
+Darter_score=case_when(Darter_score =DarterCount>Darter_upper ~ 1, DarterCount <= Darter_upper &DarterCount>=Darter_lower~0, DarterCount<Darter_lower~-1), 
+
+Sunfish_score=case_when(SunfishCount>Sunfish_upper ~ 1, SunfishCount <= Sunfish_upper &SunfishCount>=Sunfish_lower~0, SunfishCount<Sunfish_lower~-1),
+
+Sucker_score=case_when(SuckerCount>Sucker_upper ~ 1, SuckerCount <= Sucker_upper &SuckerCount>=Sucker_lower~0,SuckerCount<Sucker_lower~-1), 
+
+Intolerant_score=case_when(IntolerantCount>Intolerant_upper ~ 1, IntolerantCount<=Intolerant_upper &IntolerantCount>=Intolerant_lower~0, IntolerantCount<Intolerant_lower~-1), 
+
+Tolerant_score=case_when(Percent_Tolerant>Tolerant_upper ~ 1, Percent_Tolerant<=Tolerant_upper &Percent_Tolerant>=Tolerant_lower~0, Percent_Tolerant<Tolerant_lower~-1),
+
+Omnivore_score=case_when(Percent_Omnivores>Omnivore_upper ~ 1, Percent_Omnivores<=Omnivore_upper &Percent_Omnivores>=Omnivore_lower~0, Percent_Omnivores<Omnivore_lower~-1),
+                                Insectivores_score=case_when(Percent_Insectivores>Insectivore_upper ~ 1, Percent_Insectivores<=Insectivore_upper &Percent_Insectivores>=Insectivore_lower~0, Percent_Insectivores<Insectivore_lower~-1),
+
+Piscivores_score=case_when(Percent_Piscivores>Piscivore_upper ~ 1, Percent_Piscivores<=Piscivore_upper &Percent_Piscivores>=Piscivore_lower~0, Percent_Piscivores<Piscivore_lower~-1),
+                               Lithophilic_score=case_when(Percent_Lithophilic>Lithophilic_upper ~ 1, Percent_Lithophilic<=Lithophilic_upper &Percent_Lithophilic>=Lithophilic_lower~0, Percent_Lithophilic<Lithophilic_lower~-1)) %>% mutate(Total_score = Richness_score+Darter_score+Sunfish_score+Sucker_score+Intolerant_score + Tolerant_score+Omnivore_score+Insectivores_score+ Piscivores_score+Lithophilic_score)
+```
+
+##Taking p51 rules in to consideration 
+-only sampled from June-Sept
+-only wadable
+```{r}
+
+Final_scoring<-Final_score %>% dplyr::mutate_at(vars(DateSampled), funs(year, month, day))
+All_rouge_scores_noconsiderations <-  Final_scoring %>%  select(FIELDID,COMID,year, month, Method,TotalFish,Total_score,DateSampled) %>% 
+mutate(FinalScore= case_when(TotalFish<=50 ~-12, TRUE ~ Total_score)) %>% 
+mutate(Intreptation= case_when(FinalScore>=5 ~"excellent", 
+                               FinalScore == -12 ~"poorlowfish",
+                               FinalScore<= -4 & FinalScore >= -10 ~"poor",
+                               FinalScore == 0 ~ "neutral",
+                               FinalScore <= 4 &FinalScore >=1 ~ "acceptable:postive", 
+                              FinalScore >= -3 &FinalScore <=-1 ~ "acceptable:negative")) 
+ 
+All_rouge_scores_noconsiderations<-All_rouge_scores_noconsiderations  %>% dplyr::filter(!is.na(FinalScore))
+##this is the final 
+Final_Rouge_scores<-All_rouge_scores_noconsiderations   %>% dplyr::filter(!(FIELDID %in% c("main21","main20","main12n
+","main12","md-14")))  %>%  dplyr::filter(month=="6"|month=="7"|month=="8"|month=="9")
+Final_Rouge_scores<-left_join(Final_Rouge_scores,Rouge_locations)
+```
+
+```{r}
+
+Entire_combined<- merge(Final_Rouge_scores,Final_metrics)
+Entire_combined<- merge(Final_Rouge_scores,Final_score)
+
+
+```
+
+
+```{r}
+write.csv(Final_metrics,"Data/Created_Data/Final_metrics_modern.csv")
+
+write.csv(Final_score, "Data/Created_Data/Raw_scores_moden.csv")
+
+write.csv(Final_Rouge_scores, "Data/Created_Data/Final_scores.csv")
+
+write.csv(Entire_combined, "Data/Created_Data/Entire_Combined_modern.csv")
+
+```
+

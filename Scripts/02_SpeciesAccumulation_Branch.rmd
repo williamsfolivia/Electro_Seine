@@ -1,0 +1,316 @@
+---
+title: "02_SpeciesAccumulation_comparison"
+author: "OW"
+date: "2023-07-13"
+output: html_document
+---
+
+```{r}
+library(BiodiversityR) # also loads vegan
+library(ggplot2)
+library(ggsci)
+library(readxl)
+library(tidyverse)
+library(lubridate)
+library(scales)
+library(readxl)
+Raw_Rouge<-read_csv("Data/Created_Data/Close_date_rouge.csv", 
+    col_types = cols(...1 = col_skip(), DateSampled = col_date(format = "%Y-%m-%d"), 
+        TotalFish = col_number()))
+Raw_Rouge$Method[Raw_Rouge$Method=="Backpack Shock"]<-"Shocking"
+Raw_Rouge$Method[Raw_Rouge$Method=="Barge Shock"]<-"Shocking"
+Raw_Rouge$Method[Raw_Rouge$Method=="Boom Shock"]<-"Shocking"
+
+Rouge_locations <- read_csv("Data/P51_pieces/tblSamplingSites_2022.csv") %>% select(FIELDID, Branch)
+Combined_P51<- Raw_Rouge
+Combined_P51$DateSampled <- ymd(Combined_P51$DateSampled)
+
+
+
+```
+
+
+```{r}
+Combined_P51 = Combined_P51 %>%  
+  mutate_at(vars(DateSampled), funs(year, month, day))
+
+Combined_P51$TotalFish <- as.numeric(as.character(Combined_P51$TotalFish)) 
+
+Combined_P51_test<- Combined_P51 %>% select(Method,DateSampled, FIELDID,StreamName,CommonName,TotalFish,year) %>%
+  group_by(CommonName, Method,year, FIELDID, StreamName,DateSampled) %>%
+  dplyr::summarise(across(c(TotalFish), sum))
+
+Combined_P51_test<-Combined_P51_test %>% pivot_wider(names_from = CommonName, values_from = TotalFish) %>% dplyr::mutate(across(where(is.numeric), ~ ifelse(is.na(.), 0, .)))
+
+Combined_P51_test<-left_join(Combined_P51_test, Rouge_locations, by=c( "FIELDID"))
+
+```
+
+```{r}
+WadableRouge<-Combined_P51_test %>%
+ filter(!(FIELDID %in% c("Main12","Main10","Main21", "Main12N","MR-15")))
+
+SubsetRouge<-Combined_P51_test %>% filter(!(FIELDID %in% c("MR-15","Main21"))) ## removing sites not sampled well
+```
+###You need to click on the graph to add a legend when running the code or else it will not run!! 
+
+Main Branch 
+```{r}
+MainWadable<-WadableRouge %>% filter(Branch== "Main")
+
+Locations<-MainWadable %>% select(FIELDID,year,StreamName,Method)
+
+Locations$FIELDID_year <- paste(Locations$FIELDID,"_", Locations$year,"_", Locations$Method)
+Locations$FIELDID_year<- gsub(" ", "", Locations$FIELDID_year)
+
+rownames(Locations) <-Locations$FIELDID_year
+
+Locations<-Locations %>% arrange(desc(year),desc(FIELDID))
+```
+
+
+```{r}
+MainWadable<-MainWadable %>% arrange(desc(year),desc(FIELDID))
+MainWadable$FIELDID_year <- paste(MainWadable$FIELDID,"_", MainWadable$year,"_", MainWadable$Method)
+MainWadable$FIELDID_year<- gsub(" ", "", MainWadable$FIELDID_year)
+FIELDID_year<-MainWadable$FIELDID_year 
+
+MainWadable_final<-subset(MainWadable, select = -c(Method,year,FIELDID,StreamName,FIELDID_year,DateSampled))
+MainWadable_final<-subset(MainWadable_final, select = american_brook_lamprey:yellow_perch)
+
+ 
+rownames(MainWadable_final) <-FIELDID_year
+```
+ 
+
+ 
+## entire wadable watershed ##
+ 
+```{r}
+Accum.1 <- accumcomp(MainWadable_final, Locations, factor='Method', method='rarefaction')
+
+accum.long_rare_main <- accumcomp.long(Accum.1, ci=NA, label.freq=5)
+
+Accum.2 <- accumcomp(MainWadable_final, Locations, factor='Method', method='random')
+
+accum.long_random_main <- accumcomp.long(Accum.2, ci=NA, label.freq=5)
+
+```
+
+
+```{r}
+plotgg_main <- ggplot(data=accum.long_random_main, aes(x = Sites, y = Richness, ymax = UPR, ymin = LWR)) + 
+    scale_x_continuous(expand=c(0, 1), sec.axis = dup_axis(labels=NULL, name=NULL)) +
+    scale_y_continuous(sec.axis = dup_axis(labels=NULL, name=NULL)) +
+    geom_line(aes(colour=Grouping, linetype=Grouping), size=2) +
+    scale_color_manual(values = c(Seine="#DC267F", Shocking="#124DE8"))+
+    geom_ribbon(aes(colour=Grouping), alpha=0.2, show.legend=FALSE, fill="grey79") +
+    labs(x = "Sites", y = "Richness", colour = "Population", shape = "Population")+ 
+  theme_minimal()
+
+
+```
+
+LowerBranch
+```{r}
+
+LowerWadable<-WadableRouge %>% filter(Branch== "Lower")
+
+Locations<-LowerWadable %>% select(FIELDID,year,StreamName,Method)
+
+Locations$FIELDID_year <- paste(Locations$FIELDID,"_", Locations$year,"_", Locations$Method)
+Locations$FIELDID_year<- gsub(" ", "", Locations$FIELDID_year)
+
+rownames(Locations) <-Locations$FIELDID_year
+
+Locations<-Locations %>% arrange(desc(year),desc(FIELDID))
+
+LowerWadable<-LowerWadable %>% arrange(desc(year),desc(FIELDID))
+LowerWadable$FIELDID_year <- paste(LowerWadable$FIELDID,"_", LowerWadable$year,"_", LowerWadable$Method)
+LowerWadable$FIELDID_year<- gsub(" ", "", LowerWadable$FIELDID_year)
+FIELDID_year<-LowerWadable$FIELDID_year 
+
+LowerWadable_final<-subset(LowerWadable, select = -c(Method,year,FIELDID,StreamName,FIELDID_year,DateSampled))
+LowerWadable_final<-subset(LowerWadable_final, select = american_brook_lamprey:yellow_perch)
+
+ 
+rownames(LowerWadable_final) <-FIELDID_year
+
+Accum.1 <- accumcomp(LowerWadable_final, Locations, factor='Method', method='rarefaction')
+
+
+accum.long_rare_lower <- accumcomp.long(Accum.1, ci=NA, label.freq=5)
+
+Accum.2 <- accumcomp(LowerWadable_final, Locations, factor='Method', method='random')
+
+accum.long_random_lower <- accumcomp.long(Accum.2, ci=NA, label.freq=5)
+
+
+plotgg_lower <- ggplot(data=accum.long_random_lower, aes(x = Sites, y = Richness, ymax = UPR, ymin = LWR)) + 
+    scale_x_continuous( sec.axis = dup_axis(labels=NULL, name=NULL),expand = expansion(mult = c(0, 0.15))) +
+    scale_y_continuous(sec.axis = dup_axis(labels=NULL, name=NULL)) +
+    geom_line(aes(colour=Grouping, linetype=Grouping), size=2) +
+    scale_color_manual(values = c(Seine="#DC267F", Shocking="#124DE8"))+
+    geom_ribbon(aes(colour=Grouping), alpha=0.2, show.legend=FALSE, fill="grey79") +
+    labs(x = "Sites", y = "Richness", colour = "Population", shape = "Population")+ 
+  theme_minimal()
+
+
+```
+
+
+
+```{r}
+MiddleWadable<-WadableRouge %>% filter(Branch== "Middle")
+
+Locations<-MiddleWadable %>% select(FIELDID,year,StreamName,Method)
+
+Locations$FIELDID_year <- paste(Locations$FIELDID,"_", Locations$year,"_", Locations$Method)
+Locations$FIELDID_year<- gsub(" ", "", Locations$FIELDID_year)
+
+rownames(Locations) <-Locations$FIELDID_year
+
+Locations<-Locations %>% arrange(desc(year),desc(FIELDID))
+
+MiddleWadable<-MiddleWadable %>% arrange(desc(year),desc(FIELDID))
+MiddleWadable$FIELDID_year <- paste(MiddleWadable$FIELDID,"_", MiddleWadable$year,"_", MiddleWadable$Method)
+MiddleWadable$FIELDID_year<- gsub(" ", "", MiddleWadable$FIELDID_year)
+FIELDID_year<-MiddleWadable$FIELDID_year 
+
+MiddleWadable_final<-subset(MiddleWadable, select = -c(Method,year,FIELDID,StreamName,FIELDID_year,DateSampled))
+MiddleWadable_final<-subset(MiddleWadable_final, select = american_brook_lamprey:yellow_perch)
+
+ 
+rownames(MiddleWadable_final) <-FIELDID_year
+
+Accum.1 <- accumcomp(MiddleWadable_final, Locations, factor='Method', method='rarefaction')
+
+
+accum.long_rare_middle <- accumcomp.long(Accum.1, ci=NA, label.freq=5)
+
+Accum.2 <- accumcomp(MiddleWadable_final, Locations, factor='Method', method='random')
+
+accum.long_random_middle <- accumcomp.long(Accum.2, ci=NA, label.freq=5)
+
+
+plotgg_middle <- ggplot(data=accum.long_random_middle, aes(x = Sites, y = Richness, ymax = UPR, ymin = LWR)) + 
+    scale_x_continuous(expand=c(0, 1), sec.axis = dup_axis(labels=NULL, name=NULL)) +
+    scale_y_continuous(sec.axis = dup_axis(labels=NULL, name=NULL)) +
+    geom_line(aes(colour=Grouping, linetype=Grouping), size=1) +
+   scale_color_manual(values = c(Seine="#5c95cd", Shocking="#cd5c5c"))+
+    geom_ribbon(aes(colour=Grouping), alpha=0.2, show.legend=FALSE, fill="grey79") +
+    labs(x = "Sites", y = "Richness", colour = "Population", shape = "Population")+ 
+  theme_minimal()
+
+```
+
+Upper
+
+```{r}
+
+UpperWadable<-WadableRouge %>% filter(Branch== "Upper")
+
+Locations<-UpperWadable %>% select(FIELDID,year,StreamName,Method)
+
+Locations$FIELDID_year <- paste(Locations$FIELDID,"_", Locations$year,"_", Locations$Method)
+Locations$FIELDID_year<- gsub(" ", "", Locations$FIELDID_year)
+
+rownames(Locations) <-Locations$FIELDID_year
+
+Locations<-Locations %>% arrange(desc(year),desc(FIELDID))
+
+UpperWadable<-UpperWadable %>% arrange(desc(year),desc(FIELDID))
+UpperWadable$FIELDID_year <- paste(UpperWadable$FIELDID,"_", UpperWadable$year,"_", UpperWadable$Method)
+UpperWadable$FIELDID_year<- gsub(" ", "", UpperWadable$FIELDID_year)
+FIELDID_year<-UpperWadable$FIELDID_year 
+
+UpperWadable_final<-subset(UpperWadable, select = -c(Method,year,FIELDID,StreamName,FIELDID_year,DateSampled))
+UpperWadable_final<-subset(UpperWadable_final, select = american_brook_lamprey:yellow_perch)
+
+ 
+rownames(UpperWadable_final) <-FIELDID_year
+
+Accum.1 <- accumcomp(UpperWadable_final, Locations, factor='Method', method='rarefaction')
+
+
+accum.long_rare_upper <- accumcomp.long(Accum.1, ci=NA, label.freq=5)
+
+Accum.2 <- accumcomp(UpperWadable_final, Locations, factor='Method', method='random')
+
+accum.long_random_upper <- accumcomp.long(Accum.2, ci=NA, label.freq=5)
+
+
+plotgg_upper <- ggplot(data=accum.long_random_upper, aes(x = Sites, y = Richness, ymax = UPR, ymin = LWR)) + 
+    scale_x_continuous(expand=c(0, 1), sec.axis = dup_axis(labels=NULL, name=NULL)) +
+    scale_y_continuous(sec.axis = dup_axis(labels=NULL, name=NULL)) +
+    geom_line(aes(colour=Grouping, linetype=Grouping), size=1) +
+    scale_color_manual(values = c(Seine="#5c95cd", Shocking="#cd5c5c"))+
+    geom_ribbon(aes(colour=Grouping), alpha=0.2, show.legend=FALSE, fill="grey79") +
+    labs(x = "Sample", y = "Richness", colour = "Population", shape = "Population")+ 
+  theme_minimal()
+```
+
+```{r}
+plotgg_upper <- ggplot(data=accum.long_random_upper, aes(x = Sites, y = Richness, ymax = UPR, ymin = LWR)) + 
+    scale_x_continuous(expand=c(0, 1), sec.axis = dup_axis(labels=NULL, name=NULL)) +
+    scale_y_continuous(sec.axis = dup_axis(labels=NULL, name=NULL)) +
+    geom_line(aes(colour=Grouping, linetype=Grouping), size=1) +
+scale_color_manual(values = c(Seine="#5c95cd", Shocking="#cd5c5c"))+    geom_ribbon(aes(colour=Grouping), alpha=0.2, show.legend=FALSE, fill="grey79") +
+  scale_linetype_manual(values=c("solid", "longdash"))+
+    labs(x = "Sample", y = "Richness", colour = "Method", linetype = "Method")+
+  theme_light()+
+   theme(text = element_text(size = 14,family="Helvetica"),legend.key.size = unit(.35,"cm"))+ 
+  ylim(0, 35)
+
+plotgg_lower <- ggplot(data=accum.long_random_lower, aes(x = Sites, y = Richness, ymax = UPR, ymin = LWR)) + 
+    scale_x_continuous( sec.axis = dup_axis(labels=NULL, name=NULL),expand = expansion(mult = c(0, 0.15))) +
+    scale_y_continuous(sec.axis = dup_axis(labels=NULL, name=NULL)) +
+    geom_line(aes(colour=Grouping, linetype=Grouping), size=1) +
+scale_color_manual(values = c(Seine="#5c95cd", Shocking="#cd5c5c"))+    geom_ribbon(aes(colour=Grouping), alpha=0.2, show.legend=FALSE, fill="grey79") +
+  scale_linetype_manual(values=c("solid", "longdash"))+
+    labs(x = "Sample", y = "Richness", colour = "Method", linetype = "Method")+
+  theme_light()+
+   theme(text = element_text(size = 14,family="Helvetica"),legend.key.size = unit(.35,"cm"))+ 
+  ylim(0, 35)
+
+
+plotgg_main <- ggplot(data=accum.long_random_main, aes(x = Sites, y = Richness, ymax = UPR, ymin = LWR)) + 
+    scale_x_continuous(expand=c(0, 1), sec.axis = dup_axis(labels=NULL, name=NULL)) +
+    scale_y_continuous(sec.axis = dup_axis(labels=NULL, name=NULL)) +
+    geom_line(aes(colour=Grouping, linetype=Grouping), size=1) +
+scale_color_manual(values = c(Seine="#5c95cd", Shocking="#cd5c5c"))+       geom_ribbon(aes(colour=Grouping), alpha=0.2, show.legend=FALSE, fill="grey79") +
+  scale_linetype_manual(values=c("solid", "longdash"))+
+    labs(x = "Sample", y = "Richness", colour = "Method", linetype = "Method")+
+  theme_light()+
+  theme(text = element_text(size = 14,family="Helvetica"),legend.key.size = unit(.35,"cm"))+ 
+  ylim(0, 35)
+
+
+plotgg_middle <- ggplot(data=accum.long_random_middle, aes(x = Sites, y = Richness, ymax = UPR, ymin = LWR)) + 
+    scale_x_continuous(expand=c(0, 1), sec.axis = dup_axis(labels=NULL, name=NULL)) +
+    scale_y_continuous(sec.axis = dup_axis(labels=NULL, name=NULL)) +
+    geom_line(aes(colour=Grouping, linetype=Grouping), size=1) +
+scale_color_manual(values = c(Seine="#5c95cd", Shocking="#cd5c5c"))+ 
+    geom_ribbon(aes(colour=Grouping), alpha=0.2, show.legend=FALSE, fill="grey79") +
+  scale_linetype_manual(values=c("solid", "longdash"))+
+    labs(x = "Sample", y = "Richness", colour = "Method", linetype = "Method")+
+  theme_light()+
+  theme(text = element_text(size = 14,family="Helvetica"),legend.key.size = unit(.35,"cm"))+ 
+  ylim(0, 35)
+
+```
+
+
+
+
+```{r}
+library(ggpubr)
+library(extrafont)
+fourplot<-ggarrange(plotgg_main, plotgg_upper, plotgg_middle, plotgg_lower, 
+          labels = c("A", "B", "C","D"),
+          ncol = 2, nrow = 2,
+           legend = "none")
+fourplot
+```
+
+

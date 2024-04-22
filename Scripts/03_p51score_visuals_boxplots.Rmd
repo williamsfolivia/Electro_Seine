@@ -1,0 +1,211 @@
+---
+title: "02_mean_scores"
+author: "OW"
+date: "2023-11-20"
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+library(ggbreak) 
+library(wesanderson)
+
+Final_scores_modern <- read_csv("Data/Created_Data/Final_scores_2023.csv", 
+    col_types = cols(...1 = col_skip()))
+Final_scores_historic <- read_csv("Data/Created_Data/Final_scores_historic.csv", 
+    col_types = cols(...1 = col_skip()))
+Final_scores<-rbind.fill(Final_scores_modern,Final_scores_historic)
+
+Final_scores_COMID<-Final_scores%>%mutate(FinalScore= case_when(TotalFish<=50 ~-10, TRUE ~ Total_score)) %>% mutate(Era=case_when(year<2000 ~"Historic", year>2000 ~"FOTR"))
+
+Final_scores_COMID$Era <- factor(Final_scores_COMID$Era, levels = c("Historic","FOTR"))
+  
+```
+
+```{r}
+since2019<-Final_scores_COMID %>% filter(year>=2019 & Method=="Seine")
+Summary_seine<-since2019 %>% group_by(FIELDID)%>%
+ summarise(Total_Seine=n(),
+   average_score_seine=mean(FinalScore), 
+   standard_deviation_seine=sd(FinalScore))
+
+
+since2019_both<-Final_scores_COMID %>% filter(year>=2019)
+Summary_both<-since2019_both %>% group_by(FIELDID)%>%
+ summarise(Total_Both=n(),
+   average_score_both=mean(FinalScore), 
+   standard_deviation_both=sd(FinalScore))
+
+both<-left_join(Summary_seine,Summary_both, by ="FIELDID")
+```
+
+```{r}
+since2010_total<-Final_scores_COMID %>% filter(year>=2010) %>% mutate(Type="All FOTR Samples")
+since2019_total<-Final_scores_COMID %>% filter(year>=2019) %>% mutate(Type="Last 5 Years")
+total_graphing<-rbind(since2010_total,since2019_total)
+ total_graphing$Branch <- factor(total_graphing$Branch, levels = c("Main", "Upper", "Middle","Lower"))
+Overall<-since2010_total %>% group_by(FIELDID)%>%
+ summarise(Total_Samples=n(),
+   Average_Scores=mean(FinalScore), 
+   standard_deviation=sd(FinalScore))
+```
+
+```{r}
+Branch_10<-since2010_total %>% group_by(Branch)%>%
+ summarise(Total_Samples=n(),
+   Average_Scores=mean(FinalScore), 
+   standard_deviation=sd(FinalScore))
+Branch_5<-since2019_total%>% group_by(Branch)%>%
+ summarise(Total_Samples=n(),
+   Average_Scores=mean(FinalScore), 
+   standard_deviation=sd(FinalScore))
+
+Reach_10<-since2010_total %>% group_by(StreamName)%>%
+ summarise(Total_Samples=n(),
+   Average_Scores=mean(FinalScore), 
+   standard_deviation=sd(FinalScore))
+Reach_5<-since2019_total%>% group_by(StreamName)%>%
+ summarise(Total_Samples=n(),
+   Average_Scores=mean(FinalScore), 
+   standard_deviation=sd(FinalScore))
+```
+
+```{r}
+total_graphing %>% 
+  ggplot(aes(x=factor(Branch,level=c("Main","Upper","Middle","Lower")), y=FinalScore, color=Branch))+
+  geom_boxplot()+ 
+   geom_jitter(shape=16, position=position_jitter(0.2)) + 
+  geom_hline(yintercept = -4.2, linetype="solid")+ 
+   geom_hline(yintercept = 4,linetype="solid")+
+  theme_light()+ 
+  theme(text=element_text(size=14, 
+      family="Times New Roman")) + 
+   facet_wrap( ~ Type)+ 
+ scale_color_manual(values = wes_palette("Zissou1", n=4))+ 
+  xlab(" ")
+  
+  
+
+```
+
+
+```{r} 
+streamtotals<-total_graphing %>% dplyr::group_by(StreamName)%>%
+ summarise(Total_Samples=n())
+  
+  total_graphing_subset<-total_graphing %>% filter(!StreamName=="Ingersoll Creek")%>% filter(!StreamName=="Sprague Creek")%>% filter(!StreamName=="Walled Lake Drainage") %>% filter(!StreamName=="Minnow Pond")%>% filter(!StreamName=="Willow Creek")%>% filter(!StreamName=="Bishop Creek") %>% filter(!StreamName=="Tarabusi Creek") %>% 
+filter(!StreamName=="Nottingham Creek")  
+
+  total_graphing_subset<-total_graphing_subset %>% 
+ arrange(match(Branch, c("Main", "Upper", "Middle","Lower"))) %>% 
+   arrange(match(StreamName, c("Main Rouge", "Evans Creek", "Pebble Creek","Franklin Creek","Quarton Branch","Upper Rouge","Bell Branch","Seeley Creek","Minnow Pond","Tarabusi Creek","Middle Rouge","Tonquish Creek","Willow Creek","Johnson Creek","Walled Lk Drainage","Bishop Creek","Lower Rouge","Fellows Creek","Fowler Creek"))) 
+    
+  total_graphing_subset$Branch <- factor(total_graphing_subset$Branch, levels = c("Main", "Upper", "Middle","Lower"))
+
+```
+
+## move the legend and swtich order of legend 
+```{r}
+FOTRoverall<-total_graphing_subset %>% filter(Type=="All FOTR Samples") %>%  ggplot(aes(x=factor(StreamName,level=c("Main Rouge", "Evans Creek", "Pebble Creek","Franklin Creek","Quarton Branch","Upper Rouge","Bell Branch","Seeley Creek","Minnow Pond","Tarabusi Creek","Middle Rouge","Tonquish Creek","Willow Creek","Johnson Creek","Walled Lk Drainage","Bishop Creek","Lower Rouge","Fellows Creek","Fowler Creek")), y=FinalScore, color=Branch))+
+  geom_boxplot()+ 
+   geom_jitter(shape=16, position=position_jitter(0.2)) + 
+  geom_hline(yintercept = -4.2, linetype="dotted")+ 
+   geom_hline(yintercept = 4,linetype="dotted")+
+  theme(text=element_text(size=14, 
+      family="Times New Roman")) + 
+  labs(x= "", y = "Procedure 51 Score") + 
+  scale_color_manual(values = wes_palette("Zissou1", n=4))+ 
+  ylim(-12,12)+ 
+  theme_light()+
+   theme(axis.text.x = element_text(angle = 90,hjust=1,vjust = 0.5))
+```
+
+```{r}
+last5<-total_graphing_subset %>% filter(Type=="Last 5 Years") %>%  ggplot(aes(x=factor(StreamName,level=c("Main Rouge", "Evans Creek", "Pebble Creek","Franklin Creek","Quarton Branch","Upper Rouge","Bell Branch","Seeley Creek","Minnow Pond","Tarabusi Creek","Middle Rouge","Tonquish Creek","Willow Creek","Johnson Creek","Walled Lk Drainage","Bishop Creek","Lower Rouge","Fellows Creek","Fowler Creek")), y=FinalScore, color=Branch))+
+  geom_boxplot()+ 
+   geom_jitter(shape=16, position=position_jitter(0.2)) + 
+  geom_hline(yintercept = -4.2, linetype="dotted")+ 
+   geom_hline(yintercept = 4,linetype="dotted")+
+  theme_light()+ 
+  theme(text=element_text(size=14, 
+      family="Times New Roman")) + 
+    scale_color_manual(values = wes_palette("Zissou1", n=4))+ 
+  theme(axis.text.x = element_text(angle = 90,hjust=1,vjust = 0.5))+
+  labs(x= "", y = "Procedure 51 Score") + 
+  ylim(-12,12)+
+  facet_grid(~Branch,scales = "free")
+
+  
+```
+
+```{r}
+total_graphing_subset %>%  ggplot(aes(x=factor(StreamName,level=c("Main Rouge", "Evans Creek", "Pebble Creek","Franklin Creek","Quarton Branch","Upper Rouge","Bell Branch","Seeley Creek","Minnow Pond","Tarabusi Creek","Middle Rouge","Tonquish Creek","Willow Creek","Johnson Creek","Walled Lk Drainage","Bishop Creek","Lower Rouge","Fellows Creek","Fowler Creek")), y=FinalScore, color=Branch))+
+  geom_boxplot()+ 
+   geom_jitter(shape=16, position=position_jitter(0.2)) + 
+  geom_hline(yintercept = -4.2, linetype="dotted")+ 
+   geom_hline(yintercept = 4,linetype="dotted")+
+  theme_light()+ 
+  theme(text=element_text(size=14, 
+      family="Times New Roman")) + 
+    scale_color_manual(values = wes_palette("Zissou1", n=4))+ 
+  theme(axis.text.x = element_text(angle = 90,hjust=1,vjust = 0.5))+
+  labs(x= "", y = "Procedure 51 Score") + 
+  ylim(-12,12)+
+  facet_grid(Type~Branch,scales = "free")
+```
+
+```{r}
+Final_scores_COMID<-Final_scores_COMID %>% filter(!(year==2011 |year==2012))
+
+Final_graphing_years<-Final_scores_COMID %>% mutate(Time_period=case_when(year == 1972 |year== 1973 ~ "1972/73",                                                              year == 1986 ~ "1986",                                         year == 1995 ~ "1995",                                        year >= 2013 & year <=2018 ~ "2013-2018",
+            year >= 2019 & year <=2023~ "2019-2023"))
+
+
+```
+
+```{r}
+Final_graphing_years %>% 
+  ggplot(aes(x=factor(Branch,level=c("Main","Upper","Middle","Lower")), y=FinalScore, color=Branch))+
+  geom_boxplot()+ 
+   geom_jitter(shape=16, position=position_jitter(0.2)) + 
+  geom_hline(yintercept = -4.2, linetype="dotted")+ 
+   geom_hline(yintercept = 4,linetype="dotted")+
+  theme_light()+ 
+  theme(text=element_text(size=14, 
+      family="Times New Roman")) + 
+   facet_grid(.~Time_period,scales = "free")+ 
+scale_color_manual(values=c("#006D2C","#756BB1","#08589E","#B30000"),  name = "Subwatershed")+  xlab(" ")+ ylab("Final Procedure 51 Score")
+```
+
+```{r}
+library(RColorBrewer)
+ Final_graphing_years$Branch <- factor(Final_graphing_years$Branch, levels = c("Main", "Upper", "Middle","Lower"))
+
+ Final_graphing_years_sub<-Final_graphing_years %>% group_by(StreamName)  %>% filter(n()>=3) %>%
+   arrange(match(StreamName, c("Main Rouge", "Evans Creek", "Pebble Creek","Franklin Creek","Quarton Branch","Upper Rouge","Bell Branch","Seeley Creek","Minnow Pond","Tarabusi Creek","Middle Rouge","Tonquish Creek","Willow Creek","Johnson Creek","Walled Lk Drainage","Bishop Creek","Lower Rouge","Fellows Creek","Fowler Creek"))) %>% filter(Time_period== "2013-2018" | Time_period== "2019-2023")
+```
+
+
+
+```{r}
+Final_graphing_years_sub %>%
+   ggplot(aes(x=factor(StreamName,level=c("Main Rouge", "Evans Creek", "Pebble Creek","Franklin Creek","Quarton Branch","Upper Rouge","Bell Branch","Seeley Creek","Minnow Pond","Tarabusi Creek","Middle Rouge","Tonquish Creek","Willow Creek","Johnson Creek","Walled Lk Drainage","Bishop Creek","Lower Rouge","Fellows Creek","Fowler Creek")), y=FinalScore, color=StreamName))+
+  geom_boxplot()+ 
+   geom_jitter(shape=16, position=position_jitter(0.2)) + 
+  geom_hline(yintercept = -4.2, linetype="dotted")+ 
+   geom_hline(yintercept = 4,linetype="dotted")+
+  theme_light()+ 
+  theme(text=element_text(size=14, 
+      family="Times New Roman"))+
+  scale_color_manual(values = c(brewer.pal(7,"Blues")[-c(1:2)]
+                               ,brewer.pal(4, "Purples")[-1]
+                               ,brewer.pal(8,"Greens")[-c(1:3)]
+                               ,brewer.pal(9, "Reds")[-c(1:2)]
+                               )
+                    , name = "Stream Reach")+
+  theme(axis.text.x = element_text(angle = 90,hjust=1,vjust = 0.5))+
+  labs(x= "", y = "Procedure 51 Score") + 
+  ylim(-12,12)+
+  facet_grid(Time_period~Branch,scales = "free")
+```
+

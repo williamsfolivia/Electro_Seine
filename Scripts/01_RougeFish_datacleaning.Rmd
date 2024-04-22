@@ -1,0 +1,147 @@
+---
+title: "01-Datacleaning"
+author: "OW"
+date: "10/12/2022"
+output: html_document
+---
+```{r}
+library(tidyverse)
+library(plyr)
+library(readxl)
+Rouge2022 <- read_excel("Data/Raw_Database/Rouge2022.xlsx", 
+    col_types = c("text", "date", "text", 
+        "text", "numeric", "numeric", "numeric", 
+        "text", "text", "numeric", "numeric", 
+        "numeric", "text"))
+Rouge.clean <- read_excel("Data/Raw_Database/FOR_Fish_final_clean.xlsx", 
+    col_types = c("text", "text", "text", 
+        "date", "text", "text", "text", 
+        "numeric", "numeric", "text", "numeric", 
+        "numeric"))
+fishupdate2022<-read_excel("Data/Raw_Database/2022_update_fish.xlsx")
+
+Rouge.clean<-Rouge.clean %>% mutate(DateSampled = as.Date(DateSampled, format ="%Y-%m-%d"))
+Rouge2022<-Rouge2022 %>% mutate(DateSampled = as.Date(DateSampled, format ="%Y-%m-%d"))
+
+Rouge_locations <- read_excel("Data/Raw_Database/tblSamplingSites_all.xlsx")
+
+```
+
+```{r}
+
+RougeSeine<- filter(Rouge2022, Method=="Seine") %>% select(FIELDID, DateSampled, Method, SeineHauls, TimeSampling)  
+RougeSeine<-unique(RougeSeine)
+RougeSeine<-RougeSeine[RougeSeine$DateSampled <= "2022-07-21", ]
+RougeSeine2022<-Rouge2022 %>% filter(Method=="Seine")%>%filter(between(DateSampled, as.Date('2022-02-21'), as.Date('2022-07-21')))
+
+SeineFull<-left_join(Rouge.clean,RougeSeine, by=c("FIELDID","DateSampled"))
+
+SeineFull<-SeineFull %>%
+      select(- c(SeineHauls.x, Method.x))%>% 
+      dplyr::rename("Method"="Method.y")%>% 
+      dplyr::rename("SeineHauls"="SeineHauls.y")%>% 
+       dplyr::rename("CommonName"="Common Name") %>%
+      dplyr::rename("LengthSampled" ="Length Sampled")
+
+colnames(RougeSeine2022)
+FullSeine<-SeineFull %>% select(FIELDID, DateSampled, Method, SeineHauls, LengthSampled, TimeSampling,Quantity,CommonName)
+RougeSeine2022<-RougeSeine2022 %>%
+       dplyr::rename("CommonName"="Common Name") %>%
+      dplyr::rename("LengthSampled" ="Length Sampled")
+Seine2022<-RougeSeine2022 %>% select(FIELDID,DateSampled,Method,SeineHauls,LengthSampled, TimeSampling,Quantity,CommonName)
+FinalSeine_data<-rbind(Seine2022,FullSeine)
+```
+
+
+```{r}
+fishupdate2022_shocking<-filter(fishupdate2022, Method=="Backpack Shock"|Method=="Barge Shock" | Method == "Boom Shock")
+fishupdate2022.1<- fishupdate2022 %>%select(FIELDID, DateSampled)
+fishupdate2022.1<-unique(fishupdate2022.1)
+
+
+
+```
+
+```{r}
+RougeShocking<-fishupdate2022_shocking %>%
+       dplyr::rename("CommonName"="Common Name") %>%
+      dplyr::rename("LengthSampled" ="Length Sampled")
+RougeShocking<-RougeShocking %>% select(FIELDID, DateSampled, Method, SeineHauls, LengthSampled,Quantity,CommonName)
+
+Final_combined<-plyr::rbind.fill(RougeShocking,FinalSeine_data)
+Final_combined %>% select(FIELDID,DateSampled) %>% unique()
+```
+
+
+
+```{r Turning database to numeric}
+Final_combined$CommonName =tolower(Final_combined$CommonName)
+Final_combined$CommonName <- gsub(" ", "_", Final_combined$CommonName)
+
+Final_combined<-Final_combined %>% filter(!grepl('Frank4', FIELDID)) %>% filter(!grepl('GilbL', FIELDID)) %>% filter(!grepl('HamL', FIELDID))  %>% filter(!grepl('Mid4', FIELDID)) %>% filter(!grepl('SimpL', FIELDID)) %>% filter(!grepl('ULL', FIELDID)) %>% filter(!grepl('Wall6', FIELDID)) %>% filter(!grepl('WalnutL', FIELDID)) %>% filter(!grepl('WingL', FIELDID)) %>% 
+  filter(!grepl('CL', FIELDID)) %>%   filter(!grepl('SeeSTO', FIELDID)) %>%   filter(!grepl('Frank3', FIELDID))%>%   filter(!grepl('Frank5', FIELDID)) %>%   filter(!grepl('Frank4', FIELDID))
+
+Final_combined<-Final_combined %>% select(FIELDID,Method,DateSampled,CommonName,Quantity) %>% dplyr::rename(TotalFish=Quantity)
+
+Final_combined<-Final_combined %>%
+  group_by(FIELDID,Method,DateSampled,CommonName) %>%
+  dplyr::summarise(sum(TotalFish)) %>% 
+  dplyr::rename(TotalFish='sum(TotalFish)')
+
+Final_combined %>% ungroup%>% select(FIELDID,Method,DateSampled) %>%unique()
+```
+
+```{r}
+Rouge_locations<- Rouge_locations[, c("Branch", "StreamName","FIELDID")]
+DateSubset<-left_join(Final_combined, Rouge_locations, by ="FIELDID") ##this works here
+
+DateSubset$DateSampled <- ymd(DateSubset$DateSampled)
+
+DateSubset = DateSubset %>%  
+  mutate_at(vars(DateSampled), funs(year, month, day))
+
+subset_combined<-DateSubset %>% filter(!(Method == "Seine" & year == 2022)) 
+subset_combined$Method[subset_combined$Method=="Backpack Shock"]<-"Shocking"
+subset_combined$Method[subset_combined$Method=="Barge Shock"]<-"Shocking"
+subset_combined$Method[subset_combined$Method=="Boom Shock"]<-"Shocking"
+
+```
+
+Pairing it down by date
+```{r}
+subset_combined$DateSampled <- as.Date(subset_combined$DateSampled , format = "%Y-%m-%d") 
+##Season<-time2season(Raw_Rouge$DateSampled, out.fmt = "seasons", type="default")
+SubsetRouge<-cbind(subset_combined)
+
+StartDate <- c("2022-08-30")
+StartDate <- (StartDate = as.Date(StartDate, format ="%Y-%m-%d"))
+timebetween<-difftime(StartDate,subset_combined$DateSampled)
+timebetween<-as.numeric(timebetween, units = "days")
+timebetween<-as.data.frame(timebetween)
+Rouge_time<-cbind(SubsetRouge,timebetween)
+```
+
+
+```{r}
+Rouge_time_Seine <- subset(Rouge_time, Method == "Seine")
+Rouge_time_Shocking <- subset(Rouge_time, Method == "Shocking")
+Rouge_time_Seine_subset<-Rouge_time_Seine[ Rouge_time_Seine$timebetween == ave(Rouge_time_Seine$timebetween, Rouge_time_Seine$FIELDID, FUN=min), ] 
+shock<-Rouge_time_Shocking %>% ungroup() %>% select(FIELDID) %>% unique()
+Rouge_time_Seine_subset<-left_join(shock,Rouge_time_Seine_subset, by=c("FIELDID"))
+Rouge_subset<-rbind(Rouge_time_Seine_subset, Rouge_time_Shocking)
+
+Rouge_subset<-Rouge_subset %>%
+  filter(!(FIELDID %in% c("DNRFel","John10","Evan6","Low14","Main21","Main20")))
+
+## removing sites with no matches 
+```
+
+
+```{r}
+write.csv(SubsetRouge,"Data/Created_Data/Electro_seine_final.csv")
+
+write.csv(Final_combined,"Data/Created_Data/Final_combined_2022.csv")
+
+write.csv(Rouge_subset,"Data/Created_Data/Close_date_rouge.csv")
+```
+

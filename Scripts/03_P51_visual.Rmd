@@ -1,0 +1,115 @@
+---
+title: "02_p51_comparison"
+author: "OW"
+date: "2023-11-06"
+output: ''
+---
+
+```{r}
+
+library(tidyverse)
+library(ggpubr)
+library(rstatix)
+Raw_Rouge<-read_csv("~/Desktop/Paper Code/Delisting_FOTR/Delisting_FOTR/Data/Created_Data/Close_date_rouge.csv", 
+    col_types = cols(...1 = col_skip(), DateSampled = col_date(format = "%Y-%m-%d"), 
+        TotalFish = col_number()))
+
+Final_score2023 <- read_csv("~/Desktop/Paper Code/Delisting_FOTR/Delisting_FOTR/Data/Created_Data/Final_scores_2023.csv", 
+    col_types = cols(...1 = col_skip()))
+
+Newnames<- read_csv("~/Desktop/Paper Code/Delisting_FOTR/Delisting_FOTR/Data/Created_Data/VisualNames.csv")
+
+
+```
+
+```{r}
+SubsetRouge<-Raw_Rouge %>%
+ filter(!(FIELDID %in% c("DNRFel","John10","Evan6","Main21","Main12","Main10","Main12N","Low14","Main20","MR-15",))) %>% select(FIELDID,Method,DateSampled, Branch,StreamName) %>% unique() 
+SubsetRouge$DateSampled<-ymd(SubsetRouge$DateSampled)
+
+
+
+SubsetRouge$FIELDID <- tolower(SubsetRouge$FIELDID)
+
+```
+
+```{r}
+Total_metrics<-left_join(SubsetRouge,Final_score2023, by=c("FIELDID","Method","DateSampled","Branch","StreamName"))
+Total_scores<-Total_metrics %>% select(FIELDID,Branch,Method,Total_score) %>% dplyr::rename('Score'='Total_score') %>% mutate(Type="Normal")
+Total_scores_pivot<-Total_scores %>% pivot_wider(names_from =Method,values_from = Score ) %>% mutate(difference=Seine-Shocking) 
+```
+
+
+```{r}
+Final_join<-rbind(Total_scores,Considerations_subset)
+Final_join_names<-left_join(Final_join,Newnames, by=c("FIELDID","Branch")) 
+  Final_join_names$StreamName<- gsub(" ","",Final_join_names$StreamName)
+```
+
+```{r}
+Final_join_names<-Final_join_names %>% 
+ arrange(match(Branch, c("Main", "Upper", "Middle","Lower"))) %>% 
+   arrange(match(StreamName, c("MainRouge", "EvansCreek", "PebbleCreek","FranklinCreek","QuartonBranch","UpperRouge","BellBranch","SeeleyCreek","MinnowPond","TarabusiCreek","MiddleRouge","TonquishCreek","WillowCreek","JohnsonCreek","WalledLkDrainage","BishopCreek","LowerRouge","FellowsCreek","FowlerCreek")), Numeric) 
+
+Order.Name<-str_c(Final_join_names$Branch, "_",  Final_join_names$New.Name, "_",Final_join_names$Method)
+Final_join_names<-cbind(Final_join_names,Order.Name)
+
+Final_join_names$New.Name <- factor(Final_join_names$New.Name, levels =unique(Final_join_names$New.Name))
+Final_join_names$Method <- gsub("Seine_Adjusted", "Seine Adjusted", Final_join_names$Method)
+Final_join_names$Method <- gsub("Shocking_Adjusted", "Electrofishing Adjusted", Final_join_names$Method)
+Final_join_names$Method <- gsub("Shocking", "Electrofishing", Final_join_names$Method)
+
+
+```
+
+
+```{r}
+
+Final_join_names %>% 
+ggplot( aes(Score, New.Name)) + 
+geom_point(aes(colour = Method, shape= Method), size=2.75) +scale_shape_manual(values = c(17,2,15, 0)) + scale_color_manual(values = c("#cd5c5c", "Black","#5c95cd","Black"))+ 
+  geom_line(aes(linetype=Type),show.legend = F)+ 
+  scale_linetype_manual(values = c("dashed", "solid")) +
+   facet_grid(factor(Branch, levels=c("Main", "Upper", "Middle","Lower"))~., scales = "free")+
+  scale_y_discrete(limits=rev)+ 
+  labs(y= "", x = "Procedure 51 Score") + 
+  theme(text=element_text(size=18, 
+      family="Helvetica"))+ 
+  geom_vline(xintercept = -4, linetype="dotted")+ 
+   geom_vline(xintercept = 4,linetype="dotted")+
+  xlim(-10,10)+ 
+  theme_light()
+
+
+
+
+
+
+
+
+  
+```
+
+```{r}
+ggplot(Final_join, aes(Score, FIELDID)) + 
+geom_point(aes(colour = Method, shape= Method), size=2.5) +scale_shape_manual(values = c(15, 0, 17,2)) + scale_color_manual(values = c("#d98383", "Black", "#4888c7","Black"))+ geom_line(aes(linetype=Type))+ scale_linetype_manual(values=c("dashed","solid"))
+```
+
+
+```{r}
+ggplot(Considerations, aes(FinalScore, FIELDID)) + 
+   geom_point(aes(colour = factor(Method), shape= factor(Method))) + geom_line() + ggtitle("P51  considerations") 
+  
+```
+"#83aed9","#d98383"
+
+```{r}
+SubsetRouge<-SubsetRouge %>% select(FIELDID,Branch,StreamName) %>% unique()
+
+write.csv(SubsetRouge, "~/OneDrive - Umich/Rouge River/RougeRiver_Anaylsis/finalsites.csv")
+```
+
+```{r}
+Final_score2023%>% select(FIELDID) %>% unique()
+```
+

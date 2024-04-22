@@ -1,0 +1,4485 @@
+,FIELDID,Method,DateSampled,CommonName,TotalFish
+1,Bell1,Seine,9/16/16,bluegill,2
+2,Bell1,Seine,9/16/16,central_stoneroller,1
+3,Bell1,Seine,9/16/16,common_shiner,86
+4,Bell1,Seine,9/16/16,creek_chub,52
+5,Bell1,Seine,9/16/16,fathead_minnow,16
+6,Bell1,Seine,9/16/16,johnny_darter,30
+7,Bell1,Seine,9/16/16,largemouth_bass,1
+8,Bell1,Seine,9/16/16,pumpkinseed,2
+9,Bell1,Seine,9/16/16,sunfish_hybrid,1
+10,Bell1,Seine,9/16/16,white_sucker,42
+11,Bell4,Backpack Shock,6/17/22,blacknose_dace,1
+12,Bell4,Backpack Shock,6/17/22,bluntnose_minnow,25
+13,Bell4,Backpack Shock,6/17/22,common_shiner,3
+14,Bell4,Backpack Shock,6/17/22,creek_chub,4
+15,Bell4,Backpack Shock,6/17/22,fathead_minnow,36
+16,Bell4,Backpack Shock,6/17/22,johnny_darter,41
+17,Bell4,Backpack Shock,6/17/22,pumpkinseed,5
+18,Bell4,Backpack Shock,6/17/22,white_sucker,2
+19,Bell4,Seine,9/16/16,blacknose_dace,5
+20,Bell4,Seine,9/16/16,bluegill,11
+21,Bell4,Seine,9/16/16,bluntnose_minnow,62
+22,Bell4,Seine,9/16/16,common_shiner,8
+23,Bell4,Seine,9/16/16,creek_chub,27
+24,Bell4,Seine,9/16/16,fathead_minnow,510
+25,Bell4,Seine,9/16/16,green_sunfish,10
+26,Bell4,Seine,9/16/16,johnny_darter,53
+27,Bell4,Seine,9/16/16,pumpkinseed,3
+28,Bell4,Seine,9/16/16,white_sucker,32
+29,Bish2,Backpack Shock,7/6/22,blacknose_dace,8
+30,Bish2,Backpack Shock,7/6/22,bluegill,1
+31,Bish2,Backpack Shock,7/6/22,creek_chub,55
+32,Bish2,Backpack Shock,7/6/22,fathead_minnow,10
+33,Bish2,Backpack Shock,7/6/22,johnny_darter,3
+34,Bish2,Backpack Shock,7/6/22,largemouth_bass,4
+35,Bish2,Backpack Shock,7/6/22,white_sucker,2
+36,Bish2,Seine,6/23/17,blacknose_dace,16
+37,Bish2,Seine,6/23/17,bluegill,18
+38,Bish2,Seine,6/23/17,central_mudminnow,4
+39,Bish2,Seine,6/23/17,creek_chub,51
+40,Bish2,Seine,6/23/17,golden_shiner,1
+41,Bish2,Seine,6/23/17,green_sunfish,1
+42,Bish2,Seine,6/23/17,johnny_darter,91
+43,Bish2,Seine,6/23/17,pumpkinseed,3
+44,DNRFel,Backpack Shock,6/13/22,blacknose_dace,7
+45,DNRFel,Backpack Shock,6/13/22,bluntnose_minnow,2
+46,DNRFel,Backpack Shock,6/13/22,central_stoneroller,1
+47,DNRFel,Backpack Shock,6/13/22,common_shiner,7
+48,DNRFel,Backpack Shock,6/13/22,creek_chub,4
+49,DNRFel,Backpack Shock,6/13/22,fathead_minnow,9
+50,DNRFel,Backpack Shock,6/13/22,green_sunfish,11
+51,DNRFel,Backpack Shock,6/13/22,johnny_darter,25
+52,DNRFel,Backpack Shock,6/13/22,sunfish_hybrid,4
+53,DNRFel,Backpack Shock,6/13/22,white_sucker,1
+54,Evan2,Backpack Shock,7/29/22,blacknose_dace,10
+55,Evan2,Backpack Shock,7/29/22,creek_chub,5
+56,Evan2,Backpack Shock,7/29/22,fathead_minnow,18
+57,Evan2,Backpack Shock,7/29/22,pumpkinseed,2
+58,Evan2,Backpack Shock,7/29/22,white_sucker,7
+59,Evan2,Seine,10/6/16,common_shiner,6
+60,Evan2,Seine,10/6/16,creek_chub,66
+61,Evan2,Seine,10/6/16,fathead_minnow,216
+62,Evan2,Seine,10/6/16,green_sunfish,6
+63,Evan2,Seine,10/6/16,largemouth_bass,1
+64,Evan2,Seine,10/6/16,white_sucker,22
+65,Evan3,Seine,6/22/18,blacknose_dace,12
+66,Evan3,Seine,6/22/18,common_shiner,2
+67,Evan3,Seine,6/22/18,creek_chub,28
+68,Evan3,Seine,6/22/18,fathead_minnow,51
+69,Evan3,Seine,6/22/18,white_sucker,19
+70,Evan4,Seine,7/30/20,blacknose_dace,10
+71,Evan4,Seine,7/30/20,common_shiner,20
+72,Evan4,Seine,7/30/20,creek_chub,40
+73,Evan4,Seine,7/30/20,fathead_minnow,55
+74,Evan4,Seine,7/30/20,johnny_darter,16
+75,Evan4,Seine,7/30/20,white_sucker,12
+76,Evan5,Backpack Shock,7/29/22,blacknose_dace,9
+77,Evan5,Backpack Shock,7/29/22,creek_chub,14
+78,Evan5,Backpack Shock,7/29/22,fathead_minnow,2
+79,Evan5,Backpack Shock,7/29/22,goldfish,1
+80,Evan5,Backpack Shock,7/29/22,white_sucker,12
+81,Evan5,Seine,6/11/21,blacknose_dace,19
+82,Evan5,Seine,6/11/21,creek_chub,10
+83,Evan5,Seine,6/11/21,fathead_minnow,62
+84,Evan6,Backpack Shock,7/29/22,creek_chub,11
+85,Evan6,Backpack Shock,7/29/22,fathead_minnow,18
+86,Fel1,Seine,5/17/13,black_crappie,1
+87,Fel1,Seine,5/17/13,blacknose_dace,13
+88,Fel1,Seine,5/17/13,bluegill,9
+89,Fel1,Seine,5/17/13,central_stoneroller,1
+90,Fel1,Seine,5/17/13,creek_chub,95
+91,Fel1,Seine,5/17/13,fathead_minnow,50
+92,Fel1,Seine,5/17/13,johnny_darter,30
+93,Fel1,Seine,5/17/13,mottled_sculpin,3
+94,Fel1,Seine,5/17/13,pumpkinseed,3
+95,Fel1,Seine,9/14/13,blacknose_dace,7
+96,Fel1,Seine,9/14/13,bluegill,3
+97,Fel1,Seine,9/14/13,creek_chub,60
+98,Fel1,Seine,9/14/13,fathead_minnow,5
+99,Fel1,Seine,9/14/13,johnny_darter,39
+100,Fel1,Seine,9/14/13,mottled_sculpin,3
+101,Fel1,Seine,9/14/13,pumpkinseed,1
+102,Fel1,Seine,9/14/13,white_sucker,5
+103,Fel1,Seine,5/17/14,black_crappie,1
+104,Fel1,Seine,5/17/14,blacknose_dace,17
+105,Fel1,Seine,5/17/14,creek_chub,9
+106,Fel1,Seine,5/17/14,fathead_minnow,7
+107,Fel1,Seine,5/17/14,johnny_darter,39
+108,Fel1,Seine,5/17/14,mottled_sculpin,16
+109,Fel1,Seine,5/17/14,pumpkinseed,5
+110,Fel1,Seine,9/6/14,blacknose_dace,20
+111,Fel1,Seine,9/6/14,bluegill,1
+112,Fel1,Seine,9/6/14,central_mudminnow,1
+113,Fel1,Seine,9/6/14,creek_chub,43
+114,Fel1,Seine,9/6/14,fathead_minnow,12
+115,Fel1,Seine,9/6/14,johnny_darter,31
+116,Fel1,Seine,9/6/14,mottled_sculpin,16
+117,Fel3,Seine,6/22/13,blacknose_dace,8
+118,Fel3,Seine,6/22/13,bluntnose_minnow,1
+119,Fel3,Seine,6/22/13,creek_chub,2
+120,Fel3,Seine,6/22/13,fathead_minnow,5
+121,Fel3,Seine,6/22/13,green_sunfish,1
+122,Fel3,Seine,6/22/13,johnny_darter,11
+123,Fel3,Seine,6/22/13,largemouth_bass,2
+124,Fel3,Seine,6/22/13,mottled_sculpin,5
+125,Fel3,Seine,9/14/13,blacknose_dace,27
+126,Fel3,Seine,9/14/13,creek_chub,10
+127,Fel3,Seine,9/14/13,fathead_minnow,9
+128,Fel3,Seine,9/14/13,johnny_darter,23
+129,Fel3,Seine,9/14/13,mottled_sculpin,33
+130,Fel3,Seine,9/14/13,white_sucker,1
+131,Fel3,Seine,5/17/14,black_crappie,1
+132,Fel3,Seine,5/17/14,blacknose_dace,28
+133,Fel3,Seine,5/17/14,central_stoneroller,1
+134,Fel3,Seine,5/17/14,creek_chub,7
+135,Fel3,Seine,5/17/14,fathead_minnow,54
+136,Fel3,Seine,5/17/14,johnny_darter,18
+137,Fel3,Seine,5/17/14,mottled_sculpin,3
+138,Fel3,Seine,5/17/14,white_sucker,1
+139,Fel3,Seine,9/6/14,blacknose_dace,12
+140,Fel3,Seine,9/6/14,bluegill,4
+141,Fel3,Seine,9/6/14,central_mudminnow,2
+142,Fel3,Seine,9/6/14,central_stoneroller,1
+143,Fel3,Seine,9/6/14,creek_chub,11
+144,Fel3,Seine,9/6/14,fathead_minnow,9
+145,Fel3,Seine,9/6/14,johnny_darter,25
+146,Fel3,Seine,9/6/14,largemouth_bass,2
+147,Fel3,Seine,9/6/14,mottled_sculpin,21
+148,Fel3,Seine,9/6/14,white_sucker,1
+149,Fel4,Barge Shock,7/11/22,blackside_darter,4
+150,Fel4,Barge Shock,7/11/22,bluegill,13
+151,Fel4,Barge Shock,7/11/22,central_stoneroller,3
+152,Fel4,Barge Shock,7/11/22,common_carp,5
+153,Fel4,Barge Shock,7/11/22,common_shiner,73
+154,Fel4,Barge Shock,7/11/22,creek_chub,46
+155,Fel4,Barge Shock,7/11/22,goldfish,1
+156,Fel4,Barge Shock,7/11/22,green_sunfish,44
+157,Fel4,Barge Shock,7/11/22,johnny_darter,8
+158,Fel4,Barge Shock,7/11/22,pumpkinseed,3
+159,Fel4,Barge Shock,7/11/22,white_sucker,27
+160,Fel4,Seine,5/18/13,blacknose_dace,6
+161,Fel4,Seine,5/18/13,bluegill,19
+162,Fel4,Seine,5/18/13,central_stoneroller,21
+163,Fel4,Seine,5/18/13,common_carp,2
+164,Fel4,Seine,5/18/13,common_shiner,186
+165,Fel4,Seine,5/18/13,creek_chub,53
+166,Fel4,Seine,5/18/13,fathead_minnow,40
+167,Fel4,Seine,5/18/13,green_sunfish,6
+168,Fel4,Seine,5/18/13,johnny_darter,56
+169,Fel4,Seine,5/18/13,mottled_sculpin,1
+170,Fel4,Seine,5/18/13,pumpkinseed,3
+171,Fel4,Seine,5/18/13,white_sucker,56
+172,Fel4,Seine,9/27/13,blacknose_dace,1
+173,Fel4,Seine,9/27/13,central_stoneroller,3
+174,Fel4,Seine,9/27/13,common_shiner,29
+175,Fel4,Seine,9/27/13,creek_chub,9
+176,Fel4,Seine,9/27/13,fathead_minnow,17
+177,Fel4,Seine,9/27/13,green_sunfish,3
+178,Fel4,Seine,9/27/13,johnny_darter,46
+179,Fel4,Seine,9/27/13,largemouth_bass,1
+180,Fel4,Seine,9/27/13,white_sucker,4
+181,Fel4,Seine,6/13/14,blacknose_dace,3
+182,Fel4,Seine,6/13/14,bluegill,2
+183,Fel4,Seine,6/13/14,central_stoneroller,5
+184,Fel4,Seine,6/13/14,common_shiner,55
+185,Fel4,Seine,6/13/14,creek_chub,15
+186,Fel4,Seine,6/13/14,fathead_minnow,32
+187,Fel4,Seine,6/13/14,green_sunfish,3
+188,Fel4,Seine,6/13/14,johnny_darter,40
+189,Fel4,Seine,6/13/14,white_sucker,6
+190,Fel4,Seine,9/19/14,blacknose_dace,3
+191,Fel4,Seine,9/19/14,bluegill,1
+192,Fel4,Seine,9/19/14,central_stoneroller,1
+193,Fel4,Seine,9/19/14,common_shiner,55
+194,Fel4,Seine,9/19/14,creek_chub,11
+195,Fel4,Seine,9/19/14,fathead_minnow,11
+196,Fel4,Seine,9/19/14,green_sunfish,8
+197,Fel4,Seine,9/19/14,johnny_darter,17
+198,Fel5,Seine,6/22/13,blacknose_dace,4
+199,Fel5,Seine,6/22/13,fathead_minnow,1
+200,Fel5,Seine,6/22/13,johnny_darter,32
+201,Fel5,Seine,9/27/13,blacknose_dace,7
+202,Fel5,Seine,9/27/13,bluegill,1
+203,Fel5,Seine,9/27/13,creek_chub,19
+204,Fel5,Seine,9/27/13,fathead_minnow,41
+205,Fel5,Seine,9/27/13,johnny_darter,56
+206,Fel5,Seine,9/27/13,mottled_sculpin,8
+207,Fel5,Seine,9/27/13,white_sucker,10
+208,Fel5,Seine,5/20/14,black_crappie,4
+209,Fel5,Seine,5/20/14,blacknose_dace,17
+210,Fel5,Seine,5/20/14,bluegill,2
+211,Fel5,Seine,5/20/14,central_stoneroller,3
+212,Fel5,Seine,5/20/14,creek_chub,32
+213,Fel5,Seine,5/20/14,fathead_minnow,9
+214,Fel5,Seine,5/20/14,johnny_darter,38
+215,Fel5,Seine,5/20/14,mottled_sculpin,4
+216,Fel5,Seine,5/20/14,pumpkinseed,1
+217,Fel5,Seine,5/20/14,white_sucker,3
+218,Fel5,Seine,9/6/14,blacknose_dace,10
+219,Fel5,Seine,9/6/14,creek_chub,7
+220,Fel5,Seine,9/6/14,fathead_minnow,3
+221,Fel5,Seine,9/6/14,johnny_darter,28
+222,Fel5,Seine,9/6/14,largemouth_bass,1
+223,Fel5,Seine,9/6/14,mottled_sculpin,7
+224,Fel6,Backpack Shock,6/13/22,blacknose_dace,2
+225,Fel6,Backpack Shock,6/13/22,common_shiner,4
+226,Fel6,Backpack Shock,6/13/22,creek_chub,12
+227,Fel6,Backpack Shock,6/13/22,fathead_minnow,8
+228,Fel6,Backpack Shock,6/13/22,green_sunfish,7
+229,Fel6,Backpack Shock,6/13/22,white_sucker,1
+230,Fel6,Seine,6/22/13,black_crappie,3
+231,Fel6,Seine,6/22/13,blacknose_dace,2
+232,Fel6,Seine,6/22/13,bluegill,4
+233,Fel6,Seine,6/22/13,common_shiner,2
+234,Fel6,Seine,6/22/13,creek_chub,5
+235,Fel6,Seine,6/22/13,fathead_minnow,29
+236,Fel6,Seine,6/22/13,green_sunfish,4
+237,Fel6,Seine,6/22/13,johnny_darter,18
+238,Fel6,Seine,6/22/13,mottled_sculpin,1
+239,Fel6,Seine,6/22/13,pumpkinseed,2
+240,Fel6,Seine,6/22/13,white_sucker,2
+241,Fel6,Seine,9/27/13,blacknose_dace,11
+242,Fel6,Seine,9/27/13,bluegill,2
+243,Fel6,Seine,9/27/13,common_shiner,6
+244,Fel6,Seine,9/27/13,creek_chub,26
+245,Fel6,Seine,9/27/13,johnny_darter,64
+246,Fel6,Seine,9/27/13,largemouth_bass,1
+247,Fel6,Seine,9/27/13,mottled_sculpin,22
+248,Fel6,Seine,9/27/13,white_sucker,6
+249,Fel6,Seine,5/20/14,blacknose_dace,12
+250,Fel6,Seine,5/20/14,central_stoneroller,1
+251,Fel6,Seine,5/20/14,creek_chub,5
+252,Fel6,Seine,5/20/14,fathead_minnow,11
+253,Fel6,Seine,5/20/14,johnny_darter,42
+254,Fel6,Seine,5/20/14,mottled_sculpin,12
+255,Fel6,Seine,9/19/14,black_crappie,1
+256,Fel6,Seine,9/19/14,blacknose_dace,19
+257,Fel6,Seine,9/19/14,bluegill,6
+258,Fel6,Seine,9/19/14,common_shiner,10
+259,Fel6,Seine,9/19/14,creek_chub,12
+260,Fel6,Seine,9/19/14,fathead_minnow,13
+261,Fel6,Seine,9/19/14,johnny_darter,18
+262,Fel6,Seine,9/19/14,largemouth_bass,2
+263,Fel6,Seine,9/19/14,mottled_sculpin,12
+264,Fel6,Seine,9/19/14,white_sucker,2
+265,Fowl1,Seine,5/10/13,blacknose_dace,14
+266,Fowl1,Seine,5/10/13,bluegill,2
+267,Fowl1,Seine,5/10/13,brook_stickleback,1
+268,Fowl1,Seine,5/10/13,central_mudminnow,1
+269,Fowl1,Seine,5/10/13,central_stoneroller,12
+270,Fowl1,Seine,5/10/13,creek_chub,28
+271,Fowl1,Seine,5/10/13,fathead_minnow,43
+272,Fowl1,Seine,5/10/13,green_sunfish,1
+273,Fowl1,Seine,5/10/13,johnny_darter,14
+274,Fowl1,Seine,5/10/13,northern_redbelly_dace,3
+275,Fowl1,Seine,9/20/13,blacknose_dace,3
+276,Fowl1,Seine,9/20/13,bluegill,17
+277,Fowl1,Seine,9/20/13,brook_stickleback,1
+278,Fowl1,Seine,9/20/13,brown_bullhead,5
+279,Fowl1,Seine,9/20/13,central_mudminnow,23
+280,Fowl1,Seine,9/20/13,creek_chub,37
+281,Fowl1,Seine,9/20/13,fathead_minnow,13
+282,Fowl1,Seine,9/20/13,green_sunfish,3
+283,Fowl1,Seine,9/20/13,johnny_darter,12
+284,Fowl1,Seine,9/20/13,northern_redbelly_dace,1
+285,Fowl1,Seine,9/20/13,white_sucker,3
+286,Fowl1,Seine,5/16/14,blacknose_dace,6
+287,Fowl1,Seine,5/16/14,bluegill,1
+288,Fowl1,Seine,5/16/14,brook_stickleback,13
+289,Fowl1,Seine,5/16/14,central_mudminnow,4
+290,Fowl1,Seine,5/16/14,central_stoneroller,13
+291,Fowl1,Seine,5/16/14,creek_chub,17
+292,Fowl1,Seine,5/16/14,fathead_minnow,67
+293,Fowl1,Seine,5/16/14,johnny_darter,9
+294,Fowl1,Seine,5/16/14,northern_redbelly_dace,446
+295,Fowl1,Seine,5/16/14,pumpkinseed,2
+296,Fowl1,Seine,5/16/14,white_sucker,2
+297,Fowl1,Seine,9/5/14,blacknose_dace,2
+298,Fowl1,Seine,9/5/14,bluegill,2
+299,Fowl1,Seine,9/5/14,brook_stickleback,4
+300,Fowl1,Seine,9/5/14,central_mudminnow,32
+301,Fowl1,Seine,9/5/14,central_stoneroller,7
+302,Fowl1,Seine,9/5/14,creek_chub,38
+303,Fowl1,Seine,9/5/14,fathead_minnow,11
+304,Fowl1,Seine,9/5/14,green_sunfish,12
+305,Fowl1,Seine,9/5/14,johnny_darter,8
+306,Fowl1,Seine,9/5/14,largemouth_bass,1
+307,Fowl1,Seine,9/5/14,northern_redbelly_dace,38
+308,Fowl1,Seine,9/5/14,white_sucker,1
+309,Fowl2,Barge Shock,7/19/22,bluegill,16
+310,Fowl2,Barge Shock,7/19/22,central_mudminnow,3
+311,Fowl2,Barge Shock,7/19/22,common_carp,1
+312,Fowl2,Barge Shock,7/19/22,fathead_minnow,2
+313,Fowl2,Barge Shock,7/19/22,gizzard_shad,2
+314,Fowl2,Barge Shock,7/19/22,green_sunfish,38
+315,Fowl2,Barge Shock,7/19/22,johnny_darter,7
+316,Fowl2,Barge Shock,7/19/22,largemouth_bass,2
+317,Fowl2,Barge Shock,7/19/22,northern_pike,1
+318,Fowl2,Barge Shock,7/19/22,pumpkinseed,10
+319,Fowl2,Barge Shock,7/19/22,round_goby,11
+320,Fowl2,Barge Shock,7/19/22,white_sucker,24
+321,Fowl2,Barge Shock,7/19/22,yellow_bullhead,3
+322,Fowl2,Barge Shock,7/19/22,yellow_perch,7
+323,Fowl2,Seine,5/10/13,central_stoneroller,1
+324,Fowl2,Seine,5/10/13,common_shiner,3
+325,Fowl2,Seine,5/10/13,creek_chub,3
+326,Fowl2,Seine,5/10/13,fathead_minnow,466
+327,Fowl2,Seine,5/10/13,green_sunfish,2
+328,Fowl2,Seine,5/10/13,johnny_darter,17
+329,Fowl2,Seine,5/10/13,pumpkinseed,2
+330,Fowl2,Seine,9/27/13,common_shiner,5
+331,Fowl2,Seine,9/27/13,creek_chub,13
+332,Fowl2,Seine,9/27/13,fathead_minnow,14
+333,Fowl2,Seine,9/27/13,johnny_darter,16
+334,Fowl2,Seine,9/27/13,white_sucker,3
+335,Fowl2,Seine,5/3/14,central_mudminnow,2
+336,Fowl2,Seine,5/3/14,creek_chub,8
+337,Fowl2,Seine,5/3/14,fathead_minnow,67
+338,Fowl2,Seine,5/3/14,johnny_darter,26
+339,Fowl2,Seine,5/3/14,white_sucker,4
+340,Fowl2,Seine,8/22/14,black_crappie,2
+341,Fowl2,Seine,8/22/14,blackside_darter,3
+342,Fowl2,Seine,8/22/14,central_mudminnow,2
+343,Fowl2,Seine,8/22/14,central_stoneroller,1
+344,Fowl2,Seine,8/22/14,common_shiner,1
+345,Fowl2,Seine,8/22/14,creek_chub,9
+346,Fowl2,Seine,8/22/14,fathead_minnow,2
+347,Fowl2,Seine,8/22/14,gizzard_shad,2
+348,Fowl2,Seine,8/22/14,green_sunfish,3
+349,Fowl2,Seine,8/22/14,johnny_darter,36
+350,Fowl2,Seine,8/22/14,largemouth_bass,3
+351,Fowl2,Seine,8/22/14,pumpkinseed,3
+352,Fowl2,Seine,8/22/14,white_sucker,13
+353,Fowl2,Seine,8/22/16,black_crappie,2
+354,Fowl2,Seine,8/22/16,blackside_darter,2
+355,Fowl2,Seine,8/22/16,bluegill,5
+356,Fowl2,Seine,8/22/16,central_mudminnow,2
+357,Fowl2,Seine,8/22/16,creek_chub,7
+358,Fowl2,Seine,8/22/16,fathead_minnow,1
+359,Fowl2,Seine,8/22/16,gizzard_shad,16
+360,Fowl2,Seine,8/22/16,green_sunfish,41
+361,Fowl2,Seine,8/22/16,johnny_darter,30
+362,Fowl2,Seine,8/22/16,pumpkinseed,2
+363,Fowl2,Seine,8/22/16,round_goby,6
+364,Fowl2,Seine,8/22/16,smallmouth_bass,1
+365,Fowl2,Seine,8/22/16,sunfish_hybrid,1
+366,Fowl2,Seine,8/22/16,white_sucker,20
+367,Fowl2,Seine,8/22/16,yellow_bullhead,1
+368,Fowl2,Seine,5/20/17,black_crappie,6
+369,Fowl2,Seine,5/20/17,bluegill,4
+370,Fowl2,Seine,5/20/17,creek_chub,5
+371,Fowl2,Seine,5/20/17,emerald_shiner,1
+372,Fowl2,Seine,5/20/17,fathead_minnow,146
+373,Fowl2,Seine,5/20/17,green_sunfish,1
+374,Fowl2,Seine,5/20/17,johnny_darter,27
+375,Fowl2,Seine,5/20/17,pumpkinseed,4
+376,Fowl2,Seine,5/20/17,round_goby,8
+377,Fowl2,Seine,5/20/17,sunfish_hybrid,1
+378,Fowl2,Seine,5/20/17,white_sucker,3
+379,Fowl2,Seine,5/20/17,yellow_perch,2
+380,Fowl2,Seine,7/29/17,black_crappie,1
+381,Fowl2,Seine,7/29/17,blackside_darter,1
+382,Fowl2,Seine,7/29/17,bluegill,8
+383,Fowl2,Seine,7/29/17,common_carp,1
+384,Fowl2,Seine,7/29/17,common_shiner,1
+385,Fowl2,Seine,7/29/17,creek_chub,15
+386,Fowl2,Seine,7/29/17,fathead_minnow,20
+387,Fowl2,Seine,7/29/17,green_sunfish,32
+388,Fowl2,Seine,7/29/17,johnny_darter,73
+389,Fowl2,Seine,7/29/17,largemouth_bass,4
+390,Fowl2,Seine,7/29/17,pumpkinseed,1
+391,Fowl2,Seine,7/29/17,round_goby,82
+392,Fowl2,Seine,7/29/17,white_sucker,20
+393,Fowl2,Seine,7/29/17,yellow_perch,2
+394,Fowl2,Seine,5/5/18,bluegill,1
+395,Fowl2,Seine,5/5/18,creek_chub,1
+396,Fowl2,Seine,5/5/18,fathead_minnow,32
+397,Fowl2,Seine,5/5/18,johnny_darter,57
+398,Fowl2,Seine,5/5/18,round_goby,20
+399,Fowl2,Seine,5/5/18,white_sucker,4
+400,Fowl2,Seine,8/16/18,bluegill,8
+401,Fowl2,Seine,8/16/18,creek_chub,6
+402,Fowl2,Seine,8/16/18,fathead_minnow,1
+403,Fowl2,Seine,8/16/18,green_sunfish,9
+404,Fowl2,Seine,8/16/18,johnny_darter,29
+405,Fowl2,Seine,8/16/18,largemouth_bass,3
+406,Fowl2,Seine,8/16/18,pumpkinseed,4
+407,Fowl2,Seine,8/16/18,round_goby,55
+408,Fowl2,Seine,8/16/18,white_sucker,14
+409,Fowl2,Seine,8/16/18,yellow_perch,1
+410,Fowl2,Seine,8/18/19,black_crappie,1
+411,Fowl2,Seine,8/18/19,blackside_darter,6
+412,Fowl2,Seine,8/18/19,bluegill,1
+413,Fowl2,Seine,8/18/19,common_shiner,2
+414,Fowl2,Seine,8/18/19,creek_chub,3
+415,Fowl2,Seine,8/18/19,fathead_minnow,5
+416,Fowl2,Seine,8/18/19,green_sunfish,18
+417,Fowl2,Seine,8/18/19,johnny_darter,37
+418,Fowl2,Seine,8/18/19,largemouth_bass,2
+419,Fowl2,Seine,8/18/19,pumpkinseed,4
+420,Fowl2,Seine,8/18/19,round_goby,74
+421,Fowl2,Seine,8/18/19,white_sucker,8
+422,Fowl2,Seine,8/18/19,yellow_bullhead,1
+423,Fowl2,Seine,8/19/20,blackside_darter,2
+424,Fowl2,Seine,8/19/20,bluegill,4
+425,Fowl2,Seine,8/19/20,bluntnose_minnow,1
+426,Fowl2,Seine,8/19/20,common_carp,1
+427,Fowl2,Seine,8/19/20,common_shiner,2
+428,Fowl2,Seine,8/19/20,creek_chub,6
+429,Fowl2,Seine,8/19/20,gizzard_shad,1
+430,Fowl2,Seine,8/19/20,green_sunfish,13
+431,Fowl2,Seine,8/19/20,johnny_darter,15
+432,Fowl2,Seine,8/19/20,largemouth_bass,1
+433,Fowl2,Seine,8/19/20,northern_sunfish,1
+434,Fowl2,Seine,8/19/20,pumpkinseed,4
+435,Fowl2,Seine,8/19/20,round_goby,74
+436,Fowl2,Seine,8/19/20,white_sucker,4
+437,Fowl2,Seine,8/26/21,bluegill,5
+438,Fowl2,Seine,8/26/21,common_carp,1
+439,Fowl2,Seine,8/26/21,common_shiner,3
+440,Fowl2,Seine,8/26/21,creek_chub,1
+441,Fowl2,Seine,8/26/21,gizzard_shad,6
+442,Fowl2,Seine,8/26/21,green_sunfish,16
+443,Fowl2,Seine,8/26/21,johnny_darter,9
+444,Fowl2,Seine,8/26/21,largemouth_bass,2
+445,Fowl2,Seine,8/26/21,pumpkinseed,1
+446,Fowl2,Seine,8/26/21,round_goby,41
+447,Fowl2,Seine,8/26/21,yellow_perch,1
+448,Fowl3,Seine,6/1/13,blacknose_dace,1
+449,Fowl3,Seine,6/1/13,brook_stickleback,10
+450,Fowl3,Seine,6/1/13,central_mudminnow,3
+451,Fowl3,Seine,6/1/13,creek_chub,5
+452,Fowl3,Seine,6/1/13,fathead_minnow,6
+453,Fowl3,Seine,6/1/13,johnny_darter,2
+454,Fowl3,Seine,9/20/13,bluegill,9
+455,Fowl3,Seine,9/20/13,brook_stickleback,17
+456,Fowl3,Seine,9/20/13,central_mudminnow,30
+457,Fowl3,Seine,9/20/13,central_stoneroller,40
+458,Fowl3,Seine,9/20/13,creek_chub,11
+459,Fowl3,Seine,9/20/13,fathead_minnow,7
+460,Fowl3,Seine,9/20/13,green_sunfish,7
+461,Fowl3,Seine,9/20/13,johnny_darter,40
+462,Fowl3,Seine,9/20/13,pumpkinseed,1
+463,Fowl3,Seine,9/20/13,white_sucker,18
+464,Fowl3,Seine,5/16/14,brook_stickleback,4
+465,Fowl3,Seine,5/16/14,central_mudminnow,3
+466,Fowl3,Seine,5/16/14,central_stoneroller,25
+467,Fowl3,Seine,5/16/14,creek_chub,19
+468,Fowl3,Seine,5/16/14,fathead_minnow,41
+469,Fowl3,Seine,5/16/14,johnny_darter,17
+470,Fowl3,Seine,5/16/14,northern_redbelly_dace,37
+471,Fowl3,Seine,5/16/14,pumpkinseed,2
+472,Fowl3,Seine,5/16/14,white_sucker,1
+473,Fowl3,Seine,9/5/14,bluegill,1
+474,Fowl3,Seine,9/5/14,brook_stickleback,92
+475,Fowl3,Seine,9/5/14,central_mudminnow,60
+476,Fowl3,Seine,9/5/14,central_stoneroller,3
+477,Fowl3,Seine,9/5/14,creek_chub,17
+478,Fowl3,Seine,9/5/14,fathead_minnow,17
+479,Fowl3,Seine,9/5/14,johnny_darter,51
+480,Fowl3,Seine,9/5/14,northern_redbelly_dace,6
+481,Fowl3,Seine,9/5/14,white_sucker,7
+482,Fowl4,Backpack Shock,7/18/22,blacknose_dace,24
+483,Fowl4,Backpack Shock,7/18/22,bluegill,1
+484,Fowl4,Backpack Shock,7/18/22,central_mudminnow,6
+485,Fowl4,Backpack Shock,7/18/22,common_carp,1
+486,Fowl4,Backpack Shock,7/18/22,common_shiner,23
+487,Fowl4,Backpack Shock,7/18/22,creek_chub,52
+488,Fowl4,Backpack Shock,7/18/22,goldfish,2
+489,Fowl4,Backpack Shock,7/18/22,green_sunfish,16
+490,Fowl4,Backpack Shock,7/18/22,johnny_darter,36
+491,Fowl4,Backpack Shock,7/18/22,white_sucker,20
+492,Fowl4,Seine,8/29/15,blacknose_dace,1
+493,Fowl4,Seine,8/29/15,bluegill,1
+494,Fowl4,Seine,8/29/15,central_mudminnow,8
+495,Fowl4,Seine,8/29/15,common_shiner,2
+496,Fowl4,Seine,8/29/15,creek_chub,1
+497,Fowl4,Seine,8/29/15,fathead_minnow,10
+498,Fowl4,Seine,8/29/15,johnny_darter,6
+499,Fowl4,Seine,8/29/15,largemouth_bass,1
+500,Fowl4,Seine,8/26/21,blacknose_dace,8
+501,Fowl4,Seine,8/26/21,blackside_darter,1
+502,Fowl4,Seine,8/26/21,bluegill,4
+503,Fowl4,Seine,8/26/21,central_mudminnow,1
+504,Fowl4,Seine,8/26/21,common_carp,2
+505,Fowl4,Seine,8/26/21,common_shiner,15
+506,Fowl4,Seine,8/26/21,creek_chub,21
+507,Fowl4,Seine,8/26/21,green_sunfish,11
+508,Fowl4,Seine,8/26/21,johnny_darter,16
+509,Fowl4,Seine,8/26/21,pumpkinseed,4
+510,Fowl4,Seine,8/26/21,white_sucker,11
+511,Fowl4,Seine,8/26/21,yellow_bullhead,1
+512,Fowl4,Seine,8/26/21,yellow_perch,1
+513,Fowl5,Backpack Shock,7/18/22,blacknose_dace,5
+514,Fowl5,Backpack Shock,7/18/22,creek_chub,18
+515,Fowl5,Backpack Shock,7/18/22,fathead_minnow,13
+516,Fowl5,Backpack Shock,7/18/22,green_sunfish,33
+517,Fowl5,Backpack Shock,7/18/22,johnny_darter,5
+518,Fowl5,Backpack Shock,7/18/22,pumpkinseed,4
+519,Fowl5,Backpack Shock,7/18/22,round_goby,4
+520,Fowl5,Seine,8/22/16,black_crappie,7
+521,Fowl5,Seine,8/22/16,bluegill,30
+522,Fowl5,Seine,8/22/16,common_shiner,2
+523,Fowl5,Seine,8/22/16,creek_chub,16
+524,Fowl5,Seine,8/22/16,fathead_minnow,3
+525,Fowl5,Seine,8/22/16,gizzard_shad,1
+526,Fowl5,Seine,8/22/16,green_sunfish,5
+527,Fowl5,Seine,8/22/16,johnny_darter,33
+528,Fowl5,Seine,8/22/16,pumpkinseed,1
+529,Fowl5,Seine,8/22/16,smallmouth_bass,2
+530,Fowl5,Seine,8/22/16,white_sucker,12
+531,Fowl5,Seine,5/20/17,black_crappie,3
+532,Fowl5,Seine,5/20/17,bluegill,12
+533,Fowl5,Seine,5/20/17,common_shiner,17
+534,Fowl5,Seine,5/20/17,creek_chub,8
+535,Fowl5,Seine,5/20/17,fathead_minnow,14
+536,Fowl5,Seine,5/20/17,green_sunfish,1
+537,Fowl5,Seine,5/20/17,johnny_darter,35
+538,Fowl5,Seine,5/20/17,pumpkinseed,2
+539,Fowl5,Seine,5/20/17,white_sucker,15
+540,Fowl5,Seine,7/29/17,black_crappie,1
+541,Fowl5,Seine,7/29/17,bluegill,6
+542,Fowl5,Seine,7/29/17,bluntnose_minnow,1
+543,Fowl5,Seine,7/29/17,central_mudminnow,1
+544,Fowl5,Seine,7/29/17,central_stoneroller,1
+545,Fowl5,Seine,7/29/17,common_shiner,12
+546,Fowl5,Seine,7/29/17,creek_chub,30
+547,Fowl5,Seine,7/29/17,fathead_minnow,29
+548,Fowl5,Seine,7/29/17,green_sunfish,9
+549,Fowl5,Seine,7/29/17,johnny_darter,55
+550,Fowl5,Seine,7/29/17,pumpkinseed,2
+551,Fowl5,Seine,7/29/17,white_sucker,25
+552,Fowl5,Seine,8/16/18,bluegill,9
+553,Fowl5,Seine,8/16/18,central_mudminnow,1
+554,Fowl5,Seine,8/16/18,central_stoneroller,4
+555,Fowl5,Seine,8/16/18,common_shiner,9
+556,Fowl5,Seine,8/16/18,creek_chub,46
+557,Fowl5,Seine,8/16/18,fathead_minnow,37
+558,Fowl5,Seine,8/16/18,green_sunfish,38
+559,Fowl5,Seine,8/16/18,johnny_darter,58
+560,Fowl5,Seine,8/16/18,largemouth_bass,2
+561,Fowl5,Seine,8/16/18,white_sucker,23
+562,Fowl5,Seine,8/16/19,bluegill,8
+563,Fowl5,Seine,8/16/19,central_stoneroller,4
+564,Fowl5,Seine,8/16/19,common_shiner,2
+565,Fowl5,Seine,8/16/19,creek_chub,38
+566,Fowl5,Seine,8/16/19,fathead_minnow,46
+567,Fowl5,Seine,8/16/19,green_sunfish,15
+568,Fowl5,Seine,8/16/19,johnny_darter,57
+569,Fowl5,Seine,8/16/19,largemouth_bass,7
+570,Fowl5,Seine,8/16/19,pumpkinseed,8
+571,Fowl5,Seine,8/16/19,white_sucker,7
+572,Fowl5,Seine,8/6/20,blacknose_dace,2
+573,Fowl5,Seine,8/6/20,bluegill,28
+574,Fowl5,Seine,8/6/20,central_mudminnow,3
+575,Fowl5,Seine,8/6/20,central_stoneroller,1
+576,Fowl5,Seine,8/6/20,common_shiner,6
+577,Fowl5,Seine,8/6/20,creek_chub,9
+578,Fowl5,Seine,8/6/20,fathead_minnow,4
+579,Fowl5,Seine,8/6/20,gizzard_shad,3
+580,Fowl5,Seine,8/6/20,green_sunfish,16
+581,Fowl5,Seine,8/6/20,johnny_darter,38
+582,Fowl5,Seine,8/6/20,northern_sunfish,1
+583,Fowl5,Seine,8/6/20,pumpkinseed,2
+584,Fowl5,Seine,8/6/20,round_goby,2
+585,Fowl5,Seine,8/6/20,sunfish_hybrid,2
+586,Fowl5,Seine,8/6/20,white_sucker,2
+587,Fowl5,Seine,7/8/21,bluegill,8
+588,Fowl5,Seine,7/8/21,brook_stickleback,1
+589,Fowl5,Seine,7/8/21,central_mudminnow,1
+590,Fowl5,Seine,7/8/21,common_carp,1
+591,Fowl5,Seine,7/8/21,common_shiner,2
+592,Fowl5,Seine,7/8/21,creek_chub,10
+593,Fowl5,Seine,7/8/21,fathead_minnow,193
+594,Fowl5,Seine,7/8/21,green_sunfish,44
+595,Fowl5,Seine,7/8/21,johnny_darter,78
+596,Fowl5,Seine,7/8/21,largemouth_bass,6
+597,Fowl5,Seine,7/8/21,pumpkinseed,2
+598,Fowl5,Seine,7/8/21,round_goby,14
+599,Fowl5,Seine,7/8/21,white_sucker,2
+600,Fowl5,Seine,7/18/22,blacknose_dace,1
+601,Fowl5,Seine,7/18/22,bluegill,18
+602,Fowl5,Seine,7/18/22,central_stoneroller,1
+603,Fowl5,Seine,7/18/22,common_carp,1
+604,Fowl5,Seine,7/18/22,creek_chub,20
+605,Fowl5,Seine,7/18/22,fathead_minnow,61
+606,Fowl5,Seine,7/18/22,green_sunfish,28
+607,Fowl5,Seine,7/18/22,johnny_darter,33
+608,Fowl5,Seine,7/18/22,largemouth_bass,1
+609,Fowl5,Seine,7/18/22,pumpkinseed,27
+610,Fowl5,Seine,7/18/22,round_goby,30
+611,Fowl5,Seine,7/18/22,white_sucker,3
+612,Fowl5,Seine,7/18/22,yellow_bullhead,1
+613,Fowl6,Seine,4/30/18,brook_stickleback,5
+614,Fowl6,Seine,4/30/18,central_mudminnow,6
+615,Fowl6,Seine,4/30/18,creek_chub,1
+616,Fowl6,Seine,4/30/18,fathead_minnow,43
+617,Fowl6,Seine,4/30/18,northern_redbelly_dace,13
+618,Fowl6,Seine,8/16/18,bluegill,3
+619,Fowl6,Seine,8/16/18,brook_stickleback,7
+620,Fowl6,Seine,8/16/18,central_mudminnow,29
+621,Fowl6,Seine,8/16/18,creek_chub,2
+622,Fowl6,Seine,8/16/18,fathead_minnow,28
+623,Fowl6,Seine,8/16/18,green_sunfish,1
+624,Frank1,Barge Shock,7/7/22,blacknose_dace,83
+625,Frank1,Barge Shock,7/7/22,central_stoneroller,6
+626,Frank1,Barge Shock,7/7/22,common_shiner,52
+627,Frank1,Barge Shock,7/7/22,creek_chub,127
+628,Frank1,Barge Shock,7/7/22,fathead_minnow,1
+629,Frank1,Barge Shock,7/7/22,mottled_sculpin,21
+630,Frank1,Barge Shock,7/7/22,white_sucker,21
+631,Frank1,Seine,9/18/15,blacknose_dace,285
+632,Frank1,Seine,9/18/15,common_shiner,1
+633,Frank1,Seine,9/18/15,creek_chub,2
+634,Frank1,Seine,9/18/15,mottled_sculpin,14
+635,Frank1,Seine,9/18/15,white_sucker,2
+636,Frank1,Seine,7/7/22,blacknose_dace,68
+637,Frank1,Seine,7/7/22,common_shiner,1
+638,Frank1,Seine,7/7/22,creek_chub,6
+639,Frank1,Seine,7/7/22,fathead_minnow,1
+640,Frank1,Seine,7/7/22,mottled_sculpin,16
+641,Frank1,Seine,7/7/22,white_sucker,1
+642,Frank2,Seine,9/18/15,blacknose_dace,144
+643,Frank2,Seine,9/18/15,bluegill,2
+644,Frank2,Seine,9/18/15,common_shiner,61
+645,Frank2,Seine,9/18/15,creek_chub,91
+646,Frank2,Seine,9/18/15,fathead_minnow,2
+647,Frank2,Seine,9/18/15,pumpkinseed,24
+648,Frank2,Seine,9/18/15,white_sucker,18
+649,Ing1,Seine,9/11/15,blacknose_dace,9
+650,Ing1,Seine,9/11/15,brook_stickleback,5
+651,Ing1,Seine,9/11/15,creek_chub,10
+652,Ing1,Seine,9/11/15,fathead_minnow,12
+653,Ing1,Seine,9/11/15,green_sunfish,2
+654,Ing1,Seine,9/11/15,johnny_darter,12
+655,Ing1,Seine,9/11/15,largemouth_bass,1
+656,Ing1,Seine,9/11/15,white_sucker,3
+657,John1,Backpack Shock,7/12/22,blacknose_dace,10
+658,John1,Backpack Shock,7/12/22,bluegill,7
+659,John1,Backpack Shock,7/12/22,brook_stickleback,5
+660,John1,Backpack Shock,7/12/22,central_mudminnow,40
+661,John1,Backpack Shock,7/12/22,central_stoneroller,31
+662,John1,Backpack Shock,7/12/22,creek_chub,93
+663,John1,Backpack Shock,7/12/22,fathead_minnow,36
+664,John1,Backpack Shock,7/12/22,green_sunfish,2
+665,John1,Backpack Shock,7/12/22,johnny_darter,8
+666,John1,Backpack Shock,7/12/22,largemouth_bass,1
+667,John1,Backpack Shock,7/12/22,mottled_sculpin,31
+668,John1,Backpack Shock,7/12/22,northern_redbelly_dace,1
+669,John1,Backpack Shock,7/12/22,rainbow_darter,90
+670,John1,Backpack Shock,7/12/22,white_sucker,13
+671,John1,Seine,5/24/12,blacknose_dace,3
+672,John1,Seine,5/24/12,bluegill,21
+673,John1,Seine,5/24/12,bluntnose_minnow,19
+674,John1,Seine,5/24/12,brown_bullhead,1
+675,John1,Seine,5/24/12,central_mudminnow,5
+676,John1,Seine,5/24/12,central_stoneroller,16
+677,John1,Seine,5/24/12,creek_chub,47
+678,John1,Seine,5/24/12,fathead_minnow,91
+679,John1,Seine,5/24/12,green_sunfish,1
+680,John1,Seine,5/24/12,johnny_darter,23
+681,John1,Seine,5/24/12,mottled_sculpin,9
+682,John1,Seine,5/24/12,northern_redbelly_dace,81
+683,John1,Seine,5/24/12,pumpkinseed,6
+684,John1,Seine,5/24/12,rainbow_darter,90
+685,John1,Seine,5/24/12,sunfish_hybrid,2
+686,John1,Seine,5/24/12,white_sucker,3
+687,John1,Seine,6/6/22,blacknose_dace,1
+688,John1,Seine,6/6/22,brook_stickleback,2
+689,John1,Seine,6/6/22,central_mudminnow,16
+690,John1,Seine,6/6/22,central_stoneroller,1
+691,John1,Seine,6/6/22,creek_chub,4
+692,John1,Seine,6/6/22,fathead_minnow,4
+693,John1,Seine,6/6/22,largemouth_bass,1
+694,John1,Seine,6/6/22,mottled_sculpin,9
+695,John1,Seine,6/6/22,northern_redbelly_dace,3
+696,John1,Seine,6/6/22,rainbow_darter,78
+697,John10,Barge Shock,7/12/22,blacknose_dace,13
+698,John10,Barge Shock,7/12/22,brook_stickleback,24
+699,John10,Barge Shock,7/12/22,central_mudminnow,11
+700,John10,Barge Shock,7/12/22,central_stoneroller,2
+701,John10,Barge Shock,7/12/22,creek_chub,17
+702,John10,Barge Shock,7/12/22,fathead_minnow,4
+703,John10,Barge Shock,7/12/22,green_sunfish,4
+704,John10,Barge Shock,7/12/22,johnny_darter,18
+705,John10,Barge Shock,7/12/22,largemouth_bass,4
+706,John10,Barge Shock,7/12/22,mottled_sculpin,35
+707,John10,Barge Shock,7/12/22,rainbow_darter,9
+708,John10,Barge Shock,7/12/22,white_sucker,25
+709,John2,Seine,5/25/12,bluegill,3
+710,John2,Seine,5/25/12,bluntnose_minnow,22
+711,John2,Seine,5/25/12,brown_trout,4
+712,John2,Seine,5/25/12,central_mudminnow,5
+713,John2,Seine,5/25/12,central_stoneroller,13
+714,John2,Seine,5/25/12,creek_chub,30
+715,John2,Seine,5/25/12,fathead_minnow,84
+716,John2,Seine,5/25/12,johnny_darter,44
+717,John2,Seine,5/25/12,mottled_sculpin,10
+718,John2,Seine,5/25/12,pumpkinseed,2
+719,John2,Seine,5/25/12,rainbow_darter,7
+720,John2,Seine,5/25/12,redside_dace,8
+721,John2,Seine,5/25/12,white_sucker,18
+722,John2,Seine,6/26/18,bluegill,9
+723,John2,Seine,6/26/18,bluntnose_minnow,4
+724,John2,Seine,6/26/18,brook_stickleback,7
+725,John2,Seine,6/26/18,central_mudminnow,1
+726,John2,Seine,6/26/18,central_stoneroller,7
+727,John2,Seine,6/26/18,creek_chub,67
+728,John2,Seine,6/26/18,fathead_minnow,5
+729,John2,Seine,6/26/18,johnny_darter,5
+730,John2,Seine,6/26/18,largemouth_bass,24
+731,John2,Seine,6/26/18,mottled_sculpin,8
+732,John2,Seine,6/26/18,pumpkinseed,1
+733,John2,Seine,6/26/18,rainbow_darter,2
+734,John2,Seine,6/26/18,white_sucker,10
+735,John2,Seine,6/26/18,yellow_perch,4
+736,John2,Seine,5/21/21,blacknose_dace,2
+737,John2,Seine,5/21/21,bluegill,3
+738,John2,Seine,5/21/21,central_mudminnow,1
+739,John2,Seine,5/21/21,creek_chub,2
+740,John2,Seine,5/21/21,fathead_minnow,4
+741,John2,Seine,5/21/21,green_sunfish,1
+742,John2,Seine,5/21/21,johnny_darter,1
+743,John2,Seine,5/21/21,mottled_sculpin,2
+744,John2,Seine,5/21/21,northern_redbelly_dace,4
+745,John2,Seine,5/21/21,rainbow_darter,9
+746,John2,Seine,5/21/21,redside_dace,1
+747,John2,Seine,5/21/21,white_sucker,3
+748,John2,Seine,6/6/22,bluegill,5
+749,John2,Seine,6/6/22,bluntnose_minnow,1
+750,John2,Seine,6/6/22,brook_stickleback,41
+751,John2,Seine,6/6/22,creek_chub,23
+752,John2,Seine,6/6/22,fathead_minnow,3
+753,John2,Seine,6/6/22,green_sunfish,2
+754,John2,Seine,6/6/22,johnny_darter,4
+755,John2,Seine,6/6/22,pumpkinseed,1
+756,John2,Seine,6/6/22,rainbow_darter,2
+757,John2,Seine,6/6/22,white_sucker,5
+758,John3,Seine,5/29/12,bluegill,4
+759,John3,Seine,5/29/12,bluntnose_minnow,30
+760,John3,Seine,5/29/12,brook_stickleback,1
+761,John3,Seine,5/29/12,brown_trout,3
+762,John3,Seine,5/29/12,central_mudminnow,4
+763,John3,Seine,5/29/12,central_stoneroller,1
+764,John3,Seine,5/29/12,creek_chub,9
+765,John3,Seine,5/29/12,fathead_minnow,19
+766,John3,Seine,5/29/12,johnny_darter,13
+767,John3,Seine,5/29/12,mottled_sculpin,46
+768,John3,Seine,5/29/12,rainbow_darter,12
+769,John3,Seine,6/26/18,blacknose_dace,4
+770,John3,Seine,6/26/18,bluegill,15
+771,John3,Seine,6/26/18,bluntnose_minnow,8
+772,John3,Seine,6/26/18,central_stoneroller,4
+773,John3,Seine,6/26/18,creek_chub,6
+774,John3,Seine,6/26/18,fathead_minnow,4
+775,John3,Seine,6/26/18,largemouth_bass,1
+776,John3,Seine,6/26/18,mottled_sculpin,17
+777,John3,Seine,6/26/18,rainbow_darter,8
+778,John3,Seine,6/26/18,white_sucker,3
+779,John5,Seine,5/31/12,blacknose_dace,2
+780,John5,Seine,5/31/12,bluegill,7
+781,John5,Seine,5/31/12,brown_trout,13
+782,John5,Seine,5/31/12,creek_chub,1
+783,John5,Seine,5/31/12,fathead_minnow,4
+784,John5,Seine,5/31/12,green_sunfish,10
+785,John5,Seine,5/31/12,johnny_darter,1
+786,John5,Seine,5/31/12,mottled_sculpin,31
+787,John5,Seine,5/31/12,pumpkinseed,1
+788,John5,Seine,5/31/12,rainbow_darter,3
+789,John5,Seine,5/31/12,white_sucker,2
+790,John6,Barge Shock,8/9/22,blacknose_dace,2
+791,John6,Barge Shock,8/9/22,bluegill,10
+792,John6,Barge Shock,8/9/22,bluntnose_minnow,2
+793,John6,Barge Shock,8/9/22,brown_trout,16
+794,John6,Barge Shock,8/9/22,creek_chub,14
+795,John6,Barge Shock,8/9/22,golden_shiner,2
+796,John6,Barge Shock,8/9/22,green_sunfish,4
+797,John6,Barge Shock,8/9/22,largemouth_bass,1
+798,John6,Barge Shock,8/9/22,mottled_sculpin,34
+799,John6,Barge Shock,8/9/22,rainbow_darter,1
+800,John6,Barge Shock,8/9/22,rock_bass,2
+801,John6,Barge Shock,8/9/22,white_crappie,11
+802,John6,Barge Shock,8/9/22,white_sucker,38
+803,John6,Seine,5/31/12,black_crappie,2
+804,John6,Seine,5/31/12,blacknose_dace,1
+805,John6,Seine,5/31/12,bluegill,1
+806,John6,Seine,5/31/12,bluntnose_minnow,2
+807,John6,Seine,5/31/12,brown_trout,6
+808,John6,Seine,5/31/12,common_shiner,2
+809,John6,Seine,5/31/12,creek_chub,9
+810,John6,Seine,5/31/12,fathead_minnow,6
+811,John6,Seine,5/31/12,green_sunfish,2
+812,John6,Seine,5/31/12,mottled_sculpin,35
+813,John6,Seine,5/31/12,rainbow_darter,17
+814,John6,Seine,5/31/12,white_sucker,5
+815,John6,Seine,10/9/18,black_crappie,6
+816,John6,Seine,10/9/18,blacknose_dace,14
+817,John6,Seine,10/9/18,bluegill,21
+818,John6,Seine,10/9/18,bluntnose_minnow,28
+819,John6,Seine,10/9/18,central_stoneroller,3
+820,John6,Seine,10/9/18,creek_chub,5
+821,John6,Seine,10/9/18,golden_shiner,6
+822,John6,Seine,10/9/18,johnny_darter,9
+823,John6,Seine,10/9/18,mottled_sculpin,19
+824,John6,Seine,10/9/18,pumpkinseed,6
+825,John6,Seine,10/9/18,rainbow_darter,1
+826,John6,Seine,10/9/18,rock_bass,3
+827,John6,Seine,10/9/18,white_sucker,7
+828,John6,Seine,7/17/20,blacknose_dace,2
+829,John6,Seine,7/17/20,bluntnose_minnow,15
+830,John6,Seine,7/17/20,brown_trout,1
+831,John6,Seine,7/17/20,creek_chub,7
+832,John6,Seine,7/17/20,fathead_minnow,1
+833,John6,Seine,7/17/20,mottled_sculpin,16
+834,John6,Seine,7/17/20,rainbow_darter,4
+835,John6,Seine,7/17/20,white_sucker,22
+836,John6,Seine,5/21/21,blacknose_dace,4
+837,John6,Seine,5/21/21,brown_trout,6
+838,John6,Seine,5/21/21,mottled_sculpin,9
+839,John6,Seine,5/21/21,rainbow_darter,10
+840,John7,Seine,5/25/12,blacknose_dace,1
+841,John7,Seine,5/25/12,bluegill,18
+842,John7,Seine,5/25/12,bluntnose_minnow,12
+843,John7,Seine,5/25/12,brook_stickleback,2
+844,John7,Seine,5/25/12,brown_bullhead,1
+845,John7,Seine,5/25/12,brown_trout,2
+846,John7,Seine,5/25/12,central_mudminnow,6
+847,John7,Seine,5/25/12,central_stoneroller,9
+848,John7,Seine,5/25/12,fathead_minnow,13
+849,John7,Seine,5/25/12,golden_shiner,2
+850,John7,Seine,5/25/12,johnny_darter,12
+851,John7,Seine,5/25/12,mottled_sculpin,9
+852,John7,Seine,5/25/12,rainbow_darter,4
+853,John7,Seine,5/25/12,white_sucker,4
+854,John8,Seine,5/29/12,blacknose_dace,50
+855,John8,Seine,5/29/12,bluegill,2
+856,John8,Seine,5/29/12,central_stoneroller,5
+857,John8,Seine,5/29/12,creek_chub,7
+858,John8,Seine,5/29/12,fathead_minnow,52
+859,John8,Seine,5/29/12,mottled_sculpin,29
+860,John8,Seine,5/29/12,northern_redbelly_dace,1
+861,John8,Seine,5/29/12,pumpkinseed,1
+862,John8,Seine,5/29/12,white_sucker,1
+863,John9,Seine,5/24/12,bluegill,14
+864,John9,Seine,5/24/12,bluntnose_minnow,1
+865,John9,Seine,5/24/12,brook_stickleback,3
+866,John9,Seine,5/24/12,central_mudminnow,8
+867,John9,Seine,5/24/12,central_stoneroller,20
+868,John9,Seine,5/24/12,creek_chub,27
+869,John9,Seine,5/24/12,fathead_minnow,18
+870,John9,Seine,5/24/12,johnny_darter,30
+871,John9,Seine,5/24/12,largemouth_bass,3
+872,John9,Seine,5/24/12,mottled_sculpin,13
+873,John9,Seine,5/24/12,pumpkinseed,5
+874,John9,Seine,5/24/12,rainbow_darter,6
+875,John9,Seine,5/24/12,white_sucker,5
+876,JohnRHS,Seine,5/31/12,blacknose_dace,2
+877,JohnRHS,Seine,5/31/12,green_sunfish,1
+878,JohnRHS,Seine,5/31/12,mottled_sculpin,23
+879,JohnRHS,Seine,5/31/12,rainbow_darter,12
+880,JohnRHS,Seine,10/9/18,blacknose_dace,11
+881,JohnRHS,Seine,10/9/18,bluegill,5
+882,JohnRHS,Seine,10/9/18,bluntnose_minnow,15
+883,JohnRHS,Seine,10/9/18,central_stoneroller,2
+884,JohnRHS,Seine,10/9/18,creek_chub,12
+885,JohnRHS,Seine,10/9/18,fathead_minnow,1
+886,JohnRHS,Seine,10/9/18,golden_shiner,4
+887,JohnRHS,Seine,10/9/18,johnny_darter,6
+888,JohnRHS,Seine,10/9/18,mottled_sculpin,16
+889,JohnRHS,Seine,10/9/18,rainbow_darter,4
+890,JohnRHS,Seine,10/9/18,white_sucker,11
+891,JohnRHS,Seine,10/9/18,yellow_perch,1
+892,JohnSWD,Seine,5/25/12,blacknose_dace,4
+893,JohnSWD,Seine,5/25/12,central_mudminnow,7
+894,JohnSWD,Seine,5/25/12,fathead_minnow,1
+895,JohnSWD,Seine,5/25/12,johnny_darter,2
+896,JohnSWD,Seine,5/25/12,mottled_sculpin,10
+897,LR-1,Seine,11/23/12,blackside_darter,2
+898,LR-1,Seine,11/23/12,bluegill,6
+899,LR-1,Seine,11/23/12,central_stoneroller,6
+900,LR-1,Seine,11/23/12,creek_chub,7
+901,LR-1,Seine,11/23/12,fathead_minnow,1
+902,LR-1,Seine,11/23/12,johnny_darter,19
+903,LR-1,Seine,11/23/12,pumpkinseed,2
+904,LR-1,Seine,11/23/12,white_sucker,2
+905,LR-1,Seine,5/31/13,blackside_darter,2
+906,LR-1,Seine,5/31/13,bluegill,19
+907,LR-1,Seine,5/31/13,common_shiner,4
+908,LR-1,Seine,5/31/13,creek_chub,4
+909,LR-1,Seine,5/31/13,fathead_minnow,45
+910,LR-1,Seine,5/31/13,green_sunfish,4
+911,LR-1,Seine,5/31/13,johnny_darter,4
+912,LR-1,Seine,5/31/13,pumpkinseed,3
+913,LR-1,Seine,5/31/13,white_sucker,11
+914,LR-1,Seine,8/3/13,blackside_darter,7
+915,LR-1,Seine,8/3/13,bluegill,7
+916,LR-1,Seine,8/3/13,bluntnose_minnow,2
+917,LR-1,Seine,8/3/13,common_shiner,21
+918,LR-1,Seine,8/3/13,creek_chub,21
+919,LR-1,Seine,8/3/13,fathead_minnow,28
+920,LR-1,Seine,8/3/13,green_sunfish,4
+921,LR-1,Seine,8/3/13,johnny_darter,59
+922,LR-1,Seine,8/3/13,largemouth_bass,1
+923,LR-1,Seine,8/3/13,pumpkinseed,1
+924,LR-1,Seine,8/3/13,rock_bass,1
+925,LR-1,Seine,8/3/13,round_goby,2
+926,LR-1,Seine,8/3/13,white_sucker,6
+927,LR-1,Seine,6/14/14,blackside_darter,1
+928,LR-1,Seine,6/14/14,bluegill,3
+929,LR-1,Seine,6/14/14,common_shiner,6
+930,LR-1,Seine,6/14/14,creek_chub,13
+931,LR-1,Seine,6/14/14,fathead_minnow,17
+932,LR-1,Seine,6/14/14,johnny_darter,4
+933,LR-1,Seine,6/14/14,pumpkinseed,4
+934,LR-1,Seine,6/14/14,white_sucker,4
+935,LR-1,Seine,8/8/14,blackside_darter,3
+936,LR-1,Seine,8/8/14,central_stoneroller,4
+937,LR-1,Seine,8/8/14,common_shiner,12
+938,LR-1,Seine,8/8/14,creek_chub,3
+939,LR-1,Seine,8/8/14,fathead_minnow,11
+940,LR-1,Seine,8/8/14,green_sunfish,1
+941,LR-1,Seine,8/8/14,johnny_darter,25
+942,LR-1,Seine,8/8/14,pumpkinseed,2
+943,LR-1,Seine,8/8/14,round_goby,3
+944,LR-1,Seine,8/8/14,white_sucker,10
+945,LR-1,Seine,5/15/15,blackside_darter,14
+946,LR-1,Seine,5/15/15,bluegill,14
+947,LR-1,Seine,5/15/15,common_shiner,3
+948,LR-1,Seine,5/15/15,creek_chub,14
+949,LR-1,Seine,5/15/15,fathead_minnow,20
+950,LR-1,Seine,5/15/15,green_sunfish,2
+951,LR-1,Seine,5/15/15,johnny_darter,25
+952,LR-1,Seine,5/15/15,pumpkinseed,2
+953,LR-1,Seine,5/15/15,round_goby,1
+954,LR-1,Seine,5/15/15,white_sucker,7
+955,LR-1,Seine,5/15/15,yellow_perch,1
+956,LR-1,Seine,8/7/15,blackside_darter,14
+957,LR-1,Seine,8/7/15,bluegill,3
+958,LR-1,Seine,8/7/15,common_shiner,9
+959,LR-1,Seine,8/7/15,creek_chub,10
+960,LR-1,Seine,8/7/15,fathead_minnow,21
+961,LR-1,Seine,8/7/15,green_sunfish,10
+962,LR-1,Seine,8/7/15,johnny_darter,38
+963,LR-1,Seine,8/7/15,largemouth_bass,2
+964,LR-1,Seine,8/7/15,round_goby,12
+965,LR-1,Seine,8/7/15,white_sucker,17
+966,LR-1,Seine,5/20/16,blackside_darter,4
+967,LR-1,Seine,5/20/16,bluegill,6
+968,LR-1,Seine,5/20/16,common_shiner,6
+969,LR-1,Seine,5/20/16,creek_chub,6
+970,LR-1,Seine,5/20/16,fathead_minnow,7
+971,LR-1,Seine,5/20/16,green_sunfish,2
+972,LR-1,Seine,5/20/16,johnny_darter,7
+973,LR-1,Seine,5/20/16,pumpkinseed,3
+974,LR-1,Seine,5/20/16,round_goby,13
+975,LR-1,Seine,5/20/16,white_sucker,2
+976,LR-1,Seine,8/25/16,blackside_darter,4
+977,LR-1,Seine,8/25/16,common_shiner,20
+978,LR-1,Seine,8/25/16,creek_chub,12
+979,LR-1,Seine,8/25/16,emerald_shiner,1
+980,LR-1,Seine,8/25/16,fathead_minnow,18
+981,LR-1,Seine,8/25/16,golden_shiner,2
+982,LR-1,Seine,8/25/16,johnny_darter,11
+983,LR-1,Seine,8/25/16,round_goby,36
+984,LR-1,Seine,8/25/16,white_sucker,7
+985,LR-1,Seine,8/25/17,blacknose_dace,2
+986,LR-1,Seine,8/25/17,blackside_darter,1
+987,LR-1,Seine,8/25/17,bluegill,1
+988,LR-1,Seine,8/25/17,central_stoneroller,3
+989,LR-1,Seine,8/25/17,common_carp,1
+990,LR-1,Seine,8/25/17,common_shiner,6
+991,LR-1,Seine,8/25/17,creek_chub,10
+992,LR-1,Seine,8/25/17,fathead_minnow,12
+993,LR-1,Seine,8/25/17,green_sunfish,1
+994,LR-1,Seine,8/25/17,johnny_darter,17
+995,LR-1,Seine,8/25/17,largemouth_bass,1
+996,LR-1,Seine,8/25/17,pumpkinseed,1
+997,LR-1,Seine,8/25/17,round_goby,53
+998,LR-1,Seine,8/25/17,spotfin_shiner,1
+999,LR-1,Seine,8/25/17,white_sucker,14
+1000,LR-10,Barge Shock,7/5/22,blacknose_dace,2
+1001,LR-10,Barge Shock,7/5/22,bluegill,9
+1002,LR-10,Barge Shock,7/5/22,bluntnose_minnow,1
+1003,LR-10,Barge Shock,7/5/22,common_shiner,2
+1004,LR-10,Barge Shock,7/5/22,creek_chub,10
+1005,LR-10,Barge Shock,7/5/22,fathead_minnow,3
+1006,LR-10,Barge Shock,7/5/22,green_sunfish,21
+1007,LR-10,Barge Shock,7/5/22,northern_logperch,3
+1008,LR-10,Barge Shock,7/5/22,round_goby,15
+1009,LR-10,Barge Shock,7/5/22,white_sucker,9
+1010,LR-10,Barge Shock,7/5/22,yellow_perch,1
+1011,LR-10,Seine,11/23/12,blackside_darter,3
+1012,LR-10,Seine,11/23/12,bluntnose_minnow,1
+1013,LR-10,Seine,11/23/12,central_stoneroller,6
+1014,LR-10,Seine,11/23/12,common_shiner,1
+1015,LR-10,Seine,11/23/12,fathead_minnow,2
+1016,LR-10,Seine,11/23/12,johnny_darter,1
+1017,LR-10,Seine,11/23/12,northern_logperch,2
+1018,LR-10,Seine,11/23/12,round_goby,18
+1019,LR-10,Seine,11/23/12,smallmouth_bass,2
+1020,LR-10,Seine,11/23/12,white_sucker,1
+1021,LR-10,Seine,6/7/13,common_shiner,16
+1022,LR-10,Seine,6/7/13,creek_chub,33
+1023,LR-10,Seine,6/7/13,fathead_minnow,14
+1024,LR-10,Seine,6/7/13,northern_logperch,2
+1025,LR-10,Seine,6/7/13,round_goby,102
+1026,LR-10,Seine,6/7/13,white_sucker,2
+1027,LR-10,Seine,9/7/13,common_shiner,17
+1028,LR-10,Seine,9/7/13,creek_chub,13
+1029,LR-10,Seine,9/7/13,fathead_minnow,14
+1030,LR-10,Seine,9/7/13,rock_bass,1
+1031,LR-10,Seine,9/7/13,round_goby,54
+1032,LR-10,Seine,9/7/13,white_sucker,3
+1033,LR-10,Seine,6/27/14,blackside_darter,1
+1034,LR-10,Seine,6/27/14,bluegill,1
+1035,LR-10,Seine,6/27/14,bluntnose_minnow,1
+1036,LR-10,Seine,6/27/14,central_stoneroller,2
+1037,LR-10,Seine,6/27/14,common_shiner,2
+1038,LR-10,Seine,6/27/14,creek_chub,21
+1039,LR-10,Seine,6/27/14,fathead_minnow,16
+1040,LR-10,Seine,6/27/14,largemouth_bass,1
+1041,LR-10,Seine,6/27/14,northern_logperch,2
+1042,LR-10,Seine,6/27/14,pumpkinseed,1
+1043,LR-10,Seine,6/27/14,round_goby,74
+1044,LR-10,Seine,6/27/14,white_sucker,8
+1045,LR-10,Seine,9/20/14,blackside_darter,3
+1046,LR-10,Seine,9/20/14,common_shiner,7
+1047,LR-10,Seine,9/20/14,creek_chub,16
+1048,LR-10,Seine,9/20/14,fathead_minnow,5
+1049,LR-10,Seine,9/20/14,johnny_darter,4
+1050,LR-10,Seine,9/20/14,round_goby,9
+1051,LR-10,Seine,9/20/14,white_sucker,1
+1052,LR-10,Seine,5/1/15,blacknose_dace,2
+1053,LR-10,Seine,5/1/15,blackside_darter,1
+1054,LR-10,Seine,5/1/15,bluegill,2
+1055,LR-10,Seine,5/1/15,central_stoneroller,4
+1056,LR-10,Seine,5/1/15,common_shiner,1
+1057,LR-10,Seine,5/1/15,creek_chub,9
+1058,LR-10,Seine,5/1/15,fathead_minnow,15
+1059,LR-10,Seine,5/1/15,johnny_darter,1
+1060,LR-10,Seine,5/1/15,rock_bass,1
+1061,LR-10,Seine,5/1/15,round_goby,5
+1062,LR-10,Seine,5/1/15,white_sucker,3
+1063,LR-10,Seine,8/22/15,bluegill,2
+1064,LR-10,Seine,8/22/15,common_shiner,7
+1065,LR-10,Seine,8/22/15,creek_chub,12
+1066,LR-10,Seine,8/22/15,fathead_minnow,13
+1067,LR-10,Seine,8/22/15,green_sunfish,1
+1068,LR-10,Seine,8/22/15,pumpkinseed,2
+1069,LR-10,Seine,8/22/15,round_goby,36
+1070,LR-10,Seine,8/22/15,white_sucker,11
+1071,LR-10,Seine,6/3/16,bluegill,2
+1072,LR-10,Seine,6/3/16,common_shiner,4
+1073,LR-10,Seine,6/3/16,creek_chub,4
+1074,LR-10,Seine,6/3/16,fathead_minnow,10
+1075,LR-10,Seine,6/3/16,green_sunfish,1
+1076,LR-10,Seine,6/3/16,pumpkinseed,1
+1077,LR-10,Seine,6/3/16,rainbow_trout,2
+1078,LR-10,Seine,6/3/16,round_goby,3
+1079,LR-10,Seine,6/3/16,white_sucker,10
+1080,LR-10,Seine,8/26/16,blackside_darter,2
+1081,LR-10,Seine,8/26/16,bluegill,6
+1082,LR-10,Seine,8/26/16,common_shiner,12
+1083,LR-10,Seine,8/26/16,creek_chub,5
+1084,LR-10,Seine,8/26/16,emerald_shiner,5
+1085,LR-10,Seine,8/26/16,fathead_minnow,25
+1086,LR-10,Seine,8/26/16,gizzard_shad,3
+1087,LR-10,Seine,8/26/16,johnny_darter,1
+1088,LR-10,Seine,8/26/16,round_goby,123
+1089,LR-10,Seine,8/26/16,smallmouth_bass,1
+1090,LR-10,Seine,8/26/16,white_sucker,20
+1091,LR-10,Seine,5/3/17,blackside_darter,1
+1092,LR-10,Seine,5/3/17,bluegill,3
+1093,LR-10,Seine,5/3/17,common_shiner,1
+1094,LR-10,Seine,5/3/17,creek_chub,11
+1095,LR-10,Seine,5/3/17,emerald_shiner,1
+1096,LR-10,Seine,5/3/17,fathead_minnow,19
+1097,LR-10,Seine,5/3/17,largemouth_bass,2
+1098,LR-10,Seine,5/3/17,pumpkinseed,2
+1099,LR-10,Seine,5/3/17,round_goby,11
+1100,LR-10,Seine,5/3/17,white_sucker,9
+1101,LR-10,Seine,5/3/17,yellow_perch,1
+1102,LR-10,Seine,9/9/17,blacknose_dace,1
+1103,LR-10,Seine,9/9/17,blackside_darter,1
+1104,LR-10,Seine,9/9/17,common_shiner,18
+1105,LR-10,Seine,9/9/17,creek_chub,20
+1106,LR-10,Seine,9/9/17,emerald_shiner,10
+1107,LR-10,Seine,9/9/17,fathead_minnow,21
+1108,LR-10,Seine,9/9/17,gizzard_shad,14
+1109,LR-10,Seine,9/9/17,green_sunfish,1
+1110,LR-10,Seine,9/9/17,johnny_darter,1
+1111,LR-10,Seine,9/9/17,mimic_shiner,4
+1112,LR-10,Seine,9/9/17,northern_logperch,6
+1113,LR-10,Seine,9/9/17,round_goby,129
+1114,LR-10,Seine,9/9/17,spotfin_shiner,2
+1115,LR-10,Seine,9/9/17,white_sucker,9
+1116,LR-10,Seine,5/29/18,blacknose_dace,1
+1117,LR-10,Seine,5/29/18,blackside_darter,5
+1118,LR-10,Seine,5/29/18,bluegill,2
+1119,LR-10,Seine,5/29/18,central_stoneroller,1
+1120,LR-10,Seine,5/29/18,common_shiner,8
+1121,LR-10,Seine,5/29/18,creek_chub,12
+1122,LR-10,Seine,5/29/18,emerald_shiner,3
+1123,LR-10,Seine,5/29/18,fathead_minnow,18
+1124,LR-10,Seine,5/29/18,green_sunfish,2
+1125,LR-10,Seine,5/29/18,northern_logperch,5
+1126,LR-10,Seine,5/29/18,pumpkinseed,1
+1127,LR-10,Seine,5/29/18,round_goby,53
+1128,LR-10,Seine,5/29/18,white_sucker,3
+1129,LR-10,Seine,5/29/18,yellow_perch,1
+1130,LR-10,Seine,9/14/18,blacknose_dace,1
+1131,LR-10,Seine,9/14/18,blackside_darter,1
+1132,LR-10,Seine,9/14/18,central_stoneroller,1
+1133,LR-10,Seine,9/14/18,common_shiner,13
+1134,LR-10,Seine,9/14/18,creek_chub,11
+1135,LR-10,Seine,9/14/18,emerald_shiner,3
+1136,LR-10,Seine,9/14/18,fathead_minnow,4
+1137,LR-10,Seine,9/14/18,gizzard_shad,2
+1138,LR-10,Seine,9/14/18,largemouth_bass,1
+1139,LR-10,Seine,9/14/18,mimic_shiner,21
+1140,LR-10,Seine,9/14/18,pumpkinseed,2
+1141,LR-10,Seine,9/14/18,round_goby,110
+1142,LR-10,Seine,9/14/18,spotfin_shiner,13
+1143,LR-10,Seine,9/14/18,white_sucker,6
+1144,LR-10,Seine,9/14/18,yellow_perch,1
+1145,LR-10,Seine,8/24/19,blackside_darter,4
+1146,LR-10,Seine,8/24/19,common_shiner,9
+1147,LR-10,Seine,8/24/19,creek_chub,22
+1148,LR-10,Seine,8/24/19,fathead_minnow,10
+1149,LR-10,Seine,8/24/19,gizzard_shad,2
+1150,LR-10,Seine,8/24/19,northern_logperch,17
+1151,LR-10,Seine,8/24/19,pumpkinseed,1
+1152,LR-10,Seine,8/24/19,round_goby,170
+1153,LR-10,Seine,8/24/19,sunfish_hybrid,1
+1154,LR-10,Seine,8/24/19,white_sucker,6
+1155,LR-10,Seine,8/24/19,yellow_perch,1
+1156,LR-10,Seine,8/21/20,blacknose_dace,2
+1157,LR-10,Seine,8/21/20,blackside_darter,11
+1158,LR-10,Seine,8/21/20,bluegill,9
+1159,LR-10,Seine,8/21/20,bluntnose_minnow,1
+1160,LR-10,Seine,8/21/20,common_shiner,9
+1161,LR-10,Seine,8/21/20,creek_chub,4
+1162,LR-10,Seine,8/21/20,fathead_minnow,5
+1163,LR-10,Seine,8/21/20,green_sunfish,1
+1164,LR-10,Seine,8/21/20,northern_logperch,20
+1165,LR-10,Seine,8/21/20,pumpkinseed,1
+1166,LR-10,Seine,8/21/20,round_goby,67
+1167,LR-10,Seine,8/21/20,white_sucker,4
+1168,LR-10,Seine,9/3/21,bluegill,1
+1169,LR-10,Seine,9/3/21,common_shiner,6
+1170,LR-10,Seine,9/3/21,creek_chub,10
+1171,LR-10,Seine,9/3/21,fathead_minnow,4
+1172,LR-10,Seine,9/3/21,green_sunfish,1
+1173,LR-10,Seine,9/3/21,johnny_darter,1
+1174,LR-10,Seine,9/3/21,northern_logperch,4
+1175,LR-10,Seine,9/3/21,round_goby,29
+1176,LR-10,Seine,9/3/21,white_sucker,1
+1177,LR-10,Seine,7/5/22,blackside_darter,1
+1178,LR-10,Seine,7/5/22,bluegill,2
+1179,LR-10,Seine,7/5/22,creek_chub,1
+1180,LR-10,Seine,7/5/22,northern_logperch,2
+1181,LR-10,Seine,7/5/22,round_goby,20
+1182,LR-11,Seine,6/21/13,bluegill,1
+1183,LR-11,Seine,6/21/13,bluntnose_minnow,1
+1184,LR-11,Seine,6/21/13,central_stoneroller,1
+1185,LR-11,Seine,6/21/13,common_shiner,1
+1186,LR-11,Seine,6/21/13,creek_chub,2
+1187,LR-11,Seine,6/21/13,emerald_shiner,10
+1188,LR-11,Seine,6/21/13,fathead_minnow,13
+1189,LR-11,Seine,6/21/13,johnny_darter,1
+1190,LR-11,Seine,6/21/13,largemouth_bass,2
+1191,LR-11,Seine,6/21/13,round_goby,46
+1192,LR-11,Seine,6/21/13,white_sucker,2
+1193,LR-11A,Barge Shock,7/5/22,blackside_darter,1
+1194,LR-11A,Barge Shock,7/5/22,bluntnose_minnow,1
+1195,LR-11A,Barge Shock,7/5/22,common_carp,3
+1196,LR-11A,Barge Shock,7/5/22,creek_chub,1
+1197,LR-11A,Barge Shock,7/5/22,emerald_shiner,2
+1198,LR-11A,Barge Shock,7/5/22,fathead_minnow,1
+1199,LR-11A,Barge Shock,7/5/22,northern_logperch,2
+1200,LR-11A,Barge Shock,7/5/22,pumpkinseed,1
+1201,LR-11A,Barge Shock,7/5/22,rock_bass,1
+1202,LR-11A,Barge Shock,7/5/22,round_goby,7
+1203,LR-11A,Barge Shock,7/5/22,shorhead_redhorse,1
+1204,LR-11A,Barge Shock,7/5/22,smallmouth_bass,1
+1205,LR-11A,Barge Shock,7/5/22,white_sucker,2
+1206,LR-11A,Barge Shock,7/5/22,yellow_perch,5
+1207,LR-11A,Seine,6/27/14,black_crappie,1
+1208,LR-11A,Seine,6/27/14,blacknose_shiner,1
+1209,LR-11A,Seine,6/27/14,common_shiner,13
+1210,LR-11A,Seine,6/27/14,creek_chub,5
+1211,LR-11A,Seine,6/27/14,emerald_shiner,38
+1212,LR-11A,Seine,6/27/14,fathead_minnow,8
+1213,LR-11A,Seine,6/27/14,golden_shiner,1
+1214,LR-11A,Seine,6/27/14,johnny_darter,1
+1215,LR-11A,Seine,6/27/14,largemouth_bass,6
+1216,LR-11A,Seine,6/27/14,northern_logperch,1
+1217,LR-11A,Seine,6/27/14,round_goby,18
+1218,LR-11A,Seine,6/27/14,white_sucker,2
+1219,LR-11A,Seine,9/20/14,blackside_darter,2
+1220,LR-11A,Seine,9/20/14,bluntnose_minnow,6
+1221,LR-11A,Seine,9/20/14,common_shiner,3
+1222,LR-11A,Seine,9/20/14,emerald_shiner,12
+1223,LR-11A,Seine,9/20/14,fathead_minnow,57
+1224,LR-11A,Seine,9/20/14,johnny_darter,8
+1225,LR-11A,Seine,9/20/14,mosquito_fish,11
+1226,LR-11A,Seine,9/20/14,pumpkinseed,1
+1227,LR-11A,Seine,9/20/14,round_goby,32
+1228,LR-11A,Seine,9/20/14,smallmouth_bass,1
+1229,LR-11A,Seine,9/20/14,white_sucker,3
+1230,LR-11A,Seine,5/1/15,blacknose_shiner,1
+1231,LR-11A,Seine,5/1/15,blackside_darter,1
+1232,LR-11A,Seine,5/1/15,bluntnose_minnow,8
+1233,LR-11A,Seine,5/1/15,common_shiner,14
+1234,LR-11A,Seine,5/1/15,emerald_shiner,281
+1235,LR-11A,Seine,5/1/15,fathead_minnow,15
+1236,LR-11A,Seine,5/1/15,goldfish,1
+1237,LR-11A,Seine,5/1/15,johnny_darter,1
+1238,LR-11A,Seine,5/1/15,northern_logperch,1
+1239,LR-11A,Seine,5/1/15,round_goby,23
+1240,LR-11A,Seine,5/1/15,spottail_shiner,3
+1241,LR-11A,Seine,5/1/15,white_sucker,2
+1242,LR-11A,Seine,5/1/15,yellow_perch,2
+1243,LR-11A,Seine,8/22/15,brook_silverside,2
+1244,LR-11A,Seine,8/22/15,common_carp,1
+1245,LR-11A,Seine,8/22/15,creek_chub,2
+1246,LR-11A,Seine,8/22/15,emerald_shiner,25
+1247,LR-11A,Seine,8/22/15,fathead_minnow,53
+1248,LR-11A,Seine,8/22/15,largemouth_bass,1
+1249,LR-11A,Seine,8/22/15,round_goby,4
+1250,LR-11A,Seine,8/22/15,white_sucker,16
+1251,LR-11A,Seine,6/3/16,blackside_darter,1
+1252,LR-11A,Seine,6/3/16,bluegill,1
+1253,LR-11A,Seine,6/3/16,bluntnose_minnow,4
+1254,LR-11A,Seine,6/3/16,common_shiner,1
+1255,LR-11A,Seine,6/3/16,emerald_shiner,39
+1256,LR-11A,Seine,6/3/16,fathead_minnow,50
+1257,LR-11A,Seine,6/3/16,golden_redhorse,2
+1258,LR-11A,Seine,6/3/16,johnny_darter,3
+1259,LR-11A,Seine,6/3/16,northern_logperch,5
+1260,LR-11A,Seine,6/3/16,round_goby,58
+1261,LR-11A,Seine,6/3/16,white_sucker,8
+1262,LR-11A,Seine,6/3/16,yellow_perch,13
+1263,LR-11A,Seine,8/26/16,bluegill,3
+1264,LR-11A,Seine,8/26/16,brook_silverside,19
+1265,LR-11A,Seine,8/26/16,common_carp,1
+1266,LR-11A,Seine,8/26/16,common_shiner,3
+1267,LR-11A,Seine,8/26/16,creek_chub,1
+1268,LR-11A,Seine,8/26/16,emerald_shiner,17
+1269,LR-11A,Seine,8/26/16,fathead_minnow,126
+1270,LR-11A,Seine,8/26/16,gizzard_shad,4
+1271,LR-11A,Seine,8/26/16,johnny_darter,3
+1272,LR-11A,Seine,8/26/16,mosquito_fish,83
+1273,LR-11A,Seine,8/26/16,northern_logperch,2
+1274,LR-11A,Seine,8/26/16,round_goby,46
+1275,LR-11A,Seine,8/26/16,smallmouth_bass,1
+1276,LR-11A,Seine,8/26/16,spotfin_shiner,2
+1277,LR-11A,Seine,8/26/16,sunfish_hybrid,1
+1278,LR-11A,Seine,5/31/17,blackside_darter,1
+1279,LR-11A,Seine,5/31/17,bluntnose_minnow,6
+1280,LR-11A,Seine,5/31/17,brook_silverside,4
+1281,LR-11A,Seine,5/31/17,common_shiner,2
+1282,LR-11A,Seine,5/31/17,creek_chub,5
+1283,LR-11A,Seine,5/31/17,emerald_shiner,41
+1284,LR-11A,Seine,5/31/17,fathead_minnow,18
+1285,LR-11A,Seine,5/31/17,golden_shiner,1
+1286,LR-11A,Seine,5/31/17,mimic_shiner,1
+1287,LR-11A,Seine,5/31/17,northern_logperch,1
+1288,LR-11A,Seine,5/31/17,round_goby,32
+1289,LR-11A,Seine,5/31/17,yellow_perch,3
+1290,LR-11A,Seine,9/9/17,blacknose_dace,1
+1291,LR-11A,Seine,9/9/17,bluntnose_minnow,2
+1292,LR-11A,Seine,9/9/17,brook_silverside,19
+1293,LR-11A,Seine,9/9/17,common_shiner,5
+1294,LR-11A,Seine,9/9/17,creek_chub,15
+1295,LR-11A,Seine,9/9/17,emerald_shiner,479
+1296,LR-11A,Seine,9/9/17,fathead_minnow,23
+1297,LR-11A,Seine,9/9/17,johnny_darter,3
+1298,LR-11A,Seine,9/9/17,mimic_shiner,6
+1299,LR-11A,Seine,9/9/17,mosquito_fish,21
+1300,LR-11A,Seine,9/9/17,northern_logperch,1
+1301,LR-11A,Seine,9/9/17,round_goby,27
+1302,LR-11A,Seine,9/9/17,white_sucker,12
+1303,LR-11A,Seine,5/29/18,blacknose_shiner,1
+1304,LR-11A,Seine,5/29/18,bluegill,1
+1305,LR-11A,Seine,5/29/18,bluntnose_minnow,9
+1306,LR-11A,Seine,5/29/18,common_shiner,3
+1307,LR-11A,Seine,5/29/18,creek_chub,3
+1308,LR-11A,Seine,5/29/18,emerald_shiner,141
+1309,LR-11A,Seine,5/29/18,fathead_minnow,22
+1310,LR-11A,Seine,5/29/18,johnny_darter,4
+1311,LR-11A,Seine,5/29/18,northern_logperch,4
+1312,LR-11A,Seine,5/29/18,round_goby,35
+1313,LR-11A,Seine,5/29/18,threespine_stickleback,1
+1314,LR-11A,Seine,5/29/18,yellow_perch,8
+1315,LR-11A,Seine,9/14/18,bluntnose_minnow,7
+1316,LR-11A,Seine,9/14/18,brook_silverside,5
+1317,LR-11A,Seine,9/14/18,common_shiner,13
+1318,LR-11A,Seine,9/14/18,creek_chub,4
+1319,LR-11A,Seine,9/14/18,emerald_shiner,26
+1320,LR-11A,Seine,9/14/18,fathead_minnow,9
+1321,LR-11A,Seine,9/14/18,johnny_darter,8
+1322,LR-11A,Seine,9/14/18,largemouth_bass,6
+1323,LR-11A,Seine,9/14/18,mimic_shiner,42
+1324,LR-11A,Seine,9/14/18,northern_logperch,3
+1325,LR-11A,Seine,9/14/18,round_goby,87
+1326,LR-11A,Seine,9/14/18,smallmouth_bass,1
+1327,LR-11A,Seine,9/14/18,spotfin_shiner,10
+1328,LR-11A,Seine,9/14/18,white_sucker,3
+1329,LR-11A,Seine,8/24/19,blackside_darter,4
+1330,LR-11A,Seine,8/24/19,bluntnose_minnow,18
+1331,LR-11A,Seine,8/24/19,brook_silverside,14
+1332,LR-11A,Seine,8/24/19,common_shiner,9
+1333,LR-11A,Seine,8/24/19,creek_chub,5
+1334,LR-11A,Seine,8/24/19,emerald_shiner,80
+1335,LR-11A,Seine,8/24/19,fathead_minnow,69
+1336,LR-11A,Seine,8/24/19,johnny_darter,8
+1337,LR-11A,Seine,8/24/19,northern_logperch,7
+1338,LR-11A,Seine,8/24/19,pumpkinseed,1
+1339,LR-11A,Seine,8/24/19,round_goby,135
+1340,LR-11A,Seine,8/24/19,white_sucker,1
+1341,LR-11A,Seine,8/24/19,yellow_perch,3
+1342,LR-11A,Seine,8/21/20,blackside_darter,1
+1343,LR-11A,Seine,8/21/20,bluegill,3
+1344,LR-11A,Seine,8/21/20,bluntnose_minnow,1
+1345,LR-11A,Seine,8/21/20,brook_silverside,8
+1346,LR-11A,Seine,8/21/20,common_shiner,3
+1347,LR-11A,Seine,8/21/20,emerald_shiner,62
+1348,LR-11A,Seine,8/21/20,fathead_minnow,4
+1349,LR-11A,Seine,8/21/20,golden_shiner,2
+1350,LR-11A,Seine,8/21/20,johnny_darter,1
+1351,LR-11A,Seine,8/21/20,northern_logperch,8
+1352,LR-11A,Seine,8/21/20,round_goby,82
+1353,LR-11A,Seine,8/21/20,spotfin_shiner,10
+1354,LR-11A,Seine,8/21/20,white_sucker,1
+1355,LR-11A,Seine,8/21/20,yellow_perch,1
+1356,LR-11A,Seine,9/3/21,blackside_darter,1
+1357,LR-11A,Seine,9/3/21,bluegill,2
+1358,LR-11A,Seine,9/3/21,bluntnose_minnow,3
+1359,LR-11A,Seine,9/3/21,brook_silverside,49
+1360,LR-11A,Seine,9/3/21,common_shiner,3
+1361,LR-11A,Seine,9/3/21,creek_chub,2
+1362,LR-11A,Seine,9/3/21,emerald_shiner,9
+1363,LR-11A,Seine,9/3/21,fathead_minnow,1
+1364,LR-11A,Seine,9/3/21,mimic_shiner,5
+1365,LR-11A,Seine,9/3/21,rock_bass,1
+1366,LR-11A,Seine,9/3/21,round_goby,28
+1367,LR-11A,Seine,9/3/21,spotfin_shiner,2
+1368,LR-11A,Seine,7/5/22,emerald_shiner,4
+1369,LR-11A,Seine,7/5/22,green_sunfish,1
+1370,LR-11A,Seine,7/5/22,largemouth_bass,2
+1371,LR-11A,Seine,7/5/22,northern_logperch,6
+1372,LR-11A,Seine,7/5/22,rock_bass,1
+1373,LR-11A,Seine,7/5/22,round_goby,19
+1374,LR-11A,Seine,7/5/22,white_sucker,3
+1375,LR-11A,Seine,7/5/22,yellow_perch,2
+1376,LR-12,Barge Shock,7/20/22,blacknose_dace,15
+1377,LR-12,Barge Shock,7/20/22,blackside_darter,3
+1378,LR-12,Barge Shock,7/20/22,bluegill,19
+1379,LR-12,Barge Shock,7/20/22,central_mudminnow,4
+1380,LR-12,Barge Shock,7/20/22,creek_chub,14
+1381,LR-12,Barge Shock,7/20/22,fathead_minnow,1
+1382,LR-12,Barge Shock,7/20/22,green_sunfish,18
+1383,LR-12,Barge Shock,7/20/22,johnny_darter,1
+1384,LR-12,Barge Shock,7/20/22,largemouth_bass,1
+1385,LR-12,Barge Shock,7/20/22,northern_hog_sucker,8
+1386,LR-12,Barge Shock,7/20/22,northern_logperch,5
+1387,LR-12,Barge Shock,7/20/22,pumpkinseed,1
+1388,LR-12,Barge Shock,7/20/22,round_goby,39
+1389,LR-12,Barge Shock,7/20/22,white_sucker,10
+1390,LR-12,Barge Shock,7/20/22,yellow_perch,1
+1391,LR-12,Seine,5/31/13,black_crappie,0
+1392,LR-12,Seine,5/31/13,blacknose_dace,2
+1393,LR-12,Seine,5/31/13,blackside_darter,2
+1394,LR-12,Seine,5/31/13,bluegill,4
+1395,LR-12,Seine,5/31/13,bluntnose_minnow,4
+1396,LR-12,Seine,5/31/13,central_stoneroller,2
+1397,LR-12,Seine,5/31/13,common_carp,1
+1398,LR-12,Seine,5/31/13,common_shiner,8
+1399,LR-12,Seine,5/31/13,creek_chub,25
+1400,LR-12,Seine,5/31/13,fathead_minnow,110
+1401,LR-12,Seine,5/31/13,green_sunfish,9
+1402,LR-12,Seine,5/31/13,johnny_darter,25
+1403,LR-12,Seine,5/31/13,pumpkinseed,6
+1404,LR-12,Seine,5/31/13,rainbow_trout,1
+1405,LR-12,Seine,5/31/13,rock_bass,1
+1406,LR-12,Seine,5/31/13,white_sucker,11
+1407,LR-12,Seine,8/9/13,blacknose_dace,10
+1408,LR-12,Seine,8/9/13,blackside_darter,9
+1409,LR-12,Seine,8/9/13,bluegill,10
+1410,LR-12,Seine,8/9/13,central_stoneroller,4
+1411,LR-12,Seine,8/9/13,common_shiner,14
+1412,LR-12,Seine,8/9/13,creek_chub,13
+1413,LR-12,Seine,8/9/13,fathead_minnow,29
+1414,LR-12,Seine,8/9/13,green_sunfish,9
+1415,LR-12,Seine,8/9/13,johnny_darter,112
+1416,LR-12,Seine,8/9/13,largemouth_bass,1
+1417,LR-12,Seine,8/9/13,northern_hog_sucker,7
+1418,LR-12,Seine,8/9/13,northern_pike,1
+1419,LR-12,Seine,8/9/13,pumpkinseed,2
+1420,LR-12,Seine,8/9/13,rainbow_trout,1
+1421,LR-12,Seine,8/9/13,round_goby,2
+1422,LR-12,Seine,8/9/13,white_sucker,31
+1423,LR-12,Seine,5/10/14,blacknose_dace,15
+1424,LR-12,Seine,5/10/14,blackside_darter,4
+1425,LR-12,Seine,5/10/14,bluegill,1
+1426,LR-12,Seine,5/10/14,central_stoneroller,4
+1427,LR-12,Seine,5/10/14,creek_chub,5
+1428,LR-12,Seine,5/10/14,fathead_minnow,11
+1429,LR-12,Seine,5/10/14,johnny_darter,4
+1430,LR-12,Seine,5/10/14,pumpkinseed,2
+1431,LR-12,Seine,5/10/14,white_sucker,2
+1432,LR-12,Seine,7/11/14,blacknose_dace,2
+1433,LR-12,Seine,7/11/14,blackside_darter,2
+1434,LR-12,Seine,7/11/14,bluegill,3
+1435,LR-12,Seine,7/11/14,central_stoneroller,8
+1436,LR-12,Seine,7/11/14,common_shiner,3
+1437,LR-12,Seine,7/11/14,creek_chub,4
+1438,LR-12,Seine,7/11/14,fathead_minnow,11
+1439,LR-12,Seine,7/11/14,green_sunfish,1
+1440,LR-12,Seine,7/11/14,johnny_darter,16
+1441,LR-12,Seine,7/11/14,largemouth_bass,1
+1442,LR-12,Seine,7/11/14,northern_hog_sucker,2
+1443,LR-12,Seine,7/11/14,white_sucker,9
+1444,LR-12,Seine,8/9/14,bluegill,1
+1445,LR-12,Seine,8/9/14,central_stoneroller,2
+1446,LR-12,Seine,8/9/14,common_carp,1
+1447,LR-12,Seine,8/9/14,common_shiner,5
+1448,LR-12,Seine,8/9/14,creek_chub,3
+1449,LR-12,Seine,8/9/14,fathead_minnow,3
+1450,LR-12,Seine,8/9/14,green_sunfish,1
+1451,LR-12,Seine,8/9/14,johnny_darter,15
+1452,LR-12,Seine,8/9/14,largemouth_bass,2
+1453,LR-12,Seine,8/9/14,pumpkinseed,1
+1454,LR-12,Seine,8/9/14,white_sucker,10
+1455,LR-12,Seine,5/29/15,blacknose_dace,12
+1456,LR-12,Seine,5/29/15,blackside_darter,8
+1457,LR-12,Seine,5/29/15,bluegill,5
+1458,LR-12,Seine,5/29/15,brook_stickleback,1
+1459,LR-12,Seine,5/29/15,central_mudminnow,4
+1460,LR-12,Seine,5/29/15,central_stoneroller,4
+1461,LR-12,Seine,5/29/15,common_shiner,9
+1462,LR-12,Seine,5/29/15,creek_chub,11
+1463,LR-12,Seine,5/29/15,fathead_minnow,26
+1464,LR-12,Seine,5/29/15,green_sunfish,3
+1465,LR-12,Seine,5/29/15,johnny_darter,17
+1466,LR-12,Seine,5/29/15,northern_hog_sucker,1
+1467,LR-12,Seine,5/29/15,round_goby,6
+1468,LR-12,Seine,5/29/15,sunfish_hybrid,1
+1469,LR-12,Seine,5/29/15,white_sucker,8
+1470,LR-12,Seine,8/14/15,blacknose_dace,5
+1471,LR-12,Seine,8/14/15,blackside_darter,1
+1472,LR-12,Seine,8/14/15,bluntnose_minnow,1
+1473,LR-12,Seine,8/14/15,central_mudminnow,2
+1474,LR-12,Seine,8/14/15,central_stoneroller,4
+1475,LR-12,Seine,8/14/15,common_shiner,5
+1476,LR-12,Seine,8/14/15,fathead_minnow,30
+1477,LR-12,Seine,8/14/15,green_sunfish,5
+1478,LR-12,Seine,8/14/15,johnny_darter,30
+1479,LR-12,Seine,8/14/15,northern_hog_sucker,1
+1480,LR-12,Seine,8/14/15,pumpkinseed,3
+1481,LR-12,Seine,8/14/15,rainbow_trout,1
+1482,LR-12,Seine,8/14/15,round_goby,5
+1483,LR-12,Seine,8/14/15,white_sucker,31
+1484,LR-12,Seine,9/12/15,blacknose_dace,9
+1485,LR-12,Seine,9/12/15,blackside_darter,4
+1486,LR-12,Seine,9/12/15,bluegill,7
+1487,LR-12,Seine,9/12/15,central_stoneroller,3
+1488,LR-12,Seine,9/12/15,common_shiner,2
+1489,LR-12,Seine,9/12/15,creek_chub,6
+1490,LR-12,Seine,9/12/15,emerald_shiner,1
+1491,LR-12,Seine,9/12/15,fathead_minnow,19
+1492,LR-12,Seine,9/12/15,green_sunfish,3
+1493,LR-12,Seine,9/12/15,johnny_darter,94
+1494,LR-12,Seine,9/12/15,northern_hog_sucker,1
+1495,LR-12,Seine,9/12/15,pumpkinseed,4
+1496,LR-12,Seine,9/12/15,rainbow_trout,2
+1497,LR-12,Seine,9/12/15,round_goby,87
+1498,LR-12,Seine,9/12/15,white_sucker,43
+1499,LR-12,Seine,5/19/16,black_crappie,1
+1500,LR-12,Seine,5/19/16,blacknose_dace,4
+1501,LR-12,Seine,5/19/16,blackside_darter,12
+1502,LR-12,Seine,5/19/16,bluegill,4
+1503,LR-12,Seine,5/19/16,central_mudminnow,1
+1504,LR-12,Seine,5/19/16,central_stoneroller,13
+1505,LR-12,Seine,5/19/16,common_shiner,7
+1506,LR-12,Seine,5/19/16,creek_chub,6
+1507,LR-12,Seine,5/19/16,fathead_minnow,19
+1508,LR-12,Seine,5/19/16,green_sunfish,11
+1509,LR-12,Seine,5/19/16,johnny_darter,24
+1510,LR-12,Seine,5/19/16,pumpkinseed,2
+1511,LR-12,Seine,5/19/16,round_goby,36
+1512,LR-12,Seine,5/19/16,sunfish_hybrid,2
+1513,LR-12,Seine,5/19/16,white_sucker,4
+1514,LR-12,Seine,8/13/16,blacknose_dace,1
+1515,LR-12,Seine,8/13/16,bluegill,2
+1516,LR-12,Seine,8/13/16,central_stoneroller,1
+1517,LR-12,Seine,8/13/16,common_shiner,2
+1518,LR-12,Seine,8/13/16,creek_chub,6
+1519,LR-12,Seine,8/13/16,emerald_shiner,2
+1520,LR-12,Seine,8/13/16,fathead_minnow,32
+1521,LR-12,Seine,8/13/16,green_sunfish,5
+1522,LR-12,Seine,8/13/16,johnny_darter,9
+1523,LR-12,Seine,8/13/16,northern_hog_sucker,1
+1524,LR-12,Seine,8/13/16,round_goby,44
+1525,LR-12,Seine,8/13/16,sunfish_hybrid,1
+1526,LR-12,Seine,8/13/16,white_sucker,5
+1527,LR-12,Seine,5/3/17,blacknose_dace,4
+1528,LR-12,Seine,5/3/17,blackside_darter,2
+1529,LR-12,Seine,5/3/17,bluegill,1
+1530,LR-12,Seine,5/3/17,common_shiner,8
+1531,LR-12,Seine,5/3/17,creek_chub,7
+1532,LR-12,Seine,5/3/17,fathead_minnow,41
+1533,LR-12,Seine,5/3/17,johnny_darter,12
+1534,LR-12,Seine,5/3/17,northern_hog_sucker,1
+1535,LR-12,Seine,5/3/17,round_goby,62
+1536,LR-12,Seine,5/3/17,white_sucker,4
+1537,LR-12,Seine,8/12/17,blacknose_dace,1
+1538,LR-12,Seine,8/12/17,blackside_darter,1
+1539,LR-12,Seine,8/12/17,common_carp,1
+1540,LR-12,Seine,8/12/17,common_shiner,4
+1541,LR-12,Seine,8/12/17,creek_chub,4
+1542,LR-12,Seine,8/12/17,emerald_shiner,2
+1543,LR-12,Seine,8/12/17,fathead_minnow,21
+1544,LR-12,Seine,8/12/17,green_sunfish,2
+1545,LR-12,Seine,8/12/17,johnny_darter,12
+1546,LR-12,Seine,8/12/17,rainbow_trout,1
+1547,LR-12,Seine,8/12/17,round_goby,108
+1548,LR-12,Seine,8/12/17,white_sucker,15
+1549,LR-12,Seine,9/14/18,blacknose_dace,14
+1550,LR-12,Seine,9/14/18,bluegill,1
+1551,LR-12,Seine,9/14/18,bluntnose_minnow,1
+1552,LR-12,Seine,9/14/18,common_shiner,4
+1553,LR-12,Seine,9/14/18,creek_chub,8
+1554,LR-12,Seine,9/14/18,fathead_minnow,29
+1555,LR-12,Seine,9/14/18,green_sunfish,2
+1556,LR-12,Seine,9/14/18,johnny_darter,7
+1557,LR-12,Seine,9/14/18,mimic_shiner,5
+1558,LR-12,Seine,9/14/18,northern_hog_sucker,2
+1559,LR-12,Seine,9/14/18,round_goby,60
+1560,LR-12,Seine,9/14/18,white_sucker,4
+1561,LR-12,Seine,8/23/19,blacknose_dace,6
+1562,LR-12,Seine,8/23/19,bluegill,3
+1563,LR-12,Seine,8/23/19,central_stoneroller,4
+1564,LR-12,Seine,8/23/19,common_shiner,4
+1565,LR-12,Seine,8/23/19,creek_chub,5
+1566,LR-12,Seine,8/23/19,fathead_minnow,19
+1567,LR-12,Seine,8/23/19,green_sunfish,1
+1568,LR-12,Seine,8/23/19,johnny_darter,34
+1569,LR-12,Seine,8/23/19,northern_logperch,1
+1570,LR-12,Seine,8/23/19,rainbow_trout,2
+1571,LR-12,Seine,8/23/19,rock_bass,72
+1572,LR-12,Seine,8/23/19,white_sucker,2
+1573,LR-12,Seine,8/20/20,blacknose_dace,2
+1574,LR-12,Seine,8/20/20,bluegill,1
+1575,LR-12,Seine,8/20/20,common_shiner,4
+1576,LR-12,Seine,8/20/20,creek_chub,7
+1577,LR-12,Seine,8/20/20,fathead_minnow,30
+1578,LR-12,Seine,8/20/20,green_sunfish,4
+1579,LR-12,Seine,8/20/20,johnny_darter,8
+1580,LR-12,Seine,8/20/20,largemouth_bass,1
+1581,LR-12,Seine,8/20/20,northern_hog_sucker,1
+1582,LR-12,Seine,8/20/20,pumpkinseed,1
+1583,LR-12,Seine,8/20/20,rainbow_trout,3
+1584,LR-12,Seine,8/20/20,round_goby,55
+1585,LR-12,Seine,8/20/20,white_sucker,5
+1586,LR-12,Seine,8/20/20,yellow_perch,1
+1587,LR-12,Seine,9/2/21,blacknose_dace,1
+1588,LR-12,Seine,9/2/21,blackside_darter,1
+1589,LR-12,Seine,9/2/21,bluegill,8
+1590,LR-12,Seine,9/2/21,common_shiner,2
+1591,LR-12,Seine,9/2/21,creek_chub,7
+1592,LR-12,Seine,9/2/21,fathead_minnow,15
+1593,LR-12,Seine,9/2/21,green_sunfish,1
+1594,LR-12,Seine,9/2/21,johnny_darter,7
+1595,LR-12,Seine,9/2/21,northern_hog_sucker,2
+1596,LR-12,Seine,9/2/21,northern_logperch,2
+1597,LR-12,Seine,9/2/21,pumpkinseed,2
+1598,LR-12,Seine,9/2/21,round_goby,34
+1599,LR-12,Seine,7/20/22,blacknose_dace,3
+1600,LR-12,Seine,7/20/22,bluegill,3
+1601,LR-12,Seine,7/20/22,common_shiner,10
+1602,LR-12,Seine,7/20/22,creek_chub,6
+1603,LR-12,Seine,7/20/22,fathead_minnow,8
+1604,LR-12,Seine,7/20/22,green_sunfish,2
+1605,LR-12,Seine,7/20/22,johnny_darter,5
+1606,LR-12,Seine,7/20/22,northern_hog_sucker,3
+1607,LR-12,Seine,7/20/22,northern_logperch,2
+1608,LR-12,Seine,7/20/22,pumpkinseed,1
+1609,LR-12,Seine,7/20/22,rainbow_trout,2
+1610,LR-12,Seine,7/20/22,round_goby,35
+1611,LR-12,Seine,7/20/22,sunfish_hybrid,1
+1612,LR-12,Seine,7/20/22,white_sucker,3
+1613,LR-12,Seine,7/20/22,yellow_perch,5
+1614,LR-2,Barge Shock,7/19/22,bluegill,16
+1615,LR-2,Barge Shock,7/19/22,central_mudminnow,2
+1616,LR-2,Barge Shock,7/19/22,common_carp,9
+1617,LR-2,Barge Shock,7/19/22,common_shiner,1
+1618,LR-2,Barge Shock,7/19/22,creek_chub,1
+1619,LR-2,Barge Shock,7/19/22,fathead_minnow,6
+1620,LR-2,Barge Shock,7/19/22,green_sunfish,35
+1621,LR-2,Barge Shock,7/19/22,johnny_darter,4
+1622,LR-2,Barge Shock,7/19/22,northern_hog_sucker,6
+1623,LR-2,Barge Shock,7/19/22,northern_logperch,5
+1624,LR-2,Barge Shock,7/19/22,northern_pike,2
+1625,LR-2,Barge Shock,7/19/22,rainbow_trout,1
+1626,LR-2,Barge Shock,7/19/22,round_goby,37
+1627,LR-2,Barge Shock,7/19/22,white_sucker,1
+1628,LR-2,Barge Shock,7/19/22,yellow_perch,12
+1629,LR-2,Seine,5/10/13,black_crappie,1
+1630,LR-2,Seine,5/10/13,blacknose_dace,9
+1631,LR-2,Seine,5/10/13,bluegill,3
+1632,LR-2,Seine,5/10/13,central_stoneroller,1
+1633,LR-2,Seine,5/10/13,common_shiner,6
+1634,LR-2,Seine,5/10/13,creek_chub,8
+1635,LR-2,Seine,5/10/13,emerald_shiner,1
+1636,LR-2,Seine,5/10/13,fathead_minnow,765
+1637,LR-2,Seine,5/10/13,golden_shiner,3
+1638,LR-2,Seine,5/10/13,green_sunfish,2
+1639,LR-2,Seine,5/10/13,johnny_darter,2
+1640,LR-2,Seine,5/10/13,pumpkinseed,1
+1641,LR-2,Seine,5/10/13,white_sucker,4
+1642,LR-2,Seine,9/6/13,common_shiner,31
+1643,LR-2,Seine,9/6/13,creek_chub,5
+1644,LR-2,Seine,9/6/13,fathead_minnow,1
+1645,LR-2,Seine,9/6/13,green_sunfish,1
+1646,LR-2,Seine,9/6/13,johnny_darter,5
+1647,LR-2,Seine,5/3/14,common_shiner,2
+1648,LR-2,Seine,5/3/14,fathead_minnow,30
+1649,LR-2,Seine,5/3/14,johnny_darter,3
+1650,LR-2,Seine,5/3/14,pumpkinseed,1
+1651,LR-2,Seine,5/3/14,sunfish_hybrid,1
+1652,LR-2,Seine,8/22/14,bluegill,4
+1653,LR-2,Seine,8/22/14,bluntnose_minnow,1
+1654,LR-2,Seine,8/22/14,common_shiner,8
+1655,LR-2,Seine,8/22/14,creek_chub,3
+1656,LR-2,Seine,8/22/14,fathead_minnow,4
+1657,LR-2,Seine,8/22/14,gizzard_shad,8
+1658,LR-2,Seine,8/22/14,green_sunfish,6
+1659,LR-2,Seine,8/22/14,johnny_darter,3
+1660,LR-2,Seine,8/22/14,rainbow_trout,1
+1661,LR-2,Seine,8/22/14,white_sucker,1
+1662,LR-2,Seine,5/21/16,bluegill,13
+1663,LR-2,Seine,5/21/16,creek_chub,2
+1664,LR-2,Seine,5/21/16,fathead_minnow,9
+1665,LR-2,Seine,5/21/16,green_sunfish,14
+1666,LR-2,Seine,5/21/16,johnny_darter,2
+1667,LR-2,Seine,5/21/16,largemouth_bass,1
+1668,LR-2,Seine,5/21/16,pumpkinseed,3
+1669,LR-2,Seine,5/21/16,rainbow_trout,5
+1670,LR-2,Seine,8/12/16,black_crappie,1
+1671,LR-2,Seine,8/12/16,common_carp,1
+1672,LR-2,Seine,8/12/16,common_shiner,5
+1673,LR-2,Seine,8/12/16,creek_chub,6
+1674,LR-2,Seine,8/12/16,golden_shiner,1
+1675,LR-2,Seine,8/12/16,green_sunfish,24
+1676,LR-2,Seine,8/12/16,pumpkinseed,8
+1677,LR-2,Seine,8/12/16,rainbow_trout,1
+1678,LR-2,Seine,8/12/16,round_goby,8
+1679,LR-2,Seine,8/12/16,white_sucker,39
+1680,LR-2,Seine,8/12/16,yellow_perch,12
+1681,LR-2,Seine,8/11/17,bluegill,13
+1682,LR-2,Seine,8/11/17,central_stoneroller,2
+1683,LR-2,Seine,8/11/17,common_shiner,38
+1684,LR-2,Seine,8/11/17,creek_chub,13
+1685,LR-2,Seine,8/11/17,emerald_shiner,13
+1686,LR-2,Seine,8/11/17,fathead_minnow,14
+1687,LR-2,Seine,8/11/17,green_sunfish,1
+1688,LR-2,Seine,8/11/17,johnny_darter,38
+1689,LR-2,Seine,8/11/17,largemouth_bass,1
+1690,LR-2,Seine,8/11/17,northern_logperch,2
+1691,LR-2,Seine,8/11/17,round_goby,50
+1692,LR-2,Seine,8/11/17,white_sucker,14
+1693,LR-2,Seine,8/11/17,yellow_perch,9
+1694,LR-2,Seine,5/11/18,blacknose_dace,1
+1695,LR-2,Seine,5/11/18,bluegill,5
+1696,LR-2,Seine,5/11/18,fathead_minnow,51
+1697,LR-2,Seine,5/11/18,johnny_darter,16
+1698,LR-2,Seine,5/11/18,mimic_shiner,3
+1699,LR-2,Seine,5/11/18,round_goby,8
+1700,LR-2,Seine,5/11/18,white_sucker,2
+1701,LR-2,Seine,8/23/18,blacknose_dace,1
+1702,LR-2,Seine,8/23/18,common_shiner,1
+1703,LR-2,Seine,8/23/18,creek_chub,2
+1704,LR-2,Seine,8/23/18,emerald_shiner,1
+1705,LR-2,Seine,8/23/18,fathead_minnow,1
+1706,LR-2,Seine,8/23/18,johnny_darter,52
+1707,LR-2,Seine,8/23/18,mimic_shiner,49
+1708,LR-2,Seine,8/23/18,round_goby,18
+1709,LR-2,Seine,8/23/18,white_sucker,1
+1710,LR-2,Seine,8/23/18,yellow_perch,1
+1711,LR-2,Seine,8/18/19,bluegill,17
+1712,LR-2,Seine,8/18/19,central_mudminnow,1
+1713,LR-2,Seine,8/18/19,common_shiner,2
+1714,LR-2,Seine,8/18/19,creek_chub,2
+1715,LR-2,Seine,8/18/19,fathead_minnow,28
+1716,LR-2,Seine,8/18/19,green_sunfish,10
+1717,LR-2,Seine,8/18/19,johnny_darter,42
+1718,LR-2,Seine,8/18/19,largemouth_bass,2
+1719,LR-2,Seine,8/18/19,northern_logperch,3
+1720,LR-2,Seine,8/18/19,pumpkinseed,5
+1721,LR-2,Seine,8/18/19,rainbow_trout,1
+1722,LR-2,Seine,8/18/19,round_goby,39
+1723,LR-2,Seine,8/18/19,sunfish_hybrid,2
+1724,LR-2,Seine,8/18/19,white_sucker,6
+1725,LR-2,Seine,8/18/19,yellow_perch,1
+1726,LR-2,Seine,8/19/20,bluegill,13
+1727,LR-2,Seine,8/19/20,creek_chub,2
+1728,LR-2,Seine,8/19/20,green_sunfish,1
+1729,LR-2,Seine,8/19/20,johnny_darter,25
+1730,LR-2,Seine,8/19/20,largemouth_bass,4
+1731,LR-2,Seine,8/19/20,northern_logperch,2
+1732,LR-2,Seine,8/19/20,round_goby,31
+1733,LR-2,Seine,8/19/20,white_sucker,3
+1734,LR-2,Seine,8/27/21,bluegill,11
+1735,LR-2,Seine,8/27/21,central_mudminnow,1
+1736,LR-2,Seine,8/27/21,common_shiner,1
+1737,LR-2,Seine,8/27/21,creek_chub,3
+1738,LR-2,Seine,8/27/21,johnny_darter,21
+1739,LR-2,Seine,8/27/21,largemouth_bass,1
+1740,LR-2,Seine,8/27/21,northern_logperch,22
+1741,LR-2,Seine,8/27/21,pumpkinseed,2
+1742,LR-2,Seine,8/27/21,round_goby,106
+1743,LR-2,Seine,8/27/21,striped_shiner,1
+1744,LR-2,Seine,8/27/21,yellow_perch,2
+1745,LR-3,Seine,8/29/15,blacknose_dace,1
+1746,LR-3,Seine,8/29/15,blackside_darter,2
+1747,LR-3,Seine,8/29/15,common_shiner,5
+1748,LR-3,Seine,8/29/15,creek_chub,3
+1749,LR-3,Seine,8/29/15,fathead_minnow,10
+1750,LR-3,Seine,8/29/15,gizzard_shad,1
+1751,LR-3,Seine,8/29/15,johnny_darter,1
+1752,LR-3,Seine,8/29/15,round_goby,16
+1753,LR-5,Barge Shock,7/11/22,bluegill,21
+1754,LR-5,Barge Shock,7/11/22,common_carp,10
+1755,LR-5,Barge Shock,7/11/22,common_shiner,7
+1756,LR-5,Barge Shock,7/11/22,creek_chub,8
+1757,LR-5,Barge Shock,7/11/22,fathead_minnow,1
+1758,LR-5,Barge Shock,7/11/22,green_sunfish,28
+1759,LR-5,Barge Shock,7/11/22,johnny_darter,2
+1760,LR-5,Barge Shock,7/11/22,pumpkinseed,5
+1761,LR-5,Barge Shock,7/11/22,sunfish_hybrid,2
+1762,LR-5,Barge Shock,7/11/22,white_sucker,15
+1763,LR-5,Seine,5/18/13,blacknose_dace,2
+1764,LR-5,Seine,5/18/13,blackside_darter,2
+1765,LR-5,Seine,5/18/13,bluegill,19
+1766,LR-5,Seine,5/18/13,brown_bullhead,3
+1767,LR-5,Seine,5/18/13,central_stoneroller,1
+1768,LR-5,Seine,5/18/13,common_carp,2
+1769,LR-5,Seine,5/18/13,common_shiner,14
+1770,LR-5,Seine,5/18/13,creek_chub,22
+1771,LR-5,Seine,5/18/13,fathead_minnow,34
+1772,LR-5,Seine,5/18/13,green_sunfish,14
+1773,LR-5,Seine,5/18/13,johnny_darter,51
+1774,LR-5,Seine,5/18/13,northern_sunfish,3
+1775,LR-5,Seine,5/18/13,white_sucker,7
+1776,LR-5,Seine,8/10/13,black_crappie,1
+1777,LR-5,Seine,8/10/13,bluegill,4
+1778,LR-5,Seine,8/10/13,common_shiner,35
+1779,LR-5,Seine,8/10/13,creek_chub,15
+1780,LR-5,Seine,8/10/13,fathead_minnow,16
+1781,LR-5,Seine,8/10/13,gizzard_shad,2
+1782,LR-5,Seine,8/10/13,green_sunfish,6
+1783,LR-5,Seine,8/10/13,johnny_darter,71
+1784,LR-5,Seine,8/10/13,pumpkinseed,10
+1785,LR-5,Seine,8/10/13,white_sucker,29
+1786,LR-5,Seine,6/13/14,bluegill,12
+1787,LR-5,Seine,6/13/14,common_shiner,5
+1788,LR-5,Seine,6/13/14,creek_chub,22
+1789,LR-5,Seine,6/13/14,fathead_minnow,9
+1790,LR-5,Seine,6/13/14,green_sunfish,2
+1791,LR-5,Seine,6/13/14,johnny_darter,60
+1792,LR-5,Seine,6/13/14,sunfish_hybrid,1
+1793,LR-5,Seine,6/13/14,white_sucker,15
+1794,LR-5,Seine,8/22/14,black_crappie,3
+1795,LR-5,Seine,8/22/14,blackside_darter,5
+1796,LR-5,Seine,8/22/14,bluegill,4
+1797,LR-5,Seine,8/22/14,common_shiner,4
+1798,LR-5,Seine,8/22/14,creek_chub,5
+1799,LR-5,Seine,8/22/14,fathead_minnow,5
+1800,LR-5,Seine,8/22/14,gizzard_shad,1
+1801,LR-5,Seine,8/22/14,green_sunfish,5
+1802,LR-5,Seine,8/22/14,johnny_darter,138
+1803,LR-5,Seine,8/22/14,pumpkinseed,1
+1804,LR-5,Seine,8/22/14,white_sucker,46
+1805,LR-5,Seine,5/15/15,bluegill,3
+1806,LR-5,Seine,5/15/15,common_shiner,4
+1807,LR-5,Seine,5/15/15,creek_chub,13
+1808,LR-5,Seine,5/15/15,fathead_minnow,14
+1809,LR-5,Seine,5/15/15,johnny_darter,25
+1810,LR-5,Seine,5/15/15,white_sucker,16
+1811,LR-5,Seine,8/14/15,black_crappie,1
+1812,LR-5,Seine,8/14/15,bluegill,7
+1813,LR-5,Seine,8/14/15,common_shiner,1
+1814,LR-5,Seine,8/14/15,creek_chub,10
+1815,LR-5,Seine,8/14/15,fathead_minnow,35
+1816,LR-5,Seine,8/14/15,green_sunfish,6
+1817,LR-5,Seine,8/14/15,johnny_darter,42
+1818,LR-5,Seine,8/14/15,largemouth_bass,1
+1819,LR-5,Seine,8/14/15,pumpkinseed,4
+1820,LR-5,Seine,8/14/15,white_sucker,34
+1821,LR-5,Seine,5/19/16,bluegill,27
+1822,LR-5,Seine,5/19/16,central_mudminnow,1
+1823,LR-5,Seine,5/19/16,creek_chub,10
+1824,LR-5,Seine,5/19/16,fathead_minnow,11
+1825,LR-5,Seine,5/19/16,johnny_darter,27
+1826,LR-5,Seine,5/19/16,white_sucker,14
+1827,LR-5,Seine,8/25/16,bluegill,11
+1828,LR-5,Seine,8/25/16,common_carp,4
+1829,LR-5,Seine,8/25/16,common_shiner,1
+1830,LR-5,Seine,8/25/16,creek_chub,11
+1831,LR-5,Seine,8/25/16,fathead_minnow,26
+1832,LR-5,Seine,8/25/16,golden_shiner,1
+1833,LR-5,Seine,8/25/16,green_sunfish,46
+1834,LR-5,Seine,8/25/16,johnny_darter,44
+1835,LR-5,Seine,8/25/16,pumpkinseed,3
+1836,LR-5,Seine,8/25/16,white_sucker,29
+1837,LR-6,Barge Shock,6/28/22,blacknose_dace,1
+1838,LR-6,Barge Shock,6/28/22,blackside_darter,6
+1839,LR-6,Barge Shock,6/28/22,bluegill,18
+1840,LR-6,Barge Shock,6/28/22,central_stoneroller,1
+1841,LR-6,Barge Shock,6/28/22,common_carp,2
+1842,LR-6,Barge Shock,6/28/22,common_shiner,3
+1843,LR-6,Barge Shock,6/28/22,creek_chub,6
+1844,LR-6,Barge Shock,6/28/22,fathead_minnow,6
+1845,LR-6,Barge Shock,6/28/22,green_sunfish,14
+1846,LR-6,Barge Shock,6/28/22,northern_pike,1
+1847,LR-6,Barge Shock,6/28/22,pumpkinseed,6
+1848,LR-6,Barge Shock,6/28/22,round_goby,27
+1849,LR-6,Barge Shock,6/28/22,spotted_sucker,2
+1850,LR-6,Barge Shock,6/28/22,white_sucker,13
+1851,LR-6,Barge Shock,6/28/22,yellow_bullhead,1
+1852,LR-6,Seine,6/7/13,blackside_darter,1
+1853,LR-6,Seine,6/7/13,bluegill,1
+1854,LR-6,Seine,6/7/13,bluntnose_minnow,2
+1855,LR-6,Seine,6/7/13,common_shiner,2
+1856,LR-6,Seine,6/7/13,creek_chub,3
+1857,LR-6,Seine,6/7/13,fathead_minnow,9
+1858,LR-6,Seine,6/7/13,green_sunfish,5
+1859,LR-6,Seine,6/7/13,johnny_darter,11
+1860,LR-6,Seine,6/7/13,pumpkinseed,10
+1861,LR-6,Seine,6/7/13,round_goby,9
+1862,LR-6,Seine,6/7/13,white_sucker,9
+1863,LR-6,Seine,9/6/13,blackside_darter,3
+1864,LR-6,Seine,9/6/13,bluegill,3
+1865,LR-6,Seine,9/6/13,bluntnose_minnow,3
+1866,LR-6,Seine,9/6/13,central_stoneroller,1
+1867,LR-6,Seine,9/6/13,common_carp,1
+1868,LR-6,Seine,9/6/13,common_shiner,33
+1869,LR-6,Seine,9/6/13,creek_chub,2
+1870,LR-6,Seine,9/6/13,fathead_minnow,3
+1871,LR-6,Seine,9/6/13,gizzard_shad,5
+1872,LR-6,Seine,9/6/13,green_sunfish,1
+1873,LR-6,Seine,9/6/13,johnny_darter,21
+1874,LR-6,Seine,9/6/13,largemouth_bass,1
+1875,LR-6,Seine,9/6/13,pumpkinseed,1
+1876,LR-6,Seine,9/6/13,rock_bass,1
+1877,LR-6,Seine,9/6/13,round_goby,29
+1878,LR-6,Seine,9/6/13,white_sucker,4
+1879,LR-6,Seine,6/14/14,blacknose_dace,4
+1880,LR-6,Seine,6/14/14,blackside_darter,1
+1881,LR-6,Seine,6/14/14,common_shiner,2
+1882,LR-6,Seine,6/14/14,creek_chub,4
+1883,LR-6,Seine,6/14/14,fathead_minnow,2
+1884,LR-6,Seine,6/14/14,johnny_darter,1
+1885,LR-6,Seine,6/14/14,pumpkinseed,1
+1886,LR-6,Seine,6/14/14,round_goby,17
+1887,LR-6,Seine,8/1/14,blackside_darter,1
+1888,LR-6,Seine,8/1/14,bluegill,1
+1889,LR-6,Seine,8/1/14,common_shiner,8
+1890,LR-6,Seine,8/1/14,creek_chub,5
+1891,LR-6,Seine,8/1/14,fathead_minnow,2
+1892,LR-6,Seine,8/1/14,green_sunfish,2
+1893,LR-6,Seine,8/1/14,johnny_darter,17
+1894,LR-6,Seine,8/1/14,largemouth_bass,3
+1895,LR-6,Seine,8/1/14,round_goby,18
+1896,LR-6,Seine,8/1/14,white_sucker,5
+1897,LR-8,Seine,5/11/13,blacknose_dace,2
+1898,LR-8,Seine,5/11/13,bluegill,7
+1899,LR-8,Seine,5/11/13,central_stoneroller,3
+1900,LR-8,Seine,5/11/13,common_shiner,14
+1901,LR-8,Seine,5/11/13,creek_chub,3
+1902,LR-8,Seine,5/11/13,fathead_minnow,44
+1903,LR-8,Seine,5/11/13,johnny_darter,1
+1904,LR-8,Seine,5/11/13,white_sucker,1
+1905,LR-8,Seine,9/13/13,blacknose_dace,3
+1906,LR-8,Seine,9/13/13,central_stoneroller,11
+1907,LR-8,Seine,9/13/13,common_shiner,99
+1908,LR-8,Seine,9/13/13,creek_chub,82
+1909,LR-8,Seine,9/13/13,fathead_minnow,38
+1910,LR-8,Seine,9/13/13,green_sunfish,2
+1911,LR-8,Seine,9/13/13,johnny_darter,62
+1912,LR-8,Seine,9/13/13,largemouth_bass,9
+1913,LR-8,Seine,9/13/13,pumpkinseed,3
+1914,LR-8,Seine,9/13/13,white_sucker,20
+1915,LR-8,Seine,5/2/14,blacknose_dace,3
+1916,LR-8,Seine,5/2/14,brook_stickleback,1
+1917,LR-8,Seine,5/2/14,central_stoneroller,14
+1918,LR-8,Seine,5/2/14,common_shiner,52
+1919,LR-8,Seine,5/2/14,creek_chub,49
+1920,LR-8,Seine,5/2/14,fathead_minnow,1
+1921,LR-8,Seine,5/2/14,johnny_darter,11
+1922,LR-8,Seine,5/2/14,white_sucker,7
+1923,LR-8,Seine,9/5/14,blacknose_dace,6
+1924,LR-8,Seine,9/5/14,bluegill,2
+1925,LR-8,Seine,9/5/14,central_stoneroller,19
+1926,LR-8,Seine,9/5/14,common_shiner,39
+1927,LR-8,Seine,9/5/14,creek_chub,62
+1928,LR-8,Seine,9/5/14,fathead_minnow,32
+1929,LR-8,Seine,9/5/14,green_sunfish,4
+1930,LR-8,Seine,9/5/14,johnny_darter,39
+1931,LR-8,Seine,9/5/14,largemouth_bass,13
+1932,LR-8,Seine,9/5/14,sunfish_hybrid,2
+1933,LR-8,Seine,9/5/14,white_perch,1
+1934,LR-8,Seine,9/5/14,white_sucker,27
+1935,Low10,Seine,6/10/15,blacknose_dace,2
+1936,Low10,Seine,6/10/15,blackside_darter,1
+1937,Low10,Seine,6/10/15,bluegill,4
+1938,Low10,Seine,6/10/15,central_stoneroller,1
+1939,Low10,Seine,6/10/15,common_shiner,2
+1940,Low10,Seine,6/10/15,creek_chub,14
+1941,Low10,Seine,6/10/15,fathead_minnow,2
+1942,Low10,Seine,6/10/15,green_sunfish,3
+1943,Low10,Seine,6/10/15,johnny_darter,12
+1944,Low10,Seine,6/10/15,pumpkinseed,1
+1945,Low10,Seine,6/10/15,rainbow_trout,1
+1946,Low10,Seine,6/10/15,sunfish_hybrid,2
+1947,Low10,Seine,6/10/15,white_sucker,12
+1948,Low10,Seine,8/15/15,creek_chub,3
+1949,Low10,Seine,8/15/15,fathead_minnow,4
+1950,Low10,Seine,8/15/15,green_sunfish,5
+1951,Low10,Seine,8/15/15,johnny_darter,52
+1952,Low10,Seine,8/15/15,pumpkinseed,4
+1953,Low10,Seine,8/15/15,white_sucker,10
+1954,Low10,Seine,5/21/16,black_crappie,1
+1955,Low10,Seine,5/21/16,blacknose_dace,5
+1956,Low10,Seine,5/21/16,bluegill,1
+1957,Low10,Seine,5/21/16,common_shiner,2
+1958,Low10,Seine,5/21/16,creek_chub,19
+1959,Low10,Seine,5/21/16,fathead_minnow,6
+1960,Low10,Seine,5/21/16,green_sunfish,5
+1961,Low10,Seine,5/21/16,johnny_darter,5
+1962,Low10,Seine,5/21/16,pumpkinseed,2
+1963,Low10,Seine,5/21/16,rainbow_trout,3
+1964,Low10,Seine,5/21/16,round_goby,2
+1965,Low10,Seine,8/12/16,creek_chub,11
+1966,Low10,Seine,8/12/16,fathead_minnow,20
+1967,Low10,Seine,8/12/16,green_sunfish,1
+1968,Low10,Seine,8/12/16,johnny_darter,12
+1969,Low10,Seine,8/12/16,pumpkinseed,2
+1970,Low10,Seine,8/12/16,rainbow_trout,1
+1971,Low10,Seine,8/12/16,round_goby,25
+1972,Low10,Seine,8/12/16,sunfish_hybrid,3
+1973,Low10,Seine,8/12/16,white_sucker,21
+1974,Low10,Seine,8/12/16,yellow_perch,1
+1975,Low10,Seine,8/11/17,bluegill,4
+1976,Low10,Seine,8/11/17,creek_chub,5
+1977,Low10,Seine,8/11/17,fathead_minnow,4
+1978,Low10,Seine,8/11/17,green_sunfish,3
+1979,Low10,Seine,8/11/17,johnny_darter,4
+1980,Low10,Seine,8/11/17,largemouth_bass,2
+1981,Low10,Seine,8/11/17,pumpkinseed,1
+1982,Low10,Seine,8/11/17,round_goby,35
+1983,Low10,Seine,8/11/17,sunfish_hybrid,3
+1984,Low10,Seine,8/11/17,white_sucker,17
+1985,Low10,Seine,8/11/17,yellow_perch,4
+1986,Low11,Seine,8/22/16,black_crappie,13
+1987,Low11,Seine,8/22/16,bluegill,20
+1988,Low11,Seine,8/22/16,central_stoneroller,2
+1989,Low11,Seine,8/22/16,common_shiner,3
+1990,Low11,Seine,8/22/16,creek_chub,5
+1991,Low11,Seine,8/22/16,fathead_minnow,7
+1992,Low11,Seine,8/22/16,gizzard_shad,11
+1993,Low11,Seine,8/22/16,green_sunfish,8
+1994,Low11,Seine,8/22/16,johnny_darter,47
+1995,Low11,Seine,8/22/16,largemouth_bass,2
+1996,Low11,Seine,8/22/16,pumpkinseed,29
+1997,Low11,Seine,8/22/16,smallmouth_bass,6
+1998,Low11,Seine,8/22/16,white_sucker,55
+1999,Low11,Seine,5/19/17,blackside_darter,1
+2000,Low11,Seine,5/19/17,bluegill,34
+2001,Low11,Seine,5/19/17,bluntnose_minnow,4
+2002,Low11,Seine,5/19/17,central_stoneroller,1
+2003,Low11,Seine,5/19/17,common_shiner,10
+2004,Low11,Seine,5/19/17,creek_chub,39
+2005,Low11,Seine,5/19/17,fathead_minnow,56
+2006,Low11,Seine,5/19/17,golden_shiner,4
+2007,Low11,Seine,5/19/17,green_sunfish,26
+2008,Low11,Seine,5/19/17,johnny_darter,50
+2009,Low11,Seine,5/19/17,largemouth_bass,1
+2010,Low11,Seine,5/19/17,pumpkinseed,22
+2011,Low11,Seine,5/19/17,white_sucker,33
+2012,Low11,Seine,7/28/17,black_crappie,4
+2013,Low11,Seine,7/28/17,bluegill,28
+2014,Low11,Seine,7/28/17,central_stoneroller,2
+2015,Low11,Seine,7/28/17,common_shiner,9
+2016,Low11,Seine,7/28/17,creek_chub,10
+2017,Low11,Seine,7/28/17,fathead_minnow,22
+2018,Low11,Seine,7/28/17,green_sunfish,12
+2019,Low11,Seine,7/28/17,johnny_darter,107
+2020,Low11,Seine,7/28/17,largemouth_bass,14
+2021,Low11,Seine,7/28/17,pumpkinseed,17
+2022,Low11,Seine,7/28/17,sunfish_hybrid,2
+2023,Low11,Seine,7/28/17,white_sucker,54
+2024,Low11,Seine,8/17/18,black_crappie,1
+2025,Low11,Seine,8/17/18,blacknose_dace,3
+2026,Low11,Seine,8/17/18,bluegill,81
+2027,Low11,Seine,8/17/18,central_stoneroller,4
+2028,Low11,Seine,8/17/18,common_carp,2
+2029,Low11,Seine,8/17/18,common_shiner,23
+2030,Low11,Seine,8/17/18,creek_chub,24
+2031,Low11,Seine,8/17/18,fathead_minnow,20
+2032,Low11,Seine,8/17/18,gizzard_shad,2
+2033,Low11,Seine,8/17/18,johnny_darter,24
+2034,Low11,Seine,8/17/18,largemouth_bass,1
+2035,Low11,Seine,8/17/18,northern_sunfish,1
+2036,Low11,Seine,8/17/18,pumpkinseed,10
+2037,Low11,Seine,8/17/18,white_sucker,12
+2038,Low11,Seine,8/16/19,black_crappie,3
+2039,Low11,Seine,8/16/19,bluegill,24
+2040,Low11,Seine,8/16/19,common_carp,1
+2041,Low11,Seine,8/16/19,common_shiner,8
+2042,Low11,Seine,8/16/19,creek_chub,15
+2043,Low11,Seine,8/16/19,golden_shiner,1
+2044,Low11,Seine,8/16/19,green_sunfish,9
+2045,Low11,Seine,8/16/19,johnny_darter,50
+2046,Low11,Seine,8/16/19,largemouth_bass,3
+2047,Low11,Seine,8/16/19,northern_sunfish,1
+2048,Low11,Seine,8/16/19,pumpkinseed,31
+2049,Low11,Seine,8/16/19,white_sucker,8
+2050,Low11,Seine,8/16/19,yellow_perch,1
+2051,Low11,Seine,8/6/20,bluegill,71
+2052,Low11,Seine,8/6/20,bluntnose_minnow,1
+2053,Low11,Seine,8/6/20,central_stoneroller,13
+2054,Low11,Seine,8/6/20,common_carp,3
+2055,Low11,Seine,8/6/20,common_shiner,1
+2056,Low11,Seine,8/6/20,creek_chub,3
+2057,Low11,Seine,8/6/20,fathead_minnow,2
+2058,Low11,Seine,8/6/20,gizzard_shad,3
+2059,Low11,Seine,8/6/20,golden_shiner,1
+2060,Low11,Seine,8/6/20,green_sunfish,8
+2061,Low11,Seine,8/6/20,johnny_darter,44
+2062,Low11,Seine,8/6/20,largemouth_bass,22
+2063,Low11,Seine,8/6/20,northern_sunfish,4
+2064,Low11,Seine,8/6/20,pumpkinseed,7
+2065,Low11,Seine,8/6/20,smallmouth_bass,1
+2066,Low11,Seine,8/6/20,sunfish_hybrid,1
+2067,Low11,Seine,8/6/20,white_sucker,5
+2068,Low11,Seine,7/8/21,black_crappie,1
+2069,Low11,Seine,7/8/21,bluegill,20
+2070,Low11,Seine,7/8/21,central_stoneroller,5
+2071,Low11,Seine,7/8/21,common_shiner,10
+2072,Low11,Seine,7/8/21,creek_chub,2
+2073,Low11,Seine,7/8/21,fathead_minnow,31
+2074,Low11,Seine,7/8/21,golden_shiner,2
+2075,Low11,Seine,7/8/21,green_sunfish,24
+2076,Low11,Seine,7/8/21,johnny_darter,85
+2077,Low11,Seine,7/8/21,largemouth_bass,5
+2078,Low11,Seine,7/8/21,northern_sunfish,1
+2079,Low11,Seine,7/8/21,pumpkinseed,7
+2080,Low11,Seine,7/8/21,sunfish_hybrid,5
+2081,Low11,Seine,7/8/21,white_sucker,15
+2082,Low13,Seine,9/2/21,blacknose_dace,2
+2083,Low13,Seine,9/2/21,bluegill,1
+2084,Low13,Seine,9/2/21,common_shiner,1
+2085,Low13,Seine,9/2/21,creek_chub,4
+2086,Low13,Seine,9/2/21,pumpkinseed,2
+2087,Low13,Seine,9/2/21,round_goby,45
+2088,Low14,Barge Shock,6/28/22,black_redhorse,1
+2089,Low14,Barge Shock,6/28/22,blacknose_dace,1
+2090,Low14,Barge Shock,6/28/22,bluegill,9
+2091,Low14,Barge Shock,6/28/22,common_shiner,1
+2092,Low14,Barge Shock,6/28/22,creek_chub,7
+2093,Low14,Barge Shock,6/28/22,fathead_minnow,1
+2094,Low14,Barge Shock,6/28/22,green_sunfish,14
+2095,Low14,Barge Shock,6/28/22,northern_hog_sucker,2
+2096,Low14,Barge Shock,6/28/22,northern_logperch,5
+2097,Low14,Barge Shock,6/28/22,northern_pike,1
+2098,Low14,Barge Shock,6/28/22,pumpkinseed,11
+2099,Low14,Barge Shock,6/28/22,rock_bass,3
+2100,Low14,Barge Shock,6/28/22,round_goby,12
+2101,Low14,Barge Shock,6/28/22,white_sucker,9
+2102,Low14,Barge Shock,6/28/22,yellow_perch,4
+2103,Low2,Backpack Shock,7/26/22,blacknose_dace,9
+2104,Low2,Backpack Shock,7/26/22,bluegill,1
+2105,Low2,Backpack Shock,7/26/22,common_shiner,6
+2106,Low2,Backpack Shock,7/26/22,creek_chub,13
+2107,Low2,Backpack Shock,7/26/22,johnny_darter,27
+2108,Low2,Seine,5/11/13,black_crappie,1
+2109,Low2,Seine,5/11/13,blacknose_dace,1
+2110,Low2,Seine,5/11/13,bluegill,5
+2111,Low2,Seine,5/11/13,central_mudminnow,1
+2112,Low2,Seine,5/11/13,central_stoneroller,9
+2113,Low2,Seine,5/11/13,creek_chub,13
+2114,Low2,Seine,5/11/13,fathead_minnow,11
+2115,Low2,Seine,5/11/13,green_sunfish,1
+2116,Low2,Seine,9/13/13,bluegill,18
+2117,Low2,Seine,9/13/13,central_mudminnow,2
+2118,Low2,Seine,9/13/13,central_stoneroller,14
+2119,Low2,Seine,9/13/13,common_shiner,19
+2120,Low2,Seine,9/13/13,creek_chub,32
+2121,Low2,Seine,9/13/13,green_sunfish,25
+2122,Low2,Seine,9/13/13,johnny_darter,10
+2123,Low2,Seine,9/13/13,largemouth_bass,6
+2124,Low2,Seine,9/13/13,pumpkinseed,7
+2125,Low2,Seine,9/13/13,smallmouth_bass,11
+2126,Low2,Seine,9/13/13,white_sucker,11
+2127,Low2,Seine,5/2/14,brook_stickleback,1
+2128,Low2,Seine,5/2/14,central_mudminnow,2
+2129,Low2,Seine,5/2/14,central_stoneroller,1
+2130,Low2,Seine,5/2/14,common_shiner,3
+2131,Low2,Seine,5/2/14,creek_chub,5
+2132,Low2,Seine,5/2/14,fathead_minnow,1
+2133,Low2,Seine,5/2/14,green_sunfish,3
+2134,Low2,Seine,5/2/14,johnny_darter,29
+2135,Low2,Seine,5/2/14,white_sucker,3
+2136,Low2,Seine,8/23/14,blacknose_dace,1
+2137,Low2,Seine,8/23/14,bluegill,3
+2138,Low2,Seine,8/23/14,central_mudminnow,5
+2139,Low2,Seine,8/23/14,central_stoneroller,96
+2140,Low2,Seine,8/23/14,common_shiner,46
+2141,Low2,Seine,8/23/14,creek_chub,177
+2142,Low2,Seine,8/23/14,fathead_minnow,4
+2143,Low2,Seine,8/23/14,green_sunfish,38
+2144,Low2,Seine,8/23/14,johnny_darter,8
+2145,Low2,Seine,8/23/14,largemouth_bass,6
+2146,Low2,Seine,8/23/14,pumpkinseed,6
+2147,Low2,Seine,8/23/14,sunfish_hybrid,1
+2148,Low2,Seine,8/23/14,white_sucker,44
+2149,Low3,Seine,6/1/13,brook_stickleback,1
+2150,Low3,Seine,6/1/13,creek_chub,2
+2151,Low3,Seine,6/1/13,fathead_minnow,6
+2152,Low3,Seine,6/1/13,green_sunfish,1
+2153,Low3,Seine,6/1/13,johnny_darter,6
+2154,Low3,Seine,9/13/13,bluegill,4
+2155,Low3,Seine,9/13/13,central_mudminnow,7
+2156,Low3,Seine,9/13/13,creek_chub,7
+2157,Low3,Seine,9/13/13,fathead_minnow,2
+2158,Low3,Seine,9/13/13,green_sunfish,4
+2159,Low3,Seine,9/13/13,largemouth_bass,12
+2160,Low3,Seine,9/13/13,smallmouth_bass,3
+2161,Low3,Seine,9/13/13,white_sucker,1
+2162,Low3,Seine,5/2/14,blacknose_dace,2
+2163,Low3,Seine,5/2/14,bluegill,1
+2164,Low3,Seine,5/2/14,central_mudminnow,2
+2165,Low3,Seine,5/2/14,creek_chub,5
+2166,Low3,Seine,5/2/14,fathead_minnow,8
+2167,Low3,Seine,5/2/14,johnny_darter,8
+2168,Low3,Seine,8/23/14,bluegill,6
+2169,Low3,Seine,8/23/14,brook_stickleback,2
+2170,Low3,Seine,8/23/14,central_mudminnow,18
+2171,Low3,Seine,8/23/14,creek_chub,15
+2172,Low3,Seine,8/23/14,fathead_minnow,7
+2173,Low3,Seine,8/23/14,johnny_darter,17
+2174,Low4,Seine,8/9/13,black_crappie,0
+2175,Low4,Seine,8/9/13,blacknose_dace,10
+2176,Low4,Seine,8/9/13,blackside_darter,6
+2177,Low4,Seine,8/9/13,bluegill,1
+2178,Low4,Seine,8/9/13,central_stoneroller,1
+2179,Low4,Seine,8/9/13,common_shiner,5
+2180,Low4,Seine,8/9/13,creek_chub,7
+2181,Low4,Seine,8/9/13,fathead_minnow,42
+2182,Low4,Seine,8/9/13,green_sunfish,2
+2183,Low4,Seine,8/9/13,johnny_darter,57
+2184,Low4,Seine,8/9/13,white_sucker,10
+2185,Low4,Seine,8/9/14,blacknose_dace,6
+2186,Low4,Seine,8/9/14,bluegill,1
+2187,Low4,Seine,8/9/14,central_mudminnow,1
+2188,Low4,Seine,8/9/14,central_stoneroller,4
+2189,Low4,Seine,8/9/14,common_shiner,2
+2190,Low4,Seine,8/9/14,creek_chub,18
+2191,Low4,Seine,8/9/14,fathead_minnow,1
+2192,Low4,Seine,8/9/14,green_sunfish,1
+2193,Low4,Seine,8/9/14,johnny_darter,7
+2194,Low4,Seine,8/9/14,northern_hog_sucker,2
+2195,Low4,Seine,8/9/14,sunfish_hybrid,1
+2196,Low4,Seine,8/9/14,white_sucker,21
+2197,Low4,Seine,5/29/15,blacknose_dace,14
+2198,Low4,Seine,5/29/15,blackside_darter,4
+2199,Low4,Seine,5/29/15,bluegill,14
+2200,Low4,Seine,5/29/15,central_stoneroller,10
+2201,Low4,Seine,5/29/15,common_shiner,9
+2202,Low4,Seine,5/29/15,creek_chub,9
+2203,Low4,Seine,5/29/15,fathead_minnow,21
+2204,Low4,Seine,5/29/15,green_sunfish,3
+2205,Low4,Seine,5/29/15,johnny_darter,37
+2206,Low4,Seine,5/29/15,northern_hog_sucker,1
+2207,Low4,Seine,5/29/15,pumpkinseed,2
+2208,Low4,Seine,5/29/15,rainbow_trout,5
+2209,Low4,Seine,5/29/15,round_goby,1
+2210,Low4,Seine,5/29/15,white_sucker,16
+2211,Low4,Seine,5/29/15,yellow_perch,1
+2212,Low4,Seine,8/15/15,blacknose_dace,2
+2213,Low4,Seine,8/15/15,blackside_darter,1
+2214,Low4,Seine,8/15/15,bluntnose_minnow,1
+2215,Low4,Seine,8/15/15,central_stoneroller,6
+2216,Low4,Seine,8/15/15,common_shiner,1
+2217,Low4,Seine,8/15/15,creek_chub,3
+2218,Low4,Seine,8/15/15,fathead_minnow,10
+2219,Low4,Seine,8/15/15,green_sunfish,9
+2220,Low4,Seine,8/15/15,johnny_darter,44
+2221,Low4,Seine,8/15/15,pumpkinseed,1
+2222,Low4,Seine,8/15/15,round_goby,1
+2223,Low4,Seine,8/15/15,white_sucker,9
+2224,Low4,Seine,5/21/16,blacknose_dace,1
+2225,Low4,Seine,5/21/16,blackside_darter,3
+2226,Low4,Seine,5/21/16,central_stoneroller,2
+2227,Low4,Seine,5/21/16,common_shiner,2
+2228,Low4,Seine,5/21/16,creek_chub,3
+2229,Low4,Seine,5/21/16,fathead_minnow,2
+2230,Low4,Seine,5/21/16,green_sunfish,1
+2231,Low4,Seine,5/21/16,johnny_darter,6
+2232,Low4,Seine,5/21/16,rainbow_trout,6
+2233,Low4,Seine,5/21/16,round_goby,10
+2234,Low4,Seine,5/21/16,white_sucker,2
+2235,Low4,Seine,8/12/16,bluegill,5
+2236,Low4,Seine,8/12/16,common_shiner,6
+2237,Low4,Seine,8/12/16,creek_chub,6
+2238,Low4,Seine,8/12/16,green_sunfish,9
+2239,Low4,Seine,8/12/16,johnny_darter,2
+2240,Low4,Seine,8/12/16,rainbow_trout,2
+2241,Low4,Seine,8/12/16,round_goby,12
+2242,Low4,Seine,8/12/16,white_sucker,7
+2243,Low4,Seine,8/12/16,yellow_perch,1
+2244,Low4,Seine,8/12/17,blacknose_dace,7
+2245,Low4,Seine,8/12/17,bluegill,2
+2246,Low4,Seine,8/12/17,central_stoneroller,2
+2247,Low4,Seine,8/12/17,common_shiner,2
+2248,Low4,Seine,8/12/17,creek_chub,9
+2249,Low4,Seine,8/12/17,fathead_minnow,1
+2250,Low4,Seine,8/12/17,green_sunfish,2
+2251,Low4,Seine,8/12/17,johnny_darter,11
+2252,Low4,Seine,8/12/17,largemouth_bass,1
+2253,Low4,Seine,8/12/17,pumpkinseed,2
+2254,Low4,Seine,8/12/17,round_goby,51
+2255,Low4,Seine,8/12/17,white_sucker,7
+2256,Low4,Seine,5/11/18,blacknose_dace,1
+2257,Low4,Seine,5/11/18,blackside_darter,1
+2258,Low4,Seine,5/11/18,common_shiner,2
+2259,Low4,Seine,5/11/18,creek_chub,4
+2260,Low4,Seine,5/11/18,fathead_minnow,5
+2261,Low4,Seine,5/11/18,johnny_darter,2
+2262,Low4,Seine,5/11/18,rainbow_trout,1
+2263,Low4,Seine,5/11/18,round_goby,10
+2264,Low4,Seine,8/23/18,blacknose_dace,6
+2265,Low4,Seine,8/23/18,creek_chub,3
+2266,Low4,Seine,8/23/18,fathead_minnow,2
+2267,Low4,Seine,8/23/18,johnny_darter,3
+2268,Low4,Seine,8/23/18,mimic_shiner,1
+2269,Low4,Seine,8/23/18,round_goby,10
+2270,Low4,Seine,8/23/18,white_sucker,1
+2271,Low5,Seine,8/10/13,blackside_darter,3
+2272,Low5,Seine,8/10/13,bluegill,2
+2273,Low5,Seine,8/10/13,common_shiner,17
+2274,Low5,Seine,8/10/13,creek_chub,5
+2275,Low5,Seine,8/10/13,fathead_minnow,12
+2276,Low5,Seine,8/10/13,green_sunfish,1
+2277,Low5,Seine,8/10/13,johnny_darter,53
+2278,Low5,Seine,8/10/13,pumpkinseed,3
+2279,Low5,Seine,8/10/13,rock_bass,1
+2280,Low5,Seine,8/10/13,white_sucker,10
+2281,Low5,Seine,8/8/14,blackside_darter,2
+2282,Low5,Seine,8/8/14,bluegill,3
+2283,Low5,Seine,8/8/14,common_shiner,5
+2284,Low5,Seine,8/8/14,creek_chub,2
+2285,Low5,Seine,8/8/14,fathead_minnow,1
+2286,Low5,Seine,8/8/14,green_sunfish,2
+2287,Low5,Seine,8/8/14,johnny_darter,21
+2288,Low5,Seine,8/8/14,round_goby,1
+2289,Low5,Seine,8/8/14,sunfish_hybrid,1
+2290,Low5,Seine,8/8/14,white_sucker,28
+2291,Low5,Seine,5/15/15,blackside_darter,2
+2292,Low5,Seine,5/15/15,bluegill,9
+2293,Low5,Seine,5/15/15,common_shiner,1
+2294,Low5,Seine,5/15/15,creek_chub,14
+2295,Low5,Seine,5/15/15,fathead_minnow,7
+2296,Low5,Seine,5/15/15,green_sunfish,1
+2297,Low5,Seine,5/15/15,johnny_darter,25
+2298,Low5,Seine,5/15/15,pumpkinseed,3
+2299,Low5,Seine,5/15/15,white_sucker,4
+2300,Low5,Seine,8/14/15,blackside_darter,1
+2301,Low5,Seine,8/14/15,central_mudminnow,1
+2302,Low5,Seine,8/14/15,central_stoneroller,1
+2303,Low5,Seine,8/14/15,common_shiner,3
+2304,Low5,Seine,8/14/15,creek_chub,6
+2305,Low5,Seine,8/14/15,fathead_minnow,27
+2306,Low5,Seine,8/14/15,green_sunfish,5
+2307,Low5,Seine,8/14/15,johnny_darter,11
+2308,Low5,Seine,8/14/15,largemouth_bass,2
+2309,Low5,Seine,8/14/15,pumpkinseed,3
+2310,Low5,Seine,8/14/15,round_goby,2
+2311,Low5,Seine,8/14/15,white_sucker,3
+2312,Low5,Seine,5/19/16,blackside_darter,3
+2313,Low5,Seine,5/19/16,bluegill,5
+2314,Low5,Seine,5/19/16,central_mudminnow,1
+2315,Low5,Seine,5/19/16,central_stoneroller,2
+2316,Low5,Seine,5/19/16,common_shiner,1
+2317,Low5,Seine,5/19/16,creek_chub,13
+2318,Low5,Seine,5/19/16,fathead_minnow,12
+2319,Low5,Seine,5/19/16,green_sunfish,3
+2320,Low5,Seine,5/19/16,johnny_darter,9
+2321,Low5,Seine,5/19/16,pumpkinseed,4
+2322,Low5,Seine,5/19/16,rainbow_trout,1
+2323,Low5,Seine,5/19/16,round_goby,16
+2324,Low5,Seine,5/19/16,white_sucker,10
+2325,Low5,Seine,8/13/16,blackside_darter,4
+2326,Low5,Seine,8/13/16,bluegill,4
+2327,Low5,Seine,8/13/16,central_stoneroller,2
+2328,Low5,Seine,8/13/16,creek_chub,6
+2329,Low5,Seine,8/13/16,fathead_minnow,18
+2330,Low5,Seine,8/13/16,green_sunfish,8
+2331,Low5,Seine,8/13/16,johnny_darter,14
+2332,Low5,Seine,8/13/16,pumpkinseed,2
+2333,Low5,Seine,8/13/16,round_goby,36
+2334,Low5,Seine,8/13/16,white_sucker,13
+2335,Low5,Seine,8/25/17,blacknose_dace,4
+2336,Low5,Seine,8/25/17,blackside_darter,3
+2337,Low5,Seine,8/25/17,bluegill,1
+2338,Low5,Seine,8/25/17,central_stoneroller,3
+2339,Low5,Seine,8/25/17,common_shiner,6
+2340,Low5,Seine,8/25/17,creek_chub,21
+2341,Low5,Seine,8/25/17,fathead_minnow,11
+2342,Low5,Seine,8/25/17,green_sunfish,6
+2343,Low5,Seine,8/25/17,johnny_darter,18
+2344,Low5,Seine,8/25/17,round_goby,54
+2345,Low5,Seine,8/25/17,white_sucker,13
+2346,Low5,Seine,8/25/17,yellow_perch,1
+2347,Low5,Seine,5/25/18,blacknose_dace,4
+2348,Low5,Seine,5/25/18,bluegill,1
+2349,Low5,Seine,5/25/18,creek_chub,7
+2350,Low5,Seine,5/25/18,fathead_minnow,21
+2351,Low5,Seine,5/25/18,green_sunfish,7
+2352,Low5,Seine,5/25/18,johnny_darter,1
+2353,Low5,Seine,5/25/18,largemouth_bass,1
+2354,Low5,Seine,5/25/18,pumpkinseed,2
+2355,Low5,Seine,5/25/18,round_goby,27
+2356,Low5,Seine,5/25/18,white_sucker,2
+2357,Low5,Seine,8/25/18,blackside_darter,3
+2358,Low5,Seine,8/25/18,bluegill,19
+2359,Low5,Seine,8/25/18,central_mudminnow,1
+2360,Low5,Seine,8/25/18,central_stoneroller,2
+2361,Low5,Seine,8/25/18,common_shiner,6
+2362,Low5,Seine,8/25/18,creek_chub,24
+2363,Low5,Seine,8/25/18,fathead_minnow,14
+2364,Low5,Seine,8/25/18,green_sunfish,7
+2365,Low5,Seine,8/25/18,johnny_darter,21
+2366,Low5,Seine,8/25/18,mimic_shiner,3
+2367,Low5,Seine,8/25/18,northern_hog_sucker,1
+2368,Low5,Seine,8/25/18,pumpkinseed,2
+2369,Low5,Seine,8/25/18,round_goby,64
+2370,Low5,Seine,8/25/18,white_sucker,15
+2371,Low6,Seine,8/3/13,blackside_darter,5
+2372,Low6,Seine,8/3/13,bluegill,12
+2373,Low6,Seine,8/3/13,common_shiner,5
+2374,Low6,Seine,8/3/13,creek_chub,4
+2375,Low6,Seine,8/3/13,fathead_minnow,3
+2376,Low6,Seine,8/3/13,green_sunfish,13
+2377,Low6,Seine,8/3/13,johnny_darter,5
+2378,Low6,Seine,8/3/13,northern_sunfish,1
+2379,Low6,Seine,8/3/13,pumpkinseed,16
+2380,Low6,Seine,8/3/13,round_goby,1
+2381,Low6,Seine,8/3/13,white_sucker,13
+2382,Low6,Seine,8/2/14,blackside_darter,2
+2383,Low6,Seine,8/2/14,bluegill,1
+2384,Low6,Seine,8/2/14,common_shiner,1
+2385,Low6,Seine,8/2/14,creek_chub,3
+2386,Low6,Seine,8/2/14,fathead_minnow,10
+2387,Low6,Seine,8/2/14,johnny_darter,4
+2388,Low6,Seine,8/2/14,pumpkinseed,1
+2389,Low6,Seine,8/2/14,round_goby,6
+2390,Low6,Seine,8/2/14,white_sucker,12
+2391,Low6,Seine,5/29/15,black_crappie,1
+2392,Low6,Seine,5/29/15,blackside_darter,5
+2393,Low6,Seine,5/29/15,bluegill,1
+2394,Low6,Seine,5/29/15,common_carp,1
+2395,Low6,Seine,5/29/15,common_shiner,1
+2396,Low6,Seine,5/29/15,creek_chub,3
+2397,Low6,Seine,5/29/15,fathead_minnow,9
+2398,Low6,Seine,5/29/15,johnny_darter,3
+2399,Low6,Seine,5/29/15,pumpkinseed,4
+2400,Low6,Seine,5/29/15,round_goby,2
+2401,Low6,Seine,5/29/15,sunfish_hybrid,1
+2402,Low6,Seine,5/29/15,white_sucker,9
+2403,Low6,Seine,8/7/15,blackside_darter,12
+2404,Low6,Seine,8/7/15,bluegill,9
+2405,Low6,Seine,8/7/15,central_mudminnow,1
+2406,Low6,Seine,8/7/15,creek_chub,5
+2407,Low6,Seine,8/7/15,fathead_minnow,51
+2408,Low6,Seine,8/7/15,green_sunfish,12
+2409,Low6,Seine,8/7/15,johnny_darter,42
+2410,Low6,Seine,8/7/15,largemouth_bass,1
+2411,Low6,Seine,8/7/15,pumpkinseed,4
+2412,Low6,Seine,8/7/15,round_goby,11
+2413,Low6,Seine,8/7/15,white_sucker,48
+2414,Low6,Seine,5/10/16,blackside_darter,3
+2415,Low6,Seine,5/10/16,bluegill,2
+2416,Low6,Seine,5/10/16,creek_chub,7
+2417,Low6,Seine,5/10/16,fathead_minnow,2
+2418,Low6,Seine,5/10/16,johnny_darter,3
+2419,Low6,Seine,5/10/16,pumpkinseed,1
+2420,Low6,Seine,5/10/16,round_goby,28
+2421,Low6,Seine,5/10/16,white_sucker,5
+2422,Low6,Seine,8/25/16,blackside_darter,4
+2423,Low6,Seine,8/25/16,creek_chub,7
+2424,Low6,Seine,8/25/16,emerald_shiner,3
+2425,Low6,Seine,8/25/16,fathead_minnow,12
+2426,Low6,Seine,8/25/16,golden_shiner,1
+2427,Low6,Seine,8/25/16,green_sunfish,5
+2428,Low6,Seine,8/25/16,johnny_darter,3
+2429,Low6,Seine,8/25/16,largemouth_bass,2
+2430,Low6,Seine,8/25/16,pumpkinseed,3
+2431,Low6,Seine,8/25/16,round_goby,62
+2432,Low6,Seine,8/25/16,white_sucker,9
+2433,Low6,Seine,8/25/16,yellow_perch,1
+2434,Low6,Seine,9/8/17,blackside_darter,1
+2435,Low6,Seine,9/8/17,bluegill,8
+2436,Low6,Seine,9/8/17,common_carp,1
+2437,Low6,Seine,9/8/17,common_shiner,3
+2438,Low6,Seine,9/8/17,creek_chub,15
+2439,Low6,Seine,9/8/17,fathead_minnow,15
+2440,Low6,Seine,9/8/17,gizzard_shad,2
+2441,Low6,Seine,9/8/17,green_sunfish,6
+2442,Low6,Seine,9/8/17,johnny_darter,13
+2443,Low6,Seine,9/8/17,round_goby,136
+2444,Low6,Seine,9/8/17,white_sucker,21
+2445,Low7,Seine,8/2/13,blacknose_dace,1
+2446,Low7,Seine,8/2/13,blackside_darter,10
+2447,Low7,Seine,8/2/13,bluntnose_minnow,2
+2448,Low7,Seine,8/2/13,central_stoneroller,3
+2449,Low7,Seine,8/2/13,common_shiner,10
+2450,Low7,Seine,8/2/13,creek_chub,25
+2451,Low7,Seine,8/2/13,fathead_minnow,38
+2452,Low7,Seine,8/2/13,green_sunfish,3
+2453,Low7,Seine,8/2/13,johnny_darter,49
+2454,Low7,Seine,8/2/13,pumpkinseed,1
+2455,Low7,Seine,8/2/13,round_goby,5
+2456,Low7,Seine,8/2/13,white_sucker,6
+2457,Low7,Seine,8/2/14,blackside_darter,1
+2458,Low7,Seine,8/2/14,central_stoneroller,1
+2459,Low7,Seine,8/2/14,common_shiner,8
+2460,Low7,Seine,8/2/14,creek_chub,5
+2461,Low7,Seine,8/2/14,fathead_minnow,14
+2462,Low7,Seine,8/2/14,johnny_darter,3
+2463,Low7,Seine,8/2/14,largemouth_bass,2
+2464,Low7,Seine,8/2/14,pumpkinseed,1
+2465,Low7,Seine,8/2/14,round_goby,17
+2466,Low7,Seine,8/2/14,white_sucker,18
+2467,Low7,Seine,5/7/15,blacknose_dace,1
+2468,Low7,Seine,5/7/15,blackside_darter,1
+2469,Low7,Seine,5/7/15,bluegill,1
+2470,Low7,Seine,5/7/15,central_stoneroller,1
+2471,Low7,Seine,5/7/15,common_shiner,15
+2472,Low7,Seine,5/7/15,creek_chub,5
+2473,Low7,Seine,5/7/15,fathead_minnow,26
+2474,Low7,Seine,5/7/15,green_sunfish,2
+2475,Low7,Seine,5/7/15,johnny_darter,2
+2476,Low7,Seine,5/7/15,northern_logperch,1
+2477,Low7,Seine,5/7/15,round_goby,28
+2478,Low7,Seine,5/7/15,white_sucker,13
+2479,Low7,Seine,5/7/15,yellow_perch,2
+2480,Low7,Seine,8/1/15,bluegill,10
+2481,Low7,Seine,8/1/15,central_mudminnow,5
+2482,Low7,Seine,8/1/15,common_shiner,3
+2483,Low7,Seine,8/1/15,creek_chub,2
+2484,Low7,Seine,8/1/15,fathead_minnow,43
+2485,Low7,Seine,8/1/15,johnny_darter,4
+2486,Low7,Seine,8/1/15,round_goby,41
+2487,Low7,Seine,8/1/15,white_sucker,18
+2488,Low7,Seine,5/10/16,blacknose_dace,2
+2489,Low7,Seine,5/10/16,bluegill,1
+2490,Low7,Seine,5/10/16,central_stoneroller,11
+2491,Low7,Seine,5/10/16,creek_chub,9
+2492,Low7,Seine,5/10/16,fathead_minnow,20
+2493,Low7,Seine,5/10/16,green_sunfish,4
+2494,Low7,Seine,5/10/16,pumpkinseed,2
+2495,Low7,Seine,5/10/16,round_goby,43
+2496,Low7,Seine,8/27/16,blacknose_dace,1
+2497,Low7,Seine,8/27/16,blackside_darter,3
+2498,Low7,Seine,8/27/16,bluegill,3
+2499,Low7,Seine,8/27/16,central_stoneroller,1
+2500,Low7,Seine,8/27/16,common_shiner,11
+2501,Low7,Seine,8/27/16,creek_chub,7
+2502,Low7,Seine,8/27/16,fathead_minnow,32
+2503,Low7,Seine,8/27/16,golden_shiner,1
+2504,Low7,Seine,8/27/16,johnny_darter,1
+2505,Low7,Seine,8/27/16,pumpkinseed,2
+2506,Low7,Seine,8/27/16,round_goby,113
+2507,Low7,Seine,8/27/16,white_sucker,7
+2508,Low7,Seine,5/31/17,blacknose_dace,4
+2509,Low7,Seine,5/31/17,blackside_darter,1
+2510,Low7,Seine,5/31/17,bluegill,3
+2511,Low7,Seine,5/31/17,common_shiner,4
+2512,Low7,Seine,5/31/17,creek_chub,11
+2513,Low7,Seine,5/31/17,fathead_minnow,38
+2514,Low7,Seine,5/31/17,pumpkinseed,5
+2515,Low7,Seine,5/31/17,round_goby,85
+2516,Low7,Seine,5/31/17,white_sucker,1
+2517,Low7,Seine,5/31/17,yellow_perch,2
+2518,Low7,Seine,9/8/17,blacknose_dace,7
+2519,Low7,Seine,9/8/17,blacknose_shiner,1
+2520,Low7,Seine,9/8/17,blackside_darter,1
+2521,Low7,Seine,9/8/17,bluegill,4
+2522,Low7,Seine,9/8/17,central_stoneroller,2
+2523,Low7,Seine,9/8/17,common_shiner,9
+2524,Low7,Seine,9/8/17,creek_chub,27
+2525,Low7,Seine,9/8/17,fathead_minnow,47
+2526,Low7,Seine,9/8/17,green_sunfish,2
+2527,Low7,Seine,9/8/17,largemouth_bass,1
+2528,Low7,Seine,9/8/17,mimic_shiner,1
+2529,Low7,Seine,9/8/17,northern_logperch,2
+2530,Low7,Seine,9/8/17,round_goby,108
+2531,Low7,Seine,9/8/17,white_sucker,8
+2532,Low7,Seine,9/8/17,yellow_perch,1
+2533,Low7,Seine,5/25/18,bluegill,1
+2534,Low7,Seine,5/25/18,central_stoneroller,2
+2535,Low7,Seine,5/25/18,common_carp,1
+2536,Low7,Seine,5/25/18,creek_chub,4
+2537,Low7,Seine,5/25/18,fathead_minnow,20
+2538,Low7,Seine,5/25/18,green_sunfish,2
+2539,Low7,Seine,5/25/18,round_goby,64
+2540,Low7,Seine,5/25/18,white_sucker,5
+2541,Low7,Seine,5/25/18,yellow_perch,1
+2542,Low7,Seine,8/25/18,blackside_darter,6
+2543,Low7,Seine,8/25/18,bluegill,2
+2544,Low7,Seine,8/25/18,central_stoneroller,1
+2545,Low7,Seine,8/25/18,common_shiner,18
+2546,Low7,Seine,8/25/18,creek_chub,6
+2547,Low7,Seine,8/25/18,emerald_shiner,2
+2548,Low7,Seine,8/25/18,fathead_minnow,13
+2549,Low7,Seine,8/25/18,green_sunfish,4
+2550,Low7,Seine,8/25/18,johnny_darter,2
+2551,Low7,Seine,8/25/18,mimic_shiner,11
+2552,Low7,Seine,8/25/18,northern_hog_sucker,2
+2553,Low7,Seine,8/25/18,rainbow_trout,1
+2554,Low7,Seine,8/25/18,round_goby,80
+2555,Low7,Seine,8/25/18,white_sucker,7
+2556,Low7,Seine,8/23/19,blacknose_dace,3
+2557,Low7,Seine,8/23/19,blackside_darter,3
+2558,Low7,Seine,8/23/19,bluegill,1
+2559,Low7,Seine,8/23/19,common_shiner,2
+2560,Low7,Seine,8/23/19,creek_chub,12
+2561,Low7,Seine,8/23/19,fathead_minnow,42
+2562,Low7,Seine,8/23/19,green_sunfish,1
+2563,Low7,Seine,8/23/19,johnny_darter,3
+2564,Low7,Seine,8/23/19,largemouth_bass,2
+2565,Low7,Seine,8/23/19,northern_hog_sucker,1
+2566,Low7,Seine,8/23/19,northern_logperch,2
+2567,Low7,Seine,8/23/19,pumpkinseed,3
+2568,Low7,Seine,8/23/19,round_goby,116
+2569,Low7,Seine,8/23/19,white_sucker,4
+2570,Low7,Seine,8/20/20,blacknose_dace,1
+2571,Low7,Seine,8/20/20,blackside_darter,4
+2572,Low7,Seine,8/20/20,bluegill,24
+2573,Low7,Seine,8/20/20,common_shiner,7
+2574,Low7,Seine,8/20/20,creek_chub,2
+2575,Low7,Seine,8/20/20,fathead_minnow,6
+2576,Low7,Seine,8/20/20,green_sunfish,1
+2577,Low7,Seine,8/20/20,northern_logperch,1
+2578,Low7,Seine,8/20/20,pumpkinseed,5
+2579,Low7,Seine,8/20/20,round_goby,71
+2580,Low7,Seine,8/20/20,sunfish_hybrid,1
+2581,Low7,Seine,8/20/20,white_sucker,1
+2582,Low8,Seine,8/2/13,blacknose_dace,4
+2583,Low8,Seine,8/2/13,blackside_darter,4
+2584,Low8,Seine,8/2/13,bluegill,3
+2585,Low8,Seine,8/2/13,bluntnose_minnow,2
+2586,Low8,Seine,8/2/13,common_shiner,5
+2587,Low8,Seine,8/2/13,creek_chub,13
+2588,Low8,Seine,8/2/13,fathead_minnow,13
+2589,Low8,Seine,8/2/13,green_sunfish,3
+2590,Low8,Seine,8/2/13,johnny_darter,48
+2591,Low8,Seine,8/2/13,northern_pike,1
+2592,Low8,Seine,8/2/13,pumpkinseed,3
+2593,Low8,Seine,8/2/13,round_goby,33
+2594,Low8,Seine,8/2/13,white_sucker,12
+2595,Low8,Seine,8/1/14,blacknose_dace,1
+2596,Low8,Seine,8/1/14,blackside_darter,3
+2597,Low8,Seine,8/1/14,bluegill,1
+2598,Low8,Seine,8/1/14,creek_chub,4
+2599,Low8,Seine,8/1/14,fathead_minnow,3
+2600,Low8,Seine,8/1/14,johnny_darter,7
+2601,Low8,Seine,8/1/14,round_goby,45
+2602,Low8,Seine,8/1/14,white_sucker,18
+2603,Low8,Seine,8/23/14,bluegill,1
+2604,Low8,Seine,8/23/14,bluntnose_minnow,1
+2605,Low8,Seine,8/23/14,common_shiner,4
+2606,Low8,Seine,8/23/14,creek_chub,1
+2607,Low8,Seine,8/23/14,emerald_shiner,2
+2608,Low8,Seine,8/23/14,fathead_minnow,5
+2609,Low8,Seine,8/23/14,green_sunfish,1
+2610,Low8,Seine,8/23/14,johnny_darter,2
+2611,Low8,Seine,8/23/14,largemouth_bass,1
+2612,Low8,Seine,8/23/14,round_goby,24
+2613,Low8,Seine,8/23/14,white_sucker,7
+2614,Low8,Seine,5/16/15,blacknose_dace,1
+2615,Low8,Seine,5/16/15,bluegill,8
+2616,Low8,Seine,5/16/15,brook_stickleback,1
+2617,Low8,Seine,5/16/15,common_shiner,3
+2618,Low8,Seine,5/16/15,creek_chub,11
+2619,Low8,Seine,5/16/15,fathead_minnow,20
+2620,Low8,Seine,5/16/15,johnny_darter,1
+2621,Low8,Seine,5/16/15,round_goby,73
+2622,Low8,Seine,5/16/15,white_sucker,4
+2623,Low8,Seine,8/1/15,blacknose_dace,2
+2624,Low8,Seine,8/1/15,bluegill,3
+2625,Low8,Seine,8/1/15,central_stoneroller,6
+2626,Low8,Seine,8/1/15,common_shiner,4
+2627,Low8,Seine,8/1/15,creek_chub,6
+2628,Low8,Seine,8/1/15,fathead_minnow,105
+2629,Low8,Seine,8/1/15,johnny_darter,1
+2630,Low8,Seine,8/1/15,round_goby,26
+2631,Low8,Seine,8/1/15,white_sucker,38
+2632,Low8,Seine,5/20/16,bluegill,8
+2633,Low8,Seine,5/20/16,creek_chub,13
+2634,Low8,Seine,5/20/16,fathead_minnow,21
+2635,Low8,Seine,5/20/16,green_sunfish,6
+2636,Low8,Seine,5/20/16,johnny_darter,2
+2637,Low8,Seine,5/20/16,round_goby,96
+2638,Low8,Seine,5/20/16,white_sucker,1
+2639,Low8,Seine,8/27/16,blackside_darter,3
+2640,Low8,Seine,8/27/16,bluegill,3
+2641,Low8,Seine,8/27/16,common_shiner,2
+2642,Low8,Seine,8/27/16,emerald_shiner,1
+2643,Low8,Seine,8/27/16,fathead_minnow,31
+2644,Low8,Seine,8/27/16,gizzard_shad,3
+2645,Low8,Seine,8/27/16,johnny_darter,3
+2646,Low8,Seine,8/27/16,northern_sunfish,1
+2647,Low8,Seine,8/27/16,pumpkinseed,3
+2648,Low8,Seine,8/27/16,round_goby,117
+2649,Low8,Seine,8/27/16,white_sucker,15
+2650,Low8,Seine,5/3/17,blackside_darter,7
+2651,Low8,Seine,5/3/17,bluegill,3
+2652,Low8,Seine,5/3/17,creek_chub,9
+2653,Low8,Seine,5/3/17,fathead_minnow,55
+2654,Low8,Seine,5/3/17,green_sunfish,1
+2655,Low8,Seine,5/3/17,round_goby,96
+2656,Low8,Seine,5/3/17,white_sucker,2
+2657,Low8,Seine,9/9/17,blacknose_dace,1
+2658,Low8,Seine,9/9/17,blackside_darter,2
+2659,Low8,Seine,9/9/17,bluegill,2
+2660,Low8,Seine,9/9/17,central_stoneroller,1
+2661,Low8,Seine,9/9/17,common_shiner,3
+2662,Low8,Seine,9/9/17,creek_chub,19
+2663,Low8,Seine,9/9/17,fathead_minnow,16
+2664,Low8,Seine,9/9/17,green_sunfish,1
+2665,Low8,Seine,9/9/17,johnny_darter,1
+2666,Low8,Seine,9/9/17,largemouth_bass,1
+2667,Low8,Seine,9/9/17,northern_logperch,2
+2668,Low8,Seine,9/9/17,pumpkinseed,1
+2669,Low8,Seine,9/9/17,round_goby,94
+2670,Low8,Seine,9/9/17,white_sucker,24
+2671,Low9,Seine,8/29/15,central_mudminnow,1
+2672,Low9,Seine,8/29/15,central_stoneroller,1
+2673,Low9,Seine,8/29/15,common_shiner,1
+2674,Low9,Seine,8/29/15,creek_chub,6
+2675,Low9,Seine,8/29/15,fathead_minnow,13
+2676,Low9,Seine,8/29/15,johnny_darter,47
+2677,Low9,Seine,8/29/15,largemouth_bass,2
+2678,Low9,Seine,8/29/15,pumpkinseed,1
+2679,Low9,Seine,8/29/15,white_sucker,2
+2680,Low9,Seine,8/22/16,bluegill,2
+2681,Low9,Seine,8/22/16,central_stoneroller,3
+2682,Low9,Seine,8/22/16,creek_chub,3
+2683,Low9,Seine,8/22/16,fathead_minnow,19
+2684,Low9,Seine,8/22/16,gizzard_shad,9
+2685,Low9,Seine,8/22/16,green_sunfish,2
+2686,Low9,Seine,8/22/16,johnny_darter,149
+2687,Low9,Seine,8/22/16,round_goby,3
+2688,Low9,Seine,8/22/16,smallmouth_bass,5
+2689,Low9,Seine,8/22/16,white_sucker,7
+2690,Low9,Seine,5/19/17,black_crappie,1
+2691,Low9,Seine,5/19/17,blacknose_dace,1
+2692,Low9,Seine,5/19/17,bluegill,15
+2693,Low9,Seine,5/19/17,central_stoneroller,1
+2694,Low9,Seine,5/19/17,creek_chub,6
+2695,Low9,Seine,5/19/17,fathead_minnow,29
+2696,Low9,Seine,5/19/17,green_sunfish,4
+2697,Low9,Seine,5/19/17,johnny_darter,85
+2698,Low9,Seine,5/19/17,pumpkinseed,2
+2699,Low9,Seine,5/19/17,white_sucker,10
+2700,Low9,Seine,7/28/17,black_crappie,7
+2701,Low9,Seine,7/28/17,bluegill,11
+2702,Low9,Seine,7/28/17,creek_chub,8
+2703,Low9,Seine,7/28/17,fathead_minnow,88
+2704,Low9,Seine,7/28/17,green_sunfish,3
+2705,Low9,Seine,7/28/17,johnny_darter,176
+2706,Low9,Seine,7/28/17,largemouth_bass,8
+2707,Low9,Seine,7/28/17,round_goby,1
+2708,Low9,Seine,7/28/17,white_sucker,30
+2709,Low9,Seine,5/5/18,blacknose_dace,3
+2710,Low9,Seine,5/5/18,central_stoneroller,2
+2711,Low9,Seine,5/5/18,common_carp,1
+2712,Low9,Seine,5/5/18,creek_chub,5
+2713,Low9,Seine,5/5/18,fathead_minnow,19
+2714,Low9,Seine,5/5/18,johnny_darter,74
+2715,Low9,Seine,5/5/18,round_goby,1
+2716,Low9,Seine,5/5/18,white_sucker,11
+2717,Low9,Seine,8/17/18,bluegill,5
+2718,Low9,Seine,8/17/18,central_stoneroller,8
+2719,Low9,Seine,8/17/18,common_carp,1
+2720,Low9,Seine,8/17/18,common_shiner,3
+2721,Low9,Seine,8/17/18,creek_chub,26
+2722,Low9,Seine,8/17/18,fathead_minnow,2
+2723,Low9,Seine,8/17/18,gizzard_shad,7
+2724,Low9,Seine,8/17/18,green_sunfish,3
+2725,Low9,Seine,8/17/18,johnny_darter,110
+2726,Low9,Seine,8/17/18,largemouth_bass,4
+2727,Low9,Seine,8/17/18,round_goby,9
+2728,Low9,Seine,8/17/18,white_sucker,8
+2729,Low9,Seine,8/17/18,yellow_perch,1
+2730,Low9,Seine,8/18/19,black_crappie,6
+2731,Low9,Seine,8/18/19,bluegill,24
+2732,Low9,Seine,8/18/19,bluntnose_minnow,2
+2733,Low9,Seine,8/18/19,central_stoneroller,1
+2734,Low9,Seine,8/18/19,creek_chub,6
+2735,Low9,Seine,8/18/19,fathead_minnow,29
+2736,Low9,Seine,8/18/19,gizzard_shad,2
+2737,Low9,Seine,8/18/19,green_sunfish,17
+2738,Low9,Seine,8/18/19,johnny_darter,106
+2739,Low9,Seine,8/18/19,largemouth_bass,5
+2740,Low9,Seine,8/18/19,pumpkinseed,23
+2741,Low9,Seine,8/18/19,round_goby,49
+2742,Low9,Seine,8/18/19,white_sucker,25
+2743,Low9,Seine,8/18/19,yellow_bullhead,1
+2744,Low9,Seine,8/19/20,bluegill,13
+2745,Low9,Seine,8/19/20,bluntnose_minnow,2
+2746,Low9,Seine,8/19/20,common_shiner,1
+2747,Low9,Seine,8/19/20,creek_chub,5
+2748,Low9,Seine,8/19/20,fathead_minnow,1
+2749,Low9,Seine,8/19/20,gizzard_shad,1
+2750,Low9,Seine,8/19/20,green_sunfish,13
+2751,Low9,Seine,8/19/20,johnny_darter,70
+2752,Low9,Seine,8/19/20,largemouth_bass,8
+2753,Low9,Seine,8/19/20,pumpkinseed,8
+2754,Low9,Seine,8/19/20,round_goby,31
+2755,Low9,Seine,8/19/20,white_sucker,12
+2756,Low9,Seine,8/27/21,bluegill,56
+2757,Low9,Seine,8/27/21,common_carp,1
+2758,Low9,Seine,8/27/21,common_shiner,5
+2759,Low9,Seine,8/27/21,creek_chub,2
+2760,Low9,Seine,8/27/21,fathead_minnow,10
+2761,Low9,Seine,8/27/21,gizzard_shad,2
+2762,Low9,Seine,8/27/21,golden_shiner,1
+2763,Low9,Seine,8/27/21,green_sunfish,30
+2764,Low9,Seine,8/27/21,johnny_darter,70
+2765,Low9,Seine,8/27/21,largemouth_bass,7
+2766,Low9,Seine,8/27/21,pumpkinseed,12
+2767,Low9,Seine,8/27/21,round_goby,126
+2768,Low9,Seine,8/27/21,white_sucker,7
+2769,Low9,Seine,8/27/21,yellow_perch,2
+2770,MN-2,Backpack Shock,6/23/22,blackside_darter,1
+2771,MN-2,Backpack Shock,6/23/22,pumpkinseed,1
+2772,MN-2,Backpack Shock,6/23/22,white_sucker,32
+2773,MN-2,Seine,9/15/16,bluntnose_minnow,1
+2774,MN-2,Seine,9/15/16,fathead_minnow,363
+2775,MN-2,Seine,9/15/16,johnny_darter,20
+2776,MN-2,Seine,5/27/17,black_crappie,4
+2777,MN-2,Seine,5/27/17,bluegill,11
+2778,MN-2,Seine,5/27/17,common_shiner,3
+2779,MN-2,Seine,5/27/17,creek_chub,2
+2780,MN-2,Seine,5/27/17,fathead_minnow,163
+2781,MN-2,Seine,5/27/17,johnny_darter,10
+2782,MN-2,Seine,5/27/17,pumpkinseed,3
+2783,MN-2,Seine,5/27/17,rock_bass,1
+2784,MN-2,Seine,9/14/17,central_stoneroller,1
+2785,MN-2,Seine,9/14/17,creek_chub,2
+2786,MN-2,Seine,9/14/17,fathead_minnow,134
+2787,MN-2,Seine,9/14/17,johnny_darter,3
+2788,MN-2,Seine,9/14/17,white_sucker,3
+2789,MN-2,Seine,7/31/20,fathead_minnow,147
+2790,MN-2,Seine,7/31/20,green_sunfish,1
+2791,MN-2,Seine,7/31/20,johnny_darter,11
+2792,MN-2,Seine,7/31/20,pumpkinseed,1
+2793,MN-2,Seine,7/31/20,white_sucker,2
+2794,MN-2,Seine,6/23/22,blackside_darter,1
+2795,MN-2,Seine,6/23/22,sunfish_hybrid,1
+2796,MN-2,Seine,6/23/22,white_sucker,131
+2797,MN-5,Barge Shock,7/27/22,blackside_darter,2
+2798,MN-5,Barge Shock,7/27/22,bluegill,5
+2799,MN-5,Barge Shock,7/27/22,common_shiner,2
+2800,MN-5,Barge Shock,7/27/22,green_sunfish,3
+2801,MN-5,Barge Shock,7/27/22,johnny_darter,7
+2802,MN-5,Barge Shock,7/27/22,northern_pike,1
+2803,MN-5,Barge Shock,7/27/22,pumpkinseed,1
+2804,MN-5,Barge Shock,7/27/22,rock_bass,11
+2805,MN-5,Barge Shock,7/27/22,white_sucker,31
+2806,MN-5,Seine,10/10/16,blackside_darter,11
+2807,MN-5,Seine,10/10/16,bluegill,1
+2808,MN-5,Seine,10/10/16,bluntnose_minnow,5
+2809,MN-5,Seine,10/10/16,common_shiner,22
+2810,MN-5,Seine,10/10/16,creek_chub,1
+2811,MN-5,Seine,10/10/16,johnny_darter,79
+2812,MN-5,Seine,10/10/16,rock_bass,2
+2813,MN-5,Seine,10/10/16,white_sucker,12
+2814,MN-5,Seine,9/14/17,black_crappie,2
+2815,MN-5,Seine,9/14/17,blackside_darter,2
+2816,MN-5,Seine,9/14/17,bluegill,4
+2817,MN-5,Seine,9/14/17,bluntnose_minnow,12
+2818,MN-5,Seine,9/14/17,central_stoneroller,12
+2819,MN-5,Seine,9/14/17,common_shiner,1
+2820,MN-5,Seine,9/14/17,creek_chub,9
+2821,MN-5,Seine,9/14/17,fathead_minnow,13
+2822,MN-5,Seine,9/14/17,johnny_darter,70
+2823,MN-5,Seine,9/14/17,largemouth_bass,1
+2824,MN-5,Seine,9/14/17,rock_bass,2
+2825,MN-5,Seine,9/14/17,spotfin_shiner,1
+2826,MN-5,Seine,9/14/17,white_sucker,28
+2827,MN-6,Seine,9/28/18,bluegill,2
+2828,MN-6,Seine,9/28/18,bluntnose_minnow,2
+2829,MN-6,Seine,9/28/18,johnny_darter,47
+2830,MN-6,Seine,9/28/18,pumpkinseed,1
+2831,MN-6,Seine,9/28/18,white_sucker,4
+2832,MN-7,Seine,9/15/16,common_shiner,5
+2833,MN-7,Seine,9/15/16,creek_chub,3
+2834,MN-7,Seine,9/15/16,fathead_minnow,214
+2835,MN-7,Seine,9/15/16,johnny_darter,3
+2836,MN-7,Seine,9/15/16,round_goby,1
+2837,MN-7,Seine,5/27/17,bluegill,1
+2838,MN-7,Seine,5/27/17,creek_chub,2
+2839,MN-7,Seine,5/27/17,fathead_minnow,44
+2840,MN-7A,Barge Shock,7/27/22,bluegill,15
+2841,MN-7A,Barge Shock,7/27/22,common_carp,3
+2842,MN-7A,Barge Shock,7/27/22,common_shiner,3
+2843,MN-7A,Barge Shock,7/27/22,creek_chub,9
+2844,MN-7A,Barge Shock,7/27/22,fathead_minnow,28
+2845,MN-7A,Barge Shock,7/27/22,goldfish,2
+2846,MN-7A,Barge Shock,7/27/22,green_sunfish,2
+2847,MN-7A,Barge Shock,7/27/22,johnny_darter,2
+2848,MN-7A,Barge Shock,7/27/22,northern_pike,1
+2849,MN-7A,Barge Shock,7/27/22,pumpkinseed,3
+2850,MN-7A,Barge Shock,7/27/22,rock_bass,1
+2851,MN-7A,Barge Shock,7/27/22,round_goby,5
+2852,MN-7A,Barge Shock,7/27/22,sunfish_hybrid,3
+2853,MN-7A,Barge Shock,7/27/22,white_sucker,91
+2854,MN-7A,Seine,9/15/17,bluntnose_minnow,3
+2855,MN-7A,Seine,9/15/17,common_carp,1
+2856,MN-7A,Seine,9/15/17,common_shiner,2
+2857,MN-7A,Seine,9/15/17,creek_chub,18
+2858,MN-7A,Seine,9/15/17,fathead_minnow,201
+2859,MN-7A,Seine,9/15/17,johnny_darter,7
+2860,MN-7A,Seine,9/15/17,round_goby,14
+2861,MN-7A,Seine,9/15/17,white_sucker,13
+2862,MN-7A,Seine,9/15/17,yellow_bullhead,1
+2863,MN-7A,Seine,7/31/20,bluntnose_minnow,2
+2864,MN-7A,Seine,7/31/20,common_shiner,3
+2865,MN-7A,Seine,7/31/20,fathead_minnow,127
+2866,MN-7A,Seine,7/31/20,golden_shiner,1
+2867,MN-7A,Seine,7/31/20,johnny_darter,7
+2868,MN-7A,Seine,7/31/20,round_goby,31
+2869,MN-7A,Seine,7/31/20,stonecat,1
+2870,MN-7A,Seine,7/31/20,white_sucker,7
+2871,MN-7A,Seine,8/20/21,bluegill,4
+2872,MN-7A,Seine,8/20/21,creek_chub,2
+2873,MN-7A,Seine,8/20/21,fathead_minnow,70
+2874,MN-7A,Seine,8/20/21,green_sunfish,1
+2875,MN-7A,Seine,8/20/21,johnny_darter,1
+2876,MN-7A,Seine,8/20/21,pumpkinseed,1
+2877,MN-7A,Seine,8/20/21,round_goby,50
+2878,MN-7A,Seine,8/20/21,white_sucker,1
+2879,MR-11,Barge Shock,7/5/22,bluegill,13
+2880,MR-11,Barge Shock,7/5/22,bluntnose_minnow,2
+2881,MR-11,Barge Shock,7/5/22,common_carp,1
+2882,MR-11,Barge Shock,7/5/22,common_shiner,3
+2883,MR-11,Barge Shock,7/5/22,creek_chub,2
+2884,MR-11,Barge Shock,7/5/22,fathead_minnow,1
+2885,MR-11,Barge Shock,7/5/22,golden_shiner,1
+2886,MR-11,Barge Shock,7/5/22,johnny_darter,1
+2887,MR-11,Barge Shock,7/5/22,northern_pike,1
+2888,MR-11,Barge Shock,7/5/22,pumpkinseed,6
+2889,MR-11,Barge Shock,7/5/22,rock_bass,6
+2890,MR-11,Barge Shock,7/5/22,round_goby,2
+2891,MR-11,Barge Shock,7/5/22,spotfin_shiner,1
+2892,MR-11,Barge Shock,7/5/22,white_sucker,4
+2893,MR-11,Seine,9/26/14,bluegill,1
+2894,MR-11,Seine,9/26/14,bluntnose_minnow,4
+2895,MR-11,Seine,9/26/14,johnny_darter,17
+2896,MR-11,Seine,9/26/14,round_goby,1
+2897,MR-11,Seine,9/26/14,spotfin_shiner,12
+2898,MR-11,Seine,7/10/15,blackside_darter,9
+2899,MR-11,Seine,7/10/15,bluntnose_minnow,1
+2900,MR-11,Seine,7/10/15,johnny_darter,47
+2901,MR-11,Seine,7/10/15,round_goby,6
+2902,MR-11,Seine,7/10/15,spotfin_shiner,1
+2903,MR-11,Seine,7/10/15,white_sucker,2
+2904,MR-11,Seine,6/17/16,bluegill,4
+2905,MR-11,Seine,6/17/16,bluntnose_minnow,2
+2906,MR-11,Seine,6/17/16,common_shiner,2
+2907,MR-11,Seine,6/17/16,johnny_darter,43
+2908,MR-11,Seine,6/17/16,northern_pike,1
+2909,MR-11,Seine,6/17/16,rock_bass,1
+2910,MR-11,Seine,6/17/16,round_goby,78
+2911,MR-11,Seine,6/17/16,white_sucker,22
+2912,MR-11,Seine,7/5/22,blackside_darter,4
+2913,MR-11,Seine,7/5/22,bluntnose_minnow,5
+2914,MR-11,Seine,7/5/22,common_shiner,8
+2915,MR-11,Seine,7/5/22,johnny_darter,11
+2916,MR-11,Seine,7/5/22,rock_bass,3
+2917,MR-11,Seine,7/5/22,round_goby,7
+2918,MR-11,Seine,7/5/22,smallmouth_bass,1
+2919,MR-11,Seine,7/5/22,spotfin_shiner,1
+2920,MR-11,Seine,7/5/22,white_sucker,6
+2921,MR-11,Seine,7/5/22,yellow_bullhead,1
+2922,MR-12,Seine,8/28/15,blacknose_dace,3
+2923,MR-12,Seine,8/28/15,blackside_darter,1
+2924,MR-12,Seine,8/28/15,bluntnose_minnow,4
+2925,MR-12,Seine,8/28/15,central_stoneroller,3
+2926,MR-12,Seine,8/28/15,common_carp,1
+2927,MR-12,Seine,8/28/15,common_shiner,24
+2928,MR-12,Seine,8/28/15,creek_chub,9
+2929,MR-12,Seine,8/28/15,fathead_minnow,10
+2930,MR-12,Seine,8/28/15,johnny_darter,38
+2931,MR-12,Seine,8/28/15,round_goby,9
+2932,MR-12,Seine,8/28/15,spotfin_shiner,3
+2933,MR-12,Seine,8/28/15,white_sucker,9
+2934,MR-12,Seine,6/24/16,blackside_darter,1
+2935,MR-12,Seine,6/24/16,bluntnose_minnow,6
+2936,MR-12,Seine,6/24/16,central_stoneroller,1
+2937,MR-12,Seine,6/24/16,common_shiner,4
+2938,MR-12,Seine,6/24/16,creek_chub,2
+2939,MR-12,Seine,6/24/16,johnny_darter,48
+2940,MR-12,Seine,6/24/16,round_goby,38
+2941,MR-12,Seine,6/24/16,white_sucker,16
+2942,MR-12,Seine,5/27/21,blackside_darter,7
+2943,MR-12,Seine,5/27/21,bluegill,1
+2944,MR-12,Seine,5/27/21,bluntnose_minnow,14
+2945,MR-12,Seine,5/27/21,common_shiner,27
+2946,MR-12,Seine,5/27/21,creek_chub,1
+2947,MR-12,Seine,5/27/21,johnny_darter,2
+2948,MR-12,Seine,5/27/21,rock_bass,1
+2949,MR-12,Seine,5/27/21,round_goby,17
+2950,MR-12,Seine,5/27/21,spotfin_shiner,3
+2951,MR-13,Seine,9/26/14,johnny_darter,8
+2952,MR-13,Seine,7/10/15,bluegill,1
+2953,MR-13,Seine,7/10/15,common_carp,1
+2954,MR-13,Seine,7/10/15,common_shiner,3
+2955,MR-13,Seine,7/10/15,creek_chub,1
+2956,MR-13,Seine,7/10/15,fathead_minnow,9
+2957,MR-13,Seine,7/10/15,johnny_darter,2
+2958,MR-13,Seine,7/10/15,largemouth_bass,1
+2959,MR-13,Seine,7/10/15,white_sucker,4
+2960,MR-13,Seine,6/24/16,bluntnose_minnow,8
+2961,MR-13,Seine,6/24/16,common_shiner,2
+2962,MR-13,Seine,6/24/16,fathead_minnow,1
+2963,MR-13,Seine,6/24/16,johnny_darter,20
+2964,MR-13,Seine,6/24/16,pumpkinseed,1
+2965,MR-13,Seine,6/24/16,round_goby,12
+2966,MR-13,Seine,6/24/16,white_sucker,15
+2967,MR-15,Backpack Shock,6/22/22,blackside_darter,1
+2968,MR-15,Backpack Shock,6/22/22,bluntnose_minnow,1
+2969,MR-15,Backpack Shock,6/22/22,common_shiner,3
+2970,MR-15,Backpack Shock,6/22/22,fathead_minnow,1
+2971,MR-15,Backpack Shock,6/22/22,green_sunfish,1
+2972,MR-15,Backpack Shock,6/22/22,johnny_darter,1
+2973,MR-15,Backpack Shock,6/22/22,pumpkinseed,1
+2974,MR-15,Backpack Shock,6/22/22,rock_bass,2
+2975,MR-15,Backpack Shock,6/22/22,round_goby,3
+2976,MR-15,Backpack Shock,6/22/22,spotfin_shiner,7
+2977,MR-15,Seine,6/24/16,bluntnose_minnow,28
+2978,MR-15,Seine,6/24/16,common_shiner,1
+2979,MR-15,Seine,6/24/16,johnny_darter,32
+2980,MR-15,Seine,6/24/16,round_goby,4
+2981,MR-15,Seine,6/24/16,spotfin_shiner,4
+2982,MR-15,Seine,6/24/16,white_sucker,12
+2983,MR-16,Seine,7/11/15,bluegill,1
+2984,MR-16,Seine,7/11/15,common_shiner,1
+2985,MR-16,Seine,7/11/15,johnny_darter,8
+2986,MR-16,Seine,7/11/15,white_sucker,3
+2987,MR-17,Seine,7/11/15,bluegill,1
+2988,MR-17,Seine,7/11/15,fathead_minnow,39
+2989,MR-17,Seine,7/11/15,johnny_darter,51
+2990,MR-17,Seine,7/11/15,largemouth_bass,3
+2991,MR-17,Seine,7/11/15,rainbow_darter,11
+2992,MR-17,Seine,7/11/15,rainbow_trout,2
+2993,MR-17,Seine,7/11/15,rock_bass,1
+2994,MR-17,Seine,7/11/15,smallmouth_bass,1
+2995,MR-17,Seine,7/11/15,sunfish_hybrid,1
+2996,MR-17,Seine,7/11/15,white_sucker,29
+2997,MR-17,Seine,6/16/16,bluegill,29
+2998,MR-17,Seine,6/16/16,bluntnose_minnow,9
+2999,MR-17,Seine,6/16/16,common_shiner,1
+3000,MR-17,Seine,6/16/16,johnny_darter,9
+3001,MR-17,Seine,6/16/16,pumpkinseed,2
+3002,MR-17,Seine,6/16/16,rainbow_darter,6
+3003,MR-17,Seine,6/16/16,rock_bass,2
+3004,MR-17,Seine,6/16/16,smallmouth_bass,1
+3005,MR-17,Seine,6/16/16,spotfin_shiner,10
+3006,MR-17,Seine,6/16/16,sunfish_hybrid,2
+3007,MR-17,Seine,6/16/16,white_sucker,1
+3008,MR-17,Seine,5/24/17,blacknose_dace,1
+3009,MR-17,Seine,5/24/17,bluegill,64
+3010,MR-17,Seine,5/24/17,bluntnose_minnow,7
+3011,MR-17,Seine,5/24/17,pumpkinseed,1
+3012,MR-17,Seine,5/24/17,rainbow_darter,53
+3013,MR-17,Seine,5/24/17,rock_bass,1
+3014,MR-17,Seine,5/24/17,smallmouth_bass,4
+3015,MR-17,Seine,5/24/17,spotfin_shiner,5
+3016,MR-18,Barge Shock,8/9/22,blacknose_dace,18
+3017,MR-18,Barge Shock,8/9/22,bluegill,2
+3018,MR-18,Barge Shock,8/9/22,common_carp,16
+3019,MR-18,Barge Shock,8/9/22,golden_shiner,1
+3020,MR-18,Barge Shock,8/9/22,green_sunfish,1
+3021,MR-18,Barge Shock,8/9/22,johnny_darter,1
+3022,MR-18,Barge Shock,8/9/22,largemouth_bass,9
+3023,MR-18,Barge Shock,8/9/22,northern_pike,1
+3024,MR-18,Barge Shock,8/9/22,pumpkinseed,3
+3025,MR-18,Barge Shock,8/9/22,rock_bass,26
+3026,MR-18,Barge Shock,8/9/22,smallmouth_bass,17
+3027,MR-18,Barge Shock,8/9/22,white_sucker,5
+3028,MR-18,Barge Shock,8/9/22,yellow_bullhead,2
+3029,MR-18,Seine,7/11/15,black_crappie,1
+3030,MR-18,Seine,7/11/15,bluntnose_minnow,8
+3031,MR-18,Seine,7/11/15,common_shiner,15
+3032,MR-18,Seine,7/11/15,fathead_minnow,90
+3033,MR-18,Seine,7/11/15,green_sunfish,1
+3034,MR-18,Seine,7/11/15,johnny_darter,6
+3035,MR-18,Seine,7/11/15,largemouth_bass,6
+3036,MR-18,Seine,7/11/15,northern_pike,1
+3037,MR-18,Seine,7/11/15,rainbow_darter,15
+3038,MR-18,Seine,7/11/15,rainbow_trout,1
+3039,MR-18,Seine,7/11/15,smallmouth_bass,9
+3040,MR-18,Seine,7/11/15,spotfin_shiner,7
+3041,MR-18,Seine,7/11/15,white_sucker,5
+3042,MR-18,Seine,5/22/21,brown_bullhead,1
+3043,MR-18,Seine,5/22/21,rainbow_darter,2
+3044,MR-18,Seine,5/22/21,rock_bass,3
+3045,MR-18,Seine,5/22/21,smallmouth_bass,5
+3046,MR-18,Seine,5/22/21,yellow_bullhead,1
+3047,MR-20,Seine,6/19/15,bluegill,2
+3048,MR-20,Seine,6/19/15,bluntnose_minnow,2
+3049,MR-20,Seine,6/19/15,central_stoneroller,5
+3050,MR-20,Seine,6/19/15,common_shiner,56
+3051,MR-20,Seine,6/19/15,creek_chub,11
+3052,MR-20,Seine,6/19/15,johnny_darter,1
+3053,MR-20,Seine,6/19/15,mottled_sculpin,4
+3054,MR-20,Seine,6/19/15,rainbow_darter,50
+3055,MR-20,Seine,6/19/15,rainbow_trout,1
+3056,MR-20,Seine,6/19/15,rock_bass,7
+3057,MR-20,Seine,6/19/15,smallmouth_bass,2
+3058,MR-20,Seine,6/19/15,white_sucker,27
+3059,MR-22,Seine,5/29/12,blacknose_dace,44
+3060,MR-22,Seine,5/29/12,bluegill,6
+3061,MR-22,Seine,5/29/12,bluntnose_minnow,21
+3062,MR-22,Seine,5/29/12,central_stoneroller,2
+3063,MR-22,Seine,5/29/12,creek_chub,1
+3064,MR-22,Seine,5/29/12,fathead_minnow,296
+3065,MR-22,Seine,5/29/12,mottled_sculpin,4
+3066,MR-22,Seine,5/29/12,white_sucker,2
+3067,MR-4,Barge Shock,7/13/22,bluegill,1
+3068,MR-4,Barge Shock,7/13/22,brown_bullhead,3
+3069,MR-4,Barge Shock,7/13/22,pumpkinseed,1
+3070,MR-4,Barge Shock,7/13/22,rock_bass,16
+3071,MR-4,Barge Shock,7/13/22,round_goby,6
+3072,MR-4,Barge Shock,7/13/22,smallmouth_bass,2
+3073,MR-4,Barge Shock,7/13/22,spotfin_shiner,8
+3074,MR-4,Barge Shock,7/13/22,sunfish_hybrid,2
+3075,MR-4,Barge Shock,7/13/22,yellow_bullhead,2
+3076,MR-4,Seine,9/26/14,bluntnose_minnow,57
+3077,MR-4,Seine,9/26/14,johnny_darter,1
+3078,MR-4,Seine,9/26/14,largemouth_bass,2
+3079,MR-4,Seine,9/26/14,rock_bass,1
+3080,MR-4,Seine,9/26/14,round_goby,30
+3081,MR-4,Seine,9/26/14,spotfin_shiner,18
+3082,MR-4,Seine,9/26/14,white_sucker,4
+3083,MR-4,Seine,7/10/15,bluegill,1
+3084,MR-4,Seine,7/10/15,bluntnose_minnow,17
+3085,MR-4,Seine,7/10/15,common_shiner,1
+3086,MR-4,Seine,7/10/15,johnny_darter,1
+3087,MR-4,Seine,7/10/15,round_goby,75
+3088,MR-4,Seine,7/10/15,spotfin_shiner,15
+3089,MR-4,Seine,7/10/15,white_sucker,4
+3090,MR-4,Seine,7/10/15,yellow_bullhead,4
+3091,MR-4,Seine,6/16/16,bluegill,2
+3092,MR-4,Seine,6/16/16,bluntnose_minnow,23
+3093,MR-4,Seine,6/16/16,common_shiner,1
+3094,MR-4,Seine,6/16/16,johnny_darter,1
+3095,MR-4,Seine,6/16/16,round_goby,27
+3096,MR-4,Seine,6/16/16,spotfin_shiner,41
+3097,MR-4,Seine,6/16/16,white_sucker,1
+3098,MR-4,Seine,5/22/21,bluegill,1
+3099,MR-4,Seine,5/22/21,rock_bass,4
+3100,MR-4,Seine,5/22/21,round_goby,3
+3101,MR-4,Seine,5/22/21,smallmouth_bass,3
+3102,MR-4,Seine,5/22/21,spotfin_shiner,8
+3103,MR-4,Seine,5/22/21,white_sucker,2
+3104,MR-4,Seine,6/6/22,bluegill,3
+3105,MR-4,Seine,6/6/22,largemouth_bass,1
+3106,MR-4,Seine,6/6/22,rock_bass,2
+3107,MR-4,Seine,6/6/22,round_goby,7
+3108,MR-4,Seine,6/6/22,smallmouth_bass,3
+3109,MR-4,Seine,6/6/22,spotfin_shiner,7
+3110,MR-8,Seine,10/16/15,bluntnose_minnow,12
+3111,MR-8,Seine,10/16/15,common_shiner,4
+3112,MR-8,Seine,10/16/15,creek_chub,3
+3113,MR-8,Seine,10/16/15,fathead_minnow,8
+3114,MR-8,Seine,10/16/15,johnny_darter,4
+3115,MR-8,Seine,10/16/15,pumpkinseed,1
+3116,MR-8,Seine,10/16/15,round_goby,1
+3117,MR-8,Seine,10/16/15,spotfin_shiner,3
+3118,MR-8,Seine,10/16/15,white_sucker,5
+3119,MR-8,Seine,6/17/16,black_crappie,1
+3120,MR-8,Seine,6/17/16,bluegill,1
+3121,MR-8,Seine,6/17/16,bluntnose_minnow,9
+3122,MR-8,Seine,6/17/16,common_shiner,6
+3123,MR-8,Seine,6/17/16,creek_chub,6
+3124,MR-8,Seine,6/17/16,fathead_minnow,1
+3125,MR-8,Seine,6/17/16,johnny_darter,29
+3126,MR-8,Seine,6/17/16,round_goby,19
+3127,MR-8,Seine,6/17/16,white_sucker,17
+3128,MR-8,Seine,5/27/21,blackside_darter,1
+3129,MR-8,Seine,5/27/21,bluegill,1
+3130,MR-8,Seine,5/27/21,bluntnose_minnow,20
+3131,MR-8,Seine,5/27/21,common_shiner,18
+3132,MR-8,Seine,5/27/21,creek_chub,5
+3133,MR-8,Seine,5/27/21,johnny_darter,8
+3134,MR-8,Seine,5/27/21,mimic_shiner,4
+3135,MR-8,Seine,5/27/21,rock_bass,1
+3136,MR-8,Seine,5/27/21,round_goby,65
+3137,MR-8,Seine,5/27/21,spotfin_shiner,5
+3138,MR-8,Seine,5/27/21,white_sucker,1
+3139,MR-9,Barge Shock,7/13/22,bluntnose_minnow,5
+3140,MR-9,Barge Shock,7/13/22,common_shiner,10
+3141,MR-9,Barge Shock,7/13/22,creek_chub,10
+3142,MR-9,Barge Shock,7/13/22,green_sunfish,2
+3143,MR-9,Barge Shock,7/13/22,northern_pike,2
+3144,MR-9,Barge Shock,7/13/22,pumpkinseed,2
+3145,MR-9,Barge Shock,7/13/22,rock_bass,1
+3146,MR-9,Barge Shock,7/13/22,spotfin_shiner,4
+3147,MR-9,Barge Shock,7/13/22,sunfish_hybrid,1
+3148,MR-9,Barge Shock,7/13/22,white_sucker,23
+3149,MR-9,Seine,10/16/15,bluntnose_minnow,23
+3150,MR-9,Seine,10/16/15,brook_silverside,2
+3151,MR-9,Seine,10/16/15,common_shiner,1
+3152,MR-9,Seine,10/16/15,creek_chub,4
+3153,MR-9,Seine,10/16/15,fathead_minnow,1
+3154,MR-9,Seine,10/16/15,johnny_darter,6
+3155,MR-9,Seine,10/16/15,round_goby,1
+3156,MR-9,Seine,10/16/15,spotfin_shiner,1
+3157,MR-9,Seine,6/17/16,bluntnose_minnow,6
+3158,MR-9,Seine,6/17/16,common_carp,2
+3159,MR-9,Seine,6/17/16,common_shiner,3
+3160,MR-9,Seine,6/17/16,creek_chub,5
+3161,MR-9,Seine,6/17/16,fathead_minnow,14
+3162,MR-9,Seine,6/17/16,golden_shiner,1
+3163,MR-9,Seine,6/17/16,johnny_darter,1
+3164,MR-9,Seine,6/17/16,round_goby,5
+3165,MR-9,Seine,6/17/16,white_sucker,9
+3166,Main1,Seine,9/23/16,bluegill,24
+3167,Main1,Seine,9/23/16,bluntnose_minnow,13
+3168,Main1,Seine,9/23/16,central_stoneroller,11
+3169,Main1,Seine,9/23/16,common_carp,1
+3170,Main1,Seine,9/23/16,common_shiner,42
+3171,Main1,Seine,9/23/16,creek_chub,21
+3172,Main1,Seine,9/23/16,fathead_minnow,11
+3173,Main1,Seine,9/23/16,green_sunfish,7
+3174,Main1,Seine,9/23/16,johnny_darter,13
+3175,Main1,Seine,9/23/16,largemouth_bass,7
+3176,Main1,Seine,9/23/16,pumpkinseed,9
+3177,Main1,Seine,9/23/16,rock_bass,17
+3178,Main1,Seine,9/23/16,sunfish_hybrid,1
+3179,Main1,Seine,9/23/16,white_sucker,1
+3180,Main1,Seine,9/23/16,yellow_bullhead,1
+3181,Main1,Seine,7/30/20,bluegill,106
+3182,Main1,Seine,7/30/20,bluntnose_minnow,7
+3183,Main1,Seine,7/30/20,central_mudminnow,1
+3184,Main1,Seine,7/30/20,central_stoneroller,3
+3185,Main1,Seine,7/30/20,common_carp,4
+3186,Main1,Seine,7/30/20,common_shiner,25
+3187,Main1,Seine,7/30/20,creek_chub,49
+3188,Main1,Seine,7/30/20,fathead_minnow,55
+3189,Main1,Seine,7/30/20,golden_shiner,1
+3190,Main1,Seine,7/30/20,johnny_darter,36
+3191,Main1,Seine,7/30/20,largemouth_bass,7
+3192,Main1,Seine,7/30/20,pumpkinseed,8
+3193,Main1,Seine,7/30/20,rock_bass,12
+3194,Main1,Seine,7/30/20,white_sucker,2
+3195,Main1,Seine,6/11/21,bluegill,11
+3196,Main1,Seine,6/11/21,common_shiner,45
+3197,Main1,Seine,6/11/21,creek_chub,29
+3198,Main1,Seine,6/11/21,johnny_darter,19
+3199,Main1,Seine,6/11/21,largemouth_bass,1
+3200,Main1,Seine,6/11/21,pumpkinseed,1
+3201,Main1,Seine,6/11/21,rock_bass,1
+3202,Main10,Boom Shock,7/22/22,bluegill,3
+3203,Main10,Boom Shock,7/22/22,bowfin,2
+3204,Main10,Boom Shock,7/22/22,channel_catfish,1
+3205,Main10,Boom Shock,7/22/22,common_carp,34
+3206,Main10,Boom Shock,7/22/22,emerald_shiner,5
+3207,Main10,Boom Shock,7/22/22,gizzard_shad,8
+3208,Main10,Boom Shock,7/22/22,golden_redhorse,1
+3209,Main10,Boom Shock,7/22/22,golden_shiner,1
+3210,Main10,Boom Shock,7/22/22,goldfish,1
+3211,Main10,Boom Shock,7/22/22,largemouth_bass,7
+3212,Main10,Boom Shock,7/22/22,northern_pike,1
+3213,Main10,Boom Shock,7/22/22,pumpkinseed,3
+3214,Main10,Boom Shock,7/22/22,rock_bass,1
+3215,Main10,Boom Shock,7/22/22,smallmouth_bass,4
+3216,Main10,Boom Shock,7/22/22,white_bass,2
+3217,Main10,Boom Shock,7/22/22,white_sucker,2
+3218,Main10,Boom Shock,7/22/22,yellow_bullhead,1
+3219,Main10,Boom Shock,7/22/22,yellow_perch,1
+3220,Main10,Seine,8/29/11,bluegill,1
+3221,Main10,Seine,8/29/11,bluntnose_minnow,4
+3222,Main10,Seine,8/29/11,brook_silverside,50
+3223,Main10,Seine,8/29/11,emerald_shiner,150
+3224,Main10,Seine,8/29/11,fathead_minnow,7
+3225,Main10,Seine,8/29/11,johnny_darter,1
+3226,Main10,Seine,8/29/11,round_goby,30
+3227,Main10,Seine,8/29/11,smallmouth_bass,15
+3228,Main10,Seine,6/21/13,bluegill,4
+3229,Main10,Seine,6/21/13,bluntnose_minnow,20
+3230,Main10,Seine,6/21/13,common_shiner,10
+3231,Main10,Seine,6/21/13,emerald_shiner,76
+3232,Main10,Seine,6/21/13,fathead_minnow,25
+3233,Main10,Seine,6/21/13,golden_shiner,1
+3234,Main10,Seine,6/21/13,johnny_darter,2
+3235,Main10,Seine,6/21/13,largemouth_bass,3
+3236,Main10,Seine,6/21/13,northern_logperch,2
+3237,Main10,Seine,6/21/13,pumpkinseed,3
+3238,Main10,Seine,6/21/13,round_goby,152
+3239,Main10,Seine,6/21/13,spotfin_shiner,8
+3240,Main10,Seine,9/7/13,blackside_darter,1
+3241,Main10,Seine,9/7/13,bluegill,2
+3242,Main10,Seine,9/7/13,bluntnose_minnow,8
+3243,Main10,Seine,9/7/13,brook_silverside,46
+3244,Main10,Seine,9/7/13,common_shiner,1
+3245,Main10,Seine,9/7/13,creek_chub,1
+3246,Main10,Seine,9/7/13,emerald_shiner,43
+3247,Main10,Seine,9/7/13,fathead_minnow,1
+3248,Main10,Seine,9/7/13,gizzard_shad,3
+3249,Main10,Seine,9/7/13,johnny_darter,4
+3250,Main10,Seine,9/7/13,mosquito_fish,4
+3251,Main10,Seine,9/7/13,northern_logperch,1
+3252,Main10,Seine,9/7/13,round_goby,70
+3253,Main10,Seine,9/7/13,smallmouth_bass,1
+3254,Main10,Seine,7/21/14,blackside_darter,1
+3255,Main10,Seine,7/21/14,bluegill,2
+3256,Main10,Seine,7/21/14,bluntnose_minnow,4
+3257,Main10,Seine,7/21/14,emerald_shiner,14
+3258,Main10,Seine,7/21/14,johnny_darter,1
+3259,Main10,Seine,7/21/14,largemouth_bass,1
+3260,Main10,Seine,7/21/14,pumpkinseed,1
+3261,Main10,Seine,7/21/14,round_goby,110
+3262,Main10,Seine,7/21/14,spotfin_shiner,2
+3263,Main10,Seine,9/26/14,black_crappie,1
+3264,Main10,Seine,9/26/14,blackside_darter,1
+3265,Main10,Seine,9/26/14,bluegill,2
+3266,Main10,Seine,9/26/14,bluntnose_minnow,17
+3267,Main10,Seine,9/26/14,brook_silverside,79
+3268,Main10,Seine,9/26/14,emerald_shiner,34
+3269,Main10,Seine,9/26/14,fathead_minnow,3
+3270,Main10,Seine,9/26/14,golden_shiner,1
+3271,Main10,Seine,9/26/14,rock_bass,6
+3272,Main10,Seine,9/26/14,round_goby,422
+3273,Main10,Seine,9/26/14,smallmouth_bass,3
+3274,Main10,Seine,9/26/14,yellow_perch,1
+3275,Main11,Barge Shock,6/29/22,black_crappie,1
+3276,Main11,Barge Shock,6/29/22,bluegill,47
+3277,Main11,Barge Shock,6/29/22,bluntnose_minnow,6
+3278,Main11,Barge Shock,6/29/22,largemouth_bass,7
+3279,Main11,Barge Shock,6/29/22,northern_pike,1
+3280,Main11,Barge Shock,6/29/22,pumpkinseed,19
+3281,Main11,Barge Shock,6/29/22,rock_bass,17
+3282,Main11,Barge Shock,6/29/22,white_sucker,8
+3283,Main11,Barge Shock,6/29/22,yellow_bullhead,1
+3284,Main11,Seine,9/28/16,bluegill,49
+3285,Main11,Seine,9/28/16,bluntnose_minnow,28
+3286,Main11,Seine,9/28/16,common_shiner,3
+3287,Main11,Seine,9/28/16,creek_chub,4
+3288,Main11,Seine,9/28/16,fathead_minnow,5
+3289,Main11,Seine,9/28/16,largemouth_bass,10
+3290,Main11,Seine,9/28/16,pumpkinseed,9
+3291,Main11,Seine,9/28/16,rock_bass,12
+3292,Main11,Seine,9/28/16,white_sucker,4
+3293,Main12,Boom Shock,7/22/22,bluegill,8
+3294,Main12,Boom Shock,7/22/22,bowfin,1
+3295,Main12,Boom Shock,7/22/22,brown_bullhead,3
+3296,Main12,Boom Shock,7/22/22,common_carp,36
+3297,Main12,Boom Shock,7/22/22,gizzard_shad,11
+3298,Main12,Boom Shock,7/22/22,golden_shiner,5
+3299,Main12,Boom Shock,7/22/22,goldfish,5
+3300,Main12,Boom Shock,7/22/22,largemouth_bass,6
+3301,Main12,Boom Shock,7/22/22,northern_pike,1
+3302,Main12,Boom Shock,7/22/22,pumpkinseed,5
+3303,Main12,Boom Shock,7/22/22,spotted_sucker,9
+3304,Main12,Boom Shock,7/22/22,sunfish_hybrid,1
+3305,Main12,Boom Shock,7/22/22,white_crappie,1
+3306,Main12,Boom Shock,7/22/22,white_sucker,3
+3307,Main12,Boom Shock,7/22/22,yellow_perch,15
+3308,Main12,Seine,9/29/17,blacknose_shiner,4
+3309,Main12,Seine,9/29/17,bluegill,81
+3310,Main12,Seine,9/29/17,bluntnose_minnow,6
+3311,Main12,Seine,9/29/17,brook_silverside,8
+3312,Main12,Seine,9/29/17,common_shiner,2
+3313,Main12,Seine,9/29/17,emerald_shiner,14
+3314,Main12,Seine,9/29/17,fathead_minnow,6
+3315,Main12,Seine,9/29/17,gizzard_shad,35
+3316,Main12,Seine,9/29/17,golden_shiner,18
+3317,Main12,Seine,9/29/17,mosquito_fish,27
+3318,Main12,Seine,9/29/17,northern_logperch,3
+3319,Main12,Seine,9/29/17,northern_pike,1
+3320,Main12,Seine,9/29/17,pumpkinseed,2
+3321,Main12,Seine,9/29/17,round_goby,156
+3322,Main12,Seine,9/29/17,white_sucker,2
+3323,Main12,Seine,9/29/17,yellow_bullhead,1
+3324,Main12,Seine,9/29/17,yellow_perch,6
+3325,Main12,Seine,9/6/19,black_crappie,1
+3326,Main12,Seine,9/6/19,blackside_darter,1
+3327,Main12,Seine,9/6/19,bluegill,12
+3328,Main12,Seine,9/6/19,bluntnose_minnow,29
+3329,Main12,Seine,9/6/19,brook_silverside,89
+3330,Main12,Seine,9/6/19,emerald_shiner,3
+3331,Main12,Seine,9/6/19,gizzard_shad,3
+3332,Main12,Seine,9/6/19,johnny_darter,1
+3333,Main12,Seine,9/6/19,mimic_shiner,3
+3334,Main12,Seine,9/6/19,pumpkinseed,2
+3335,Main12,Seine,9/6/19,round_goby,84
+3336,Main12,Seine,9/6/19,yellow_perch,20
+3337,Main12,Seine,8/7/20,bluegill,288
+3338,Main12,Seine,8/7/20,bluntnose_minnow,96
+3339,Main12,Seine,8/7/20,brook_silverside,31
+3340,Main12,Seine,8/7/20,brown_bullhead,1
+3341,Main12,Seine,8/7/20,common_carp,5
+3342,Main12,Seine,8/7/20,fathead_minnow,5
+3343,Main12,Seine,8/7/20,gizzard_shad,84
+3344,Main12,Seine,8/7/20,golden_redhorse,2
+3345,Main12,Seine,8/7/20,golden_shiner,29
+3346,Main12,Seine,8/7/20,johnny_darter,3
+3347,Main12,Seine,8/7/20,largemouth_bass,12
+3348,Main12,Seine,8/7/20,northern_pike,1
+3349,Main12,Seine,8/7/20,pumpkinseed,2
+3350,Main12,Seine,8/7/20,rock_bass,1
+3351,Main12,Seine,8/7/20,round_goby,50
+3352,Main12,Seine,8/7/20,spotfin_shiner,1
+3353,Main12,Seine,8/7/20,white_sucker,1
+3354,Main12,Seine,8/7/20,yellow_perch,17
+3355,Main12N,Boom Shock,7/22/22,black_crappie,1
+3356,Main12N,Boom Shock,7/22/22,bluegill,2
+3357,Main12N,Boom Shock,7/22/22,brown_bullhead,1
+3358,Main12N,Boom Shock,7/22/22,common_carp,8
+3359,Main12N,Boom Shock,7/22/22,freshwater_drum,1
+3360,Main12N,Boom Shock,7/22/22,gizzard_shad,5
+3361,Main12N,Boom Shock,7/22/22,goldfish,1
+3362,Main12N,Boom Shock,7/22/22,largemouth_bass,2
+3363,Main12N,Boom Shock,7/22/22,northern_pike,1
+3364,Main12N,Boom Shock,7/22/22,pumpkinseed,2
+3365,Main12N,Boom Shock,7/22/22,white_crappie,1
+3366,Main12N,Boom Shock,7/22/22,white_sucker,2
+3367,Main12N,Boom Shock,7/22/22,yellow_perch,4
+3368,Main12N,Seine,9/29/17,bluegill,12
+3369,Main12N,Seine,9/29/17,common_carp,1
+3370,Main12N,Seine,9/29/17,fathead_minnow,34
+3371,Main12N,Seine,9/29/17,gizzard_shad,3
+3372,Main12N,Seine,9/29/17,golden_shiner,4
+3373,Main12N,Seine,9/29/17,round_goby,50
+3374,Main12N,Seine,9/29/17,white_sucker,2
+3375,Main12N,Seine,9/29/17,yellow_perch,9
+3376,Main12N,Seine,9/6/19,bluegill,14
+3377,Main12N,Seine,9/6/19,bluntnose_minnow,61
+3378,Main12N,Seine,9/6/19,brook_silverside,23
+3379,Main12N,Seine,9/6/19,emerald_shiner,17
+3380,Main12N,Seine,9/6/19,fathead_minnow,6
+3381,Main12N,Seine,9/6/19,gizzard_shad,5
+3382,Main12N,Seine,9/6/19,golden_shiner,15
+3383,Main12N,Seine,9/6/19,johnny_darter,1
+3384,Main12N,Seine,9/6/19,largemouth_bass,6
+3385,Main12N,Seine,9/6/19,mimic_shiner,44
+3386,Main12N,Seine,9/6/19,round_goby,200
+3387,Main12N,Seine,9/6/19,spotfin_shiner,2
+3388,Main12N,Seine,9/6/19,yellow_perch,14
+3389,Main12N,Seine,8/7/20,blackside_darter,4
+3390,Main12N,Seine,8/7/20,bluegill,152
+3391,Main12N,Seine,8/7/20,bluntnose_minnow,15
+3392,Main12N,Seine,8/7/20,brook_silverside,4
+3393,Main12N,Seine,8/7/20,common_shiner,2
+3394,Main12N,Seine,8/7/20,emerald_shiner,39
+3395,Main12N,Seine,8/7/20,fathead_minnow,31
+3396,Main12N,Seine,8/7/20,gizzard_shad,1
+3397,Main12N,Seine,8/7/20,golden_shiner,2
+3398,Main12N,Seine,8/7/20,green_sunfish,3
+3399,Main12N,Seine,8/7/20,johnny_darter,1
+3400,Main12N,Seine,8/7/20,largemouth_bass,20
+3401,Main12N,Seine,8/7/20,northern_logperch,1
+3402,Main12N,Seine,8/7/20,pumpkinseed,2
+3403,Main12N,Seine,8/7/20,round_goby,110
+3404,Main12N,Seine,8/7/20,spotfin_shiner,1
+3405,Main12N,Seine,8/7/20,yellow_bullhead,3
+3406,Main12N,Seine,8/7/20,yellow_perch,5
+3407,Main13,Backpack Shock,6/24/22,bluegill,1
+3408,Main13,Backpack Shock,6/24/22,bluntnose_minnow,5
+3409,Main13,Backpack Shock,6/24/22,common_shiner,59
+3410,Main13,Backpack Shock,6/24/22,fathead_minnow,1
+3411,Main13,Backpack Shock,6/24/22,hornyhead_chub,8
+3412,Main13,Backpack Shock,6/24/22,johnny_darter,34
+3413,Main13,Backpack Shock,6/24/22,largemouth_bass,5
+3414,Main13,Backpack Shock,6/24/22,pumpkinseed,10
+3415,Main13,Backpack Shock,6/24/22,rock_bass,1
+3416,Main13,Backpack Shock,6/24/22,white_sucker,19
+3417,Main13,Seine,9/23/16,bluegill,9
+3418,Main13,Seine,9/23/16,bluntnose_minnow,9
+3419,Main13,Seine,9/23/16,central_stoneroller,5
+3420,Main13,Seine,9/23/16,common_shiner,150
+3421,Main13,Seine,9/23/16,hornyhead_chub,39
+3422,Main13,Seine,9/23/16,johnny_darter,4
+3423,Main13,Seine,9/23/16,largemouth_bass,4
+3424,Main13,Seine,9/23/16,pumpkinseed,24
+3425,Main13,Seine,9/23/16,stonecat,1
+3426,Main13,Seine,9/23/16,sunfish_hybrid,1
+3427,Main13,Seine,9/23/16,white_sucker,1
+3428,Main13,Seine,6/1/18,bluegill,17
+3429,Main13,Seine,6/1/18,bluntnose_minnow,13
+3430,Main13,Seine,6/1/18,central_stoneroller,7
+3431,Main13,Seine,6/1/18,common_shiner,220
+3432,Main13,Seine,6/1/18,fathead_minnow,7
+3433,Main13,Seine,6/1/18,hornyhead_chub,67
+3434,Main13,Seine,6/1/18,johnny_darter,3
+3435,Main13,Seine,6/1/18,largemouth_bass,3
+3436,Main13,Seine,6/1/18,pumpkinseed,8
+3437,Main13,Seine,6/1/18,rock_bass,8
+3438,Main13,Seine,6/1/18,sunfish_hybrid,3
+3439,Main13,Seine,6/1/18,white_sucker,10
+3440,Main14,Seine,10/10/16,bluntnose_minnow,18
+3441,Main14,Seine,10/10/16,fathead_minnow,66
+3442,Main14,Seine,10/10/16,johnny_darter,1
+3443,Main14,Seine,10/10/16,round_goby,3
+3444,Main14,Seine,10/10/16,white_sucker,1
+3445,Main14,Seine,9/15/17,bluntnose_minnow,1
+3446,Main14,Seine,9/15/17,creek_chub,2
+3447,Main14,Seine,9/15/17,fathead_minnow,193
+3448,Main14,Seine,9/15/17,johnny_darter,9
+3449,Main14,Seine,9/15/17,round_goby,11
+3450,Main14,Seine,9/15/17,white_sucker,3
+3451,Main15,Seine,6/24/17,bluegill,9
+3452,Main15,Seine,6/24/17,bluntnose_minnow,9
+3453,Main15,Seine,6/24/17,central_stoneroller,2
+3454,Main15,Seine,6/24/17,common_shiner,16
+3455,Main15,Seine,6/24/17,creek_chub,14
+3456,Main15,Seine,6/24/17,fathead_minnow,2
+3457,Main15,Seine,6/24/17,johnny_darter,25
+3458,Main15,Seine,6/24/17,pumpkinseed,1
+3459,Main15,Seine,6/24/17,rock_bass,6
+3460,Main15,Seine,6/24/17,white_sucker,7
+3461,Main16,Seine,7/14/17,blackchin_shiner,68
+3462,Main16,Seine,7/14/17,blacknose_shiner,2
+3463,Main16,Seine,7/14/17,bluegill,112
+3464,Main16,Seine,7/14/17,common_carp,3
+3465,Main16,Seine,7/14/17,common_shiner,1
+3466,Main16,Seine,7/14/17,creek_chub,12
+3467,Main16,Seine,7/14/17,fathead_minnow,9
+3468,Main16,Seine,7/14/17,pumpkinseed,9
+3469,Main16,Seine,7/14/17,sunfish_hybrid,1
+3470,Main16,Seine,7/14/17,white_sucker,7
+3471,Main17,Seine,6/24/17,black_crappie,4
+3472,Main17,Seine,6/24/17,blacknose_dace,20
+3473,Main17,Seine,6/24/17,blackside_darter,4
+3474,Main17,Seine,6/24/17,bluegill,3
+3475,Main17,Seine,6/24/17,bluntnose_minnow,5
+3476,Main17,Seine,6/24/17,central_stoneroller,10
+3477,Main17,Seine,6/24/17,common_shiner,51
+3478,Main17,Seine,6/24/17,creek_chub,15
+3479,Main17,Seine,6/24/17,johnny_darter,32
+3480,Main17,Seine,6/24/17,pumpkinseed,1
+3481,Main17,Seine,6/24/17,stonecat,2
+3482,Main17,Seine,6/24/17,white_sucker,13
+3483,Main17,Seine,5/8/21,blacknose_dace,33
+3484,Main17,Seine,5/8/21,blackside_darter,4
+3485,Main17,Seine,5/8/21,bluegill,1
+3486,Main17,Seine,5/8/21,bluntnose_minnow,9
+3487,Main17,Seine,5/8/21,central_stoneroller,20
+3488,Main17,Seine,5/8/21,common_shiner,148
+3489,Main17,Seine,5/8/21,creek_chub,6
+3490,Main17,Seine,5/8/21,fathead_minnow,15
+3491,Main17,Seine,5/8/21,johnny_darter,26
+3492,Main17,Seine,5/8/21,mimic_shiner,2
+3493,Main17,Seine,5/8/21,stonecat,3
+3494,Main17,Seine,5/8/21,sunfish_hybrid,1
+3495,Main17,Seine,5/8/21,white_sucker,12
+3496,Main18,Backpack Shock,6/24/22,bluegill,3
+3497,Main18,Backpack Shock,6/24/22,bluntnose_minnow,36
+3498,Main18,Backpack Shock,6/24/22,common_shiner,50
+3499,Main18,Backpack Shock,6/24/22,creek_chub,8
+3500,Main18,Backpack Shock,6/24/22,johnny_darter,26
+3501,Main18,Backpack Shock,6/24/22,largemouth_bass,2
+3502,Main18,Backpack Shock,6/24/22,pumpkinseed,8
+3503,Main18,Backpack Shock,6/24/22,rock_bass,3
+3504,Main18,Backpack Shock,6/24/22,white_sucker,1
+3505,Main18,Seine,7/14/17,bluegill,8
+3506,Main18,Seine,7/14/17,bluntnose_minnow,40
+3507,Main18,Seine,7/14/17,central_stoneroller,4
+3508,Main18,Seine,7/14/17,common_carp,2
+3509,Main18,Seine,7/14/17,common_shiner,56
+3510,Main18,Seine,7/14/17,creek_chub,1
+3511,Main18,Seine,7/14/17,golden_shiner,1
+3512,Main18,Seine,7/14/17,johnny_darter,24
+3513,Main18,Seine,7/14/17,largemouth_bass,3
+3514,Main18,Seine,7/14/17,pumpkinseed,5
+3515,Main18,Seine,7/14/17,rock_bass,2
+3516,Main18,Seine,7/14/17,stonecat,1
+3517,Main18,Seine,7/14/17,white_sucker,4
+3518,Main18,Seine,6/1/18,bluegill,2
+3519,Main18,Seine,6/1/18,bluntnose_minnow,87
+3520,Main18,Seine,6/1/18,central_stoneroller,3
+3521,Main18,Seine,6/1/18,common_shiner,43
+3522,Main18,Seine,6/1/18,creek_chub,5
+3523,Main18,Seine,6/1/18,johnny_darter,22
+3524,Main18,Seine,6/1/18,pumpkinseed,1
+3525,Main18,Seine,6/1/18,rock_bass,1
+3526,Main18,Seine,6/1/18,stonecat,1
+3527,Main18,Seine,6/1/18,white_sucker,1
+3528,Main19,Barge Shock,6/30/22,blacknose_dace,1
+3529,Main19,Barge Shock,6/30/22,blackside_darter,15
+3530,Main19,Barge Shock,6/30/22,bluegill,2
+3531,Main19,Barge Shock,6/30/22,common_shiner,25
+3532,Main19,Barge Shock,6/30/22,creek_chub,12
+3533,Main19,Barge Shock,6/30/22,green_sunfish,2
+3534,Main19,Barge Shock,6/30/22,johnny_darter,8
+3535,Main19,Barge Shock,6/30/22,pumpkinseed,1
+3536,Main19,Barge Shock,6/30/22,rock_bass,2
+3537,Main19,Barge Shock,6/30/22,white_sucker,13
+3538,Main19,Seine,6/22/18,blackchin_shiner,2
+3539,Main19,Seine,6/22/18,blacknose_dace,4
+3540,Main19,Seine,6/22/18,blackside_darter,3
+3541,Main19,Seine,6/22/18,bluegill,2
+3542,Main19,Seine,6/22/18,bluntnose_minnow,3
+3543,Main19,Seine,6/22/18,common_shiner,29
+3544,Main19,Seine,6/22/18,creek_chub,11
+3545,Main19,Seine,6/22/18,fathead_minnow,4
+3546,Main19,Seine,6/22/18,johnny_darter,54
+3547,Main19,Seine,6/22/18,largemouth_bass,2
+3548,Main19,Seine,6/22/18,pumpkinseed,1
+3549,Main19,Seine,6/22/18,rock_bass,1
+3550,Main19,Seine,6/22/18,white_sucker,9
+3551,Main20,Backpack Shock,6/22/22,fathead_minnow,3
+3552,Main20,Backpack Shock,6/22/22,green_sunfish,4
+3553,Main20,Backpack Shock,6/22/22,pumpkinseed,2
+3554,Main20,Backpack Shock,6/22/22,white_sucker,2
+3555,Main20,Seine,8/7/20,blackside_darter,1
+3556,Main20,Seine,8/7/20,bluegill,4
+3557,Main20,Seine,8/7/20,bluntnose_minnow,28
+3558,Main20,Seine,8/7/20,common_shiner,2
+3559,Main20,Seine,8/7/20,creek_chub,1
+3560,Main20,Seine,8/7/20,fathead_minnow,15
+3561,Main20,Seine,8/7/20,goldfish,1
+3562,Main20,Seine,8/7/20,green_sunfish,4
+3563,Main20,Seine,8/7/20,johnny_darter,28
+3564,Main20,Seine,8/7/20,rock_bass,1
+3565,Main20,Seine,8/7/20,round_goby,158
+3566,Main20,Seine,8/7/20,spotfin_shiner,23
+3567,Main20,Seine,8/7/20,white_sucker,1
+3568,Main20,Seine,8/20/21,bluegill,8
+3569,Main20,Seine,8/20/21,bluntnose_minnow,10
+3570,Main20,Seine,8/20/21,creek_chub,2
+3571,Main20,Seine,8/20/21,fathead_minnow,13
+3572,Main20,Seine,8/20/21,green_sunfish,1
+3573,Main20,Seine,8/20/21,johnny_darter,7
+3574,Main20,Seine,8/20/21,pumpkinseed,1
+3575,Main20,Seine,8/20/21,round_goby,79
+3576,Main20,Seine,8/20/21,spotfin_shiner,1
+3577,Main20,Seine,8/20/21,white_sucker,8
+3578,Main20,Seine,6/22/22,blackside_darter,1
+3579,Main20,Seine,6/22/22,bluntnose_minnow,1
+3580,Main20,Seine,6/22/22,creek_chub,2
+3581,Main20,Seine,6/22/22,green_sunfish,2
+3582,Main20,Seine,6/22/22,round_goby,14
+3583,Main20,Seine,6/22/22,white_sucker,59
+3584,Main21,Boom Shock,7/22/22,common_carp,4
+3585,Main21,Boom Shock,7/22/22,emerald_shiner,1
+3586,Main21,Boom Shock,7/22/22,gizzard_shad,21
+3587,Main21,Boom Shock,7/22/22,white_sucker,1
+3588,Main3,Barge Shock,6/29/22,bluntnose_minnow,1
+3589,Main3,Barge Shock,6/29/22,central_stoneroller,3
+3590,Main3,Barge Shock,6/29/22,common_shiner,32
+3591,Main3,Barge Shock,6/29/22,creek_chub,8
+3592,Main3,Barge Shock,6/29/22,rock_bass,21
+3593,Main3,Barge Shock,6/29/22,stonecat,1
+3594,Main3,Barge Shock,6/29/22,white_sucker,24
+3595,Main3,Seine,9/28/16,bluegill,1
+3596,Main3,Seine,9/28/16,bluntnose_minnow,6
+3597,Main3,Seine,9/28/16,central_stoneroller,24
+3598,Main3,Seine,9/28/16,common_shiner,76
+3599,Main3,Seine,9/28/16,creek_chub,43
+3600,Main3,Seine,9/28/16,fathead_minnow,2
+3601,Main3,Seine,9/28/16,johnny_darter,49
+3602,Main3,Seine,9/28/16,largemouth_bass,9
+3603,Main3,Seine,9/28/16,stonecat,2
+3604,Main3,Seine,9/28/16,white_sucker,6
+3605,Main4.5,Seine,9/28/16,central_stoneroller,38
+3606,Main4.5,Seine,9/28/16,common_carp,3
+3607,Main4.5,Seine,9/28/16,common_shiner,131
+3608,Main4.5,Seine,9/28/16,creek_chub,4
+3609,Main4.5,Seine,9/28/16,fathead_minnow,2
+3610,Main4.5,Seine,9/28/16,johnny_darter,12
+3611,Main4.5,Seine,9/28/16,largemouth_bass,5
+3612,Main4.5,Seine,9/28/16,rock_bass,3
+3613,Main4.5,Seine,9/28/16,stonecat,1
+3614,Main5,Backpack Shock,6/23/22,blackside_darter,1
+3615,Main5,Backpack Shock,6/23/22,bluegill,3
+3616,Main5,Backpack Shock,6/23/22,bluntnose_minnow,1
+3617,Main5,Backpack Shock,6/23/22,central_stoneroller,8
+3618,Main5,Backpack Shock,6/23/22,common_carp,2
+3619,Main5,Backpack Shock,6/23/22,common_shiner,32
+3620,Main5,Backpack Shock,6/23/22,creek_chub,2
+3621,Main5,Backpack Shock,6/23/22,johnny_darter,2
+3622,Main5,Backpack Shock,6/23/22,rock_bass,4
+3623,Main5,Backpack Shock,6/23/22,stonecat,4
+3624,Main5,Backpack Shock,6/23/22,sunfish_hybrid,1
+3625,Main5,Backpack Shock,6/23/22,white_sucker,19
+3626,Main5,Seine,10/6/16,blacknose_dace,1
+3627,Main5,Seine,10/6/16,blackside_darter,7
+3628,Main5,Seine,10/6/16,bluegill,3
+3629,Main5,Seine,10/6/16,bluntnose_minnow,3
+3630,Main5,Seine,10/6/16,central_stoneroller,4
+3631,Main5,Seine,10/6/16,common_carp,1
+3632,Main5,Seine,10/6/16,common_shiner,26
+3633,Main5,Seine,10/6/16,fathead_minnow,4
+3634,Main5,Seine,10/6/16,johnny_darter,8
+3635,Main5,Seine,10/6/16,largemouth_bass,3
+3636,Main5,Seine,10/6/16,northern_pike,1
+3637,Main5,Seine,10/6/16,pumpkinseed,1
+3638,Main5,Seine,10/6/16,rock_bass,4
+3639,Main5,Seine,10/6/16,white_sucker,4
+3640,Main5,Seine,9/28/18,black_crappie,1
+3641,Main5,Seine,9/28/18,blacknose_dace,3
+3642,Main5,Seine,9/28/18,bluegill,12
+3643,Main5,Seine,9/28/18,bluntnose_minnow,25
+3644,Main5,Seine,9/28/18,central_stoneroller,3
+3645,Main5,Seine,9/28/18,common_shiner,18
+3646,Main5,Seine,9/28/18,creek_chub,8
+3647,Main5,Seine,9/28/18,fathead_minnow,1
+3648,Main5,Seine,9/28/18,johnny_darter,17
+3649,Main5,Seine,9/28/18,pumpkinseed,3
+3650,Main5,Seine,9/28/18,rock_bass,1
+3651,Main5,Seine,9/28/18,stonecat,1
+3652,Main5,Seine,9/28/18,white_sucker,4
+3653,Main6,Barge Shock,7/7/22,blacknose_dace,17
+3654,Main6,Barge Shock,7/7/22,blackside_darter,6
+3655,Main6,Barge Shock,7/7/22,bluegill,1
+3656,Main6,Barge Shock,7/7/22,bluntnose_minnow,18
+3657,Main6,Barge Shock,7/7/22,brook_stickleback,1
+3658,Main6,Barge Shock,7/7/22,central_stoneroller,16
+3659,Main6,Barge Shock,7/7/22,common_shiner,59
+3660,Main6,Barge Shock,7/7/22,creek_chub,21
+3661,Main6,Barge Shock,7/7/22,fathead_minnow,24
+3662,Main6,Barge Shock,7/7/22,goldfish,2
+3663,Main6,Barge Shock,7/7/22,green_sunfish,7
+3664,Main6,Barge Shock,7/7/22,johnny_darter,47
+3665,Main6,Barge Shock,7/7/22,northern_pike,1
+3666,Main6,Barge Shock,7/7/22,pumpkinseed,5
+3667,Main6,Barge Shock,7/7/22,rock_bass,17
+3668,Main6,Barge Shock,7/7/22,stonecat,2
+3669,Main6,Barge Shock,7/7/22,sunfish_hybrid,3
+3670,Main6,Barge Shock,7/7/22,white_sucker,160
+3671,Main6,Seine,9/18/15,blacknose_dace,42
+3672,Main6,Seine,9/18/15,blackside_darter,4
+3673,Main6,Seine,9/18/15,bluegill,2
+3674,Main6,Seine,9/18/15,central_stoneroller,33
+3675,Main6,Seine,9/18/15,common_shiner,23
+3676,Main6,Seine,9/18/15,creek_chub,50
+3677,Main6,Seine,9/18/15,fathead_minnow,8
+3678,Main6,Seine,9/18/15,johnny_darter,30
+3679,Main6,Seine,9/18/15,pumpkinseed,4
+3680,Main6,Seine,9/18/15,stonecat,3
+3681,Main6,Seine,9/18/15,white_sucker,32
+3682,Min2,Backpack Shock,6/16/22,blacknose_dace,2
+3683,Min2,Backpack Shock,6/16/22,bluegill,9
+3684,Min2,Backpack Shock,6/16/22,bluntnose_minnow,1
+3685,Min2,Backpack Shock,6/16/22,central_stoneroller,4
+3686,Min2,Backpack Shock,6/16/22,common_shiner,4
+3687,Min2,Backpack Shock,6/16/22,creek_chub,13
+3688,Min2,Backpack Shock,6/16/22,johnny_darter,8
+3689,Min2,Backpack Shock,6/16/22,mottled_sculpin,25
+3690,Min2,Backpack Shock,6/16/22,pumpkinseed,13
+3691,Min2,Backpack Shock,6/16/22,white_sucker,8
+3692,Min2,Seine,5/17/12,blacknose_dace,15
+3693,Min2,Seine,5/17/12,bluegill,2
+3694,Min2,Seine,5/17/12,bluntnose_minnow,3
+3695,Min2,Seine,5/17/12,central_stoneroller,4
+3696,Min2,Seine,5/17/12,common_shiner,150
+3697,Min2,Seine,5/17/12,creek_chub,49
+3698,Min2,Seine,5/17/12,fathead_minnow,11
+3699,Min2,Seine,5/17/12,johnny_darter,45
+3700,Min2,Seine,5/17/12,mottled_sculpin,2
+3701,Min2,Seine,5/17/12,pumpkinseed,1
+3702,Min2,Seine,5/17/12,rainbow_darter,1
+3703,Min2,Seine,5/17/12,redside_dace,3
+3704,Min2,Seine,5/17/12,white_sucker,9
+3705,Min3,Seine,5/17/12,blacknose_dace,63
+3706,Min3,Seine,5/17/12,bluntnose_minnow,11
+3707,Min3,Seine,5/17/12,central_stoneroller,2
+3708,Min3,Seine,5/17/12,common_shiner,194
+3709,Min3,Seine,5/17/12,creek_chub,47
+3710,Min3,Seine,5/17/12,fathead_minnow,28
+3711,Min3,Seine,5/17/12,golden_shiner,2
+3712,Min3,Seine,5/17/12,johnny_darter,68
+3713,Min3,Seine,5/17/12,rainbow_darter,1
+3714,Min3A,Seine,5/17/12,blacknose_dace,20
+3715,Min3A,Seine,5/17/12,bluegill,12
+3716,Min3A,Seine,5/17/12,bluntnose_minnow,3
+3717,Min3A,Seine,5/17/12,central_stoneroller,4
+3718,Min3A,Seine,5/17/12,common_shiner,263
+3719,Min3A,Seine,5/17/12,creek_chub,42
+3720,Min3A,Seine,5/17/12,fathead_minnow,6
+3721,Min3A,Seine,5/17/12,johnny_darter,18
+3722,Min3A,Seine,5/17/12,pumpkinseed,2
+3723,Min3A,Seine,5/17/12,white_sucker,9
+3724,Min4,Seine,5/15/12,blacknose_dace,49
+3725,Min4,Seine,5/15/12,bluegill,5
+3726,Min4,Seine,5/15/12,central_stoneroller,12
+3727,Min4,Seine,5/15/12,common_shiner,3
+3728,Min4,Seine,5/15/12,creek_chub,55
+3729,Min4,Seine,5/15/12,fathead_minnow,21
+3730,Min4,Seine,5/15/12,golden_shiner,1
+3731,Min4,Seine,5/15/12,johnny_darter,26
+3732,Min4,Seine,5/15/12,white_sucker,7
+3733,Min5,Seine,5/15/12,blacknose_dace,67
+3734,Min5,Seine,5/15/12,bluegill,5
+3735,Min5,Seine,5/15/12,bluntnose_minnow,17
+3736,Min5,Seine,5/15/12,central_mudminnow,1
+3737,Min5,Seine,5/15/12,central_stoneroller,2
+3738,Min5,Seine,5/15/12,common_shiner,94
+3739,Min5,Seine,5/15/12,creek_chub,34
+3740,Min5,Seine,5/15/12,fathead_minnow,47
+3741,Min5,Seine,5/15/12,johnny_darter,63
+3742,Min5,Seine,5/15/12,mummichog,3
+3743,Min5,Seine,5/15/12,pumpkinseed,1
+3744,Min5,Seine,5/15/12,white_sucker,10
+3745,Mur2,Seine,10/3/16,blacknose_dace,83
+3746,Mur2,Seine,10/3/16,creek_chub,55
+3747,Mur2,Seine,10/3/16,fathead_minnow,52
+3748,Mur2,Seine,10/3/16,green_sunfish,1
+3749,Mur2,Seine,10/3/16,pumpkinseed,9
+3750,Nott,Seine,10/3/16,blackside_darter,13
+3751,Nott,Seine,10/3/16,bluegill,10
+3752,Nott,Seine,10/3/16,bluntnose_minnow,1
+3753,Nott,Seine,10/3/16,central_stoneroller,92
+3754,Nott,Seine,10/3/16,common_shiner,14
+3755,Nott,Seine,10/3/16,creek_chub,95
+3756,Nott,Seine,10/3/16,fathead_minnow,3
+3757,Nott,Seine,10/3/16,green_sunfish,4
+3758,Nott,Seine,10/3/16,johnny_darter,25
+3759,Nott,Seine,10/3/16,white_sucker,7
+3760,Nott2,Seine,6/19/19,blacknose_dace,13
+3761,Nott2,Seine,6/19/19,bluegill,1
+3762,Nott2,Seine,6/19/19,central_stoneroller,1
+3763,Nott2,Seine,6/19/19,creek_chub,73
+3764,Nott2,Seine,6/19/19,johnny_darter,5
+3765,Nott2,Seine,8/23/21,blacknose_dace,68
+3766,Nott2,Seine,8/23/21,central_stoneroller,4
+3767,Nott2,Seine,8/23/21,creek_chub,89
+3768,Nott2,Seine,8/23/21,fathead_minnow,5
+3769,Nott2,Seine,8/23/21,johnny_darter,9
+3770,Peb2,Backpack Shock,6/30/22,blacknose_dace,74
+3771,Peb2,Backpack Shock,6/30/22,common_shiner,1
+3772,Peb2,Backpack Shock,6/30/22,creek_chub,22
+3773,Peb2,Backpack Shock,6/30/22,green_sunfish,1
+3774,Peb2,Backpack Shock,6/30/22,white_sucker,22
+3775,Peb2,Seine,10/4/16,blacknose_dace,79
+3776,Peb2,Seine,10/4/16,brook_stickleback,5
+3777,Peb2,Seine,10/4/16,central_stoneroller,2
+3778,Peb2,Seine,10/4/16,common_shiner,2
+3779,Peb2,Seine,10/4/16,creek_chub,120
+3780,Peb2,Seine,10/4/16,fathead_minnow,9
+3781,Peb2,Seine,10/4/16,green_sunfish,7
+3782,Peb2,Seine,10/4/16,white_sucker,16
+3783,Peb2,Seine,4/26/17,blacknose_dace,213
+3784,Peb2,Seine,4/26/17,central_stoneroller,8
+3785,Peb2,Seine,4/26/17,common_shiner,16
+3786,Peb2,Seine,4/26/17,creek_chub,98
+3787,Peb2,Seine,4/26/17,fathead_minnow,63
+3788,Peb2,Seine,4/26/17,northern_redbelly_dace,4
+3789,Peb2,Seine,4/26/17,white_sucker,17
+3790,Peb3,Seine,10/4/16,blacknose_dace,19
+3791,Peb3,Seine,10/4/16,blackside_darter,4
+3792,Peb3,Seine,10/4/16,bluegill,5
+3793,Peb3,Seine,10/4/16,central_stoneroller,24
+3794,Peb3,Seine,10/4/16,common_shiner,51
+3795,Peb3,Seine,10/4/16,creek_chub,34
+3796,Peb3,Seine,10/4/16,fathead_minnow,26
+3797,Peb3,Seine,10/4/16,green_sunfish,1
+3798,Peb3,Seine,10/4/16,johnny_darter,43
+3799,Peb3,Seine,10/4/16,pumpkinseed,2
+3800,Peb3,Seine,10/4/16,white_sucker,21
+3801,Peb4,Seine,10/4/16,blacknose_dace,19
+3802,Peb4,Seine,10/4/16,blackside_darter,4
+3803,Peb4,Seine,10/4/16,bluegill,5
+3804,Peb4,Seine,10/4/16,central_stoneroller,24
+3805,Peb4,Seine,10/4/16,common_shiner,51
+3806,Peb4,Seine,10/4/16,creek_chub,34
+3807,Peb4,Seine,10/4/16,fathead_minnow,26
+3808,Peb4,Seine,10/4/16,green_sunfish,1
+3809,Peb4,Seine,10/4/16,johnny_darter,43
+3810,Peb4,Seine,10/4/16,pumpkinseed,2
+3811,Peb4,Seine,10/4/16,white_sucker,21
+3812,Peb5,Seine,4/26/17,blacknose_dace,78
+3813,Peb5,Seine,4/26/17,brook_stickleback,1
+3814,Peb5,Seine,4/26/17,central_stoneroller,1
+3815,Peb5,Seine,4/26/17,common_shiner,98
+3816,Peb5,Seine,4/26/17,creek_chub,71
+3817,Peb5,Seine,4/26/17,fathead_minnow,35
+3818,Peb5,Seine,4/26/17,golden_shiner,9
+3819,Peb5,Seine,4/26/17,green_sunfish,9
+3820,Peb5,Seine,4/26/17,northern_redbelly_dace,17
+3821,Peb5,Seine,4/26/17,white_sucker,8
+3822,Rav,Seine,10/6/16,blacknose_dace,127
+3823,Rav,Seine,10/6/16,bluegill,3
+3824,Rav,Seine,10/6/16,common_shiner,15
+3825,Rav,Seine,10/6/16,creek_chub,48
+3826,Rav,Seine,10/6/16,fathead_minnow,16
+3827,Rav,Seine,10/6/16,green_sunfish,1
+3828,Rav,Seine,10/6/16,pumpkinseed,3
+3829,Rav,Seine,10/6/16,white_sucker,5
+3830,See2,Seine,5/22/12,blacknose_dace,14
+3831,See2,Seine,5/22/12,bluegill,1
+3832,See2,Seine,5/22/12,central_stoneroller,2
+3833,See2,Seine,5/22/12,common_shiner,22
+3834,See2,Seine,5/22/12,creek_chub,17
+3835,See2,Seine,5/22/12,fathead_minnow,10
+3836,See2,Seine,5/22/12,johnny_darter,1
+3837,See2,Seine,5/22/12,mottled_sculpin,6
+3838,See2,Seine,5/22/12,pumpkinseed,1
+3839,See2,Seine,5/22/12,rainbow_darter,4
+3840,See3,Backpack Shock,6/15/22,blacknose_dace,18
+3841,See3,Backpack Shock,6/15/22,bluegill,2
+3842,See3,Backpack Shock,6/15/22,central_mudminnow,1
+3843,See3,Backpack Shock,6/15/22,central_stoneroller,2
+3844,See3,Backpack Shock,6/15/22,common_shiner,21
+3845,See3,Backpack Shock,6/15/22,creek_chub,17
+3846,See3,Backpack Shock,6/15/22,fathead_minnow,11
+3847,See3,Backpack Shock,6/15/22,green_sunfish,2
+3848,See3,Backpack Shock,6/15/22,johnny_darter,3
+3849,See3,Backpack Shock,6/15/22,mottled_sculpin,1
+3850,See3,Backpack Shock,6/15/22,white_sucker,5
+3851,See3,Seine,5/18/12,black_bullhead,1
+3852,See3,Seine,5/18/12,blacknose_dace,35
+3853,See3,Seine,5/18/12,bluegill,1
+3854,See3,Seine,5/18/12,brook_stickleback,1
+3855,See3,Seine,5/18/12,central_mudminnow,1
+3856,See3,Seine,5/18/12,central_stoneroller,18
+3857,See3,Seine,5/18/12,common_shiner,41
+3858,See3,Seine,5/18/12,creek_chub,23
+3859,See3,Seine,5/18/12,fathead_minnow,22
+3860,See3,Seine,5/18/12,golden_shiner,1
+3861,See3,Seine,5/18/12,johnny_darter,12
+3862,See3,Seine,5/18/12,mottled_sculpin,2
+3863,See3,Seine,5/18/12,redside_dace,1
+3864,See3,Seine,6/14/18,blacknose_dace,15
+3865,See3,Seine,6/14/18,bluegill,6
+3866,See3,Seine,6/14/18,brook_stickleback,2
+3867,See3,Seine,6/14/18,common_shiner,9
+3868,See3,Seine,6/14/18,creek_chub,30
+3869,See3,Seine,6/14/18,fathead_minnow,33
+3870,See3,Seine,6/14/18,johnny_darter,14
+3871,See3,Seine,6/14/18,mottled_sculpin,1
+3872,See3,Seine,6/14/18,pumpkinseed,1
+3873,See3,Seine,6/14/18,white_sucker,1
+3874,See3,Seine,7/29/20,blacknose_dace,31
+3875,See3,Seine,7/29/20,bluegill,4
+3876,See3,Seine,7/29/20,central_mudminnow,3
+3877,See3,Seine,7/29/20,central_stoneroller,26
+3878,See3,Seine,7/29/20,common_shiner,35
+3879,See3,Seine,7/29/20,creek_chub,22
+3880,See3,Seine,7/29/20,fathead_minnow,24
+3881,See3,Seine,7/29/20,golden_shiner,2
+3882,See3,Seine,7/29/20,johnny_darter,23
+3883,See3,Seine,7/29/20,largemouth_bass,3
+3884,See3,Seine,7/29/20,mottled_sculpin,2
+3885,See3,Seine,7/29/20,northern_redbelly_dace,1
+3886,See3,Seine,7/29/20,pumpkinseed,2
+3887,See3,Seine,7/29/20,white_sucker,31
+3888,See3,Seine,6/15/22,black_bullhead,1
+3889,See3,Seine,6/15/22,blacknose_dace,24
+3890,See3,Seine,6/15/22,bluegill,1
+3891,See3,Seine,6/15/22,brook_stickleback,1
+3892,See3,Seine,6/15/22,central_mudminnow,1
+3893,See3,Seine,6/15/22,central_stoneroller,4
+3894,See3,Seine,6/15/22,common_shiner,21
+3895,See3,Seine,6/15/22,creek_chub,9
+3896,See3,Seine,6/15/22,fathead_minnow,27
+3897,See3,Seine,6/15/22,johnny_darter,5
+3898,See3,Seine,6/15/22,northern_redbelly_dace,1
+3899,See3,Seine,6/15/22,white_sucker,3
+3900,See4,Seine,5/18/12,blacknose_dace,13
+3901,See4,Seine,5/18/12,bluegill,1
+3902,See4,Seine,5/18/12,central_stoneroller,8
+3903,See4,Seine,5/18/12,creek_chub,14
+3904,See4,Seine,5/18/12,fathead_minnow,4
+3905,See4,Seine,5/18/12,sunfish_hybrid,2
+3906,SeeBosch,Seine,6/19/12,blacknose_dace,68
+3907,SeeBosch,Seine,6/19/12,bluntnose_minnow,1
+3908,SeeBosch,Seine,6/19/12,central_stoneroller,5
+3909,SeeBosch,Seine,6/19/12,common_shiner,32
+3910,SeeBosch,Seine,6/19/12,creek_chub,52
+3911,SeeBosch,Seine,6/19/12,fathead_minnow,83
+3912,SeeBosch,Seine,6/19/12,green_sunfish,1
+3913,SeeBosch,Seine,6/19/12,johnny_darter,10
+3914,SeeBosch,Seine,6/19/12,mimic_shiner,1
+3915,SeeBosch,Seine,6/19/12,mottled_sculpin,4
+3916,SeeBosch,Seine,6/19/12,white_sucker,3
+3917,Sprag,Seine,9/23/16,bluegill,13
+3918,Sprag,Seine,9/23/16,central_stoneroller,6
+3919,Sprag,Seine,9/23/16,common_shiner,1
+3920,Sprag,Seine,9/23/16,creek_chub,32
+3921,Sprag,Seine,9/23/16,fathead_minnow,3
+3922,Sprag,Seine,9/23/16,johnny_darter,10
+3923,Sprag,Seine,9/23/16,rock_bass,1
+3924,Sprag,Seine,9/23/16,white_sucker,1
+3925,Tar2,Backpack Shock,6/17/22,blacknose_dace,40
+3926,Tar2,Backpack Shock,6/17/22,bluegill,9
+3927,Tar2,Backpack Shock,6/17/22,bluntnose_minnow,5
+3928,Tar2,Backpack Shock,6/17/22,common_shiner,38
+3929,Tar2,Backpack Shock,6/17/22,creek_chub,65
+3930,Tar2,Backpack Shock,6/17/22,johnny_darter,7
+3931,Tar2,Backpack Shock,6/17/22,pumpkinseed,6
+3932,Tar2,Backpack Shock,6/17/22,white_sucker,1
+3933,Tar2,Seine,9/22/16,blacknose_dace,43
+3934,Tar2,Seine,9/22/16,bluegill,22
+3935,Tar2,Seine,9/22/16,bluntnose_minnow,12
+3936,Tar2,Seine,9/22/16,common_shiner,107
+3937,Tar2,Seine,9/22/16,creek_chub,84
+3938,Tar2,Seine,9/22/16,fathead_minnow,178
+3939,Tar2,Seine,9/22/16,johnny_darter,97
+3940,Tar2,Seine,9/22/16,largemouth_bass,1
+3941,Tar2,Seine,9/22/16,pumpkinseed,2
+3942,Tar2,Seine,9/22/16,white_sucker,20
+3943,Ton1,Backpack Shock,6/14/22,blacknose_dace,11
+3944,Ton1,Backpack Shock,6/14/22,bluegill,1
+3945,Ton1,Backpack Shock,6/14/22,creek_chub,13
+3946,Ton1,Backpack Shock,6/14/22,johnny_darter,2
+3947,Ton1,Backpack Shock,6/14/22,mottled_sculpin,13
+3948,Ton1,Backpack Shock,6/14/22,pumpkinseed,1
+3949,Ton1,Backpack Shock,6/14/22,smallmouth_bass,1
+3950,Ton1,Seine,8/28/15,blacknose_dace,13
+3951,Ton1,Seine,8/28/15,bluegill,41
+3952,Ton1,Seine,8/28/15,common_carp,1
+3953,Ton1,Seine,8/28/15,creek_chub,13
+3954,Ton1,Seine,8/28/15,fathead_minnow,29
+3955,Ton1,Seine,8/28/15,johnny_darter,1
+3956,Ton1,Seine,8/28/15,largemouth_bass,2
+3957,Ton1,Seine,8/28/15,least_darter,13
+3958,Ton1,Seine,8/28/15,mottled_sculpin,2
+3959,Ton1,Seine,8/28/15,white_sucker,2
+3960,Ton3,Backpack Shock,6/14/22,blacknose_dace,6
+3961,Ton3,Backpack Shock,6/14/22,bluegill,1
+3962,Ton3,Backpack Shock,6/14/22,common_shiner,7
+3963,Ton3,Backpack Shock,6/14/22,creek_chub,19
+3964,Ton3,Backpack Shock,6/14/22,fathead_minnow,5
+3965,Ton3,Backpack Shock,6/14/22,johnny_darter,7
+3966,Ton3,Backpack Shock,6/14/22,pumpkinseed,3
+3967,Ton3,Backpack Shock,6/14/22,white_sucker,16
+3968,Ton3,Seine,8/28/15,blacknose_dace,4
+3969,Ton3,Seine,8/28/15,bluegill,3
+3970,Ton3,Seine,8/28/15,central_stoneroller,1
+3971,Ton3,Seine,8/28/15,common_carp,1
+3972,Ton3,Seine,8/28/15,common_shiner,10
+3973,Ton3,Seine,8/28/15,creek_chub,6
+3974,Ton3,Seine,8/28/15,fathead_minnow,34
+3975,Ton3,Seine,8/28/15,green_sunfish,1
+3976,Ton3,Seine,8/28/15,johnny_darter,2
+3977,Ton3,Seine,8/28/15,pumpkinseed,2
+3978,UR-1,Barge Shock,6/27/22,common_shiner,7
+3979,UR-1,Barge Shock,6/27/22,creek_chub,21
+3980,UR-1,Barge Shock,6/27/22,fathead_minnow,4
+3981,UR-1,Barge Shock,6/27/22,golden_shiner,2
+3982,UR-1,Barge Shock,6/27/22,goldfish,3
+3983,UR-1,Barge Shock,6/27/22,green_sunfish,4
+3984,UR-1,Barge Shock,6/27/22,johnny_darter,21
+3985,UR-1,Barge Shock,6/27/22,pumpkinseed,11
+3986,UR-1,Barge Shock,6/27/22,sunfish_hybrid,1
+3987,UR-1,Barge Shock,6/27/22,white_sucker,33
+3988,UR-1,Seine,9/22/16,blacknose_dace,3
+3989,UR-1,Seine,9/22/16,bluegill,2
+3990,UR-1,Seine,9/22/16,bluntnose_minnow,3
+3991,UR-1,Seine,9/22/16,common_carp,9
+3992,UR-1,Seine,9/22/16,common_shiner,19
+3993,UR-1,Seine,9/22/16,creek_chub,7
+3994,UR-1,Seine,9/22/16,fathead_minnow,373
+3995,UR-1,Seine,9/22/16,johnny_darter,141
+3996,UR-1,Seine,9/22/16,white_sucker,14
+3997,UR-1,Seine,5/14/19,blacknose_dace,2
+3998,UR-1,Seine,5/14/19,blackside_darter,1
+3999,UR-1,Seine,5/14/19,bluegill,1
+4000,UR-1,Seine,5/14/19,bluntnose_minnow,4
+4001,UR-1,Seine,5/14/19,central_stoneroller,3
+4002,UR-1,Seine,5/14/19,common_shiner,4
+4003,UR-1,Seine,5/14/19,creek_chub,4
+4004,UR-1,Seine,5/14/19,fathead_minnow,109
+4005,UR-1,Seine,5/14/19,golden_shiner,3
+4006,UR-1,Seine,5/14/19,johnny_darter,41
+4007,UR-1,Seine,5/14/19,white_sucker,6
+4008,UR-2,Barge Shock,6/27/22,blacknose_dace,5
+4009,UR-2,Barge Shock,6/27/22,bluntnose_minnow,9
+4010,UR-2,Barge Shock,6/27/22,common_shiner,15
+4011,UR-2,Barge Shock,6/27/22,creek_chub,51
+4012,UR-2,Barge Shock,6/27/22,fathead_minnow,7
+4013,UR-2,Barge Shock,6/27/22,johnny_darter,6
+4014,UR-2,Barge Shock,6/27/22,pumpkinseed,7
+4015,UR-2,Barge Shock,6/27/22,white_sucker,36
+4016,UR-2,Seine,9/16/16,bluntnose_minnow,20
+4017,UR-2,Seine,9/16/16,common_shiner,13
+4018,UR-2,Seine,9/16/16,creek_chub,29
+4019,UR-2,Seine,9/16/16,fathead_minnow,356
+4020,UR-2,Seine,9/16/16,johnny_darter,67
+4021,UR-2,Seine,9/16/16,white_sucker,22
+4022,UR-2,Seine,6/10/21,blacknose_dace,9
+4023,UR-2,Seine,6/10/21,bluntnose_minnow,23
+4024,UR-2,Seine,6/10/21,common_shiner,50
+4025,UR-2,Seine,6/10/21,creek_chub,20
+4026,UR-2,Seine,6/10/21,fathead_minnow,45
+4027,UR-2,Seine,6/10/21,johnny_darter,58
+4028,UR-2,Seine,6/10/21,white_sucker,8
+4029,UR-4,Seine,6/10/21,common_shiner,9
+4030,UR-4,Seine,6/10/21,creek_chub,9
+4031,UR-4,Seine,6/10/21,fathead_minnow,22
+4032,UR-4,Seine,6/10/21,johnny_darter,1
+4033,UR-4,Seine,6/10/21,white_sucker,7
+4034,Up1,Barge Shock,6/16/22,american_brook_lamprey,1
+4035,Up1,Barge Shock,6/16/22,blacknose_dace,9
+4036,Up1,Barge Shock,6/16/22,bluegill,1
+4037,Up1,Barge Shock,6/16/22,central_stoneroller,1
+4038,Up1,Barge Shock,6/16/22,common_shiner,14
+4039,Up1,Barge Shock,6/16/22,creek_chub,17
+4040,Up1,Barge Shock,6/16/22,green_sunfish,4
+4041,Up1,Barge Shock,6/16/22,johnny_darter,3
+4042,Up1,Barge Shock,6/16/22,mottled_sculpin,7
+4043,Up1,Barge Shock,6/16/22,northern_hog_sucker,23
+4044,Up1,Barge Shock,6/16/22,pumpkinseed,1
+4045,Up1,Barge Shock,6/16/22,rainbow_darter,3
+4046,Up1,Barge Shock,6/16/22,white_sucker,11
+4047,Up1,Seine,5/22/12,blacknose_dace,8
+4048,Up1,Seine,5/22/12,central_stoneroller,11
+4049,Up1,Seine,5/22/12,common_shiner,62
+4050,Up1,Seine,5/22/12,creek_chub,49
+4051,Up1,Seine,5/22/12,fathead_minnow,18
+4052,Up1,Seine,5/22/12,johnny_darter,19
+4053,Up1,Seine,5/22/12,mottled_sculpin,1
+4054,Up1,Seine,5/22/12,northern_hog_sucker,6
+4055,Up1,Seine,5/22/12,pumpkinseed,8
+4056,Up1,Seine,5/22/12,rainbow_darter,11
+4057,Up1,Seine,5/22/12,redside_dace,5
+4058,Up1,Seine,5/22/12,white_sucker,3
+4059,Up1,Seine,6/14/18,blacknose_dace,37
+4060,Up1,Seine,6/14/18,common_shiner,56
+4061,Up1,Seine,6/14/18,creek_chub,28
+4062,Up1,Seine,6/14/18,fathead_minnow,10
+4063,Up1,Seine,6/14/18,green_sunfish,2
+4064,Up1,Seine,6/14/18,johnny_darter,4
+4065,Up1,Seine,6/14/18,mottled_sculpin,16
+4066,Up1,Seine,6/14/18,northern_hog_sucker,3
+4067,Up1,Seine,6/14/18,rainbow_darter,14
+4068,Up1,Seine,6/14/18,white_sucker,2
+4069,Up1,Seine,5/14/19,blacknose_dace,12
+4070,Up1,Seine,5/14/19,central_stoneroller,2
+4071,Up1,Seine,5/14/19,common_shiner,16
+4072,Up1,Seine,5/14/19,creek_chub,7
+4073,Up1,Seine,5/14/19,fathead_minnow,7
+4074,Up1,Seine,5/14/19,johnny_darter,3
+4075,Up1,Seine,5/14/19,mottled_sculpin,12
+4076,Up1,Seine,5/14/19,northern_hog_sucker,11
+4077,Up1,Seine,5/14/19,rainbow_darter,16
+4078,Up1,Seine,6/10/21,blacknose_dace,15
+4079,Up1,Seine,6/10/21,bluegill,1
+4080,Up1,Seine,6/10/21,central_stoneroller,1
+4081,Up1,Seine,6/10/21,common_shiner,44
+4082,Up1,Seine,6/10/21,creek_chub,8
+4083,Up1,Seine,6/10/21,green_sunfish,4
+4084,Up1,Seine,6/10/21,johnny_darter,8
+4085,Up1,Seine,6/10/21,mottled_sculpin,5
+4086,Up1,Seine,6/10/21,northern_hog_sucker,4
+4087,Up1,Seine,6/10/21,rainbow_darter,10
+4088,Up1,Seine,6/10/21,white_sucker,8
+4089,Up2,Seine,5/22/12,blacknose_dace,19
+4090,Up2,Seine,5/22/12,bluegill,2
+4091,Up2,Seine,5/22/12,central_stoneroller,10
+4092,Up2,Seine,5/22/12,common_shiner,39
+4093,Up2,Seine,5/22/12,creek_chub,23
+4094,Up2,Seine,5/22/12,fathead_minnow,7
+4095,Up2,Seine,5/22/12,johnny_darter,4
+4096,Up2,Seine,5/22/12,mottled_sculpin,6
+4097,Up2,Seine,5/22/12,northern_hog_sucker,8
+4098,Up2,Seine,5/22/12,pumpkinseed,1
+4099,Up2,Seine,5/22/12,rainbow_darter,45
+4100,Up2,Seine,5/22/12,white_sucker,5
+4101,Up2,Seine,7/29/20,blacknose_dace,11
+4102,Up2,Seine,7/29/20,bluegill,15
+4103,Up2,Seine,7/29/20,central_stoneroller,10
+4104,Up2,Seine,7/29/20,common_shiner,44
+4105,Up2,Seine,7/29/20,creek_chub,7
+4106,Up2,Seine,7/29/20,fathead_minnow,12
+4107,Up2,Seine,7/29/20,green_sunfish,10
+4108,Up2,Seine,7/29/20,johnny_darter,4
+4109,Up2,Seine,7/29/20,largemouth_bass,1
+4110,Up2,Seine,7/29/20,mottled_sculpin,8
+4111,Up2,Seine,7/29/20,northern_hog_sucker,7
+4112,Up2,Seine,7/29/20,pumpkinseed,9
+4113,Up2,Seine,7/29/20,rainbow_darter,10
+4114,Up2,Seine,7/29/20,white_sucker,1
+4115,Up2,Seine,10/10/20,blacknose_dace,8
+4116,Up2,Seine,10/10/20,central_stoneroller,8
+4117,Up2,Seine,10/10/20,common_shiner,35
+4118,Up2,Seine,10/10/20,fathead_minnow,30
+4119,Up2,Seine,10/10/20,green_sunfish,1
+4120,Up2,Seine,10/10/20,johnny_darter,8
+4121,Up2,Seine,10/10/20,mottled_sculpin,4
+4122,Up2,Seine,10/10/20,northern_hog_sucker,29
+4123,Up2,Seine,10/10/20,rainbow_darter,8
+4124,Up2,Seine,10/10/20,white_sucker,1
+4125,Up3,Seine,9/22/16,blacknose_dace,11
+4126,Up3,Seine,9/22/16,bluntnose_minnow,1
+4127,Up3,Seine,9/22/16,common_shiner,114
+4128,Up3,Seine,9/22/16,creek_chub,8
+4129,Up3,Seine,9/22/16,fathead_minnow,37
+4130,Up3,Seine,9/22/16,johnny_darter,119
+4131,Up3,Seine,9/22/16,rainbow_darter,9
+4132,Up3,Seine,9/22/16,white_sucker,6
+4133,Up3,Seine,7/21/17,blacknose_dace,4
+4134,Up3,Seine,7/21/17,bluegill,1
+4135,Up3,Seine,7/21/17,bluntnose_minnow,3
+4136,Up3,Seine,7/21/17,central_stoneroller,8
+4137,Up3,Seine,7/21/17,common_shiner,66
+4138,Up3,Seine,7/21/17,creek_chub,27
+4139,Up3,Seine,7/21/17,fathead_minnow,59
+4140,Up3,Seine,7/21/17,green_sunfish,1
+4141,Up3,Seine,7/21/17,johnny_darter,113
+4142,Up3,Seine,7/21/17,largemouth_bass,1
+4143,Up3,Seine,7/21/17,pumpkinseed,1
+4144,Up3,Seine,7/21/17,rainbow_darter,11
+4145,Up3,Seine,7/21/17,white_sucker,26
+4146,Up5,Seine,7/21/17,blacknose_dace,21
+4147,Up5,Seine,7/21/17,bluegill,2
+4148,Up5,Seine,7/21/17,central_stoneroller,4
+4149,Up5,Seine,7/21/17,common_shiner,183
+4150,Up5,Seine,7/21/17,creek_chub,36
+4151,Up5,Seine,7/21/17,fathead_minnow,16
+4152,Up5,Seine,7/21/17,green_sunfish,11
+4153,Up5,Seine,7/21/17,johnny_darter,54
+4154,Up5,Seine,7/21/17,mottled_sculpin,1
+4155,Up5,Seine,7/21/17,pumpkinseed,1
+4156,Up5,Seine,7/21/17,rainbow_darter,29
+4157,Up5,Seine,7/21/17,white_sucker,8
+4158,Wall1,Seine,9/11/15,black_crappie,5
+4159,Wall1,Seine,9/11/15,blacknose_dace,8
+4160,Wall1,Seine,9/11/15,bluegill,6
+4161,Wall1,Seine,9/11/15,bluntnose_minnow,7
+4162,Wall1,Seine,9/11/15,common_carp,1
+4163,Wall1,Seine,9/11/15,creek_chub,27
+4164,Wall1,Seine,9/11/15,fathead_minnow,13
+4165,Wall1,Seine,9/11/15,golden_shiner,1
+4166,Wall1,Seine,9/11/15,green_sunfish,1
+4167,Wall1,Seine,9/11/15,johnny_darter,60
+4168,Wall1,Seine,9/11/15,largemouth_bass,2
+4169,Wall1,Seine,9/11/15,pumpkinseed,1
+4170,Wall1,Seine,9/11/15,white_sucker,13
+4171,Wall2,Backpack Shock,7/6/22,blacknose_dace,97
+4172,Wall2,Backpack Shock,7/6/22,bluegill,1
+4173,Wall2,Backpack Shock,7/6/22,creek_chub,28
+4174,Wall2,Backpack Shock,7/6/22,green_sunfish,1
+4175,Wall2,Backpack Shock,7/6/22,johnny_darter,2
+4176,Wall2,Backpack Shock,7/6/22,white_sucker,2
+4177,Wall2,Seine,9/11/15,blacknose_dace,93
+4178,Wall2,Seine,9/11/15,brook_stickleback,1
+4179,Wall2,Seine,9/11/15,central_mudminnow,1
+4180,Wall2,Seine,9/11/15,creek_chub,16
+4181,Wall2,Seine,9/11/15,fathead_minnow,149
+4182,Wall2,Seine,9/11/15,green_sunfish,1
+4183,Wall2,Seine,9/11/15,johnny_darter,7
+4184,Wall2,Seine,9/11/15,white_sucker,8
+4185,Wall3,Seine,9/11/15,bluegill,1
+4186,Wall3,Seine,9/11/15,brook_stickleback,3
+4187,Wall3,Seine,9/11/15,central_mudminnow,10
+4188,Wall3,Seine,9/11/15,creek_chub,29
+4189,Wall3,Seine,9/11/15,fathead_minnow,31
+4190,Wall3,Seine,9/11/15,green_sunfish,1
+4191,Wall3,Seine,9/11/15,iowa_darter,3
+4192,Wall3,Seine,9/11/15,pumpkinseed,3
+4193,Wall3,Seine,9/11/15,white_sucker,1
+4194,Wall7,Seine,6/23/17,bluegill,9
+4195,Wall7,Seine,6/23/17,brook_stickleback,60
+4196,Wall7,Seine,6/23/17,central_mudminnow,37
+4197,Wall7,Seine,6/23/17,common_carp,1
+4198,Wall7,Seine,6/23/17,creek_chub,76
+4199,Wall7,Seine,6/23/17,fathead_minnow,16
+4200,Wall7,Seine,6/23/17,golden_shiner,13
+4201,Wall7,Seine,6/23/17,green_sunfish,3
+4202,Wall7,Seine,6/23/17,pumpkinseed,29
+4203,Will1,Backpack Shock,7/26/22,central_stoneroller,2
+4204,Will1,Backpack Shock,7/26/22,common_shiner,3
+4205,Will1,Backpack Shock,7/26/22,creek_chub,38
+4206,Will1,Backpack Shock,7/26/22,fathead_minnow,43
+4207,Will1,Backpack Shock,7/26/22,green_sunfish,2
+4208,Will1,Backpack Shock,7/26/22,johnny_darter,74
+4209,Will1,Backpack Shock,7/26/22,largemouth_bass,1
+4210,Will1,Backpack Shock,7/26/22,white_sucker,76
+4211,Will1,Seine,10/16/15,central_stoneroller,1
+4212,Will1,Seine,10/16/15,common_shiner,6
+4213,Will1,Seine,10/16/15,creek_chub,55
+4214,Will1,Seine,10/16/15,fathead_minnow,66
+4215,Will1,Seine,10/16/15,johnny_darter,6
+4216,Will1,Seine,10/16/15,white_sucker,62
+4217,Fowl2,Seine,9/24/22,fathead_minnow,9
+4218,Fowl2,Seine,9/24/22,common_shiner,1
+4219,Fowl2,Seine,9/24/22,creek_chub,6
+4220,Fowl2,Seine,9/24/22,white_sucker,19
+4221,Fowl2,Seine,9/24/22,green_sunfish,42
+4222,Fowl2,Seine,9/24/22,pumpkinseed,14
+4223,Fowl2,Seine,9/24/22,bluegill,7
+4224,Fowl2,Seine,9/24/22,largemouth_bass,4
+4225,Fowl2,Seine,9/24/22,johnny_darter,8
+4226,Fowl2,Seine,9/24/22,blackside_darter,1
+4227,Fowl2,Seine,9/24/22,round_goby,132
+4228,Low9,Seine,9/24/22,central_stoneroller,2
+4229,Low9,Seine,9/24/22,fathead_minnow,16
+4230,Low9,Seine,9/24/22,common_shiner,1
+4231,Low9,Seine,9/24/22,creek_chub,13
+4232,Low9,Seine,9/24/22,white_sucker,11
+4233,Low9,Seine,9/24/22,green_sunfish,5
+4234,Low9,Seine,9/24/22,pumpkinseed,2
+4235,Low9,Seine,9/24/22,bluegill,4
+4236,Low9,Seine,9/24/22,sunfish_hybrid,1
+4237,Low9,Seine,9/24/22,johnny_darter,42
+4238,Low9,Seine,9/24/22,yellow_perch,1
+4239,Low9,Seine,9/24/22,blackside_darter,2
+4240,Low9,Seine,9/24/22,round_goby,67
+4241,Low11,Seine,9/24/22,gizzard_shad,1
+4242,Low11,Seine,9/24/22,central_stoneroller,8
+4243,Low11,Seine,9/24/22,fathead_minnow,3
+4244,Low11,Seine,9/24/22,common_shiner,25
+4245,Low11,Seine,9/24/22,creek_chub,8
+4246,Low11,Seine,9/24/22,white_sucker,9
+4247,Low11,Seine,9/24/22,green_sunfish,11
+4248,Low11,Seine,9/24/22,pumpkinseed,5
+4249,Low11,Seine,9/24/22,bluegill,39
+4250,Low11,Seine,9/24/22,sunfish_hybrid,2
+4251,Low11,Seine,9/24/22,largemouth_bass,7
+4252,Low11,Seine,9/24/22,black_crappie,1
+4253,Low11,Seine,9/24/22,johnny_darter,34
+4254,Low11,Seine,9/24/22,round_goby,33
+4255,Evan5,Seine,6/27/23,blacknose_dace,34
+4256,Evan5,Seine,6/27/23,common_shiner,6
+4257,Evan5,Seine,6/27/23,creek_chub,12
+4258,John2,Seine,5/4/23,fathead_minnow,1
+4259,John2,Seine,5/4/23,white_sucker,1
+4260,John2,Seine,5/4/23,mottled_sculpin,3
+4261,John2,Seine,5/4/23,rainbow_darter,9
+4262,John2,Seine,5/4/23,johnny_darter,8
+4263,LR-2,Seine,5/4/23,bowfin,1
+4264,LR-2,Seine,5/4/23,fathead_minnow,1
+4265,LR-2,Seine,5/4/23,green_sunfish,3
+4266,LR-2,Seine,5/4/23,pumpkinseed,1
+4267,LR-2,Seine,5/4/23,bluegill,3
+4268,LR-2,Seine,5/4/23,johnny_darter,4
+4269,LR-2,Seine,5/4/23,blackside_darter,1
+4270,LR-2,Seine,5/4/23,round_goby,30
+4271,See3,Seine,5/18/23,central_stoneroller,11
+4272,See3,Seine,5/18/23,common_carp,1
+4273,See3,Seine,5/18/23,common_shiner,17
+4274,See3,Seine,5/18/23,northern_redbelly_dace,3
+4275,See3,Seine,5/18/23,bluntnose_minnow,2
+4276,See3,Seine,5/18/23,fathead_minnow,68
+4277,See3,Seine,5/18/23,blacknose_dace,84
+4278,See3,Seine,5/18/23,creek_chub,49
+4279,See3,Seine,5/18/23,white_sucker,24
+4280,See3,Seine,5/18/23,yellow_bullhead,1
+4281,See3,Seine,5/18/23,brook_stickleback,3
+4282,See3,Seine,5/18/23,mottled_sculpin,3
+4283,See3,Seine,5/18/23,pumpkinseed,3
+4284,See3,Seine,5/18/23,bluegill,1
+4285,See3,Seine,5/18/23,johnny_darter,34
+4286,SeeBosch,Seine,5/18/23,central_stoneroller,6
+4287,SeeBosch,Seine,5/18/23,common_shiner,14
+4288,SeeBosch,Seine,5/18/23,fathead_minnow,7
+4289,SeeBosch,Seine,5/18/23,blacknose_dace,60
+4290,SeeBosch,Seine,5/18/23,creek_chub,56
+4291,SeeBosch,Seine,5/18/23,white_sucker,6
+4292,SeeBosch,Seine,5/18/23,green_sunfish,4
+4293,SeeBosch,Seine,5/18/23,johnny_darter,4
+4294,John1,Seine,6/20/23,central_stoneroller,14
+4295,John1,Seine,6/20/23,fathead_minnow,25
+4296,John1,Seine,6/20/23,blacknose_dace,17
+4297,John1,Seine,6/20/23,creek_chub,21
+4298,John1,Seine,6/20/23,white_sucker,20
+4299,John1,Seine,6/20/23,central_mudminnow,7
+4300,John1,Seine,6/20/23,mottled_sculpin,16
+4301,John1,Seine,6/20/23,green_sunfish,4
+4302,John1,Seine,6/20/23,bluegill,1
+4303,John1,Seine,6/20/23,largemouth_bass,1
+4304,John1,Seine,6/20/23,rainbow_darter,144
+4305,John1,Seine,6/20/23,johnny_darter,3
+4306,John6,Seine,6/21/23,creek_chub,4
+4307,John6,Seine,6/21/23,white_sucker,15
+4308,John6,Seine,6/21/23,mottled_sculpin,14
+4309,John6,Seine,6/21/23,rock_bass,1
+4310,John6,Seine,6/21/23,brown_trout,5
+4311,John6,Seine,6/21/23,bluegill,2
+4312,John6,Seine,6/21/23,rainbow_darter,6
+4313,MR-20,Seine,6/21/23,common_shiner,6
+4314,MR-20,Seine,6/21/23,white_sucker,92
+4315,MR-20,Seine,6/21/23,mottled_sculpin,5
+4316,MR-20,Seine,6/21/23,rock_bass,3
+4317,MR-20,Seine,6/21/23,smallmouth_bass,47
+4318,MR-20,Seine,6/21/23,largemouth_bass,8
+4319,MR-20,Seine,6/21/23,rainbow_darter,14
+4320,MR-20,Seine,6/21/23,johnny_darter,11
+4321,MR-18,Seine,6/22/23,spotfin_shiner,5
+4322,MR-18,Seine,6/22/23,bluntnose_minnow,1
+4323,MR-18,Seine,6/22/23,white_sucker,10
+4324,MR-18,Seine,6/22/23,mottled_sculpin,4
+4325,MR-18,Seine,6/22/23,yellow_bullhead,4
+4326,MR-18,Seine,6/22/23,rock_bass,13
+4327,MR-18,Seine,6/22/23,bluegill,2
+4328,MR-18,Seine,6/22/23,smallmouth_bass,31
+4329,MR-18,Seine,6/22/23,largemouth_bass,5
+4330,MR-18,Seine,6/22/23,rainbow_darter,8
+4331,MR-11,Seine,6/22/23,spotfin_shiner,30
+4332,MR-11,Seine,6/22/23,common_shiner,25
+4333,MR-11,Seine,6/22/23,mimic_shiner,3
+4334,MR-11,Seine,6/22/23,bluntnose_minnow,22
+4335,MR-11,Seine,6/22/23,creek_chub,5
+4336,MR-11,Seine,6/22/23,white_sucker,25
+4337,MR-11,Seine,6/22/23,northern_pike,1
+4338,MR-11,Seine,6/22/23,rock_bass,3
+4339,MR-11,Seine,6/22/23,bluegill,1
+4340,MR-11,Seine,6/22/23,smallmouth_bass,1
+4341,MR-11,Seine,6/22/23,black_crappie,1
+4342,MR-11,Seine,6/22/23,johnny_darter,28
+4343,MR-11,Seine,6/22/23,blackside_darter,9
+4344,MR-11,Seine,6/22/23,round_goby,62
+4345,Peb3,Seine,6/27/23,central_stoneroller,28
+4346,Peb3,Seine,6/27/23,common_shiner,36
+4347,Peb3,Seine,6/27/23,fathead_minnow,7
+4348,Peb3,Seine,6/27/23,blacknose_dace,61
+4349,Peb3,Seine,6/27/23,creek_chub,34
+4350,Peb3,Seine,6/27/23,white_sucker,12
+4351,Peb3,Seine,6/27/23,largemouth_bass,1
+4352,Evan5,Seine,6/27/23,fathead_minnow,340
+4353,Evan5,Seine,6/27/23,green_sunfish,1
+4354,Evan5,Seine,6/27/23,white_sucker,7
+4355,Fel4,Seine,6/28/23,common_carp,1
+4356,Fel4,Seine,6/28/23,common_shiner,132
+4357,Fel4,Seine,6/28/23,fathead_minnow,22
+4358,Fel4,Seine,6/28/23,blacknose_dace,5
+4359,Fel4,Seine,6/28/23,creek_chub,27
+4360,Fel4,Seine,6/28/23,white_sucker,11
+4361,Fel4,Seine,6/28/23,green_sunfish,5
+4362,Fel4,Seine,6/28/23,bluegill,1
+4363,Fel4,Seine,6/28/23,largemouth_bass,1
+4364,Fel4,Seine,6/28/23,johnny_darter,133
+4365,Fel4,Seine,6/28/23,blackside_darter,2
+4366,Fowl4,Seine,7/5/23,central_stoneroller,6
+4367,Fowl4,Seine,7/5/23,common_carp,1
+4368,Fowl4,Seine,7/5/23,common_shiner,11
+4369,Fowl4,Seine,7/5/23,fathead_minnow,10
+4370,Fowl4,Seine,7/5/23,blacknose_dace,13
+4371,Fowl4,Seine,7/5/23,creek_chub,29
+4372,Fowl4,Seine,7/5/23,white_sucker,38
+4373,Fowl4,Seine,7/5/23,central_mudminnow,1
+4374,Fowl4,Seine,7/5/23,brook_stickleback,2
+4375,Fowl4,Seine,7/5/23,green_sunfish,2
+4376,Fowl4,Seine,7/5/23,largemouth_bass,4
+4377,Fowl4,Seine,7/5/23,johnny_darter,85
+4378,Fowl5,Seine,7/5/23,common_carp,2
+4379,Fowl5,Seine,7/5/23,common_shiner,6
+4380,Fowl5,Seine,7/5/23,fathead_minnow,132
+4381,Fowl5,Seine,7/5/23,creek_chub,16
+4382,Fowl5,Seine,7/5/23,white_sucker,22
+4383,Fowl5,Seine,7/5/23,central_mudminnow,1
+4384,Fowl5,Seine,7/5/23,brook_stickleback,4
+4385,Fowl5,Seine,7/5/23,green_sunfish,22
+4386,Fowl5,Seine,7/5/23,bluegill,13
+4387,Fowl5,Seine,7/5/23,johnny_darter,23
+4388,Fowl5,Seine,7/5/23,round_goby,16
+4389,Low9,Seine,7/11/23,gizzard_shad,4
+4390,Low9,Seine,7/11/23,common_carp,1
+4391,Low9,Seine,7/11/23,common_shiner,6
+4392,Low9,Seine,7/11/23,bluntnose_minnow,6
+4393,Low9,Seine,7/11/23,fathead_minnow,29
+4394,Low9,Seine,7/11/23,creek_chub,11
+4395,Low9,Seine,7/11/23,white_sucker,15
+4396,Low9,Seine,7/11/23,yellow_bullhead,1
+4397,Low9,Seine,7/11/23,green_sunfish,25
+4398,Low9,Seine,7/11/23,pumpkinseed,5
+4399,Low9,Seine,7/11/23,bluegill,16
+4400,Low9,Seine,7/11/23,largemouth_bass,28
+4401,Low9,Seine,7/11/23,black_crappie,3
+4402,Low9,Seine,7/11/23,johnny_darter,79
+4403,Low9,Seine,7/11/23,yellow_perch,1
+4404,Low9,Seine,7/11/23,round_goby,31
+4405,Low11,Seine,7/11/23,central_stoneroller,15
+4406,Low11,Seine,7/11/23,common_shiner,67
+4407,Low11,Seine,7/11/23,golden_shiner,6
+4408,Low11,Seine,7/11/23,fathead_minnow,13
+4409,Low11,Seine,7/11/23,creek_chub,12
+4410,Low11,Seine,7/11/23,white_sucker,76
+4411,Low11,Seine,7/11/23,green_sunfish,15
+4412,Low11,Seine,7/11/23,pumpkinseed,1
+4413,Low11,Seine,7/11/23,bluegill,5
+4414,Low11,Seine,7/11/23,largemouth_bass,23
+4415,Low11,Seine,7/11/23,black_crappie,2
+4416,Low11,Seine,7/11/23,johnny_darter,72
+4417,Low11,Seine,7/11/23,yellow_perch,1
+4418,Low11,Seine,7/11/23,round_goby,20
+4419,LR-12,Seine,7/12/23,common_shiner,16
+4420,LR-12,Seine,7/12/23,blacknose_dace,17
+4421,LR-12,Seine,7/12/23,creek_chub,5
+4422,LR-12,Seine,7/12/23,white_sucker,15
+4423,LR-12,Seine,7/12/23,northern_hog_sucker,1
+4424,LR-12,Seine,7/12/23,rainbow_trout,1
+4425,LR-12,Seine,7/12/23,green_sunfish,13
+4426,LR-12,Seine,7/12/23,pumpkinseed,3
+4427,LR-12,Seine,7/12/23,bluegill,2
+4428,LR-12,Seine,7/12/23,johnny_darter,16
+4429,LR-12,Seine,7/12/23,logperch,6
+4430,LR-12,Seine,7/12/23,blackside_darter,2
+4431,LR-12,Seine,7/12/23,round_goby,70
+4432,LR-10,Seine,7/12/23,common_shiner,7
+4433,LR-10,Seine,7/12/23,bluntnose_minnow,3
+4434,LR-10,Seine,7/12/23,fathead_minnow,2
+4435,LR-10,Seine,7/12/23,white_sucker,8
+4436,LR-10,Seine,7/12/23,logperch,6
+4437,LR-10,Seine,7/12/23,blackside_darter,1
+4438,LR-10,Seine,7/12/23,round_goby,56
+4439,LR-11A,Seine,7/19/23,common_shiner,3
+4440,LR-11A,Seine,7/19/23,spotfin_shiner,3
+4441,LR-11A,Seine,7/19/23,emerald_shiner,33
+4442,LR-11A,Seine,7/19/23,mimic_shiner,4
+4443,LR-11A,Seine,7/19/23,bluntnose_minnow,15
+4444,LR-11A,Seine,7/19/23,fathead_minnow,12
+4445,LR-11A,Seine,7/19/23,white_sucker,10
+4446,LR-11A,Seine,7/19/23,black_crappie,4
+4447,LR-11A,Seine,7/19/23,johnny_darter,2
+4448,LR-11A,Seine,7/19/23,yellow_perch,2
+4449,LR-11A,Seine,7/19/23,logperch,3
+4450,LR-11A,Seine,7/19/23,blackside_darter,3
+4451,LR-11A,Seine,7/19/23,round_goby,146
+4452,Sprag,Seine,4/30/23,central_stoneroller,4
+4453,Sprag,Seine,4/30/23,common_shiner,44
+4454,Sprag,Seine,4/30/23,bluntnose_minnow,5
+4455,Sprag,Seine,4/30/23,fathead_minnow,12
+4456,Sprag,Seine,4/30/23,creek_chub,25
+4457,Sprag,Seine,4/30/23,white_sucker,2
+4458,Sprag,Seine,4/30/23,rock_bass,2
+4459,Sprag,Seine,4/30/23,bluegill,6
+4460,Sprag,Seine,4/30/23,pumpkinseed,1
+4461,Sprag,Seine,4/30/23,johnny_darter,4
+4462,Sprag2,Seine,4/30/23,central_stoneroller,6
+4463,Sprag2,Seine,4/30/23,common_shiner,38
+4464,Sprag2,Seine,4/30/23,fathead_minnow,24
+4465,Sprag2,Seine,4/30/23,creek_chub,31
+4466,Sprag2,Seine,4/30/23,stonecat,3
+4467,Sprag2,Seine,4/30/23,bluegill,2
+4468,Sprag2,Seine,4/30/23,johnny_darter,13
+4469,Sprag2,Seine,9/16/23,central_stoneroller,38
+4470,Sprag2,Seine,9/16/23,common_shiner,102
+4471,Sprag2,Seine,9/16/23,bluntnose_minnow,1
+4472,Sprag2,Seine,9/16/23,fathead_minnow,64
+4473,Sprag2,Seine,9/16/23,creek_chub,71
+4474,Sprag2,Seine,9/16/23,white_sucker,18
+4475,Sprag2,Seine,9/16/23,stonecat,3
+4476,Sprag2,Seine,9/16/23,central_mudminnow,2
+4477,Sprag2,Seine,9/16/23,rock_bass,2
+4478,Sprag2,Seine,9/16/23,green_sunfish,5
+4479,Sprag2,Seine,9/16/23,pumpkinseed,28
+4480,Sprag2,Seine,9/16/23,bluegill,45
+4481,Sprag2,Seine,9/16/23,northern_sunfish,2
+4482,Sprag2,Seine,9/16/23,largemouth_bass,6
+4483,Sprag2,Seine,9/16/23,black_crappie,1
+4484,Sprag2,Seine,9/16/23,johnny_darter,17

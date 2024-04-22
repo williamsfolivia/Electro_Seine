@@ -1,0 +1,109 @@
+---
+title: "R Notebook"
+output: html_notebook
+editor_options: 
+  chunk_output_type: inline
+---
+
+```{r}
+library(tidyverse)
+library(ggbreak) 
+
+Final_scores_modern <- read_csv("~/Desktop/Delisting Code FOTR/Delisting_FOTR/Delisting_FOTR/Data/Created_Data/Final_scores_2023.csv", 
+    col_types = cols(...1 = col_skip()))
+Final_scores_historic <- read_csv("~/Desktop/Delisting Code FOTR/Delisting_FOTR/Delisting_FOTR/Data/Created_Data/Final_scores_historic.csv", 
+    col_types = cols(...1 = col_skip()))
+Final_scores<-rbind.fill(Final_scores_modern,Final_scores_historic)
+
+Final_scores_COMID<-Final_scores%>%mutate(FinalScore= case_when(TotalFish<=50 ~-10, TRUE ~ Total_score)) %>% mutate(Era=case_when(year<2000 ~"Historic", year>2000 ~"FOTR")) %>% filter(!FIELDID=="main12n")
+
+  Final_scores_COMID$Era <- factor(Final_scores_COMID$Era, levels = c("Historic","FOTR"))
+
+```
+
+```{r}
+Summary_since2019<-Final_scores_COMID %>% filter(year>=2019)  %>% group_by(FIELDID)%>% filter(n()>=2) %>% 
+  dplyr::summarise(Total_Both=n(),
+   average_score_both=mean(FinalScore), 
+   standard_deviation_both=sd(FinalScore))
+
+Summary_since2015<-Final_scores_COMID %>% filter(year>=2013 &year<=2018) %>% group_by(FIELDID)%>% filter(n()>=2) %>% 
+  dplyr::summarise(Total_Both=n(),
+   average_score_both=mean(FinalScore), 
+   standard_deviation_both=sd(FinalScore))
+
+Summary_total<-Final_scores_COMID %>% filter(year>=2010)%>% group_by(FIELDID)%>% filter(n()>=2) %>% 
+  dplyr::summarise(Total_Both=n(),
+   average_score_both=mean(FinalScore), 
+   standard_deviation_both=sd(FinalScore))
+
+```
+
+```{r}
+Summary_branch<-Final_scores_COMID %>% group_by(Branch,year)%>% filter(n()>=2) %>% 
+  dplyr::summarise(Total_Both=n(),
+   average_score=mean(FinalScore), 
+   standard_deviation=sd(FinalScore), .groups = 'drop')
+Summary_branch<-Summary_branch %>% mutate(pos2sd=abs(standard_deviation*2), neg2sd=abs(standard_deviation)*-2)
+Test<-Summary_branch%>%select(-c("standard_deviation","Total_Both")) %>%  pivot_wider(names_from = "year",values_from = "average_score")
+
+  Summary_branch$Branch <- factor(Summary_branch$Branch, levels = c("Main", "Upper", "Middle","Lower"))
+```
+
+```{r}
+Summary_branch %>% 
+ggplot(aes(x=year,y=average_score, color=Branch))+
+  geom_point()+
+  geom_line()+
+  geom_errorbar(aes(ymin=average_score+neg2sd, ymax=average_score+pos2sd), width=.2)+
+facet_wrap(~Branch, ncol=1)+ 
+   scale_color_manual(values=c("#006D2C","#756BB1","#08589E","#B30000"),  name = "Subwatershed")+
+   labs(x= "", y = "Average 51 Score")+ 
+  theme_light()+ 
+   theme(text=element_text(size=20, 
+      family="Times New Roman")) +
+  geom_hline(yintercept = -4, linetype="dotted")+ 
+   geom_hline(yintercept = 4,linetype="dotted")
+  
+
+```
+
+```{r}
+Summary_stream<-Final_scores_COMID %>% group_by(StreamName,year)%>% filter(n()>=2) %>% 
+  dplyr::summarise(Total_Both=n(),
+   average_score=mean(FinalScore), 
+   standard_deviation=sd(FinalScore), .groups = 'drop')
+Summary_branch<-Summary_branch %>% mutate(pos2sd=abs(standard_deviation*2), neg2sd=abs(standard_deviation)*-2)
+Branch<-Final_scores_COMID %>% select(Branch,StreamName) %>% unique() 
+
+Summary_stream<-left_join(Branch,Summary_stream, by="StreamName")
+
+ Summary_stream$Branch <- factor(Summary_stream$Branch, levels = c("Main", "Upper", "Middle","Lower"))
+ 
+Summary_stream<-Summary_stream %>% group_by(StreamName)  %>% filter(n()>=2) %>%
+   arrange(match(StreamName, c("Main Rouge", "Evans Creek", "Pebble Creek","Franklin Creek","Quarton Branch","Upper Rouge","Bell Branch","Seeley Creek","Minnow Pond","Tarabusi Creek","Middle Rouge","Tonquish Creek","Willow Creek","Johnson Creek","Walled Lk Drainage","Bishop Creek","Lower Rouge","Fellows Creek","Fowler Creek"))) 
+```
+
+```{r}
+library(RColorBrewer)
+Summary_stream %>%
+ggplot(aes(x=year,y=average_score, color=factor(StreamName,level=c("Main Rouge", "Evans Creek", "Pebble Creek","Franklin Creek","Quarton Branch","Upper Rouge","Bell Branch","Seeley Creek","Minnow Pond","Tarabusi Creek","Middle Rouge","Tonquish Creek","Willow Creek","Johnson Creek","Walled Lk Drainage","Bishop Creek","Lower Rouge","Fellows Creek","Fowler Creek"))))+
+  geom_point(size=2.5)+
+  geom_line(size=1)+
+   ylim(-10,10)+   
+  facet_wrap(~Branch,ncol = 1)+
+   geom_hline(yintercept = -4, linetype="dotted")+ 
+   geom_hline(yintercept = 4,linetype="dotted")+ 
+  theme_light()+ 
+ scale_color_manual(values = c(brewer.pal(5, "BuGn")[-c(1:2)]
+                               ,brewer.pal(3, "Purples")[-1]
+                               ,brewer.pal(7, "GnBu")[-c(1:3)]
+                               ,brewer.pal(5, "OrRd")[-c(1:2)]
+                               )
+                    , name = "Stream Reach")+ 
+  labs(x= "", y = "Average 51 Score")+ 
+  theme(text=element_text(size=20, 
+      family="Times New Roman")) 
+  
+```
+

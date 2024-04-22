@@ -1,0 +1,196 @@
+﻿FIELDID,ID,Branch,StreamName,SiteDescription,SamplingRoads,SamplingLocation,County,Latitude,Longitude
+Bell1,1,Upper,Bell Branch,Bicentennial Park,7 Mile/Newburgh Rd,Upstream,Wayne,42.42924,-83.39666
+Bell2,2,Upper,Bell Branch,Schoolcraft College,6 Mile/Haggerty,Upstream,Wayne,42.4151185,-83.429007
+Bell3,3,Upper,Bell Branch,Livonia 6 Mile,6 Mile/Farmington,Downstream,Wayne,42.41015,-83.39285
+Bell4,166,Upper,Bell Branch,Hubbard Drive,Five Mile/Merriman,Upstream,Wayne,42.40327,-83.36237
+Bish2,33,Middle,Bishop Creek,Bishop Scarborough,10 Mile/Meadowbrook,Upstream,Oakland,42.47131,-83.45151
+CL,182,Middle,Curtis Lake,Silver Spring Drive,7 Mile Rd,No Road,Wayne,42.434131,-83.462669
+DNRNFel,168,Lower,Fellows Creek,N Fellows,Canton Center,Upstream,Wayne,42.32336,-83.48854
+Evan1,131,Main,Evans Creek,Evans Green Spruce,12 Mile/Evergreen,Upstream,Oakland,42.504517,-83.233603
+Evan2,136,Main,Evans Creek,LTU,10 Mile/Northwestern,Upstream,Oakland,42.474374,-83.246909
+Evan3,186,Main,Evans Creek,Latter Day Saints,9 Mile & Berg,Upstream,Oakland,42.459278,-83.268639
+Evan4,195,Main,Evans Creek,Berg Road,"23000 Eight Mile Road, Southfield 48033",Upstream,Oakland,42.443871,-83.269766
+Evan5,199,Main,Evans Creek,Lahser at credit union,"24333 Lahser Rd, Southfield, MI 48033",Up and Downstream,Oakland,42.46792,-83.26124
+Fel1,74,Lower,Fellows Creek,Top of Hill Ct,Napier/Powell,Downstream,Wayne,42.35729,-83.53988
+Fel2,75,Lower,Fellows Creek,Vintage Valley,Ford/Ridge,Downstream,Wayne,42.31932,-83.5246
+Fel3,121,Lower,Fellows Creek,Ann Arbor Rd,at Joy Road,Downstream,Wayne,42.349854,-83.540557
+Fel4,76,Lower,Fellows Creek,Flodin Pk,Saltz Rd/Sheldon,Downstream,Wayne,42.31346,-83.46471
+Fel5,122,Lower,Fellows Creek,Warren Ridge,between Napier and Ridge,Upstream,Wayne,42.335263,-83.539831
+Fel6,123,Lower,Fellows Creek,Hanford,west of Ridge,Upstream,Wayne,42.328188,-83.532192
+Fel7,173,Lower,Fellows Creek,Napier Court,Napier/Ann Arbor Rd,Upstream,Washtenaw,42.3462,-83.54797
+FLOW2,155,Main,Forest Lakes,Brookside Drive,W Long Lake,Upstream,Oakland,42.58359,-83.27364
+Fowl1,77,Lower,Fowler Creek,Prospect,Prospect/Cherry Hill,Downstream,Wayne,42.30423,-83.60516
+Fowl2,78,Lower,Fowler Creek,Fowler Beck,"Beck, N of Geddes",Downstream,Wayne,42.28226,-83.50515
+Fowl3,119,Lower,Fowler Creek,Harris,S of Cherry Hill,Up and Downstream,Washtenaw,42.297437,-83.584549
+Fowl4,142,Lower,Fowler Creek,Ridge Rd S of Geddes,Ridge/Geddes,Downstream,Washtenaw,42.2755623,-83.553772
+Fowl5,152,Lower,Fowler Creek,Fowler Denton,Denton N of Geddes,Downstream,Wayne,42.2802935,-83.5254264
+Fowl6,185,Lower,Fowler Creek,Ellsworth,7842 Cherry Hill,Upstream,Washtenaw,42.303202,-83.608035
+Frank1,16,Main,Franklin Creek,Franklin Cider Mill,14 Mile/Franklin Rd,Upstream,Oakland,42.53024,-83.30585
+Frank2,17,Main,Franklin Creek,Ink Pump Sta,Inkster & Farmington,Upstream,Oakland,42.529325,-83.325381
+Frank3,157,Main,Franklin Creek,Stream above Morris Lk,Morris Lake Drive,Downstream,Oakland,42.56567,-83.38011
+Frank4,158,Main,Franklin Creek,Morris Lake,Mirror Lake Drive,Downstream,Oakland,42.56574,-83.37964
+Frank5,159,Main,Franklin Creek,above Morris Lk,Mirror Lake Drive,Upstream,Oakland,42.5654,-83.38219
+Frank6,160,Main,Franklin Creek,outlet from Morris Lk,Lockhart St,Downstream,Oakland,42.5653611,-83.3735027
+Frank7,170,Main,Franklin Creek,Doherty Elementary School,"3575 Walnut Lake Rd, West Bloomfiled",Downstream,Oakland,42.55605,-83.3548
+Frank8,171,Main,Morris Lake,end of Lockhart,4985 Lockhart St,Upstream,Oakland,42.564393,-83.3754668
+GilbL,198,Main,Quarton Branch,Gilbert Lake,"1045 Timberlake Drive, Bloomfield Township, 48302",Downstream,Oakland,42.560939,-83.278472
+HamL,190,Main,Forest Lakes,Hammond Lake,2300 E Hammond Lake Road,Upstream,Oakland,42.6066819,-83.3223617
+Ing1,34,Middle,Ingersoll Creek,Brookfarm Park,Willowbrook/10 Mile,Downstream,Oakland,42.46293,-83.44552
+John1,35,Middle,Johnson Creek,5M Salem,5 Mile/Salem Rd,Downstream,Washtenaw,42.3897,-83.58194
+John2,36,Middle,Johnson Creek,5M NV,5 Mile/Ridge,Upstream,Wayne,42.39424,-83.534404
+John3,37,Middle,Johnson Creek,6M NV,6 Mile/Beck,Upstream,Wayne,42.40844,-83.51693
+John5,38,Middle,Johnson Creek,Fish Hatchery Pk,7 Mile/Sheldon,Downstream,Wayne,42.4224,-83.49289
+John6,39,,Johnson Creek,Hines,Hines/Sheldon,Downstream,Wayne,42.42546,-83.48138
+John7,40,Middle,Johnson Creek,Arcadia,"S of 6 Mile, W of Beck",Downstream,Wayne,42.399455,-83.526902
+John8,90,Middle,Johnson Creek,Maybury Angell,7 Mile & Napier,Downstream,Wayne,42.42148,-83.54396
+John9,105,Middle,Johnson Creek,Western Wayne CA,5 Mile & Napier,Downstream,Wayne,42.38066,-83.545192
+JohnRHS,106,Middle,Johnson Creek,Rural Hills St,Hines,Upstream,Wayne,42.42611,-83.486667
+JohnSWD,107,Middle,Johnson Creek,Salem Woods Dr,Currie,Downstream,Washtenaw,42.392444,-83.595278
+Low10,139,Lower,Lower Rouge,Canton Center,n of S Canton Scholars,Downstream,Wayne,42.286955,-83.484475
+Low11,151,Lower,Lower Rouge,Denton Rd,N of Proctor,Upstream,Wayne,42.2972147,-83.5254371
+Low12,169,Lower,Lower Rouge,East of Low4,Sheldon along trail,Downstream,Wayne,42.2838277,-83.474042
+Low13,200,Lower,Lower Rouge,Venoy - Dorsey Park,Venoy/Michigan,Upstream,Wayne,42.2876032,-83.3592921
+Low2,79,Lower,Lower Rouge,Cherry Hill,Cherry Hill/Ridge,Upstream,Wayne,42.30724,-83.53793
+Low3,118,Lower,Lower Rouge,Gotfredson,N of Ford,Upstream,Washtenaw,42.323651,-83.565967
+Low4,124,Lower,Lower Rouge,Sheldon Rd,N of Michigan,Downstream,Wayne,42.286433,-83.47563
+Low5,125,Lower,Lower Rouge,Lotz Rd,N of Michigan,Downstream,Wayne,42.282389,-83.437141
+Low6,126,Lower,Lower Rouge,Newburgh Rd,N of Michigan,Upstream,Wayne,42.282611,-83.407008
+Low7,127,Lower,Lower Rouge,RR Tracks,Wayne Bowl,Downstream,Wayne,42.283278,-83.397352
+Low8,128,Lower,Lower Rouge,Elizabeth St,N of Michigan,Downstream,Wayne,42.285374,-83.388726
+Low9,132,Lower,Lower Rouge,Lower Beck Rd,Beck Road,Downstream,Wayne,42.283461,-83.505311
+LR-1,80,Lower,Lower Rouge,Commerce Ct,"Michigan Ave, WCDOE Office",Upstream,Wayne,42.280425,-83.42027
+LR-10,89,Lower,Lower Rouge,Inkster,John Daly north of Michigan,Downstream,Wayne,42.298506,-83.305839
+LR-11,96,Lower,Lower Rouge,Ford Field west,Brady & Cherry Hill,Upstream,Wayne,42.31108,-83.245905
+LR-11A,134,Lower,Lower Rouge,Ford Field east,east of Ford Field,Downstream,Wayne,42.3125679,-83.2415233
+LR-12,104,Lower,Lower Rouge,Morton Taylor,"E of Morton Taylor, n of Mich Ave",Downstream,Wayne,42.282317,-83.466103
+LR-2,81,Lower,Lower Rouge,WTUA,"Geddes/Beck, d/s of outfall",Downstream,Wayne,42.281766,-83.502997
+LR-3,82,Lower,Lower Rouge,Goudy Park,Wayne & Michigan Ave,Downstream,Wayne,42.284848,-83.381855
+LR-4,83,Lower,Lower Rouge,Merriman Rd,Merriman/Mich Ave,Downstream,Wayne,42.288775,-83.3486
+LR-5,84,Lower,Fellows Creek,Fellows Lotz,Finley Drive,Downstream,Wayne,42.300561,-83.4374797
+LR-6,85,Lower,Lower Rouge,Wayne WDM,Wayne Rd W,Upstream,Wayne,42.285,-83.383888
+LR-7,86,Lower,McClaugherty Creek,McClaugherty Creek,Ecorse & Hannan,Downstream,Wayne,42.2484,-83.4248
+LR-8,87,Lower,Lower Rouge,Ridge Proctor,Ridge & Proctor,Downstream,Wayne,42.295976,-83.541846
+LR-9,88,Lower,Fellows Creek,Fellows Beck Warren,Warren & Beck,Upstream,Wayne,42.33667,-83.509238
+Main1,18,Main,Main Rouge,FF Pk,Coolidge/I-75,Upstream,Oakland,42.60991,-83.17984
+Main10,116,Main,Main Rouge,HF Estate Dam,Evergreen N of Mich,Upstream,Wayne,42.312949,-83.232347
+Main11,135,Main,Quarton Branch,Quarton at Lakeside,Lakeside/Midland Dr,Upstream,Oakland,42.554445,-83.226312
+Main12,149,Main,Main Rouge,Greenfield Village,Oxbow south,Upstream,Wayne,42.304944,-83.219585
+Main12N,184,Main,Main Rouge,Oxbow North,Greenfield Village,Downstream,Wayne,42.30589,-83.221978
+Main13,153,Main,Main Rouge,W Long Lake Rd,W Long Lake/Coolidge,Downstream,Oakland,42.59005,-83.18976
+Main14,167,Main,Main Rouge,Middle confluence,Hines/Ford Rd,Downstream,Wayne,42.33082,-83.24434
+Main15,174,Main,Main Rouge,Kensington Rd,"5191 Irongate, Bloomfield Hills",Upstream,Oakland,42.564061,-83.212396
+Main16,175,Main,Quarton Branch,Cranbrook Rowing Team,651 Orchard Ridge,Downstream,Oakland,42.5698649,-83.2571411
+Main17,176,Main,Main Rouge,Berberian Woods,28415 Streamwood,Downstream,Oakland,42.4957582,-83.2765335
+Main18,180,Main,Main Rouge,Beach Rd,park on Tarragona,Up and Downstream,Oakland,42.581007,-83.197579
+Main19,187,Main,Main Rouge,Nine Mile,W of Beech,Downstream,Oakland,42.456957,-83.305917
+Main2,19,Main,Main Rouge,CAHN,Sq Lk/Coolidge,Downstream,Oakland,42.60398,-83.17963
+Main20,194,Main,Main Rouge,Under Ford Road,Ford and Hines,Downstream,Wayne,42.33006,-83.2415
+Main3,20,Main,Main Rouge,Booth Pk,Old Woodward/Euclid,Downstream,Oakland,42.54891,-83.21774
+Main4,21,Main,Main Rouge,Linden Pk,15 Mile/Southfield,Downstream,Oakland,42.54242,-83.22478
+Main4.5,22,Main,Main Rouge,Fairway Pk,Lincoln/Southfield,Downstream,Oakland,42.53718,-83.22861
+Main5,23,Main,Main Rouge,Douglas Evans,Evergreen/13 Mile,Upstream,Oakland,42.52219,-83.24692
+Main6,24,Main,Main Rouge,Sfld Civic Ctr,Civic Center Dr/Telegraph,Up and Downstream,Oakland,42.47886,-83.2845
+Main7,92,Main,Main Rouge,Sfld 10 M,10 Mile,Upstream,Oakland,42.472849,-83.289147
+Main7.5,114,Main,Main Rouge,24836 Glenside,10 Mike & Beech,Downstream,Wayne,42.469074,-83.290339
+Main8,93,Main,Main Rouge,Fordson Island,Fort Street,Upstream,Wayne,42.29352,-83.14873
+Main9,113,Main,Main Rouge,Rotunda,Southfield,Upstream,Wayne,42.30388,-83.203929
+Mid1,41,Middle,Middle Rouge,Northville Rec E,Northville Rd/7 Mile,Downstream,Oakland,42.42177,-83.47546
+Mid2,101,Middle,Middle Rouge,Woods Dr Riffle,Hines,Upstream,Wayne,42.37183,-83.45509
+Mid3,102,Middle,Middle Rouge,Newb Dam outflow,Ann Arbor Rd,Upstream,Wayne,42.36656,-83.41015
+Mid4,143,Middle,Middle Branch,Newburgh Lake,Hines,Downstream,Wayne,42.366466,-83.423351
+Mid5,148,Middle,Middle Rouge,Helms Haven,Hines/Outer Dr,Upstream,Wayne,42.339356,-83.264421
+Min1,4,Upper,Minnow Pond,Minnow 13 M,13 Mile/Farmington,Downstream,Oakland,42.51274,-83.38905
+Min2,5,Upper,Minnow Pond,OCC,Farmington Rd,Downstream,Oakland,42.493065,-83.37734
+Min3,6,Upper,Minnow Pond,Dunckel,12 Mile/Kendallwood Dr,Upstream,Oakland,42.500565,-83.37127
+Min3A,161,Upper,Minnow Pond,Dunckel side,12 Mile Rd,Upstream,Oakland,42.500031,-83.373163
+Min4,108,Upper,Minnow Pond,14 Mile,Halsted,Upstream,Oakland,42.526938,-83.421444
+Min5,109,Upper,Minnow Pond,Farmington Rd,13 Mile,Downstream,Oakland,42.510799,-83.378381
+MN-1,25,Main,Main Rouge,Main 8 M,Eight Mile/Telegraph,Downstream,Wayne,42.438056,-83.274722
+MN-2,26,Main,Main Rouge,Eliza Howell,5 Mile/Telegraph,Upstream,Wayne,42.399722,-83.271389
+MN-3,27,Main,Main Rouge,Fort St,Fort E of bridge,Upstream,Wayne,42.290906,-83.142919
+MN-4,97,Main,Main Rouge,Parkland Pk,Ann Arbor Trail,Downstream,Wayne,42.3379,-83.247806
+MN-5,98,Main,Main Rouge,Bridge St,Bridge w of Telegraph,Downstream,Oakland,42.443614,-83.284906
+MN-6,146,Main,Main Rouge,Seven Mile,Greater Grace Temple,Upstream,Wayne,42.431922,-83.271534
+MN-7,147,Main,Main Rouge,Rouge Park,Spinoza/Sawyer,Upstream,Wayne,42.348736,-83.24721
+MN-7A,181,Main,Main Rouge,Rouge Park Sorensen,Spinoza/Sawyer,Upstream,Wayne,42.3460164,-83.2470989
+MR-1,42,Middle,Middle Rouge,Northville Rec W,Hines/7 Mile,Downstream,Wayne,42.42487,-83.47712
+MR-10,43,Middle,Middle Rouge,Parr Rec,Telegraph,Upstream,Wayne,42.347097,-83.27895
+MR-11,44,Middle,Middle Rouge,Elm Grove,"E of Nankin Mills, W of Valley View Rec Area",Downstream,Wayne,42.34516,-83.3629
+MR-12,45,Middle,Middle Rouge,Hawthorn Valley,"E of Merriman, W of Middlebelt Hill",Downstream,Wayne,42.338141,-83.344644
+MR-13,46,Middle,Middle Rouge,Warrendale,Hines/Warren,Upstream,Oakland,42.34432,-83.26865
+MR-14,47,Middle,Tonquish Creek,Smith Elem,Byron/McKinley,Upstream,Wayne,42.36027,-83.47638
+MR-15,48,Middle,Middle Rouge,Outer Dr Ford,Ford Road/Outer Drive,Downstream,Wayne,42.33098,-83.247152
+MR-16,49,Middle,Tonquish Creek,Canoe Pk,W of Ann Arbor Trail/Hines,Upstream,Wayne,42.3519,-83.375
+MR-17,50,Middle,Middle Rouge,I-275 Clam Bar,West of I-275,Upstream,Wayne,42.370466,-83.437574
+MR-18,51,Middle,Middle Rouge,Springbrook Rec,E of M-14 on Hines,Downstream,Wayne,42.390248,-83.466365
+MR-19,52,Middle,Tonquish Creek,Joy Rd,Joy/Lilley,Upstream,Wayne,42.351831,-83.462729
+MR-2,53,Middle,Middle Rouge,Reservoir Rd,"S of 6 Mile, E of Hines",Upstream,Wayne,42.408,-83.47076
+MR-20,54,Middle,Middle Rouge,Waterford Bd,Waterford Bend,Upstream,Wayne,42.411952,-83.471703
+MR-21,55,Middle,Tonquish Creek,Holliday Pk,Cowan/Woodview,Upstream,Wayne,42.345241,-83.398143
+MR-22,91,Middle,Johnson Creek,Maybury south,7 Mile N & Napier,Downstream,Wayne,42.43033,-83.544423
+MR-23,95,Middle,Johnson Creek,Maybury north,8 Mile,Downstream,Oakland,42.432475,-83.520006
+MR-24,99,Middle,Tonquish Creek,Lion's Pk,Burroughs & Coolidge,Downstream,Wayne,42.364413,-83.464724
+MR-25,103,Middle,Johnson Creek,Maybury East,Beck/Main St,Upstream,Wayne,42.43058,-83.5135
+MR-26,117,Middle,Johnson Creek,Napier Rd,Eight Mile,Downstream,Wayne,42.434306,-83.550725
+MR-27,133,Middle,Johnson Creek,Ridge,Ridge S of 7 Mile,Downstream,Wayne,42.41672,-83.531253
+MR-28,177,Middle,Tonquish creek,N Branch Tonquish,Eaton Drive,Upstream,Wayne,42.380628,-83.497516
+MR-2a,56,Middle,Middle Rouge,Reservoir Rd W,"S of 6 Mile, E of Hines",Downstream,Wayne,42.4089,-83.4704
+MR-3,57,Middle,Middle Rouge,Plym Riverside,S of Plymouth,Downstream,Wayne,42.37402,-83.45532
+MR-4,58,Middle,Middle Rouge,Levan Knoll,"W of Levan Knoll, S of Hines",Downstream,Wayne,42.359863,-83.40045
+MR-5,59,Middle,Middle Rouge,Valley View,"E of Nankin, S of Hines",Downstream,Wayne,42.34447,-83.36118
+MR-6,60,Middle,Middle Rouge,Sherwood,"E of Merriman, N of Hines",Upstream,Wayne,42.34132,-83.33765
+MR-7,61,Middle,Middle Rouge,Hills Dr,W of Middlebelt,Downstream,Wayne,42.34286,-83.32853
+MR-8,62,Middle,Middle Rouge,Inkster Rd,"W of Inkster, S of Hines",Upstream,Wayne,42.34893,-83.31455
+MR-9,63,Middle,Middle Rouge,Beech Daly,E of Beech Daly,Upstream,Wayne,42.34732,-83.29135
+Mur2,28,Main,Murphy Creek,Roeper School,41190 Woodward,Downstream,Oakland,42.59375,-83.25174
+Nfowl,120,Lower,Fowler Creek,Fowler Ridge,2N Geddes,Up and Downstream,Washtenaw,42.289405,-83.547127
+Nott,29,Main,Nottingham Creek,Country Day,Lahser/13 Mile,Upstream,Oakland,42.51149,-83.26463
+Nott2,193,Main,Nottingham Creek,Eisenman,32639 Valley Ridge Dr,,Oakland,42.527109,-83.267861
+Nton,64,Middle,Tonquish Creek,S Evergreen St,Harvey & Penniman,Upstream,Wayne,42.37312,-83.47572
+Peb1,30,Main,Pebble Creek,Danvers Ct,28314 Danvers Ct,Downstream,Oakland,42.50133,-83.32912
+Peb2,31,Main,Pebble Creek,Pebble 13 Mile,13 Mile/Middlebelt,Upstream,Oakland,42.51521,-83.34402
+Peb3,100,Main,Pebble Creek,Pebble d/s Dam,Danvers Drive,Downstream,Oakland,42.500849,-83.324474
+Peb4,162,Main,Pebble Creek,10 Mile,Beech Rd,Upstream,Oakland,42.4716,-83.30391
+Peb5,178,Main,Pebble Creek,Ravine Drive,Orchard Lake N of 13 Mile,Downstream,Oakland,42.521306,-83.357611
+Rav,163,Main,Ravines Branch,10 Mile,Middlebelt/Inkster,Upstream,Oakland,42.47027,-83.33097
+See1,7,Upper,Seeley Creek,Seeley  13 M Hagg,13 Mile/Haggerty,Downstream,Oakland,42.51145,-83.4333
+See2,8,Upper,Seeley Creek,Sleepy Hollow,Drake/11 Mile,Upstream,Oakland,42.48927,-83.40099
+See3,9,Upper,Seeley Creek,Kennedy Ct,Kennedy Court,Upstream,Oakland,42.51073,-83.4304
+See4,110,Upper,Seeley Creek,Haggerty Rd,S of 14 Mile,Downstream,Oakland,42.516904,-83.436534
+SeeBosch,111,Upper,Seeley Creek,Seeley Bosch,N of 696,Upstream,Oakland,42.491667,-83.421528
+SeeSTO,112,Upper,Seeley Creek,Seeley Comm outfall,14 Mile,Upstream,Oakland,42.527377,-83.450018
+SimpL,189,Main,Franklin Creek,Simpson Lake,Isle Royal Ct,Upstream,Oakland,42.56288,-83.34577
+Sprag,32,Main,Sprague Creek,Main Lloyd Stage,6685 Coolidge,Upstream,Oakland,42.61623,-83.19174
+Tar2,10,Upper,Tarabusi Creek,Tara 8 M,8 Mile/Gill,Upstream,Wayne,42.441084,-83.38423
+Ton1,65,Middle,Tonquish Creek,Plym Twp Pk,Beck/Ann Arbor Tr,Upstream,Wayne,42.36701,-83.49895
+Ton1/2,66,Middle,Tonquish Creek,Canton Ctr Rd,"Canton Ctr Rd, N of Ann Arbor Rd",Downstream,Wayne,42.36437,-83.48939
+Ton2,67,Middle,Tonquish Creek,Ann Arbor Rd,Ann Arbor Rd/Lilley,Downstream,Wayne,42.35809,-83.46507
+Ton3,140,Middle,Tonquish Creek,Hix Road,east side of Road,Downstream,Wayne,42.334626,-83.418158
+ULL,183,Main,Upper Long Lake,Upper Long Lake,"1807 Long Pointe Drive, Bloomfield Township 48302",Up and Downstream,Oakland,42.597873,-83.315586
+Up1,11,Upper,Upper Rouge,Heritage Park,Farmington/10 Mile,Upstream,Oakland,42.47526,-83.38567
+Up2,12,Upper,Upper Rouge,Shiawassee Park,Shiawassee/Power,Downstream,Oakland,42.46323,-83.36811
+Up3,164,Upper,Upper Rouge,Botsford Park,8 Mile Road,Downstream,Wayne,42.43659,-83.32475
+Up4,165,Upper,Upper Rouge,Garfield,Five Mile/Telegraph,Upstream,Wayne,42.40314,-83.28834
+Up5,179,Upper,Upper Rouge,Botsford Commons,21450 Archwood Circle,Downstream,Oakland,42.4497368,-83.3481324
+Up6,192,Upper,Upper Rouge,Goff Nature Preserve,7 Mile/Inkster Rd,downstream,Wayne,42.4270045,-83.3184242
+UR-1,13,Upper,Upper Rouge,Lola Valley,Kinloch,Upstream,Wayne,42.4111,-83.3029
+UR-2,14,Upper,Bell Branch,Bell Cr Pk,5 Mile/Inkster,Upstream,Wayne,42.401803,-83.310759
+UR-3,15,Upper,Tarabusi Creek,Tara 7 M,7 Mile/Merriman,Downstream,Wayne,42.426303,-83.362972
+UR-4,94,Upper,Upper Rouge,5M Beech Daly,east of Inkster,Downstream,Wayne,42.400014,-83.286158
+UR-5,138,Upper,Beitz Creek,Beitz Creek/6 Mile,6 Mile Rd,Downstream,Wayne,42.411266,-83.379288
+Wall0,68,Middle,Walled Lk Drainage,Parm Cider Mill,Old Baseline/ Old Novi Rd,Downstream,Wayne,42.43673,-83.47369
+Wall1,69,Middle,Walled Lk Drainage,Rotary Pk,9 Mile/Meadowbrook,Downstream,Oakland,42.44957,-83.46525
+Wall2,70,Middle,Walled Lk Drainage,WL 10 M,10 Mile/Novi,Upstream,Oakland,42.46732,-83.46623
+Wall3,71,Middle,Walled Lk Drainage,WL 12 M,12 Mile/Taft,Downstream,Oakland,42.49486,-83.49575
+Wall4,72,Middle,Walled Lk Drainage,WL Ford Field,Northville/Main Street,Upstream,Wayne,42.43354,-83.48056
+Wall5,141,Middle,Walled Lk Drainage,Novi Cemetery,Novi Rd south of Grand River,Downstream,Oakland,42.478094,-83.476623
+Wall6,150,Middle,Shawood Lake,Lakeshore Park,13 Mile/S Lake Dr,Upstream,Oakland,42.511663,-83.481374
+Wall7,172,Middle,Walled Lake Drainage,Novi Waste Water Treatment Plant,"46351 West Rd, Novi, MI 48377",Upstream,Oakland,42.5091535,-83.4956217
+WalnutL,188,Main,Franklin Creek,Walnut Lake,Wendrick,Downstream,Oakland,42.5666,-83.32563
+Will1,73,Middle,Willow Creek,Barchester Pk,Ford/Lilley,Up and Downstream,Wayne,42.33002,-83.46422
+Will2,144,Middle,Willow Creek,Canton High School,Joy/N Canton Ctr,Downstream,Wayne,42.348115,-83.490179
+Will3,145,Middle,Willow Creek,IKEA,Haggerty/Ford Rd,Upstream,Wayne,42.32647,-83.453283
+WingL,191,Main,Quarton Branch,Wing Lake,"4331 Geisler Court, Bloomfield Hills, 48301",Upstream,Oakland,42.5553406,-83.2955074
+John10,,Middle,Johnson Creek,Nature Area ,,,Washtenaw,42.39842131,-83.52848414
+Main21,,Main,Main Rouge,Concrete channel oxbow,,,Wayne,42.307632,-83.220396
+Low14,,Lower,Lower Rouge,Dearborn Hills golf course,,,Wayne,42.30177,-83.28

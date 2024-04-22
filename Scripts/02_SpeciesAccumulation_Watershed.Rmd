@@ -1,0 +1,178 @@
+---
+title: "02_SpeciesAccumulation_comparison"
+author: "OW"
+date: "2023-07-13"
+output: html_document
+---
+
+```{r}
+library(BiodiversityR) # also loads vegan
+library(ggplot2)
+library(ggsci)
+library(readxl)
+library(tidyverse)
+library(lubridate)
+
+Raw_Rouge<-read_csv("~/Desktop/Paper Code/Delisting_FOTR/Delisting_FOTR/Data/Created_Data/Close_date_rouge.csv", 
+    col_types = cols(...1 = col_skip(), DateSampled = col_date(format = "%Y-%m-%d"), 
+        TotalFish = col_number()))
+Raw_Rouge$Method[Raw_Rouge$Method=="Backpack Shock"]<-"Shocking"
+Raw_Rouge$Method[Raw_Rouge$Method=="Barge Shock"]<-"Shocking"
+Raw_Rouge$Method[Raw_Rouge$Method=="Boom Shock"]<-"Shocking"
+
+Rouge_locations <- read_csv("~/Desktop/Paper Code/Delisting_FOTR/Delisting_FOTR/Data/P51_pieces/tblSamplingSites_2022.csv")
+Combined_P51<- Raw_Rouge
+Combined_P51$DateSampled <- ymd(Combined_P51$DateSampled)
+```
+
+
+```{r}
+Combined_P51 = Combined_P51 %>%  
+  mutate_at(vars(DateSampled), funs(year, month, day))
+
+Combined_P51$TotalFish <- as.numeric(as.character(Combined_P51$TotalFish)) 
+
+  
+Combined_P51_test<- Combined_P51 %>% select(Method,DateSampled, FIELDID,StreamName,CommonName,TotalFish,year) %>%
+  group_by(CommonName, Method,year, FIELDID, StreamName,DateSampled) %>%
+  dplyr::summarise(across(c(TotalFish), sum))
+
+
+
+Combined_P51_test<-Combined_P51_test %>% pivot_wider(names_from = CommonName, values_from = TotalFish) %>% dplyr::mutate(across(where(is.numeric), ~ ifelse(is.na(.), 0, .)))
+
+```
+
+```{r}
+WadableRouge<-Combined_P51_test %>%
+ filter(!(FIELDID %in% c("Main12","Main10","Main21", "Main12N","MR-15")))
+
+SubsetRouge<-Combined_P51_test %>% filter(!(FIELDID %in% c("MR-15","Main21")))
+
+```
+
+```{r}
+WadableRouge %>% select(FIELDID,Method) %>% unique()
+```
+
+
+
+```{r}
+Locations<-WadableRouge %>% select(FIELDID,year,StreamName,Method)
+
+Locations$FIELDID_year <- paste(Locations$FIELDID,"_", Locations$year,"_", Locations$Method)
+Locations$FIELDID_year<- gsub(" ", "", Locations$FIELDID_year)
+
+rownames(Locations) <-Locations$FIELDID_year
+
+Locations<-Locations %>% arrange(desc(year),desc(FIELDID))
+```
+
+```{r}
+SubsetRouge<-SubsetRouge %>% arrange(desc(year),desc(FIELDID))
+SubsetRouge$FIELDID_year <- paste(SubsetRouge$FIELDID,"_", SubsetRouge$year,"_", SubsetRouge$Method)
+SubsetRouge$FIELDID_year<- gsub(" ", "", SubsetRouge$FIELDID_year)
+FIELDID_year<-SubsetRouge$FIELDID_year 
+
+SubsetRouge_final<-subset(SubsetRouge, select = -c(Method,year,FIELDID,StreamName,FIELDID_year,DateSampled))
+rownames(SubsetRouge_final) <-FIELDID_year
+```
+ 
+ 
+```{r}
+WadableRouge<-WadableRouge %>% arrange(desc(year),desc(FIELDID))
+WadableRouge$FIELDID_year <- paste(WadableRouge$FIELDID,"_", WadableRouge$year,"_", WadableRouge$Method)
+WadableRouge$FIELDID_year<- gsub(" ", "", WadableRouge$FIELDID_year)
+FIELDID_year<-WadableRouge$FIELDID_year 
+
+WadableRouge_final<-subset(WadableRouge, select = -c(Method,year,FIELDID,StreamName,FIELDID_year,DateSampled))
+WadableRouge_final<-subset(WadableRouge_final, select = american_brook_lamprey:yellow_perch)
+
+ 
+rownames(WadableRouge_final) <-FIELDID_year
+```
+ 
+ 
+## entire wadable watershed ##
+ 
+```{r}
+Accum.1 <- accumcomp(WadableRouge_final, Locations, factor='Method', method='rarefaction')
+
+
+accum.long_rarefraction <- accumcomp.long(Accum.1, ci=NA, label.freq=5)
+
+Accum.2 <- accumcomp(WadableRouge_final, Locations, factor='Method', method='random')
+
+accum.long_random <- accumcomp.long(Accum.2, ci=NA, label.freq=5)
+
+```
+
+Entire Watershed
+
+```{r}
+Locations<-SubsetRouge %>% select(FIELDID,year,StreamName,Method)
+
+Locations$FIELDID_year <- paste(Locations$FIELDID,"_", Locations$year,"_", Locations$Method)
+Locations$FIELDID_year<- gsub(" ", "", Locations$FIELDID_year)
+
+rownames(Locations) <-Locations$FIELDID_year
+
+Locations<-Locations %>% arrange(desc(year),desc(FIELDID))
+
+SubsetRouge_final<-subset(SubsetRouge, select = american_brook_lamprey:yellow_perch)
+
+rownames(SubsetRouge_final) <-Locations$FIELDID_year
+```
+
+Wadable with random
+```{r}
+Accum.5 <- accumcomp(SubsetRouge_final, Locations, factor='Method', method='random')
+
+accum.nonwadable_random <- accumcomp.long(Accum.5, ci=NA, label.freq=5)
+
+
+Accum.6 <- accumcomp(SubsetRouge_final, Locations, factor='Method', method='rarefaction')
+
+accum.nonwadable_rarefraction <- accumcomp.long(Accum.5, ci=NA, label.freq=5)
+```
+
+
+```{r}
+plotgg5 <- ggplot(data=accum.nonwadable_random, aes(x = Sites, y = Richness, ymax = UPR, ymin = LWR)) + 
+    scale_x_continuous(expand=c(0, 1), sec.axis = dup_axis(labels=NULL, name=NULL)) +
+    scale_y_continuous(sec.axis = dup_axis(labels=NULL, name=NULL)) +
+geom_line(aes(colour=Grouping, linetype=Grouping), size=1) +
+    scale_color_manual(values = c(Seine="#5c95cd", Shocking="#cd5c5c"))+
+    geom_ribbon(aes(colour=Grouping), alpha=0.2, show.legend=FALSE, fill="grey79") +
+  scale_linetype_manual(values=c("solid", "longdash"))+
+    labs(x = "Sample", y = "Richness", colour = "Method", linetype = "Method") +theme_light()+
+  theme(text = element_text(size = 16,family="Helvetica"),legend.key.size = unit(.35,"cm"))+ 
+  ylim(0, 50)
+
+
+
+```
+
+```{r}
+plotgg2 <-ggplot(data=accum.long_random, aes(x = Sites, y = Richness, ymax = UPR, ymin = LWR)) + 
+    scale_x_continuous(expand=c(0, 1), sec.axis = dup_axis(labels=NULL, name=NULL)) +
+    scale_y_continuous(sec.axis = dup_axis(labels=NULL, name=NULL)) +
+    geom_line(aes(colour=Grouping, linetype=Grouping), size=1) +
+    scale_color_manual(values = c(Seine="#5c95cd", Shocking="#cd5c5c"))+
+    geom_ribbon(aes(colour=Grouping), alpha=0.2, show.legend=FALSE, fill="grey79") +
+  scale_linetype_manual(values=c("solid", "longdash"))+
+    labs(x = "Sample", y = "Richness", colour = "Method", linetype = "Method")+
+  theme_light()+
+   theme(text = element_text(size = 16,family="Helvetica"),legend.key.size = unit(.35,"cm"))+ 
+  ylim(0, 50)
+```
+
+This is the final plot
+```{r}
+library(ggpubr)
+ggarrange(plotgg5, plotgg2, 
+          labels = c("A", "B"),
+          ncol = 2, nrow = 1,
+         legend = "none")
+```
+

@@ -1,0 +1,183 @@
+---
+title: "02_P51Calulations"
+author: "OW"
+date: "2023-10-29"
+output: html_document
+---
+
+
+```{r}
+library(tidyverse)
+
+Raw_Rouge<-read_csv("Data/Created_Data/Close_date_rouge.csv", 
+    col_types = cols(...1 = col_skip(), DateSampled = col_date(format = "%Y-%m-%d"), 
+        TotalFish = col_number()))
+Raw_Rouge$Method[Raw_Rouge$Method=="Backpack Shock"]<-"Shocking"
+Raw_Rouge$Method[Raw_Rouge$Method=="Barge Shock"]<-"Shocking"
+Raw_Rouge$Method[Raw_Rouge$Method=="Boom Shock"]<-"Shocking"
+
+P51_species <- read_csv("Data/P51_pieces/P51_species.csv")
+
+Raw_Rouge = Raw_Rouge %>%  
+  mutate_at(vars(DateSampled), funs(year, month, day))
+
+WadableRouge<-Raw_Rouge %>%
+ filter(!(FIELDID %in% c("Main12","Main10","Main21", "Main12N","MR-15")))
+
+SubsetRouge<-Raw_Rouge %>% filter(!(FIELDID %in% c("MR-15","Main21")))
+
+Raw_Rouge_mutate<-WadableRouge %>% ## change data type here
+  group_by(CommonName, StreamName, Method) %>%
+  dplyr::summarise(across(c(TotalFish), sum))
+
+Combined_P51<-Raw_Rouge_mutate 
+```
+
+```{r}
+P51_species <- mutate_each(P51_species, funs=tolower)
+P51_species$Intolerant <- gsub(" ", "_", P51_species$Intolerant)
+P51_species$Omnivores <- gsub(" ", "_", P51_species$Omnivores)
+P51_species$Insectivores <- gsub(" ", "_", P51_species$Insectivores)
+P51_species$Piscivores <- gsub(" ", "_", P51_species$Piscivores)
+P51_species$Tolerant <- gsub(" ", "_", P51_species$Tolerant)
+P51_species$Lithophilic <- gsub(" ", "_", P51_species$Lithophilic)
+P51_species$Darter <- gsub(" ", "_", P51_species$Darter)
+P51_species$Sunfish <- gsub(" ", "_", P51_species$Sunfish)
+P51_species$Sucker <- gsub(" ", "_", P51_species$Sucker)
+
+
+##set ups the two types of fish we are looking at
+Tolerance <- P51_species[, c("Intolerant", "Tolerant")]
+Tolerance<-gather(Tolerance, key="Tolerance", value ="CommonName")
+Tolerance[Tolerance == ''] <- NA
+Tolerance<-Tolerance[complete.cases(Tolerance), ]
+
+Species_Type <-P51_species[, c("Darter", "Sunfish","Sucker")]
+Species_Type<-gather(Species_Type, key="Species_Type", value ="CommonName")
+Species_Type[Species_Type == ''] <- NA
+Species_Type<-Species_Type[complete.cases(Species_Type), ]
+
+Food_Type <-P51_species[, c("Omnivores","Insectivores","Piscivores")]
+Food_Type<-gather(Food_Type, key="Food_Type", value ="CommonName")
+Food_Type[Food_Type == ''] <- NA
+Food_Type<-Food_Type[complete.cases(Food_Type), ]
+
+Spawn_Type<-P51_species[, c("Lithophilic")]
+Spawn_Type<-as.data.frame(Spawn_Type)
+Spawn_Type$Spawner <- "Lithophilic"
+Spawn_Type<-Spawn_Type %>% dplyr::rename(CommonName=Lithophilic) 
+Spawn_Type[Spawn_Type == ''] <- NA
+Spawn_Type<-Spawn_Type[complete.cases(Spawn_Type), ]
+
+Combined_P51<-left_join(Combined_P51,Tolerance,by="CommonName")
+Combined_P51<-left_join(Combined_P51,Species_Type, by = "CommonName")
+Combined_P51<-left_join(Combined_P51,Food_Type, by = "CommonName")
+Combined_P51<-left_join(Combined_P51,Spawn_Type, by = "CommonName")
+```
+
+
+```{r}
+Totalfish<-Combined_P51 %>% group_by(Method, StreamName) %>% dplyr::summarize(Fish = sum(TotalFish))
+Totalfish.tolerance<-Combined_P51 %>% group_by(Method, StreamName, Tolerance) %>% dplyr::summarize(Fish = sum(TotalFish))
+Totalfish.species<-Combined_P51 %>% group_by(Method, StreamName, Species_Type) %>% dplyr::summarize(Fish = sum(TotalFish))
+
+Totalfish.food<-Combined_P51 %>% group_by(Method, StreamName, Food_Type) %>% dplyr::summarize(Fish = sum(TotalFish))
+
+Totalfish.spawn<-Combined_P51 %>% group_by(Method, StreamName, Spawner) %>% dplyr::summarize(Fish = sum(TotalFish))
+
+Totalfish.tolerance<-Totalfish.tolerance[complete.cases(Totalfish.tolerance), ]
+Totalfish.species<-Totalfish.species[complete.cases(Totalfish.species), ]
+Totalfish.food<-Totalfish.food[complete.cases(Totalfish.food), ]
+Totalfish.spawn<-Totalfish.spawn[complete.cases(Totalfish.spawn), ]
+
+##gets counts and renames 
+CountSpecies<-Combined_P51%>% group_by(Method, StreamName, Species_Type) %>% dplyr::count(Species_Type) %>% dplyr::rename(TypeAbundance= n)
+CountSpecies[is.na(CountSpecies)] <- "Normal"
+CountSpecies<-spread(CountSpecies, Species_Type, TypeAbundance) %>% dplyr::rename(DarterCount= Darter,
+      SunfishCount =Sunfish, 
+      SuckerCount =Sucker,
+      NormalCountSpecies= Normal)
+CountSpecies[is.na(CountSpecies)] <- 0
+
+
+CountTolerance<-Combined_P51 %>% group_by(Method, StreamName, Tolerance) %>% dplyr::count(Tolerance) %>% dplyr::rename(ToleranceAbundance= n)
+CountTolerance[is.na(CountTolerance)] <- "Normal"
+CountTolerance<-spread(CountTolerance,Tolerance, ToleranceAbundance) %>% dplyr::rename(IntolerantCount= Intolerant,
+      TolerantCount =Tolerant, 
+      NormalCountTolerance =Normal)
+CountTolerance[is.na(CountTolerance)] <- 0
+
+
+CountFood<-Combined_P51 %>% group_by(Method, StreamName, Food_Type) %>% dplyr::count(Food_Type) %>% dplyr::rename(FoodCount= n)
+CountFood[is.na(CountFood)] <- "Normal"
+CountFood<-spread(CountFood,Food_Type,FoodCount) %>% dplyr::rename(InsectivoresCount= Insectivores,
+      PiscivoresCount =Piscivores, 
+      NormalCountFood =Normal, 
+      OmnivoresCount =Omnivores)
+CountFood[is.na(CountFood)] <- 0
+
+CountSpawn<-Combined_P51 %>% group_by(Method, StreamName, Spawner) %>% dplyr::count(Spawner) %>% dplyr::rename(SpawnerCount= n)
+CountSpawn[is.na(CountSpawn)] <- "Normal"
+CountSpawn<-spread(CountSpawn,Spawner,SpawnerCount) %>% 
+  dplyr::rename(LithophilicCount= Lithophilic)
+CountSpawn[is.na(CountSpawn)] <- 0
+
+```
+
+Calculating percentages for the P51 
+
+```{r}
+Tolerance.Join<-left_join(Totalfish, Totalfish.tolerance, by =c("StreamName","Method"))
+Tolerance.Join.Per <-Tolerance.Join%>% mutate(Percent.Tolerance=(Fish.y/Fish.x)*100)
+
+Intolerant<-subset(Tolerance.Join.Per, Tolerance == "Intolerant" )
+Intolerant<-Intolerant %>%dplyr::rename(IntolerantAbundance =Fish.y  , 
+                     IntolerantPercent= Percent.Tolerance, 
+                     Intolerant = Tolerance)
+Tolerant<-subset(Tolerance.Join.Per, Tolerance == "Tolerant")
+Tolerant<-Tolerant %>%dplyr::rename(TolerantAbundance =Fish.y  , 
+                     TolerantPercent= Percent.Tolerance)
+
+Tolerance.final<-left_join(Intolerant, Tolerant, by =c("StreamName","Method"))
+Tolerance.final<-Tolerance.final[,-7]
+
+Spread.Species<-spread(Totalfish.species, Species_Type, Fish )
+Spread.Species[is.na(Spread.Species)] <- 0
+
+
+Tolerance.final <- Tolerance.final[,-3]
+Final_P51cal<-left_join(Totalfish,Tolerance.final, by =c("StreamName","Method"))
+Final_P51cal<-left_join(Final_P51cal,Spread.Species, by =c("StreamName","Method"))
+
+Final_P51cal<-Final_P51cal %>% dplyr::rename(TotalAbundance = Fish,
+                                      DarterAbundance =Darter, 
+                                      SunfishAbundance =Sunfish, 
+                                      SuckerAbundance =Sucker)
+```
+
+```{r}
+CountFish<-Raw_Rouge_mutate %>% pivot_wider(names_from = CommonName,values_from = TotalFish)
+CountFish[is.na(CountFish)] <- 0
+
+SpeciesRichness<-CountFish %>%
+  group_by(StreamName,Method) %>% dplyr::summarise(across(american_brook_lamprey:yellow_perch, sum)) %>% 
+dplyr::mutate_if(is.numeric, ~1 * (. != 0))  %>% ungroup () %>%
+ dplyr:: mutate(Richness = rowSums(select_if(., is.numeric), na.rm = TRUE)) %>% select(StreamName,Method, Richness)
+```
+
+```{r}
+Final_P51cal<-left_join(Final_P51cal,SpeciesRichness, by = c("StreamName","Method"))
+
+Final_P51cal<- left_join(Final_P51cal,CountSpecies, by = c("StreamName","Method"))
+Final_P51cal<- left_join(Final_P51cal,CountTolerance, by = c("StreamName","Method"))
+Final_P51cal<- left_join(Final_P51cal,CountSpawn, by = c("StreamName","Method"))
+Final_P51cal<- left_join(Final_P51cal,CountFood, by = c("StreamName","Method"))
+
+
+metrics_full <-Final_P51cal %>% select(StreamName, Method,Richness, TolerantCount, IntolerantCount, DarterCount, SuckerCount, SunfishCount, PiscivoresCount,OmnivoresCount,InsectivoresCount,LithophilicCount)
+```
+
+```{r}
+write.csv(metrics_full,"Data/Created_Data/SingleShortDate_P51_StreamName_wadable.csv")
+
+```
