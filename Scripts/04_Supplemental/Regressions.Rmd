@@ -1,0 +1,122 @@
+---
+title: "02_data_redo"
+author: "OW"
+date: "2024-06-06"
+output: html_document
+---
+
+```{r}
+Entire_Combined_modern <- read_csv("Data/Created_Data/Entire_Combined_modern_update.csv")
+
+
+Close_date_rouge <- read_csv("Data/Created_Data/Close_date_rouge.csv")
+matrix <- read_csv("Data/Output/matrix_wadable_single.csv")
+Newnames<- read_csv("Data/Created_Data/finalsites_new_names.csv")
+
+```
+
+```{r}
+
+Final_Score<-Entire_Combined_modern %>% select(FIELDID,Method, FinalScore) %>% pivot_wider(names_from = Method, values_from = FinalScore) %>% mutate(difference=Seine-Shocking)
+Final_Richness<-Entire_Combined_modern %>% select(FIELDID,Method, Richness) %>% pivot_wider(names_from = Method, values_from = Richness) %>% mutate(difference=Seine-Shocking)
+
+
+```
+
+
+```{r}
+Time<-Close_date_rouge %>% select(FIELDID,timebetween, Method) %>% unique %>% filter(Method=="Seine") %>% mutate(year_between=timebetween/365) 
+
+Time$FIELDID <- tolower(Time$FIELDID )
+
+Time_between<-Time %>% select(FIELDID,year_between)
+
+Richness_time<-left_join(Time_between, Final_Richness)
+Score_time<-left_join(Time_between, Final_Score)
+
+```
+
+```{r}
+Final_join_names_richness<-left_join(Richness_time,Newnames, by=c("FIELDID")) 
+
+  Final_join_names_richness$StreamName<- gsub(" ","",Final_join_names_richness$StreamName)
+  
+Final_join_names_richness<-Final_join_names_richness %>% filter(!grepl('mr-15', FIELDID))  %>% filter(!grepl('main10', FIELDID)) %>% filter(!grepl('main12', FIELDID)) 
+```
+
+
+```{r}
+ggplot(Final_join_names_richness, aes(year_between, difference, color=New.Name)) + 
+  geom_point(size=3) +
+  ggtitle("Difference between Species Richness") + 
+  guides(color = guide_legend(title = "Site Name")) +
+  xlab("Years Between Sampling") + 
+           ylab("Difference")
+  
+```
+
+```{r}
+ggplot(Final_join_names_richness, aes(year_between, difference)) + 
+  geom_smooth(method = "lm")+
+  geom_point(size=3, aes(color=New.Name)) +
+  guides(color = guide_legend(title = "Site Name")) +
+ 
+   xlab("Years Between Electrofishing and Seining Samples") + 
+           ylab("Difference in Species Richness (Seining- Electrofishing)")
+
+Richnesss<-lm(difference~year_between , data=Richness_time)
+summary(Richnesss)
+```
+
+
+```{r}
+Final_join_names_score<-left_join(Score_time,Newnames, by=c("FIELDID")) %>% drop_na()
+
+Final_join_names_score$StreamName<- gsub(" ","",Final_join_names_score$StreamName)
+```
+
+Final Scores 
+```{r}
+ggplot(Final_join_names_score, aes(year_between,difference)) + 
+  geom_point() +
+  geom_smooth(method = "lm")+
+  geom_point(size=3, aes(color=New.Name)) +
+    guides(color = guide_legend(title = "Site Name")) +
+ 
+   xlab("Years Between Electrofishing and Seining Samples") + 
+           ylab("Difference in Procedure51 Scores (Seining- Electrofishing)")
+  
+
+Score<-lm( difference~year_between, data=Score_time)
+summary(Score)
+```
+```{r}
+```
+
+```{r}
+matrix$FIELDID <- sub("_.*", "", matrix$FIELDID )
+matrix$FIELDID <- tolower(matrix$FIELDID )
+
+Time_matrix<-left_join(matrix, Time_between)
+Final_join_names_matrix<-left_join(Time_matrix,Newnames, by=c("FIELDID")) 
+
+  Final_join_names_matrix$StreamName<- gsub(" ","",Final_join_names_matrix$StreamName)
+
+```
+
+Final Sup Figure 
+```{r}
+ggplot(Final_join_names_matrix, aes(year_between, Similar)) + 
+   geom_point() +
+  geom_smooth(method = "lm")+
+  geom_point(size=3, aes(color=New.Name))+ 
+    guides(color = guide_legend(title = "Site Name")) +
+ 
+   xlab("Years Between Electrofishing and Seining Samples") + 
+           ylab("Similarity")
+
+Time<-lm(Similar~year_between, data=Time_matrix)
+summary(Time)
+
+```
+

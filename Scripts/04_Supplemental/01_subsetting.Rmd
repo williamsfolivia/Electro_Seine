@@ -1,0 +1,87 @@
+---
+title: "02_data_redo"
+author: "OW"
+date: "2024-06-06"
+output: html_document
+---
+
+```{r}
+Entire_Combined_modern <- read_csv("Data/Created_Data/Entire_Combined_modern_update.csv")
+
+
+Close_date_rouge <- read_csv("Data/Created_Data/Close_date_rouge.csv")
+matrix <- read_csv("Data/Output/matrix_wadable_single.csv")
+
+```
+
+```{r}
+
+Final_Score<-Entire_Combined_modern %>% select(FIELDID,Method, FinalScore) %>% pivot_wider(names_from = Method, values_from = FinalScore) %>% mutate(difference=Seine-Shocking)
+Final_Richness<-Entire_Combined_modern %>% select(FIELDID,Method, Richness) %>% pivot_wider(names_from = Method, values_from = Richness) %>% mutate(difference=Seine-Shocking)
+
+
+```
+
+
+```{r}
+Time<-Close_date_rouge %>% select(FIELDID,timebetween, Method) %>% unique %>% filter(Method=="Seine") %>% mutate(year_between=timebetween/365) 
+
+Time$FIELDID <- tolower(Time$FIELDID )
+
+Time_between<-Time %>% select(FIELDID,year_between)
+write.csv(Time_between, "~/Desktop/Paper Code/Electro_Seine/Scripts/NewManuscript/time_between.csv")
+Richness_time<-left_join(Time_between, Final_Richness)
+Score_time<-left_join(Time_between, Final_Score)
+
+```
+
+```{r}
+ggplot(Richness_time, aes(year_between, difference, color=FIELDID)) + 
+  geom_point(size=3) +
+  ggtitle("Difference between Species Richness") 
+```
+
+```{r}
+ggplot(Richness_time, aes(year_between, difference)) + 
+  geom_smooth(method = "lm")+
+  geom_point(size=3, aes(color=FIELDID)) +
+  ggtitle("Difference between Species Richness") 
+
+Richnesss<-lm(difference~year_between , data=Richness_time)
+summary(Richnesss)
+```
+
+
+```{r}
+ggplot(Score_time, aes(year_between,difference)) + 
+  geom_point() +
+  geom_smooth(method = "lm")+
+  geom_point(size=3, aes(color=FIELDID)) +
+  ggtitle("Difference between final p51 scores")
+
+Score<-lm( difference~year_between, data=Score_time)
+summary(Score)
+```
+```{r}
+```
+
+```{r}
+matrix$FIELDID <- sub("_.*", "", matrix$FIELDID )
+matrix$FIELDID <- tolower(matrix$FIELDID )
+
+Time_matrix<-left_join(matrix, Time_between)
+```
+
+
+```{r}
+ggplot(Time_matrix, aes(year_between, Similar)) + 
+   geom_point() +
+  geom_smooth(method = "lm")+
+  geom_point(size=3, aes(color=FIELDID))
+  ggtitle("Similarity Between")
+
+Time<-lm(Similar~year_between, data=Time_matrix)
+summary(Time)
+
+```
+

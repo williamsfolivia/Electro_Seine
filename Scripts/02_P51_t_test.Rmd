@@ -1,0 +1,101 @@
+---
+title: "02_p51_comparison"
+author: "OW"
+date: "2023-11-06"
+output: ''
+---
+
+```{r}
+
+library(tidyverse)
+library(ggpubr)
+library(rstatix)
+Entire_Combined_modern_update <- read_csv("Data/Created_Data/Entire_Combined_modern_update.csv")
+unique(Entire_Combined_modern_update$FIELDID)
+
+```
+
+```{r}
+SubsetRouge<-Entire_Combined_modern_update %>%
+ filter(!(FIELDID %in% c("DNRFel","john10","evan6","main21","main12","main10","main12N","low14","main20","mr-15"))) %>% select(FIELDID,Method,Richness,FinalScore, TolerantCount, IntolerantCount) %>% unique()
+
+SubsetRouge$FinalScore[SubsetRouge$FinalScore==-12] <- -10
+
+Seine_Richness<-SubsetRouge %>% filter(Method=="Seine") %>% select(Method,Richness)
+Shock_Richness<-SubsetRouge %>% filter(Method=="Shocking")%>% select(Method,Richness)
+
+
+Richness_test<-rbind(Seine_Richness,Shock_Richness)
+Intolerant_test<-SubsetRouge %>% select(Method,IntolerantCount)
+Score_test<-SubsetRouge %>% select(Method,FinalScore)
+Tolerant_test<-SubsetRouge %>% select(Method,TolerantCount)
+```
+T-test for richness 
+```{r}
+T_Richness<-t.test(Richness~Method, data = Richness_test, paired = TRUE)
+Richness_test %>% filter(Method=="Seine") %>% 
+  summarise(
+    mean = mean(Richness, na.rm = TRUE),
+    sd = sd(Richness, na.rm = TRUE))
+
+Richness_test %>% filter(Method=="Shocking") %>% 
+  summarise(
+    mean = mean(Richness, na.rm = TRUE),
+    sd = sd(Richness, na.rm = TRUE))
+
+T_Score<-t.test(FinalScore~Method, data = Score_test, paired = TRUE)
+
+Score_test %>% filter(Method=="Shocking") %>% 
+  summarise(
+    mean = mean(FinalScore, na.rm = TRUE),
+    sd = sd(FinalScore, na.rm = TRUE))
+
+Score_test %>% filter(Method=="Seine") %>% 
+  summarise(
+    mean = mean(FinalScore, na.rm = TRUE),
+    sd = sd(FinalScore, na.rm = TRUE))
+
+```
+
+T-test for intolerant 
+
+```{r}
+T_Intolerant<-t.test(IntolerantCount~Method, data = Intolerant_test, paired = TRUE)
+
+Intolerant_test %>% filter(Method=="Seine") %>% 
+  summarise(
+    mean = mean(IntolerantCount, na.rm = TRUE),
+    sd = sd(IntolerantCount, na.rm = TRUE))
+
+Intolerant_test %>% filter(Method=="Shocking") %>% 
+  summarise(
+    mean = mean(IntolerantCount, na.rm = TRUE),
+    sd = sd(IntolerantCount, na.rm = TRUE))
+
+
+
+```
+Tolerant
+```{r}
+T_Tolerant<-t.test(TolerantCount~Method, data = Tolerant_test, paired = TRUE)
+
+Tolerant_test %>% filter(Method=="Seine") %>% 
+  summarise(
+    mean = mean(TolerantCount, na.rm = TRUE),
+    sd = sd(TolerantCount, na.rm = TRUE))
+
+Tolerant_test %>% filter(Method=="Shocking") %>% 
+  summarise(
+    mean = mean(TolerantCount, na.rm = TRUE),
+    sd = sd(TolerantCount, na.rm = TRUE))
+
+```
+
+
+```{r}
+ggboxplot(Score, x = "Method", y = "FinalScore", 
+          color = "Method", palette = c("#00AFBB", "#E7B800"),
+          order = c("Seine", "Shocking"),
+          ylab = "Weight", xlab = "Groups")
+```
+

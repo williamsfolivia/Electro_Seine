@@ -189,7 +189,7 @@ CountFish<-Raw_Rouge %>% pivot_wider(names_from = CommonName,values_from = Total
 CountFish[is.na(CountFish)] <- 0
 
 SpeciesRichness<-CountFish %>%
-  group_by(FIELDID,Method,DateSampled) %>% dplyr::summarise(across(american_brook_lamprey:yellow_perch, sum)) %>% 
+  group_by(FIELDID,Method,DateSampled) %>% dplyr::summarise(across(blacknose_dace:american_brook_lamprey, sum)) %>% 
 mutate_if(is.numeric, ~1 * (. != 0))  %>% ungroup () %>%
  dplyr:: mutate(Richness = rowSums(select_if(., is.numeric), na.rm = TRUE)) %>% select(FIELDID,Method, DateSampled, Richness)
 
@@ -204,7 +204,7 @@ Final_P51cal<-df_list %>% reduce(full_join, by =c("FIELDID","Method","DateSample
 ```
 
 ```{r}
-Final_metrics<-Final_P51cal %>% select(FIELDID,Method,DateSampled,TotalFish,Richness,DarterCount,SunfishCount,SuckerCount,IntolerantCount,Percent_Tolerant,Percent_Omnivores,Percent_Piscivores,Percent_Lithophilic, Percent_Insectivores)
+Final_metrics<-Final_P51cal %>% select(FIELDID,Method,DateSampled,TotalFish,Richness,DarterCount,SunfishCount,SuckerCount,IntolerantCount,Percent_Tolerant,Percent_Omnivores,Percent_Piscivores,Percent_Lithophilic, Percent_Insectivores, TolerantCount)
 Final_metrics$FIELDID<-tolower(Final_metrics$FIELDID)
 ```
 
@@ -273,7 +273,7 @@ mutate(Intreptation= case_when(FinalScore>=5 ~"excellent",
 All_rouge_scores_noconsiderations<-All_rouge_scores_noconsiderations  %>% dplyr::filter(!is.na(FinalScore))
 ##this is the final 
 Final_Rouge_scores<-All_rouge_scores_noconsiderations   %>% dplyr::filter(!(FIELDID %in% c("main21","main20","main12n
-","main12","md-14")))  %>%  dplyr::filter(month=="6"|month=="7"|month=="8"|month=="9")
+","main12","md-14"))) 
 Final_Rouge_scores<-left_join(Final_Rouge_scores,Rouge_locations)
 ```
 
@@ -281,7 +281,6 @@ Final_Rouge_scores<-left_join(Final_Rouge_scores,Rouge_locations)
 
 Entire_combined<- merge(Final_Rouge_scores,Final_metrics)
 Entire_combined<- merge(Final_Rouge_scores,Final_score)
-
 
 ```
 
@@ -293,7 +292,7 @@ write.csv(Final_score, "Data/Created_Data/Raw_scores_moden.csv")
 
 write.csv(Final_Rouge_scores, "Data/Created_Data/Final_scores.csv")
 
-write.csv(Entire_combined, "Data/Created_Data/Entire_Combined_modern.csv")
+write.csv(Entire_combined, "Data/Created_Data/Entire_Combined_modern_update.csv")
 
 ```
 

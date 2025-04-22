@@ -11,7 +11,7 @@ library(ggplot2)
 library(dplyr)
 library(forcats)
 library(readr)
-Metrics_full <- read_csv("Data/Created_Data/SingleShortDate_P51_StreamName_wadable.csv")
+Metrics_full <- read_csv("Scripts/NewManuscript/SingleShortDate_P51_StreamName_wadable_5year.csv")
 Metrics_full<-Metrics_full[,-1]
 Metrics_full$StreamName <-gsub("Creek","", Metrics_full$StreamName)
 

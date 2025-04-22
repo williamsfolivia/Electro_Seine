@@ -138,6 +138,19 @@ Rouge_subset<-Rouge_subset %>%
 
 
 ```{r}
+Time<-Rouge_subset %>% select(FIELDID,timebetween, Method) %>% unique %>% filter(Method=="Seine") %>% mutate(year_between=timebetween/365)
+
+
+
+```
+
+
+```{r}
+QA<-Final_combined  %>% ungroup() %>% select(CommonName) %>% unique()
+```
+
+
+```{r}
 write.csv(SubsetRouge,"Data/Created_Data/Electro_seine_final.csv")
 
 write.csv(Final_combined,"Data/Created_Data/Final_combined_2022.csv")

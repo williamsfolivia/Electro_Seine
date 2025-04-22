@@ -106,4 +106,3 @@ ggplot(aes(x=year,y=average_score, color=factor(StreamName,level=c("Main Rouge",
       family="Times New Roman")) 
   
 ```
-

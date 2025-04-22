@@ -10,26 +10,28 @@ output: ''
 library(tidyverse)
 library(ggpubr)
 library(rstatix)
-Raw_Rouge<-read_csv("~/Desktop/Paper Code/Delisting_FOTR/Delisting_FOTR/Data/Created_Data/Close_date_rouge.csv", 
+Raw_Rouge<-read_csv("Data/Created_Data/Close_date_rouge.csv", 
     col_types = cols(...1 = col_skip(), DateSampled = col_date(format = "%Y-%m-%d"), 
         TotalFish = col_number()))
 
-Final_score2023 <- read_csv("~/Desktop/Paper Code/Delisting_FOTR/Delisting_FOTR/Data/Created_Data/Final_scores_2023.csv", 
+Final_score2023 <- read_csv("Data/Created_Data/Final_scores.csv", 
     col_types = cols(...1 = col_skip()))
 
-Newnames<- read_csv("~/Desktop/Paper Code/Delisting_FOTR/Delisting_FOTR/Data/Created_Data/VisualNames.csv")
+Newnames<- read_csv("Data/Created_Data/finalsites_new_names.csv")
+##time_between <- read_csv("Scripts/NewManuscript/time_between.csv")
 
 
 ```
 
 ```{r}
 SubsetRouge<-Raw_Rouge %>%
- filter(!(FIELDID %in% c("DNRFel","John10","Evan6","Main21","Main12","Main10","Main12N","Low14","Main20","MR-15",))) %>% select(FIELDID,Method,DateSampled, Branch,StreamName) %>% unique() 
+ filter(!(FIELDID %in% c("DNRFel","John10","Evan6","Main21","Main12","Main10","Main12N","Low14","Main20","MR-15"))) %>% select(FIELDID,Method,DateSampled, Branch,StreamName) %>% unique() 
 SubsetRouge$DateSampled<-ymd(SubsetRouge$DateSampled)
 
-
-
 SubsetRouge$FIELDID <- tolower(SubsetRouge$FIELDID)
+
+SubsetRouge$FIELDID<-tolower(SubsetRouge$FIELDID)
+##SubsetRouge<-left_join(time_between,SubsetRouge) %>% select(-"...1") %>% filter(year_between <= 5) %>%  filter(!(FIELDID %in% c("main12", "main12n"))) %>% select(-year_between)
 
 ```
 
@@ -41,7 +43,7 @@ Total_scores_pivot<-Total_scores %>% pivot_wider(names_from =Method,values_from 
 
 
 ```{r}
-Final_join<-rbind(Total_scores,Considerations_subset)
+Final_join<-Total_scores
 Final_join_names<-left_join(Final_join,Newnames, by=c("FIELDID","Branch")) 
   Final_join_names$StreamName<- gsub(" ","",Final_join_names$StreamName)
 ```
@@ -66,7 +68,7 @@ Final_join_names$Method <- gsub("Shocking", "Electrofishing", Final_join_names$M
 ```{r}
 
 Final_join_names %>% 
-ggplot( aes(Score, New.Name)) + 
+ggplot( aes(Score, FIELDID)) + 
 geom_point(aes(colour = Method, shape= Method), size=2.75) +scale_shape_manual(values = c(17,2,15, 0)) + scale_color_manual(values = c("#cd5c5c", "Black","#5c95cd","Black"))+ 
   geom_line(aes(linetype=Type),show.legend = F)+ 
   scale_linetype_manual(values = c("dashed", "solid")) +

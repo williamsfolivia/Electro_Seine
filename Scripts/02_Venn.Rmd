@@ -1,0 +1,48 @@
+---
+title: "02_VennDiagram"
+author: "OW"
+date: "2024-08-01"
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+Raw_Rouge <- read_csv("Data/Created_Data/Close_date_rouge.csv", 
+    col_types = cols(...1 = col_skip(), TotalFish = col_number()))
+Raw_Rouge$Method[Raw_Rouge$Method=="Backpack Shock"]<-"Shocking"
+Raw_Rouge$Method[Raw_Rouge$Method=="Barge Shock"]<-"Shocking"
+Raw_Rouge$Method[Raw_Rouge$Method=="Boom Shock"]<-"Shocking"
+
+Raw_Rouge<-Raw_Rouge %>%
+ filter(!(FIELDID %in% c("Main12","Main10","Main21", "Main12N","MR-15")))
+```
+
+```{r}
+Seine<-Raw_Rouge %>% filter(Method=="Seine") %>% select(FIELDID,DateSampled,CommonName,TotalFish)
+
+Seine_count<-Seine %>% select(CommonName) %>% count()
+
+Shock<-Raw_Rouge %>% filter(Method=="Shocking") %>% select(FIELDID,DateSampled,CommonName,TotalFish)
+
+
+Shock_count<-Shock %>%  group_by(CommonName) %>%summarise(count = n_distinct(TotalFish))
+Seine_count<-Seine %>% group_by(CommonName) %>%summarise(count = n_distinct(TotalFish))
+
+
+count_species<-Raw_Rouge %>% select(CommonName, FIELDID) %>% unique() %>%  select(CommonName) %>%  count()
+```
+
+```{r}
+
+Seine_fish<-Seine %>% select(CommonName) %>% unique()
+Shock_fish<-Shock %>% select(CommonName) %>% unique()
+
+shared<-inner_join(Seine_fish,Shock_fish) ##all shared
+
+
+anti_join(Seine_fish,Shock_fish) ## only seine
+anti_join(Shock_fish,Seine_fish) ## only shock
+
+
+```
+

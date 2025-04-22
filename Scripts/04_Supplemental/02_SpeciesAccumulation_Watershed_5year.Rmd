@@ -23,6 +23,8 @@ Raw_Rouge$Method[Raw_Rouge$Method=="Boom Shock"]<-"Shocking"
 Rouge_locations <- read_csv("Data/P51_pieces/tblSamplingSites_2022.csv")
 Combined_P51<- Raw_Rouge
 Combined_P51$DateSampled <- ymd(Combined_P51$DateSampled)
+
+time_between <- read_csv("Scripts/NewManuscript/time_between.csv")
 ```
 
 
@@ -43,6 +45,8 @@ Combined_P51_test<-Combined_P51_test %>% pivot_wider(names_from = CommonName, va
 
 ```
 
+
+
 ```{r}
 WadableRouge<-Combined_P51_test %>%
  filter(!(FIELDID %in% c("Main12","Main10","Main21", "Main12N","MR-15")))
@@ -50,11 +54,15 @@ WadableRouge<-Combined_P51_test %>%
 SubsetRouge<-Combined_P51_test %>% filter(!(FIELDID %in% c("MR-15","Main21")))
 
 ```
-
+subsetting out under 5 years
 ```{r}
-WadableRouge %>% select(FIELDID,Method) %>% unique()
-```
+WadableRouge$FIELDID<-tolower(WadableRouge$FIELDID)
+WadableRouge<-left_join(time_between,WadableRouge) %>% select(-"...1") %>% filter(year_between <= 5) %>%  filter(!(FIELDID %in% c("main12", "main12n")))
 
+
+
+
+```
 
 
 ```{r}
