@@ -136,7 +136,7 @@ Accum.6 <- accumcomp(SubsetRouge_final, Locations, factor='Method', method='rare
 accum.nonwadable_rarefraction <- accumcomp.long(Accum.5, ci=NA, label.freq=5)
 ```
 
-
+This is the entire watershed. Not included in the paper. 
 ```{r}
 plotgg5 <- ggplot(data=accum.nonwadable_random, aes(x = Sites, y = Richness, ymax = UPR, ymin = LWR)) + 
     scale_x_continuous(expand=c(0, 1), sec.axis = dup_axis(labels=NULL, name=NULL)) +
@@ -153,6 +153,7 @@ geom_line(aes(colour=Grouping, linetype=Grouping), size=1) +
 
 ```
 
+This is the wadable watershed
 ```{r}
 plotgg2 <-ggplot(data=accum.long_random, aes(x = Sites, y = Richness, ymax = UPR, ymin = LWR)) + 
     scale_x_continuous(expand=c(0, 1), sec.axis = dup_axis(labels=NULL, name=NULL)) +
