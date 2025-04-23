@@ -36,10 +36,18 @@ SubsetRouge$FIELDID<-tolower(SubsetRouge$FIELDID)
 ```
 
 ```{r}
-Total_metrics<-left_join(SubsetRouge,Final_score2023, by=c("FIELDID","Method","DateSampled","Branch","StreamName"))
-Total_scores<-Total_metrics %>% select(FIELDID,Branch,Method,Total_score) %>% dplyr::rename('Score'='Total_score') %>% mutate(Type="Normal")
-Total_scores_pivot<-Total_scores %>% pivot_wider(names_from =Method,values_from = Score ) %>% mutate(difference=Seine-Shocking) 
+Total_metrics<-left_join(SubsetRouge,Final_score2023, by=c("FIELDID","Method","DateSampled","Branch","StreamName")) 
+Total_metrics$FinalScore[Total_metrics$FinalScore == -12] <- -10
+
+
+Adjusted_scores<-Total_metrics %>% select(FIELDID,Branch,Method,Total_score) %>% dplyr::rename('FinalScore'='Total_score') %>% mutate(Method = paste0(Method, "_Adjusted"))%>% mutate(Type="Adjusted")
+
+
+Final_scores<-Total_metrics %>% select(FIELDID,Branch,Method,FinalScore) %>% mutate(Type="Final")
+
+Total_scores<-rbind(Adjusted_scores,Final_scores)
 ```
+
 
 
 ```{r}
@@ -49,6 +57,7 @@ Final_join_names<-left_join(Final_join,Newnames, by=c("FIELDID","Branch"))
 ```
 
 ```{r}
+Final_join<-Total_scores
 Final_join_names<-Final_join_names %>% 
  arrange(match(Branch, c("Main", "Upper", "Middle","Lower"))) %>% 
    arrange(match(StreamName, c("MainRouge", "EvansCreek", "PebbleCreek","FranklinCreek","QuartonBranch","UpperRouge","BellBranch","SeeleyCreek","MinnowPond","TarabusiCreek","MiddleRouge","TonquishCreek","WillowCreek","JohnsonCreek","WalledLkDrainage","BishopCreek","LowerRouge","FellowsCreek","FowlerCreek")), Numeric) 
@@ -64,14 +73,14 @@ Final_join_names$Method <- gsub("Shocking", "Electrofishing", Final_join_names$M
 
 ```
 
-
+Final Figure
 ```{r}
 
 Final_join_names %>% 
-ggplot( aes(Score, FIELDID)) + 
+ggplot(aes(FinalScore, New.Name)) + 
 geom_point(aes(colour = Method, shape= Method), size=2.75) +scale_shape_manual(values = c(17,2,15, 0)) + scale_color_manual(values = c("#cd5c5c", "Black","#5c95cd","Black"))+ 
   geom_line(aes(linetype=Type),show.legend = F)+ 
-  scale_linetype_manual(values = c("dashed", "solid")) +
+  scale_linetype_manual(values = c("solid", "dashed")) +
    facet_grid(factor(Branch, levels=c("Main", "Upper", "Middle","Lower"))~., scales = "free")+
   scale_y_discrete(limits=rev)+ 
   labs(y= "", x = "Procedure 51 Score") + 
@@ -81,37 +90,4 @@ geom_point(aes(colour = Method, shape= Method), size=2.75) +scale_shape_manual(v
    geom_vline(xintercept = 4,linetype="dotted")+
   xlim(-10,10)+ 
   theme_light()
-
-
-
-
-
-
-
-
-  
 ```
-
-```{r}
-ggplot(Final_join, aes(Score, FIELDID)) + 
-geom_point(aes(colour = Method, shape= Method), size=2.5) +scale_shape_manual(values = c(15, 0, 17,2)) + scale_color_manual(values = c("#d98383", "Black", "#4888c7","Black"))+ geom_line(aes(linetype=Type))+ scale_linetype_manual(values=c("dashed","solid"))
-```
-
-
-```{r}
-ggplot(Considerations, aes(FinalScore, FIELDID)) + 
-   geom_point(aes(colour = factor(Method), shape= factor(Method))) + geom_line() + ggtitle("P51  considerations") 
-  
-```
-"#83aed9","#d98383"
-
-```{r}
-SubsetRouge<-SubsetRouge %>% select(FIELDID,Branch,StreamName) %>% unique()
-
-write.csv(SubsetRouge, "~/OneDrive - Umich/Rouge River/RougeRiver_Anaylsis/finalsites.csv")
-```
-
-```{r}
-Final_score2023%>% select(FIELDID) %>% unique()
-```
-
